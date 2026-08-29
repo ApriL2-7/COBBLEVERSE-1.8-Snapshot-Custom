@@ -1,0 +1,30 @@
+name: Sync launcher release asset
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - Cobbleverse-Update-Launcher.bat
+      - updater/**
+      - .github/workflows/sync-launcher-release.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-launcher:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Replace launcher asset in bootstrap release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: v2026.08.29.1
+        run: |
+          gh release upload "$RELEASE_TAG" Cobbleverse-Update-Launcher.bat \
+            --repo "${{ github.repository }}" \
+            --clobber
