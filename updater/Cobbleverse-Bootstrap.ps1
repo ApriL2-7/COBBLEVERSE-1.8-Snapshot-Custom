@@ -13,6 +13,7 @@ $ProgressPreference = "SilentlyContinue"
 $StateFileName = "cobbleverse-pack-state.json"
 $GuardFileName = "cobbleverse-client-pack-guard-2026.08.29.1.jar"
 $MinimumMatchRatio = 0.80
+$HighConfidenceMatchRatio = 0.90
 $MinimumSignatureMatches = 2
 $SignaturePaths = @(
     "mods/cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
@@ -42,16 +43,17 @@ function Update-Ui([string]$Message, [int]$Value) {
     }
 }
 
-function Save-State([string]$Path, [int]$Matched, [int]$Total, [int]$SignatureMatches) {
+function Save-State([string]$Path, [int]$Matched, [int]$Total, [int]$SignatureMatches, [double]$MatchRatio) {
     $state = [ordered]@{
         schemaVersion = 1
         version = $BaselineVersion
         repository = $Repository
         updatedAt = (Get-Date).ToString('o')
-        detectedBy = 'baseline-signature-v2'
+        detectedBy = 'baseline-signature-v3'
         verification = [ordered]@{
             matchedFiles = $Matched
             totalBaselineFiles = $Total
+            matchRatio = $MatchRatio
             signatureMatches = $SignatureMatches
         }
     }
@@ -176,13 +178,15 @@ function Test-AndRegisterBaseline {
 
     $ratio = if ($files.Count -gt 0) { [double]$matched / [double]$files.Count } else { 0.0 }
     $ratioPercent = [Math]::Round($ratio * 100, 1)
+    $passesHighConfidence = $ratio -ge $HighConfidenceMatchRatio
+    $passesSignatureRule = ($ratio -ge $MinimumMatchRatio -and $signatureMatches -ge $MinimumSignatureMatches)
 
-    if ($ratio -lt $MinimumMatchRatio -or $signatureMatches -lt $MinimumSignatureMatches) {
+    if (-not ($passesHighConfidence -or $passesSignatureRule)) {
         $exampleText = if ($examples.Count -gt 0) { "`r`n`r`n예시:`r`n- " + (($examples.ToArray()) -join "`r`n- ") } else { "" }
-        throw ("선택한 설치가 Cobbleverse {0} 기준과 충분히 일치하지 않습니다.`r`n`r`n일치: {1}/{2} ({3}%)`r`n없음: {4}`r`n다름: {5}`r`nCobbleverse 핵심 서명: {6}/{7}`r`n필요 조건: 파일 80% 이상 + 핵심 서명 {8}개 이상{9}" -f $BaselineVersion, $matched, $files.Count, $ratioPercent, $missing, $different, $signatureMatches, $SignaturePaths.Count, $MinimumSignatureMatches, $exampleText)
+        throw ("선택한 설치가 Cobbleverse {0} 기준과 충분히 일치하지 않습니다.`r`n`r`n일치: {1}/{2} ({3}%)`r`n없음: {4}`r`n다름: {5}`r`nCobbleverse 핵심 서명: {6}/{7}`r`n필요 조건: 파일 90% 이상 또는 파일 80% 이상 + 핵심 서명 {8}개 이상{9}" -f $BaselineVersion, $matched, $files.Count, $ratioPercent, $missing, $different, $signatureMatches, $SignaturePaths.Count, $MinimumSignatureMatches, $exampleText)
     }
 
-    Save-State $statePath $matched $files.Count $signatureMatches
+    Save-State $statePath $matched $files.Count $signatureMatches $ratio
     Update-Ui ("기존 설치 확인 완료  {0}% 일치" -f $ratioPercent) 100
 }
 
