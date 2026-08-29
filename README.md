@@ -9,7 +9,13 @@ This repository contains the small Windows updater and patch-building tools for 
 3. Run the launcher. It downloads the latest updater script from this repository each time.
 4. Use the graphical update window to accept the patch.
 
-The updater detects the `COBBLEVERSE 1.8 Snapshot Custom` Modrinth profile, downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
+The launcher first resolves the Modrinth profile. It prefers `COBBLEVERSE 1.8 Snapshot Custom`, can identify a renamed profile by the Cobbleverse guard mod, and falls back to a folder picker instead of waiting for hidden console input.
+
+The updater downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
+
+## Bootstrap launcher release
+
+The launcher asset in release `v2026.08.29.1` is the permanent bootstrap download for players. `.github/workflows/sync-launcher-release.yml` automatically replaces that Release asset whenever the launcher, updater, or sync workflow changes on `main`, so the original player download link remains current.
 
 ## Release asset contract
 
