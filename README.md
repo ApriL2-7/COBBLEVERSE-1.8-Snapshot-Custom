@@ -7,7 +7,7 @@ This repository contains the small Windows updater and patch-building tools for 
 1. Download `Cobbleverse-Update-Launcher.bat` once.
 2. Close Minecraft completely.
 3. Run the launcher. It downloads the latest updater script from this repository each time.
-4. Accept the update prompt.
+4. Use the graphical update window to accept the patch.
 
 The updater detects the `COBBLEVERSE 1.8 Snapshot Custom` Modrinth profile, downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
 
