@@ -8,7 +8,8 @@ param(
     [Parameter(Mandatory = $true)]
     [string]$ToVersion,
     [Parameter(Mandatory = $true)]
-    [string]$OutputDirectory
+    [string]$OutputDirectory,
+    [switch]$IncludeAllFiles
 )
 
 $ErrorActionPreference = "Stop"
@@ -70,6 +71,11 @@ foreach ($file in $currentFiles) {
 
 $changed = [Collections.Generic.List[object]]::new()
 foreach ($file in $currentFiles) {
+    if ($IncludeAllFiles) {
+        $changed.Add($file)
+        continue
+    }
+
     $previous = $old[[string]$file.path]
     if (-not $previous -or [long]$previous.size -ne [long]$file.size -or
         ([string]$previous.sha256).ToUpperInvariant() -ne ([string]$file.sha256).ToUpperInvariant()) {
@@ -139,7 +145,8 @@ try {
     Write-Host "PATCH_READY"
     Write-Host "From: $FromVersion"
     Write-Host "To: $ToVersion"
-    Write-Host "Changed/New: $($changed.Count)"
+    Write-Host "Mode: $(if ($IncludeAllFiles) { 'FULL_REPAIR' } else { 'INCREMENTAL' })"
+    Write-Host "Included: $($changed.Count)"
     Write-Host "Deleted: $($deleted.Count)"
     Write-Host "ZIP: $zipPath"
     Write-Host "Manifest: $patchManifestPath"
@@ -150,4 +157,3 @@ finally {
         Remove-Item -LiteralPath $work -Recurse -Force
     }
 }
-
