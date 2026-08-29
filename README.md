@@ -6,8 +6,12 @@ This repository contains the small Windows updater and patch-building tools for 
 
 1. Download `Cobbleverse-Update-Launcher.bat` once.
 2. Close Minecraft completely.
-3. Run the launcher. It downloads the latest updater and bootstrap verifier scripts from this repository each time.
+3. Run the launcher. The BAT downloads the latest `updater/Cobbleverse-Launcher.ps1`, which then downloads the latest bootstrap verifier and updater scripts.
 4. Use the graphical update window to accept the patch.
+
+The BAT is intentionally a tiny permanent bootstrap. Profile discovery, Modrinth/CurseForge support, baseline registration, UI behavior, and updater orchestration live in remotely downloaded PowerShell scripts, so existing players do not need to re-download the BAT when those behaviors change.
+
+Players who downloaded a launcher from before this permanent-bootstrap design need to download the BAT one final time. After that migration, the same local BAT can be kept and reused indefinitely as long as the repository location remains unchanged.
 
 The launcher resolves both Modrinth and CurseForge profiles. It checks the normal Modrinth profiles directory and common CurseForge Minecraft instance directories, recognizes the standard `COBBLEVERSE 1.8 Snapshot Custom` folder name, and can also identify already-registered profiles by their guard/state file. If automatic detection is not possible, it accepts a pasted profile path or falls back to a folder picker.
 
@@ -19,7 +23,7 @@ The updater downloads only missing sequential patches, verifies SHA-256 hashes b
 
 ## Bootstrap launcher release
 
-The launcher asset in release `v2026.08.29.1` is the permanent bootstrap download for players. `.github/workflows/sync-launcher-release.yml` automatically replaces that Release asset whenever the launcher, updater, or sync workflow changes on `main`, so the original player download link remains current.
+The launcher asset in release `v2026.08.29.1` is the permanent bootstrap download for players. `.github/workflows/sync-launcher-release.yml` automatically replaces that Release asset whenever the launcher, updater, or sync workflow changes on `main`, so new downloads from the original player link always receive the current bootstrap. Existing players on the permanent-bootstrap BAT continue receiving current launcher/updater logic without replacing their local BAT.
 
 ## Release asset contract
 
