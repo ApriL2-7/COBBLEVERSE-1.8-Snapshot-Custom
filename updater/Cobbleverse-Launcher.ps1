@@ -124,7 +124,7 @@ function Resolve-CobbleverseProfile {
     return Get-FullPath $dialog.SelectedPath
 }
 
-function Download-LatestScript([string]$RelativePath, [string]$Destination) {
+function Download-RepoFile([string]$RelativePath, [string]$Destination) {
     $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}" -f $Repository, $RelativePath
     $commonHeaders = @{
         "User-Agent" = "Cobbleverse-Updater"
@@ -153,8 +153,89 @@ function Download-LatestScript([string]$RelativePath, [string]$Destination) {
         return
     }
     catch {
-        throw "Could not download $RelativePath.`r`n`r`nraw.githubusercontent.com: $rawError`r`nGitHub API: $($_.Exception.Message)"
+        throw "Could not download repository file: $RelativePath`r`n`r`nraw.githubusercontent.com: $rawError`r`nGitHub API: $($_.Exception.Message)"
     }
+}
+
+function Download-ReleaseAsset([string]$Url, [string]$Destination) {
+    $headers = @{
+        "User-Agent" = "Cobbleverse-Updater"
+        "Cache-Control" = "no-cache"
+        "Pragma" = "no-cache"
+    }
+    try {
+        Invoke-WebRequest -UseBasicParsing -Headers $headers -Uri $Url -OutFile $Destination
+    }
+    catch {
+        throw "Could not download patch asset:`r`n$Url`r`n`r`n$($_.Exception.Message)"
+    }
+}
+
+function Assert-SafeAssetName([string]$Name) {
+    if ([string]::IsNullOrWhiteSpace($Name)) {
+        throw "Patch index contains an empty asset name."
+    }
+    if ($Name.Contains('/') -or $Name.Contains('\') -or $Name -eq '.' -or $Name -eq '..') {
+        throw "Unsafe patch asset name rejected: $Name"
+    }
+}
+
+function Prepare-IndexedReleases([string]$Root) {
+    $indexPath = Join-Path $Root "patch-index.json"
+    $releaseRoot = Join-Path $Root "releases"
+    New-Item -ItemType Directory -Path $releaseRoot -Force | Out-Null
+
+    Download-RepoFile "updater/patch-index.json" $indexPath
+    $index = Get-Content -LiteralPath $indexPath -Raw -Encoding UTF8 | ConvertFrom-Json
+    if ([int]$index.schemaVersion -ne 1) {
+        throw "Unsupported patch index schema: $($index.schemaVersion)"
+    }
+    if ([string]$index.baselineVersion -ne "2026.08.29.1") {
+        throw "Patch index baseline does not match this updater."
+    }
+
+    $patches = @($index.patches)
+    $seenFrom = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+    $i = 0
+    foreach ($entry in $patches) {
+        $i++
+        $tag = [string]$entry.tag
+        $fromVersion = [string]$entry.fromVersion
+        $toVersion = [string]$entry.toVersion
+        $manifestAsset = [string]$entry.manifestAsset
+        $patchAsset = [string]$entry.patchAsset
+
+        if ([string]::IsNullOrWhiteSpace($tag) -or $tag -notmatch '^v[0-9A-Za-z._-]+$') {
+            throw "Invalid patch tag in index: $tag"
+        }
+        if ([string]::IsNullOrWhiteSpace($fromVersion) -or [string]::IsNullOrWhiteSpace($toVersion)) {
+            throw "Patch index entry $i is missing version information."
+        }
+        if (-not $seenFrom.Add($fromVersion)) {
+            throw "Patch index contains multiple patches starting from $fromVersion."
+        }
+        Assert-SafeAssetName $manifestAsset
+        Assert-SafeAssetName $patchAsset
+
+        $entryRoot = Join-Path $releaseRoot ("release-{0:D3}" -f $i)
+        New-Item -ItemType Directory -Path $entryRoot -Force | Out-Null
+        $manifestPath = Join-Path $entryRoot $manifestAsset
+        $patchPath = Join-Path $entryRoot $patchAsset
+        $baseUrl = "https://github.com/{0}/releases/download/{1}" -f $Repository, $tag
+
+        Download-ReleaseAsset ("$baseUrl/$manifestAsset") $manifestPath
+        $manifest = Get-Content -LiteralPath $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        if ([string]$manifest.fromVersion -ne $fromVersion -or [string]$manifest.toVersion -ne $toVersion) {
+            throw "Patch index version metadata does not match $manifestAsset for $tag."
+        }
+        if ([string]$manifest.patchAsset -ne $patchAsset) {
+            throw "Patch index asset metadata does not match $manifestAsset for $tag."
+        }
+
+        Download-ReleaseAsset ("$baseUrl/$patchAsset") $patchPath
+    }
+
+    return $releaseRoot
 }
 
 $workRoot = Join-Path $env:TEMP ("Cobbleverse-Launcher-" + [Guid]::NewGuid().ToString('N'))
@@ -172,15 +253,16 @@ try {
     }
 
     New-Item -ItemType Directory -Path $workRoot -Force | Out-Null
-    Download-LatestScript "updater/Cobbleverse-Bootstrap.ps1" $bootstrapFile
-    Download-LatestScript "updater/Cobbleverse-Updater.ps1" $updaterFile
+    Download-RepoFile "updater/Cobbleverse-Bootstrap.ps1" $bootstrapFile
+    Download-RepoFile "updater/Cobbleverse-Updater.ps1" $updaterFile
+    $releaseRoot = Prepare-IndexedReleases $workRoot
 
     & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File $bootstrapFile -Gui -ProfilePath $profile -Repository $Repository
     if ($LASTEXITCODE -ne 0) {
         return
     }
 
-    & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File $updaterFile -Gui -ProfilePath $profile -ProfilesRoot $profilesRoot -Repository $Repository
+    & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File $updaterFile -Gui -ProfilePath $profile -ProfilesRoot $profilesRoot -Repository $Repository -LocalReleaseRoot $releaseRoot
 } catch {
     $message = $_.Exception.Message
     if ([string]::IsNullOrWhiteSpace($message)) {
