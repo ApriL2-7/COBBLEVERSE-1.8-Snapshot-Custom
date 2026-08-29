@@ -21,6 +21,12 @@ The selected profile's parent directory is passed to the updater as the allowed 
 
 The updater downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
 
+## Static patch index
+
+Clients do not enumerate GitHub Releases through the GitHub Releases API. Instead, the launcher downloads the small repository file `updater/patch-index.json`, stages the listed Release assets into a temporary local release directory, and invokes the existing updater with `-LocalReleaseRoot`. This keeps patch discovery independent from client-side GitHub Releases API behavior while preserving the existing manifest, SHA-256, backup, and rollback logic.
+
+`.github/workflows/update-patch-index.yml` runs when a normal Release is published. If that Release contains `cobbleverse-patch.json`, the workflow reads its `fromVersion`, `toVersion`, and `patchAsset` fields and commits the corresponding entry into `updater/patch-index.json` on `main`. Releases without a patch manifest, such as the initial bootstrap Release, leave the index unchanged.
+
 ## Bootstrap launcher release
 
 The launcher asset in release `v2026.08.29.1` is the permanent bootstrap download for players. `.github/workflows/sync-launcher-release.yml` automatically replaces that Release asset whenever the launcher, updater, or sync workflow changes on `main`, so new downloads from the original player link always receive the current bootstrap. Existing players on the permanent-bootstrap BAT continue receiving current launcher/updater logic without replacing their local BAT.
@@ -32,7 +38,7 @@ Every non-draft, non-prerelease GitHub Release that changes the client must cont
 - `cobbleverse-patch.json`
 - the ZIP named by `patchAsset` inside that JSON
 
-Patch releases form a strict chain using `fromVersion` and `toVersion`. A client that misses several releases applies each patch in order.
+Patch releases form a strict chain using `fromVersion` and `toVersion`. A client that misses several releases applies each patch in order. Publishing the Release automatically updates `updater/patch-index.json` through GitHub Actions.
 
 ## Creating a patch
 
