@@ -1,5 +1,13 @@
 {
   "schemaVersion": 1,
   "baselineVersion": "2026.08.29.1",
-  "patches": []
+  "patches": [
+    {
+      "tag": "v2026.08.29.2",
+      "fromVersion": "2026.08.29.1",
+      "toVersion": "2026.08.29.2",
+      "manifestAsset": "cobbleverse-patch.json",
+      "patchAsset": "cobbleverse-patch-2026-08-29-2.zip"
+    }
+  ]
 }
