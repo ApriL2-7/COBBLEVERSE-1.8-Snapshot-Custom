@@ -12,6 +12,16 @@ $ProgressPreference = "SilentlyContinue"
 
 $StateFileName = "cobbleverse-pack-state.json"
 $GuardFileName = "cobbleverse-client-pack-guard-2026.08.29.1.jar"
+$MinimumMatchRatio = 0.80
+$MinimumSignatureMatches = 2
+$SignaturePaths = @(
+    "mods/cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
+    "mods/CobbleverseBadges-1.3.jar",
+    "mods/cobbleverse-battle-extras-hotfix-1.0.0.jar",
+    "mods/cobbleverse-compat-api119-hotfix-1.0.0.jar",
+    "mods/cobbleverse-mount-sync-hotfix-1.0.0.jar",
+    "mods/Cobbreeding-fabric-2.2.2-cobbleverse-pcfix.jar"
+)
 $script:Form = $null
 $script:Status = $null
 $script:Progress = $null
@@ -32,15 +42,20 @@ function Update-Ui([string]$Message, [int]$Value) {
     }
 }
 
-function Save-State([string]$Path) {
+function Save-State([string]$Path, [int]$Matched, [int]$Total, [int]$SignatureMatches) {
     $state = [ordered]@{
         schemaVersion = 1
         version = $BaselineVersion
         repository = $Repository
         updatedAt = (Get-Date).ToString('o')
-        detectedBy = 'baseline-sha256'
+        detectedBy = 'baseline-signature-v2'
+        verification = [ordered]@{
+            matchedFiles = $Matched
+            totalBaselineFiles = $Total
+            signatureMatches = $SignatureMatches
+        }
     }
-    [IO.File]::WriteAllText($Path, ($state | ConvertTo-Json -Depth 4), [Text.UTF8Encoding]::new($false))
+    [IO.File]::WriteAllText($Path, ($state | ConvertTo-Json -Depth 6), [Text.UTF8Encoding]::new($false))
 }
 
 function Get-BaselineManifest {
@@ -96,7 +111,7 @@ function Test-AndRegisterBaseline {
         return
     }
 
-    Update-Ui "기존 CurseForge 설치를 확인하는 중..." 2
+    Update-Ui "기존 설치를 확인하는 중..." 2
 
     $baseline = Get-BaselineManifest
     if ([int]$baseline.schemaVersion -ne 1 -or [string]$baseline.version -ne $BaselineVersion) {
@@ -108,7 +123,18 @@ function Test-AndRegisterBaseline {
         throw "The baseline manifest contains no files."
     }
 
+    $signatureSet = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+    foreach ($signature in $SignaturePaths) {
+        $null = $signatureSet.Add($signature)
+    }
+
+    $matched = 0
+    $missing = 0
+    $different = 0
+    $signatureMatches = 0
+    $examples = [Collections.Generic.List[string]]::new()
     $index = 0
+
     foreach ($file in $files) {
         $index++
         $relative = ([string]$file.path).Replace('\', '/')
@@ -124,18 +150,40 @@ function Test-AndRegisterBaseline {
         Update-Ui ("기존 설치 확인 중  {0}/{1}" -f $index, $files.Count) $percent
 
         if (-not (Test-Path -LiteralPath $target -PathType Leaf)) {
-            throw "기준 버전과 파일 구성이 다릅니다. 없는 파일: $relative"
+            $missing++
+            if ($examples.Count -lt 5) { $examples.Add("없음: $relative") }
+            continue
         }
-        if ((Get-Item -LiteralPath $target).Length -ne [long]$file.size) {
-            throw "기준 버전과 파일 크기가 다릅니다: $relative"
+
+        $isMatch = $false
+        if ((Get-Item -LiteralPath $target).Length -eq [long]$file.size) {
+            if ((Get-FileSha256 $target) -eq ([string]$file.sha256).ToUpperInvariant()) {
+                $isMatch = $true
+            }
         }
-        if ((Get-FileSha256 $target) -ne ([string]$file.sha256).ToUpperInvariant()) {
-            throw "기준 버전과 파일 내용이 다릅니다: $relative"
+
+        if ($isMatch) {
+            $matched++
+            if ($signatureSet.Contains($relative)) {
+                $signatureMatches++
+            }
+        }
+        else {
+            $different++
+            if ($examples.Count -lt 5) { $examples.Add("다름: $relative") }
         }
     }
 
-    Save-State $statePath
-    Update-Ui "기존 설치 확인 완료" 100
+    $ratio = if ($files.Count -gt 0) { [double]$matched / [double]$files.Count } else { 0.0 }
+    $ratioPercent = [Math]::Round($ratio * 100, 1)
+
+    if ($ratio -lt $MinimumMatchRatio -or $signatureMatches -lt $MinimumSignatureMatches) {
+        $exampleText = if ($examples.Count -gt 0) { "`r`n`r`n예시:`r`n- " + (($examples.ToArray()) -join "`r`n- ") } else { "" }
+        throw ("선택한 설치가 Cobbleverse {0} 기준과 충분히 일치하지 않습니다.`r`n`r`n일치: {1}/{2} ({3}%)`r`n없음: {4}`r`n다름: {5}`r`nCobbleverse 핵심 서명: {6}/{7}`r`n필요 조건: 파일 80% 이상 + 핵심 서명 {8}개 이상{9}" -f $BaselineVersion, $matched, $files.Count, $ratioPercent, $missing, $different, $signatureMatches, $SignaturePaths.Count, $MinimumSignatureMatches, $exampleText)
+    }
+
+    Save-State $statePath $matched $files.Count $signatureMatches
+    Update-Ui ("기존 설치 확인 완료  {0}% 일치" -f $ratioPercent) 100
 }
 
 function Show-VerificationWindow {
@@ -177,7 +225,7 @@ function Show-VerificationWindow {
         catch {
             $form.Tag = 1
             [Windows.Forms.MessageBox]::Show(
-                "기존 설치를 Cobbleverse $BaselineVersion 기준 버전으로 확인하지 못했습니다.`r`n`r`n$($_.Exception.Message)`r`n`r`n선택한 CurseForge 프로필이 맞는지, 또는 클라이언트 파일이 변경되지 않았는지 확인해 주세요.",
+                "기존 설치를 Cobbleverse $BaselineVersion 기준 버전으로 확인하지 못했습니다.`r`n`r`n$($_.Exception.Message)`r`n`r`n선택한 프로필이 맞는지 확인해 주세요.",
                 "Cobbleverse Updater",
                 [Windows.Forms.MessageBoxButtons]::OK,
                 [Windows.Forms.MessageBoxIcon]::Error
