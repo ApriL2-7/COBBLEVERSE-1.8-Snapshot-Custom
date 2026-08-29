@@ -622,7 +622,7 @@ function Show-UpdaterWindow {
     $script:CloseButton.ForeColor = [Drawing.Color]::FromArgb(8, 28, 30)
     $script:CloseButton.Font = New-UiFont 9 ([Drawing.FontStyle]::Bold)
     $script:CloseButton.Visible = $false
-    $script:CloseButton.Add_Click({ $form.Close() })
+    $script:CloseButton.Add_Click({ $script:MainForm.Close() })
     $form.Controls.Add($script:CloseButton)
 
     $form.Add_Shown({
@@ -647,13 +647,34 @@ function Show-UpdaterWindow {
         }
     })
 
-    $null = $form.ShowDialog()
+    $form.Show()
+    while (-not $form.IsDisposed -and $form.Visible) {
+        [Windows.Forms.Application]::DoEvents()
+        Start-Sleep -Milliseconds 50
+    }
     if ($form.Tag -eq 1) { return 1 }
     return 0
 }
 
 if ($Gui) {
-    exit (Show-UpdaterWindow)
+    try {
+        exit (Show-UpdaterWindow)
+    }
+    catch {
+        $fatalMessage = $_.Exception.ToString()
+        try {
+            [IO.File]::WriteAllText((Join-Path ([IO.Path]::GetTempPath()) 'Cobbleverse-Updater-Error.log'), $fatalMessage)
+            Add-Type -AssemblyName System.Windows.Forms
+            [Windows.Forms.MessageBox]::Show(
+                $_.Exception.Message,
+                'Cobbleverse Updater',
+                [Windows.Forms.MessageBoxButtons]::OK,
+                [Windows.Forms.MessageBoxIcon]::Error
+            ) | Out-Null
+        }
+        catch {}
+        exit 1
+    }
 }
 
 try {
