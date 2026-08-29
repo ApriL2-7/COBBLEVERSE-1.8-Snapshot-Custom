@@ -157,6 +157,13 @@ function Download-RepoFile([string]$RelativePath, [string]$Destination) {
     }
 }
 
+function Normalize-WindowsPowerShellScript([string]$Path) {
+    $utf8NoBom = [Text.UTF8Encoding]::new($false)
+    $utf8Bom = [Text.UTF8Encoding]::new($true)
+    $text = [IO.File]::ReadAllText($Path, $utf8NoBom)
+    [IO.File]::WriteAllText($Path, $text, $utf8Bom)
+}
+
 function Download-ReleaseAsset([string]$Url, [string]$Destination) {
     $headers = @{
         "User-Agent" = "Cobbleverse-Updater"
@@ -255,6 +262,8 @@ try {
     New-Item -ItemType Directory -Path $workRoot -Force | Out-Null
     Download-RepoFile "updater/Cobbleverse-Bootstrap.ps1" $bootstrapFile
     Download-RepoFile "updater/Cobbleverse-Updater.ps1" $updaterFile
+    Normalize-WindowsPowerShellScript $bootstrapFile
+    Normalize-WindowsPowerShellScript $updaterFile
     $releaseRoot = Prepare-IndexedReleases $workRoot
 
     & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File $bootstrapFile -Gui -ProfilePath $profile -Repository $Repository
