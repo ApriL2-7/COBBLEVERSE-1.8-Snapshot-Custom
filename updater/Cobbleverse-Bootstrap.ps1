@@ -1,4 +1,4 @@
-﻿param(
+param(
     [Parameter(Mandatory = $true)]
     [string]$ProfilePath,
     [string]$Repository = "ApriL2-7/COBBLEVERSE-1.8-Snapshot-Custom",
@@ -43,6 +43,40 @@ function Save-State([string]$Path) {
     [IO.File]::WriteAllText($Path, ($state | ConvertTo-Json -Depth 4), [Text.UTF8Encoding]::new($false))
 }
 
+function Get-BaselineManifest {
+    $relativePath = "baselines/baseline-$BaselineVersion.json"
+    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}" -f $Repository, $relativePath
+    $commonHeaders = @{
+        "User-Agent" = "Cobbleverse-Updater"
+        "Cache-Control" = "no-cache"
+        "Pragma" = "no-cache"
+    }
+
+    try {
+        $response = Invoke-WebRequest -UseBasicParsing -Headers $commonHeaders -Uri $rawUrl
+        return ($response.Content | ConvertFrom-Json)
+    }
+    catch {
+        $rawError = $_.Exception.Message
+    }
+
+    $apiUrl = "https://api.github.com/repos/{0}/contents/{1}?ref=main" -f $Repository, $relativePath
+    $apiHeaders = @{
+        "Accept" = "application/vnd.github.raw+json"
+        "User-Agent" = "Cobbleverse-Updater"
+        "X-GitHub-Api-Version" = "2022-11-28"
+        "Cache-Control" = "no-cache"
+    }
+
+    try {
+        $response = Invoke-WebRequest -UseBasicParsing -Headers $apiHeaders -Uri $apiUrl
+        return ($response.Content | ConvertFrom-Json)
+    }
+    catch {
+        throw "기준 파일을 GitHub에서 받지 못했습니다.`r`n`r`nraw.githubusercontent.com: $rawError`r`nGitHub API: $($_.Exception.Message)"
+    }
+}
+
 function Test-AndRegisterBaseline {
     $profile = Get-FullPath ($ProfilePath.Trim().Trim('"'))
     if (-not (Test-Path -LiteralPath $profile -PathType Container)) {
@@ -64,9 +98,7 @@ function Test-AndRegisterBaseline {
 
     Update-Ui "기존 CurseForge 설치를 확인하는 중..." 2
 
-    $baselineUrl = "https://raw.githubusercontent.com/$Repository/main/baselines/baseline-$BaselineVersion.json?cache=$([Guid]::NewGuid().ToString('N'))"
-    $headers = @{ "User-Agent" = "Cobbleverse-Updater" }
-    $baseline = Invoke-RestMethod -UseBasicParsing -Headers $headers -Uri $baselineUrl
+    $baseline = Get-BaselineManifest
     if ([int]$baseline.schemaVersion -ne 1 -or [string]$baseline.version -ne $BaselineVersion) {
         throw "The baseline manifest is invalid or has an unexpected version."
     }
