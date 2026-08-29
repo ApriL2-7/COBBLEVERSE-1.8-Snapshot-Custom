@@ -1,0 +1,5 @@
+out/
+*.tmp
+*.log
+.test-work/
+
