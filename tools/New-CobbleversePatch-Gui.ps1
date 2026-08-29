@@ -129,6 +129,14 @@ try {
     if ($toVersion -eq $fromVersion) { throw 'The new version must differ from the current version.' }
     if ($toVersion -notmatch '^[0-9A-Za-z._-]+$') { throw "Invalid version: $toVersion" }
 
+    $repairChoice = [Windows.Forms.MessageBox]::Show(
+        "Create a FULL REPAIR patch?`r`n`r`nYES: include every mod/resourcepack file. Use this for the first patch so incomplete legacy installs are repaired.`r`n`r`nNO: include only changed/new files for a normal incremental update.",
+        'Cobbleverse Patch Builder',
+        [Windows.Forms.MessageBoxButtons]::YesNo,
+        [Windows.Forms.MessageBoxIcon]::Question
+    )
+    $includeAllFiles = ($repairChoice -eq [Windows.Forms.DialogResult]::Yes)
+
     $builder = Join-Path $TempRoot 'New-CobbleversePatch.ps1'
     Download-RepoFile 'tools/New-CobbleversePatch.ps1' $builder
 
@@ -137,12 +145,16 @@ try {
     $outputDirectory = Join-Path $desktop ("Cobbleverse-Patch-$toVersion")
     New-Item -ItemType Directory -Path $outputDirectory -Force | Out-Null
 
-    $result = & $builder `
-        -PayloadRoot $payloadRoot `
-        -BaselineManifest $baselinePath `
-        -FromVersion $fromVersion `
-        -ToVersion $toVersion `
-        -OutputDirectory $outputDirectory 2>&1 | Out-String
+    $builderArgs = @{
+        PayloadRoot = $payloadRoot
+        BaselineManifest = $baselinePath
+        FromVersion = $fromVersion
+        ToVersion = $toVersion
+        OutputDirectory = $outputDirectory
+    }
+    if ($includeAllFiles) { $builderArgs.IncludeAllFiles = $true }
+
+    $result = & $builder @builderArgs 2>&1 | Out-String
 
     $zipName = 'cobbleverse-patch-' + $toVersion.Replace('.', '-') + '.zip'
     $zipPath = Join-Path $outputDirectory $zipName
@@ -156,13 +168,15 @@ try {
     }
 
     $manifest = Get-Content -LiteralPath $manifestPath -Raw -Encoding UTF8 | ConvertFrom-Json
-    $changedCount = @($manifest.files).Count
+    $includedCount = @($manifest.files).Count
     $deletedCount = @($manifest.delete).Count
+    $modeName = if ($includeAllFiles) { 'FULL REPAIR' } else { 'INCREMENTAL' }
 
     Show-Info ("Patch created successfully.`r`n`r`n" +
+        "Mode: $modeName`r`n" +
         "From: $fromVersion`r`n" +
         "To: $toVersion`r`n" +
-        "Changed/New: $changedCount`r`n" +
+        "Included files: $includedCount`r`n" +
         "Deleted: $deletedCount`r`n`r`n" +
         "Saved to:`r`n$outputDirectory`r`n`r`n" +
         "Files:`r`n$zipName`r`ncobbleverse-patch.json`r`nbaseline-$toVersion.json")
