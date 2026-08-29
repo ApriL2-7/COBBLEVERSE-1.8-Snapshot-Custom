@@ -1,8 +1,12 @@
 @echo off
-setlocal
+setlocal EnableExtensions
 cd /d "%~dp0"
-echo Run the PowerShell script with the required version arguments.
-echo Example:
-echo powershell -ExecutionPolicy Bypass -File New-CobbleversePatch.ps1 -PayloadRoot "PATH\payload" -BaselineManifest "PATH\baseline.json" -FromVersion "2026.08.29.1" -ToVersion "2026.08.30.1" -OutputDirectory "PATH\out"
-pause
 
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "%~dp0New-CobbleversePatch-Gui.ps1"
+if errorlevel 1 (
+    echo.
+    echo Cobbleverse patch builder failed. Check the popup message for details.
+    pause
+)
+
+exit /b %errorlevel%
