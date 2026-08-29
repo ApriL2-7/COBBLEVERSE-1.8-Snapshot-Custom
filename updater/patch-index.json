@@ -15,6 +15,13 @@
       "toVersion": "2026.08.29.3",
       "manifestAsset": "cobbleverse-patch.json",
       "patchAsset": "cobbleverse-patch-2026-08-29-3.zip"
+    },
+    {
+      "tag": "v2026.08.29.4",
+      "fromVersion": "2026.08.29.3",
+      "toVersion": "2026.08.29.4",
+      "manifestAsset": "cobbleverse-patch.json",
+      "patchAsset": "cobbleverse-patch-2026-08-29-4.zip"
     }
   ]
 }
