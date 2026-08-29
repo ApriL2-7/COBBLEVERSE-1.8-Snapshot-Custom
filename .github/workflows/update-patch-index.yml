@@ -1,0 +1,97 @@
+name: Update client patch index
+
+on:
+  release:
+    types:
+      - published
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    if: ${{ !github.event.release.draft && !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download patch manifest from release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/cobbleverse-release"
+          if ! gh release download "$RELEASE_TAG" \
+            --repo "${{ github.repository }}" \
+            --pattern "cobbleverse-patch.json" \
+            --dir "$RUNNER_TEMP/cobbleverse-release"; then
+            echo "Release has no cobbleverse-patch.json; leaving patch index unchanged."
+            exit 0
+          fi
+
+      - name: Update static patch index
+        env:
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          MANIFEST="$RUNNER_TEMP/cobbleverse-release/cobbleverse-patch.json"
+          if [ ! -f "$MANIFEST" ]; then
+            exit 0
+          fi
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+
+          manifest_path = Path(os.environ['RUNNER_TEMP']) / 'cobbleverse-release' / 'cobbleverse-patch.json'
+          index_path = Path('updater/patch-index.json')
+          manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
+          index = json.loads(index_path.read_text(encoding='utf-8-sig'))
+
+          if int(manifest.get('schemaVersion', 0)) != 1:
+              raise SystemExit('Unsupported patch manifest schema')
+          if int(index.get('schemaVersion', 0)) != 1:
+              raise SystemExit('Unsupported patch index schema')
+
+          from_version = str(manifest.get('fromVersion', '')).strip()
+          to_version = str(manifest.get('toVersion', '')).strip()
+          patch_asset = str(manifest.get('patchAsset', '')).strip()
+          tag = os.environ['RELEASE_TAG'].strip()
+          if not from_version or not to_version or not patch_asset or not tag:
+              raise SystemExit('Patch manifest is missing required fields')
+
+          entry = {
+              'tag': tag,
+              'fromVersion': from_version,
+              'toVersion': to_version,
+              'manifestAsset': 'cobbleverse-patch.json',
+              'patchAsset': patch_asset,
+          }
+
+          patches = list(index.get('patches') or [])
+          same_from = [p for p in patches if str(p.get('fromVersion', '')).lower() == from_version.lower()]
+          if same_from:
+              if len(same_from) != 1 or str(same_from[0].get('toVersion', '')).lower() != to_version.lower():
+                  raise SystemExit(f'Patch index already has a different patch starting from {from_version}')
+              patches = [entry if str(p.get('fromVersion', '')).lower() == from_version.lower() else p for p in patches]
+          else:
+              patches.append(entry)
+
+          index['patches'] = patches
+          index_path.write_text(json.dumps(index, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+
+      - name: Commit patch index
+        run: |
+          if git diff --quiet -- updater/patch-index.json; then
+            echo "Patch index already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add updater/patch-index.json
+          git commit -m "Index patch ${{ github.event.release.tag_name }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
