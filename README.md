@@ -9,7 +9,9 @@ This repository contains the small Windows updater and patch-building tools for 
 3. Run the launcher. It downloads the latest updater script from this repository each time.
 4. Use the graphical update window to accept the patch.
 
-The launcher first resolves the Modrinth profile. It prefers `COBBLEVERSE 1.8 Snapshot Custom`, can identify a renamed profile by the Cobbleverse guard mod, and falls back to a folder picker instead of waiting for hidden console input.
+The launcher resolves both Modrinth and CurseForge profiles. It checks the normal Modrinth profiles directory and common CurseForge Minecraft instance directories, identifies the Cobbleverse profile by its guard/state file, and prefers `COBBLEVERSE 1.8 Snapshot Custom` when there is one clear match. If automatic detection is not possible, it accepts a pasted profile path or falls back to a folder picker.
+
+The selected profile's parent directory is passed to the updater as the allowed profiles root, so CurseForge and custom launcher locations still use the updater's existing path-boundary safety check.
 
 The updater downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
 
