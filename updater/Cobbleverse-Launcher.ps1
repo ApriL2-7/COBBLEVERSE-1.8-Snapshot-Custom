@@ -125,8 +125,36 @@ function Resolve-CobbleverseProfile {
 }
 
 function Download-LatestScript([string]$RelativePath, [string]$Destination) {
-    $url = "https://raw.githubusercontent.com/$Repository/main/$RelativePath?cache=$([Guid]::NewGuid().ToString('N'))"
-    Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $Destination
+    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}" -f $Repository, $RelativePath
+    $commonHeaders = @{
+        "User-Agent" = "Cobbleverse-Updater"
+        "Cache-Control" = "no-cache"
+        "Pragma" = "no-cache"
+    }
+
+    try {
+        Invoke-WebRequest -UseBasicParsing -Headers $commonHeaders -Uri $rawUrl -OutFile $Destination
+        return
+    }
+    catch {
+        $rawError = $_.Exception.Message
+    }
+
+    $apiUrl = "https://api.github.com/repos/{0}/contents/{1}?ref=main" -f $Repository, $RelativePath
+    $apiHeaders = @{
+        "Accept" = "application/vnd.github.raw+json"
+        "User-Agent" = "Cobbleverse-Updater"
+        "X-GitHub-Api-Version" = "2022-11-28"
+        "Cache-Control" = "no-cache"
+    }
+
+    try {
+        Invoke-WebRequest -UseBasicParsing -Headers $apiHeaders -Uri $apiUrl -OutFile $Destination
+        return
+    }
+    catch {
+        throw "Could not download $RelativePath.`r`n`r`nraw.githubusercontent.com: $rawError`r`nGitHub API: $($_.Exception.Message)"
+    }
 }
 
 $workRoot = Join-Path $env:TEMP ("Cobbleverse-Launcher-" + [Guid]::NewGuid().ToString('N'))
