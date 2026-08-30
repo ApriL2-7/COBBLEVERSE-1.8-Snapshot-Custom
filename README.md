@@ -7,9 +7,11 @@ This repository contains the small Windows updater and patch-building tools for 
 1. Download `Cobbleverse-Update-Launcher.bat` once.
 2. Close Minecraft completely.
 3. Run the launcher. The BAT downloads the latest `updater/Cobbleverse-Launcher.ps1`, which then downloads the latest bootstrap verifier and updater scripts.
-4. Use the graphical update window to accept the patch.
+4. Keep the CMD window open while the numeric download, verification, and installation progress reaches 100%.
 
-The BAT is intentionally a tiny permanent bootstrap. Profile discovery, Modrinth/CurseForge support, baseline registration, UI behavior, and updater orchestration live in remotely downloaded PowerShell scripts, so existing players do not need to re-download the BAT when those behaviors change.
+The BAT is intentionally a tiny permanent bootstrap. Profile discovery, Modrinth/CurseForge support, baseline registration, console progress, and updater orchestration live in remotely downloaded PowerShell scripts, so existing players do not need to re-download the BAT when those behaviors change.
+
+The normal player path is console-only. It shows SFC-style progress bars and numeric percentages for setup, patch downloads (including downloaded MB), installation verification, SHA-256 verification, rollback backup creation, and file application. The window remains open at the end so the player can read the result.
 
 Players who downloaded a launcher from before this permanent-bootstrap design need to download the BAT one final time. After that migration, the same local BAT can be kept and reused indefinitely as long as the repository location remains unchanged.
 
@@ -19,7 +21,7 @@ For older copies that do not yet contain the Cobbleverse guard file or updater s
 
 The selected profile's parent directory is passed to the updater as the allowed profiles root, so CurseForge and custom launcher locations still use the updater's existing path-boundary safety check.
 
-The updater downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails.
+The updater downloads only missing sequential patches, verifies SHA-256 hashes before changing files, backs up affected files, and restores the original files if installation fails. A client that is already current skips all historical patch ZIP downloads.
 
 ## Static patch index
 

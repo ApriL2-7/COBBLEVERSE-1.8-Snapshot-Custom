@@ -26,6 +26,20 @@ $SignaturePaths = @(
 $script:Form = $null
 $script:Status = $null
 $script:Progress = $null
+$script:LastConsolePercent = -1
+
+function Write-ConsoleProgress([string]$Message, [int]$Value) {
+    $Value = [Math]::Max(0, [Math]::Min(100, $Value))
+    if ($Value -eq $script:LastConsolePercent) { return }
+    $script:LastConsolePercent = $Value
+    $width = 30
+    $filled = [int][Math]::Floor($width * $Value / 100.0)
+    $bar = ('#' * $filled) + ('-' * ($width - $filled))
+    $line = ("[VERIFY] [{0}] {1,3}%  {2}" -f $bar, $Value, $Message)
+    if ($line.Length -lt 112) { $line = $line.PadRight(112) }
+    Write-Host ("`r" + $line) -NoNewline -ForegroundColor Cyan
+    if ($Value -ge 100) { Write-Host "" }
+}
 
 function Get-FullPath([string]$Path) {
     return [IO.Path]::GetFullPath($Path)
@@ -40,6 +54,8 @@ function Update-Ui([string]$Message, [int]$Value) {
         $script:Status.Text = $Message
         $script:Progress.Value = [Math]::Max(0, [Math]::Min(100, $Value))
         [Windows.Forms.Application]::DoEvents()
+    } else {
+        Write-ConsoleProgress $Message $Value
     }
 }
 
@@ -105,15 +121,17 @@ function Test-AndRegisterBaseline {
 
     $statePath = Join-Path $profile $StateFileName
     if (Test-Path -LiteralPath $statePath -PathType Leaf) {
+        Update-Ui "Installed version state found" 100
         return
     }
 
     $guardPath = Join-Path $profile ("mods\" + $GuardFileName)
     if (Test-Path -LiteralPath $guardPath -PathType Leaf) {
+        Update-Ui "Baseline guard found" 100
         return
     }
 
-    Update-Ui "기존 설치를 확인하는 중..." 2
+    Update-Ui "Checking the existing installation" 2
 
     $baseline = Get-BaselineManifest
     if ([int]$baseline.schemaVersion -ne 1 -or [string]$baseline.version -ne $BaselineVersion) {
@@ -149,7 +167,7 @@ function Test-AndRegisterBaseline {
 
         $target = Join-Path $profile ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
         $percent = 3 + [int](94.0 * $index / $files.Count)
-        Update-Ui ("기존 설치 확인 중  {0}/{1}" -f $index, $files.Count) $percent
+        Update-Ui ("Checking file {0}/{1}" -f $index, $files.Count) $percent
 
         if (-not (Test-Path -LiteralPath $target -PathType Leaf)) {
             $missing++
@@ -187,7 +205,7 @@ function Test-AndRegisterBaseline {
     }
 
     Save-State $statePath $matched $files.Count $signatureMatches $ratio
-    Update-Ui ("기존 설치 확인 완료  {0}% 일치" -f $ratioPercent) 100
+    Update-Ui ("Installation verified - {0}% matched" -f $ratioPercent) 100
 }
 
 function Show-VerificationWindow {

@@ -21,6 +21,26 @@ $script:DetailLabel = $null
 $script:ProgressBar = $null
 $script:MainForm = $null
 $script:CloseButton = $null
+$script:LastConsoleProgress = -1
+
+function Write-ConsoleProgress([string]$Message, [int]$Percent, [switch]$Complete) {
+    if ($Gui) { return }
+    $Percent = [Math]::Max(0, [Math]::Min(100, $Percent))
+    if ($Percent -eq $script:LastConsoleProgress -and -not $Complete) { return }
+    $script:LastConsoleProgress = $Percent
+    $width = 30
+    $filled = [int][Math]::Floor($width * $Percent / 100.0)
+    $bar = ('#' * $filled) + ('-' * ($width - $filled))
+    $line = ("[UPDATE] [{0}] {1,3}%  {2}" -f $bar, $Percent, $Message)
+    if ($line.Length -lt 112) { $line = $line.PadRight(112) }
+    Write-Host ("`r" + $line) -NoNewline -ForegroundColor Cyan
+    if ($Complete -or $Percent -ge 100) { Write-Host "" }
+}
+
+function Get-ScaledProgress([int]$Start, [int]$End, [double]$Fraction) {
+    $Fraction = [Math]::Max(0.0, [Math]::Min(1.0, $Fraction))
+    return $Start + [int][Math]::Floor(($End - $Start) * $Fraction)
+}
 
 function Write-Step([string]$Message) {
     Write-Host "[COBBLEVERSE] $Message" -ForegroundColor Cyan
@@ -306,16 +326,11 @@ function Confirm-Update([string]$From, [string]$To, [int]$PatchCount, [long]$Byt
     if ($Gui) {
         return Show-StyledConfirm $From $To $PatchCount $Bytes
     }
-    Add-Type -AssemblyName System.Windows.Forms
     $mb = [Math]::Round($Bytes / 1MB, 1)
-    $message = "새 Cobbleverse 패치가 있습니다.`n`n현재: $From`n최신: $To`n패치: $PatchCount개 / 약 $mb MB`n`n지금 업데이트하시겠습니까?"
-    $answer = [Windows.Forms.MessageBox]::Show(
-        $message,
-        "Cobbleverse 업데이트",
-        [Windows.Forms.MessageBoxButtons]::YesNo,
-        [Windows.Forms.MessageBoxIcon]::Information
-    )
-    return $answer -eq [Windows.Forms.DialogResult]::Yes
+    Write-Host ""
+    Write-Host "[COBBLEVERSE] Update available: $From -> $To ($PatchCount patch(es), about $mb MB)" -ForegroundColor Yellow
+    $answer = (Read-Host "Install now? [Y/N]").Trim()
+    return $answer -match '^(?i:y|yes)$'
 }
 
 function Test-GameNotRunning([string]$Profile) {
@@ -326,7 +341,7 @@ function Test-GameNotRunning([string]$Profile) {
     }
 }
 
-function Prepare-Patches([object[]]$Chain, [string]$WorkRoot) {
+function Prepare-Patches([object[]]$Chain, [string]$WorkRoot, [int]$ProgressStart = 15, [int]$ProgressEnd = 70) {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $prepared = [Collections.Generic.List[object]]::new()
     $index = 0
@@ -337,6 +352,8 @@ function Prepare-Patches([object[]]$Chain, [string]$WorkRoot) {
             throw "Unsupported patch schema: $($manifest.schemaVersion)"
         }
         $index++
+        $patchBase = [double]($index - 1) / [Math]::Max(1, $Chain.Count)
+        Write-ConsoleProgress ("Preparing patch {0}/{1}" -f $index, $Chain.Count) (Get-ScaledProgress $ProgressStart $ProgressEnd $patchBase)
         $zipPath = Join-Path $WorkRoot ("patch-$index.zip")
         if ($descriptor.IsLocal) {
             Copy-Item -LiteralPath $descriptor.PatchSource -Destination $zipPath -Force
@@ -349,9 +366,13 @@ function Prepare-Patches([object[]]$Chain, [string]$WorkRoot) {
         if ((Get-FileSha256 $zipPath) -ne ([string]$manifest.patchSha256).ToUpperInvariant()) {
             throw "Patch SHA-256 mismatch for $($manifest.toVersion)"
         }
+        Write-ConsoleProgress ("ZIP verified: {0}" -f $manifest.toVersion) (Get-ScaledProgress $ProgressStart $ProgressEnd ($patchBase + (0.45 / [Math]::Max(1, $Chain.Count))))
 
         $expected = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
-        foreach ($file in @($manifest.files)) {
+        $manifestFiles = @($manifest.files)
+        $verifiedFiles = 0
+        foreach ($file in $manifestFiles) {
+            $verifiedFiles++
             $relative = Assert-RelativeFilePath ([string]$file.path)
             if (-not $expected.Add(("payload/" + $relative))) {
                 throw "Duplicate patch file: $relative"
@@ -398,13 +419,17 @@ function Prepare-Patches([object[]]$Chain, [string]$WorkRoot) {
             if ((Get-FileSha256 $staged) -ne ([string]$file.sha256).ToUpperInvariant()) {
                 throw "Patched file SHA-256 mismatch: $relative"
             }
+            $fileFraction = if ($manifestFiles.Count -gt 0) { [double]$verifiedFiles / $manifestFiles.Count } else { 1.0 }
+            $withinPatch = 0.65 + (0.35 * $fileFraction)
+            Write-ConsoleProgress ("Verifying patch {0}/{1}: file {2}/{3}" -f $index, $Chain.Count, $verifiedFiles, $manifestFiles.Count) (Get-ScaledProgress $ProgressStart $ProgressEnd ($patchBase + ($withinPatch / [Math]::Max(1, $Chain.Count))))
         }
         $prepared.Add([pscustomobject]@{ Manifest = $manifest; ExtractRoot = $extractRoot })
     }
+    Write-ConsoleProgress "All patch files verified" $ProgressEnd
     return @($prepared)
 }
 
-function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$OriginalState) {
+function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$OriginalState, [int]$ProgressStart = 72, [int]$ProgressEnd = 99) {
     $operationId = [Guid]::NewGuid().ToString('N')
     $backupRoot = Join-Path $Profile (".cobbleverse-update-backup-" + $operationId)
     $touched = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
@@ -419,7 +444,9 @@ function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$O
 
     New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
     $originalFiles = [Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+    $backupIndex = 0
     foreach ($relative in $touched) {
+        $backupIndex++
         $target = Join-Path $Profile ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
         if (-not (Test-IsUnder $target $Profile)) {
             throw "Resolved target escaped profile: $relative"
@@ -430,18 +457,27 @@ function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$O
             Copy-Item -LiteralPath $target -Destination $backup -Force
             $null = $originalFiles.Add($relative)
         }
+        $backupFraction = if ($touched.Count -gt 0) { [double]$backupIndex / $touched.Count } else { 1.0 }
+        Write-ConsoleProgress ("Backing up affected files {0}/{1}" -f $backupIndex, $touched.Count) (Get-ScaledProgress $ProgressStart $ProgressEnd (0.25 * $backupFraction))
     }
 
     try {
+        $totalOperations = 0
+        foreach ($item in $Prepared) { $totalOperations += @($item.Manifest.delete).Count + @($item.Manifest.files).Count }
+        $operationIndex = 0
         foreach ($item in $Prepared) {
             foreach ($relativeRaw in @($item.Manifest.delete)) {
+                $operationIndex++
                 $relative = Assert-RelativeFilePath ([string]$relativeRaw)
                 $target = Join-Path $Profile ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
                 if (Test-Path -LiteralPath $target -PathType Leaf) {
                     Remove-Item -LiteralPath $target -Force
                 }
+                $fraction = if ($totalOperations -gt 0) { [double]$operationIndex / $totalOperations } else { 1.0 }
+                Write-ConsoleProgress ("Applying changes {0}/{1}" -f $operationIndex, $totalOperations) (Get-ScaledProgress $ProgressStart $ProgressEnd (0.25 + 0.75 * $fraction))
             }
             foreach ($file in @($item.Manifest.files)) {
+                $operationIndex++
                 $relative = Assert-RelativeFilePath ([string]$file.path)
                 $source = Join-Path (Join-Path $item.ExtractRoot 'payload') ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
                 $target = Join-Path $Profile ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
@@ -449,11 +485,15 @@ function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$O
                 $tempTarget = $target + '.cobbleverse-new-' + $operationId
                 Copy-Item -LiteralPath $source -Destination $tempTarget -Force
                 Move-Item -LiteralPath $tempTarget -Destination $target -Force
+                $fraction = if ($totalOperations -gt 0) { [double]$operationIndex / $totalOperations } else { 1.0 }
+                Write-ConsoleProgress ("Applying changes {0}/{1}" -f $operationIndex, $totalOperations) (Get-ScaledProgress $ProgressStart $ProgressEnd (0.25 + 0.75 * $fraction))
             }
             Save-State $OriginalState.Path ([string]$item.Manifest.toVersion) $Repository
         }
+        Write-ConsoleProgress "Patch installation complete" $ProgressEnd
     }
     catch {
+        if (-not $Gui) { Write-Host "" }
         Write-Host "Update failed; restoring original files..." -ForegroundColor Yellow
         foreach ($relative in $touched) {
             $target = Join-Path $Profile ($relative.Replace('/', [IO.Path]::DirectorySeparatorChar))
@@ -481,23 +521,22 @@ function Apply-PreparedPatches([object[]]$Prepared, [string]$Profile, [object]$O
 }
 
 function Invoke-CobbleverseUpdate {
+    Write-ConsoleProgress "Opening the selected profile" 0
     $profile = Resolve-Profile $ProfilePath $ProfilesRoot
     Test-GameNotRunning $profile
     $state = Read-State $profile
-    Write-Step "프로필을 확인했습니다"
+    Write-ConsoleProgress ("Installed version: {0}" -f $state.Version) 5
     if ($script:DetailLabel) {
         $script:DetailLabel.Text = "설치 버전  $($state.Version)"
     }
-    Write-Host "[COBBLEVERSE] Profile: $profile"
-    Write-Host "[COBBLEVERSE] Installed version: $($state.Version)"
-
     $workRoot = Join-Path ([IO.Path]::GetTempPath()) ("cobbleverse-updater-" + [Guid]::NewGuid().ToString('N'))
     New-Item -ItemType Directory -Path $workRoot -Force | Out-Null
     try {
-        Write-Step "새 패치를 확인하는 중..."
+        Write-ConsoleProgress "Reading the patch chain" 8
         $descriptors = @(Get-PatchDescriptors $Repository $LocalReleaseRoot $workRoot)
         $chain = @(Get-UpdateChain $descriptors $state.Version)
         if ($chain.Count -eq 0) {
+            Write-ConsoleProgress "Client is already up to date" 100 -Complete
             Write-Ok "이미 최신 버전입니다"
             return [pscustomobject]@{ Code = 0; Message = "업데이트할 파일이 없습니다.`r`n현재 클라이언트가 최신 상태예요." }
         }
@@ -508,18 +547,21 @@ function Invoke-CobbleverseUpdate {
             $downloadBytes += [long]$item.Manifest.patchSize
         }
         if ($CheckOnly) {
+            Write-ConsoleProgress ("Update available: {0}" -f $latest) 100 -Complete
             Write-Host "UPDATE_AVAILABLE=$latest"
             return [pscustomobject]@{ Code = 2; Message = "업데이트 가능: $latest" }
         }
         if (-not (Confirm-Update $state.Version $latest $chain.Count $downloadBytes -AssumeYes:$Yes)) {
+            Write-ConsoleProgress "Update cancelled" 100 -Complete
             Write-Step "업데이트를 취소했습니다"
             return [pscustomobject]@{ Code = 0; Message = "파일은 변경되지 않았습니다." }
         }
 
-        Write-Step "패치를 다운로드하고 안전성을 확인하는 중..."
-        $prepared = @(Prepare-Patches $chain $workRoot)
-        Write-Step "검증 완료 · 패치를 적용하는 중..."
-        Apply-PreparedPatches $prepared $profile $state
+        Write-ConsoleProgress "Starting patch verification" 12
+        $prepared = @(Prepare-Patches $chain $workRoot 15 70)
+        Write-ConsoleProgress "Creating a rollback backup" 72
+        Apply-PreparedPatches $prepared $profile $state 72 99
+        Write-ConsoleProgress ("Updated successfully: {0}" -f $latest) 100 -Complete
         Write-Ok "업데이트 완료 · $latest"
         return [pscustomobject]@{ Code = 0; Message = "모든 패치를 정상적으로 적용했습니다.`r`n이제 Modrinth에서 게임을 실행해도 됩니다." }
     }
@@ -544,7 +586,6 @@ function Show-UpdaterWindow {
     $form.MaximizeBox = $false
     $form.BackColor = [Drawing.Color]::FromArgb(14, 19, 27)
     $form.ForeColor = [Drawing.Color]::White
-
     $accent = [Windows.Forms.Panel]::new()
     $accent.Dock = [Windows.Forms.DockStyle]::Top
     $accent.Height = 7
@@ -647,11 +688,7 @@ function Show-UpdaterWindow {
         }
     })
 
-    $form.Show()
-    while (-not $form.IsDisposed -and $form.Visible) {
-        [Windows.Forms.Application]::DoEvents()
-        Start-Sleep -Milliseconds 50
-    }
+    [Windows.Forms.Application]::Run($form)
     if ($form.Tag -eq 1) { return 1 }
     return 0
 }
@@ -682,6 +719,7 @@ try {
     exit ([int]$result.Code)
 }
 catch {
+    Write-Host ""
     Write-Host "[COBBLEVERSE] $($_.Exception.Message)" -ForegroundColor Red
     exit 1
 }
