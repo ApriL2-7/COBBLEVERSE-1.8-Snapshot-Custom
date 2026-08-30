@@ -117,7 +117,8 @@ function Resolve-CobbleverseProfile {
 }
 
 function Download-RepoFile([string]$RelativePath, [string]$Destination) {
-    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}" -f $Repository, $RelativePath
+    $cacheKey = [Guid]::NewGuid().ToString('N')
+    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}?cache={2}" -f $Repository, $RelativePath, $cacheKey
     $commonHeaders = @{
         "User-Agent" = "Cobbleverse-Updater"
         "Cache-Control" = "no-cache"
