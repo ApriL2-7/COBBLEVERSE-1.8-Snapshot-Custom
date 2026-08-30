@@ -118,22 +118,7 @@ function Resolve-CobbleverseProfile {
 
 function Download-RepoFile([string]$RelativePath, [string]$Destination) {
     $cacheKey = [Guid]::NewGuid().ToString('N')
-    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}?cache={2}" -f $Repository, $RelativePath, $cacheKey
-    $commonHeaders = @{
-        "User-Agent" = "Cobbleverse-Updater"
-        "Cache-Control" = "no-cache"
-        "Pragma" = "no-cache"
-    }
-
-    try {
-        Invoke-WebRequest -UseBasicParsing -Headers $commonHeaders -Uri $rawUrl -OutFile $Destination
-        return
-    }
-    catch {
-        $rawError = $_.Exception.Message
-    }
-
-    $apiUrl = "https://api.github.com/repos/{0}/contents/{1}?ref=main" -f $Repository, $RelativePath
+    $apiUrl = "https://api.github.com/repos/{0}/contents/{1}?ref=main&cache={2}" -f $Repository, $RelativePath, $cacheKey
     $apiHeaders = @{
         "Accept" = "application/vnd.github.raw+json"
         "User-Agent" = "Cobbleverse-Updater"
@@ -146,7 +131,22 @@ function Download-RepoFile([string]$RelativePath, [string]$Destination) {
         return
     }
     catch {
-        throw "Could not download repository file: $RelativePath`r`n`r`nraw.githubusercontent.com: $rawError`r`nGitHub API: $($_.Exception.Message)"
+        $apiError = $_.Exception.Message
+    }
+
+    $rawUrl = "https://raw.githubusercontent.com/{0}/main/{1}?cache={2}" -f $Repository, $RelativePath, $cacheKey
+    $rawHeaders = @{
+        "User-Agent" = "Cobbleverse-Updater"
+        "Cache-Control" = "no-cache"
+        "Pragma" = "no-cache"
+    }
+
+    try {
+        Invoke-WebRequest -UseBasicParsing -Headers $rawHeaders -Uri $rawUrl -OutFile $Destination
+        return
+    }
+    catch {
+        throw "Could not download repository file: $RelativePath`r`n`r`nGitHub API: $apiError`r`nraw.githubusercontent.com: $($_.Exception.Message)"
     }
 }
 
