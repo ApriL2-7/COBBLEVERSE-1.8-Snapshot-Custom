@@ -15,6 +15,8 @@ The normal player path is console-only. It shows SFC-style progress bars and num
 
 Players who downloaded a launcher from before this permanent-bootstrap design need to download the BAT one final time. After that migration, the same local BAT can be kept and reused indefinitely as long as the repository location remains unchanged.
 
+Players who still have the previous hidden/GUI launcher BAT must also download the current BAT once to switch to the visible CMD progress window. Future updater-script changes will then arrive automatically through that BAT.
+
 The launcher resolves both Modrinth and CurseForge profiles. It checks the normal Modrinth profiles directory and common CurseForge Minecraft instance directories, recognizes the standard `COBBLEVERSE 1.8 Snapshot Custom` folder name, and can also identify already-registered profiles by their guard/state file. If automatic detection is not possible, it accepts a pasted profile path or falls back to a folder picker.
 
 For older copies that do not yet contain the Cobbleverse guard file or updater state file, `updater/Cobbleverse-Bootstrap.ps1` performs a one-time baseline signature verification. It compares managed `mods/` and `resourcepacks/` files against `baselines/baseline-2026.08.29.1.json` using file size and SHA-256. To tolerate launcher/export differences and optional files, registration no longer requires a 100% identical file set: at least 80% of baseline files must match exactly and at least two Cobbleverse-specific signature files must match. This still rejects unrelated profiles while allowing small CurseForge/Modrinth packaging differences. After registration, the generated state file avoids repeating the full verification on future runs.
