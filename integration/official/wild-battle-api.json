@@ -1,0 +1,113 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "GoEGm1Ea",
+    "project_id": "v7VZE8kh",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Wild Battle API 1.1.2",
+    "version_number": "1.1.2",
+    "changelog": "- Added separate Wild and Boss AI preset selection, so normal encounters and boss-style encounters can use different difficulty profiles.\n- Added in-game admin commands for status, providers, config/rule reload, import/export, and AI debug toggles.\n- Added AI explain logging to show top move choices and scoring breakdowns for balancing and debugging.\n- Added JSON-based AI rules with a commented example template, so encounter-specific behavior can be customized without coding.\n- Added optional special-encounter hooks like outbreak boss routing.\n- Fixed delegated AI provider refresh issues, so per-battle AI state no longer gets reused incorrectly.\n- Improved provider registry handling with stable namespaced ids and cleaner `/wildbattleapi providers` output.\n- Cleaned up the difficulty screen so both Wild and Boss preset controls fit cleanly on one screen with clearer wording.\n- Improved explain logs so damaging move proc effects are shown properly instead of being hidden inside base score.\n- Fixed `Stockpile` evaluation so the AI stops trying to stack it past its real cap.\n- Improved Battle Tower boss move handling for custom damaging status moves like `BT Gold Rush`, `BT Smite`, and `BT Malodor`, so they score more appropriately.",
+    "changelog_url": null,
+    "date_published": "2026-03-16T03:08:24.822529Z",
+    "downloads": 222867,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "jLvhHILm",
+        "hashes": {
+          "sha1": "ca156e0cc210162f30b3a4a0d5179984a5ceb242",
+          "sha512": "1154c26f932ff8a2db09c6698a182e0ca0aa290a8a319c873e6f118ef482c20dd130c41426a63f36787d785fe9574bd52517f0053160f977b13faa49852ef56e"
+        },
+        "url": "https://cdn.modrinth.com/data/v7VZE8kh/versions/GoEGm1Ea/wild_battle_api-fabric-1.1.2.jar",
+        "filename": "wild_battle_api-fabric-1.1.2.jar",
+        "primary": true,
+        "size": 253029,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "xNJvZgvf",
+    "project_id": "v7VZE8kh",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Wild Battle API 1.0.1",
+    "version_number": "1.0.1",
+    "changelog": "- Reduced Wild Battle API server log noise",
+    "changelog_url": null,
+    "date_published": "2026-03-11T18:35:52.727160Z",
+    "downloads": 161,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "zKi7xNCK",
+        "hashes": {
+          "sha512": "72c0835b8c514e03ae7a1127747f28208755f8b755e90edfcd4d8f754e18870f94f0d219308a8166f973a6d9c07a39402f69c02a4f579df6d0c691ed4266a29e",
+          "sha1": "0d6c1eb3b58dd406b04857b2ba609e66189ab4ee"
+        },
+        "url": "https://cdn.modrinth.com/data/v7VZE8kh/versions/xNJvZgvf/wild_battle_api-fabric-1.0.1.jar",
+        "filename": "wild_battle_api-fabric-1.0.1.jar",
+        "primary": true,
+        "size": 506626,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "IWAGW3xB",
+    "project_id": "v7VZE8kh",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Wild Battle API 1.0.0",
+    "version_number": "1.0.0",
+    "changelog": "",
+    "changelog_url": null,
+    "date_published": "2026-03-09T17:42:03.872806Z",
+    "downloads": 224,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "9jJYCC9F",
+        "hashes": {
+          "sha1": "ad6a6c5452dfaf57aa6c91bb548af3fe4ad8ce60",
+          "sha512": "6ff72eee0a5a0bb12ba4c166152cde0ab573716bd6e8ae5b7faaefe11c0d0aa356474e3f93f9b6382d418c578fe966c1d5bab225ff78f02ea955cf3185e1d4ec"
+        },
+        "url": "https://cdn.modrinth.com/data/v7VZE8kh/versions/IWAGW3xB/wild_battle_api-fabric-1.0.0.jar",
+        "filename": "wild_battle_api-fabric-1.0.0.jar",
+        "primary": true,
+        "size": 506636,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  }
+]

@@ -1,0 +1,226 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "SSS3twZY",
+    "project_id": "QAX8WiBc",
+    "author_id": "Q0uMkzhk",
+    "featured": false,
+    "name": "LumyMon 0.6.6",
+    "version_number": "0.6.6",
+    "changelog": "## **LumyMon 0.6.6**\n\n### \ud83d\udee0\ufe0f Mechanics & Content Removal\n\n*   **Legacy Mega Stones Removal:** Completely removed all unused legacy Mega Stones.\n\n### \u2699\ufe0f Compatibility & Technical Updates\n\n*   **Raid Dens Compatibility:** Fully compatible with the latest version of **Cobblemon Raid Dens**.\n\n**\u26a0\ufe0f** This version of LumyMon is **strictly required** for **COBBLEVERSE 1.7.40+** and **should not** be used on older versions of the modpack.",
+    "changelog_url": null,
+    "date_published": "2026-07-11T20:31:14.738207Z",
+    "downloads": 1518671,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "MxZnCnTv",
+        "hashes": {
+          "sha512": "06bdfc1c17945bd218b24797b1d91ed6e70308d0c53d5ace5e3bde7f93dd14c8b9b897ea5fe03d379c0a831d419b7998e104cfba7e58ef13606f218be28c78f6",
+          "sha1": "983104ced5cadd78d75a3c512bd68d486e59f82f"
+        },
+        "url": "https://cdn.modrinth.com/data/QAX8WiBc/versions/SSS3twZY/LumyMon-0.6.6.jar",
+        "filename": "LumyMon-0.6.6.jar",
+        "primary": true,
+        "size": 2331858,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "Jkb29YJU",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "yd3Gdzh2",
+    "project_id": "QAX8WiBc",
+    "author_id": "Q0uMkzhk",
+    "featured": false,
+    "name": "LumyMon 0.6.5",
+    "version_number": "0.6.5",
+    "changelog": "## LumyMon 0.6.5\n\n### \ud83d\ude80 New Features & Gameplay Enhancements\n* **The Elevator Block:** A new redstone-triggered teleportation block!\n    * **Customizable:** Shift + Right-click in Creative (with an empty hand) to set a Y-offset\n    * **Progression-Locked:** Can be configured to allow teleportation only for players who have completed a specific Advancement. Perfect for Gym/League access!\n* **Dynamic Raid Cheer System:**\n    * **Smart Replenishment:** Upon entering a Raid Dimension, the mod now checks your inventory and provides only the necessary amount of Cheers to bring your total to the required threshold\n    * **Loot Protection:** If auto-distribution is disabled, Cheers obtained as boss drops will no longer be cleared when leaving the raid\n    * **Fully Configurable:**\n        * Added `giveCheersOnRaidStart` toggle to enable/disable automatic distribution\n        * Added `raidCheerCount` to define exactly how many Cheers of each type (Heal, Defense, Attack) players should have (Default: 3)\n* **Radar Improvements:** \n    * Gym locators for all 4 regions now work directly from the Creative menu or via `/give` command\n    * Radar displays now show **\"Overworld\"** instead of \"Any\" for better clarity\n* **Localization & UI Polishing:**\n    * Improved tooltip formatting (e.g., \"Ltsurge\" is now **\"Lt. Surge\"**)\n    * Added full **French translation** (Special thanks to **Hifelhim**!)\n\n### \u26a0\ufe0f IMPORTANT: Mega Stone Migration\n* **Legacy Support Ending:** Old LumyMon Mega Stones will be removed in the next update\n* A warning tooltip has been added to all legacy Mega Stones to assist with this transition\n    * **Action Required:** Please convert them to the **Mega Showdown** versions immediately by placing them individually into a crafting table\n\n---\n> A huge thank you to everyone for reporting issues and sharing your ideas in the **\ud83d\udd0e\ufe31bug-reports** and **\ud83d\udca1\ufe31suggestions** sections of our [Discord](https://discord.lumy.fun)! \u2764\ufe0f\ud83d\udc99",
+    "changelog_url": null,
+    "date_published": "2026-04-03T21:27:22.557760Z",
+    "downloads": 963275,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "1JH4uGQG",
+        "hashes": {
+          "sha1": "309b30cfa5a51b998168079c8215869b1e1cb68b",
+          "sha512": "99d0145b9d1449a13bb02056a73ed4339f12b5055baa0e91e66a06b6368be8bf325dbcc8195a50dc89f06e2342b6ae71149bfe40be6bd3a7ffa69d071a435b12"
+        },
+        "url": "https://cdn.modrinth.com/data/QAX8WiBc/versions/yd3Gdzh2/LumyMon-0.6.5.jar",
+        "filename": "LumyMon-0.6.5.jar",
+        "primary": true,
+        "size": 2372128,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "Jkb29YJU",
+        "file_name": null,
+        "dependency_type": "optional"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "aYDCtzaa",
+    "project_id": "QAX8WiBc",
+    "author_id": "Q0uMkzhk",
+    "featured": false,
+    "name": "LumyMon 0.6.4",
+    "version_number": "0.6.4",
+    "changelog": "## LumyMon 0.6.4\n\n### \ud83c\udf1f Elemental Mastery & Improved Altars\n* **Fire Rider Protection:** You are now immune to fire and lava damage while riding a Fire-type Pok\u00e9mon\n* **Fire Overlay Overhaul:** Removed the fire/flame overlay from both first-person and third-person views when riding a Fire-type Pok\u00e9mon into lava/fire\n* **Water Rider Breathing:** Your oxygen bar will no longer decrease while riding a Water-type Pok\u00e9mon\n* **Giratina Altar Improvement:** Activating the altar now automatically clears any nearby Dripstone Blocks that may have generated around it\n\n### \ud83d\udee0\ufe0f Stability & Visual Refinements\n* **Zygarde & Mega Evolution Stability:** Implemented a fix to prevent _(or significantly reduce)_ player crashes and disconnections when Zygarde transforms into its Complete Form or during Mega Evolution (Check out this tutorial on **[how to Mega Evolve Zygarde](https://www.lumyverse.com/cobbleverse/how-to-gets-special-pokemon-forms/)**)\n* **Spawner Visual Fix:** Prevented the Legendary Monuments Pok\u00e9mon Spawner from losing its texture when clicked with an Ominous Trial Key\n\n--- \n> A huge thank you to everyone for reporting issues in the **\ud83d\udd0e\ufe31bug-reports** section of our Discord: **https://discord.lumy.fun** \u2764\ufe0f\ud83d\udc99",
+    "changelog_url": null,
+    "date_published": "2026-03-22T23:39:35.331902Z",
+    "downloads": 7858,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "dm3NBc8N",
+        "hashes": {
+          "sha1": "9167f00fe3b91aef689ec67c06458f46acd2cbb0",
+          "sha512": "6f722028ed1705aeb39f433a83dacce22dd0e7af4553594863ee1fa97df32afca7e6051204e0208f399a9cd4d9750b6b082350b83b985b3e96f56bd735fc99e6"
+        },
+        "url": "https://cdn.modrinth.com/data/QAX8WiBc/versions/aYDCtzaa/LumyMon-0.6.4.jar",
+        "filename": "LumyMon-0.6.4.jar",
+        "primary": true,
+        "size": 2345785,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "Jkb29YJU",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "ykWGQkG6",
+    "project_id": "QAX8WiBc",
+    "author_id": "Q0uMkzhk",
+    "featured": false,
+    "name": "LumyMon 0.6.3",
+    "version_number": "0.6.3",
+    "changelog": "## LumyMon 0.6.3\n\n### \ud83d\udc8e Features & Balancing\n* **Creative Tab Restyle:** Added a new custom icon for the mod's item group\n* **Regi Ores Overhaul:** Adjusted generation settings to make Regi Ores more frequent and better balanced\n* **Rock Ore Update:**\n    * Now spawns in **Badlands**, **Eroded Badlands**, and **Wooded Badlands** biomes\n    * Generation height: between **Y=75** and **Y=135**\n    * **New Texture:** Updated visuals to match **Terracotta** (previously generated within Dripstone)\n* **Steel Ore Update:**\n    * Now generates within **Dripstone Caves**\n    * Generation height: between **Y=-50** and **Y=10**\n\n### \ud83d\udd0e Bug Fixes\n* **Mod Compatibility:** Resolved issues with **Vanilla Backport**, **Sophisticated Storage** and **Sophisticated Backpacks**.\n\n### \ud83c\udf0d Localization\n* **Korean:** Added full Korean translation (huge thanks to **\uc2dc\uc6b0**!)\n* **Italian:** Updated and completed the Italian localization\n\n---\n\n> We would love to include as many languages as possible and are working on making the translation process easier in the future. Thank you so much to everyone contributing to the project! \u2764\ufe0f\ud83d\udc99",
+    "changelog_url": null,
+    "date_published": "2026-03-10T21:47:03.122701Z",
+    "downloads": 17692,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "R3uc732x",
+        "hashes": {
+          "sha512": "879e4436a0d598a2cd19e08d91839cbf985518226b6f7e5cfd02cb3c2a034848ab07ac4deddc3cf47823c2f72cb73b5b8def07b1aaffb073bf8ccda09c7f66a0",
+          "sha1": "7982519f38114ef85a6f616034bf51b5814dd547"
+        },
+        "url": "https://cdn.modrinth.com/data/QAX8WiBc/versions/ykWGQkG6/LumyMon-0.6.3.jar",
+        "filename": "LumyMon-0.6.3.jar",
+        "primary": true,
+        "size": 2340068,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "Jkb29YJU",
+        "file_name": null,
+        "dependency_type": "optional"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

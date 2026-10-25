@@ -1,0 +1,244 @@
+[
+  {
+    "source": "user-supplied-download",
+    "filename": "ftb-library-fabric-2101.1.37.jar",
+    "sha256": "399e62acd6c343dab0780ac34aa0e86b4acaa6861eb5d65e826adb03ce9ec6c1",
+    "sha1": "3e7de2621365a2975bff3b3227c9027b12469dec",
+    "size": 1435726,
+    "id": "ftblibrary",
+    "version": "2101.1.37",
+    "environment": "*",
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.6"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftblibrary.fabric.FTBLibraryFabric"
+      ],
+      "rei_client": [
+        "dev.ftb.mods.ftblibrary.integration.REIIntegration"
+      ],
+      "emi": [
+        "dev.ftb.mods.ftblibrary.integration.EMIIntegration"
+      ],
+      "jei_mod_plugin": [
+        "dev.ftb.mods.ftblibrary.integration.JEIIntegration"
+      ]
+    },
+    "mixins": [
+      "ftblibrary-common.mixins.json",
+      "ftblibrary-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Library",
+      "issues": "https://github.com/FTBTeam/FTB-Library/issues"
+    }
+  },
+  {
+    "source": "user-supplied-download",
+    "filename": "ftb-teams-fabric-2101.1.11.jar",
+    "sha256": "39e34b438e0232a614a8cf1269fcff2705b85fde8b930a03d558bc66a03c7cf6",
+    "sha1": "9b07ff01ed801d40c5574d8b2c3dd3d7a00dc099",
+    "size": 303801,
+    "id": "ftbteams",
+    "version": "2101.1.11",
+    "environment": null,
+    "depends": {
+      "fabric": ">=0.100.1+1.21",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.30"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbteams.fabric.FTBTeamsFabric"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Teams",
+      "issues": "https://go.ftb.team/support-mod-issues"
+    }
+  },
+  {
+    "source": "user-supplied-download",
+    "filename": "ftb-quests-fabric-2101.1.37.jar",
+    "sha256": "2f060bcdde671d07af48ecee49cb1331307b2d187f061c62efff0ccb7974ead0",
+    "sha1": "00d40114e5a8e40d31d8b1abf2af16902bc45430",
+    "size": 1632287,
+    "id": "ftbquests",
+    "version": "2101.1.37",
+    "environment": null,
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.36",
+      "ftbteams": ">=2101.1.9"
+    },
+    "breaks": {
+      "ftbxmodcompat": "<21.1.7"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbquests.fabric.FTBQuestsFabric"
+      ],
+      "rei_client": []
+    },
+    "mixins": [
+      "ftbquests-common.mixins.json",
+      "ftbquests-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/energy-4.1.0.jar"
+      }
+    ],
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Quests",
+      "issues": "https://github.com/FTBTeam/FTB-Mods-Issues/issues"
+    }
+  },
+  {
+    "source": "user-supplied-download",
+    "filename": "cobblemon-pc-enhancements-1.1.0.jar",
+    "sha256": "4aa66d161bc041005d6c015ee95e2d6203a6f0b48d932e0309969331c550fbe0",
+    "sha1": "a93d46d4b50f4bb604a689d255d8e8f9eb3fca37",
+    "size": 48594,
+    "id": "pcenhancements",
+    "version": "1.1.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.ramen.pcenhancements.PCEnhancements"
+      ],
+      "client": [
+        "com.ramen.pcenhancements.client.PCEnhancementsClient"
+      ]
+    },
+    "mixins": [
+      "pcenhancements.mixins.json"
+    ],
+    "jars": null,
+    "contact": {}
+  },
+  {
+    "project_id": "v19DG9nW",
+    "version_id": "Srt2YL8E",
+    "downloads": [
+      {
+        "id": "41XTYcGi",
+        "hashes": {
+          "sha1": "f421b4a1834e2bca8db5ddcef3c11231c0d7b19f",
+          "sha512": "c09374d94a99c46579dcea0680208a8e31301ce5d033adc4f17d35e9bae5f6ad9879c02b8cfa18d3e95cb6abeba573f0438bb81e64aa941e4b1eee542caef807"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/Srt2YL8E/cobblemon_battle_tower-fabric-1.11.23.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.11.23.jar",
+        "primary": true,
+        "size": 52072791,
+        "file_type": null
+      }
+    ],
+    "filename": "cobblemon_battle_tower-fabric-1.11.23.jar",
+    "sha256": "3e0c349f989a6103f9aaa072bec5ed805ccbbe6c159be94f958dd4b2fdbadd97",
+    "sha1": "f421b4a1834e2bca8db5ddcef3c11231c0d7b19f",
+    "size": 52072791,
+    "id": "cobblemon_battle_tower",
+    "version": "1.11.23",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": "*",
+      "wild_battle_api": ">=1.0.0",
+      "rctapi": ">=0.14.6-beta"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "battle.tower.fabric.BattleTowerFabric"
+      ],
+      "client": [
+        "battle.tower.fabric.client.BattleTowerFabricClient"
+      ]
+    },
+    "mixins": [
+      "cobblemon_battle_tower.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "project_id": "kZgRPg5R",
+    "version_id": "cZ8toB2d",
+    "downloads": [
+      {
+        "id": "m7eC79Gy",
+        "hashes": {
+          "sha1": "fe7624abe1bf1c2995bb10653ea8c5a7609fe65a",
+          "sha512": "021efc41166c7c238fe7bb2af554ad4c32da0336509fc2c1bdada845aa839e7958eb11cb601b93749b08fabd32575ef8501137955e4f83716da864a9c0ac85df"
+        },
+        "url": "https://cdn.modrinth.com/data/kZgRPg5R/versions/cZ8toB2d/cobblemon_quests-%5B1.21.1%5D-fabric-1.2.0.jar",
+        "filename": "cobblemon_quests-[1.21.1]-fabric-1.2.0.jar",
+        "primary": true,
+        "size": 61946,
+        "file_type": null
+      }
+    ],
+    "filename": "cobblemon_quests-[1.21.1]-fabric-1.2.0.jar",
+    "sha256": "2d6321bf24532d036a261b1ad06eb386a931354446453e66ebac7a0a5dbc7d0d",
+    "sha1": "fe7624abe1bf1c2995bb10653ea8c5a7609fe65a",
+    "size": 61946,
+    "id": "cobblemon_quests",
+    "version": "1.2.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "architectury": ">=13.0.0",
+      "ftbquests": ">=2101.0.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "winterwolfsv.cobblemon_quests.fabric.Cobblemon_QuestsFabric"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "repo": "https://github.com/winterwolfsv/cobblemon_quests"
+    }
+  }
+]

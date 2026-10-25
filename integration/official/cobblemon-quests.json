@@ -1,0 +1,183 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "cZ8toB2d",
+    "project_id": "kZgRPg5R",
+    "author_id": "aW5kSgjc",
+    "featured": false,
+    "name": "Cobblemon Quests [1.2.0 - Fabric]",
+    "version_number": "1.2.0",
+    "changelog": "### Does not work with FTB Quests 2101.1.19. Use FTB Quests 2101.1.18 instead.\n\n- Update mod to work with cobbelmon 1.7",
+    "changelog_url": null,
+    "date_published": "2025-11-24T12:09:58.104107Z",
+    "downloads": 592844,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "m7eC79Gy",
+        "hashes": {
+          "sha1": "fe7624abe1bf1c2995bb10653ea8c5a7609fe65a",
+          "sha512": "021efc41166c7c238fe7bb2af554ad4c32da0336509fc2c1bdada845aa839e7958eb11cb601b93749b08fabd32575ef8501137955e4f83716da864a9c0ac85df"
+        },
+        "url": "https://cdn.modrinth.com/data/kZgRPg5R/versions/cZ8toB2d/cobblemon_quests-%5B1.21.1%5D-fabric-1.2.0.jar",
+        "filename": "cobblemon_quests-[1.21.1]-fabric-1.2.0.jar",
+        "primary": true,
+        "size": 61946,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": "Ygf8KJFC",
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "bI0Iu3CZ",
+    "project_id": "kZgRPg5R",
+    "author_id": "aW5kSgjc",
+    "featured": false,
+    "name": "Cobblemon Quests [1.1.14 - Fabric]",
+    "version_number": "1.1.14",
+    "changelog": "## Changes from 1.1.13\nAdded actions:\n- Throw poké ball (at pokemon)\n\nAdded aspects:\n- Level (min/max)\n- Pokémon nature\n\nFixes:\n- Winning in a fight against a player/npc no longer increases (almost) all other quests.\n\n## Changes from 1.1.12\nAdded actions:\n- Defeat player\n- Defeat npc\n- Evolve into\n- Scan (Pokédex)\n- Reel\n- Have registered (Pokédex)\n\nOther changes:\n- Aspects (added in cobblemon 1.6) can now be selected as triggers for quests. Information on how can be read in the new [quest creation wiki](https://github.com/WinterWolfSV/Cobblemon_Quests/blob/1.1.13-(1.21.1)/quest-creation.md).\n- `/givepokemon countascatch=true` no longer works, and is replaced by `/cobblemonquests givepokemon`. Read more about the command [here](https://github.com/WinterWolfSV/Cobblemon_Quests/blob/1.1.13-(1.21.1)/quest-creation.md#commands).\n\nFixes:\n- The last entry in biomes/pokemon/form can now be selected. [#18](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/18)\n- Biome selection now shows correct biomes. [#19](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/19)\n- Trading no longer counts as a catch. [#20](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/20)",
+    "changelog_url": null,
+    "date_published": "2025-03-29T22:34:46.877807Z",
+    "downloads": 386621,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "w9x3jXXW",
+        "hashes": {
+          "sha512": "9e9bd1abd176a75576f47b73d8797b488c024563231f950560c6e2e7337cb1e5109d7e283ecfe891e878b6d0d09e6a8bb1d388a18bfaf04bc0dfa36d0f15a671",
+          "sha1": "090e11c4d9d378a26c150d528463cf4bc19a00df"
+        },
+        "url": "https://cdn.modrinth.com/data/kZgRPg5R/versions/bI0Iu3CZ/cobblemon_quests-%5B1.21.1%5D-fabric-1.1.14.jar",
+        "filename": "cobblemon_quests-[1.21.1]-fabric-1.1.14.jar",
+        "primary": true,
+        "size": 62092,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "cwaHLjSa",
+    "project_id": "kZgRPg5R",
+    "author_id": "aW5kSgjc",
+    "featured": false,
+    "name": "Cobblemon Quests [1.1.13 - Fabric]",
+    "version_number": "1.1.13",
+    "changelog": "# BUG: Winning in a fight against a player/npc increases (almost) all other quests progress.\n\n## Changelog\nAdded conditions:\n- Defeat player\n- Defeat npc\n- Evolve into\n- Scan (Pokédex)\n- Reel\n- Have registered (Pokédex)\n\nOther changes:\n- Aspects (added in cobblemon 1.6) can now be selected as triggers for quests. Information on how can be read in the new [quest creation wiki](https://github.com/WinterWolfSV/Cobblemon_Quests/blob/master/quest-creation.md).\n- `/givepokemon countascatch=true` no longer works, and is replaced by `/cobblemonquests givepokemon`. Read more about the command [here](https://github.com/WinterWolfSV/Cobblemon_Quests/blob/master/quest-creation.md#commands).\n\nFixes:\n- The last entry in biomes/pokemon/form can now be selected. [#18](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/18)\n- Biome selection now shows correct biomes. [#19](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/19)\n- Trading no longer counts as a catch. [#20](https://github.com/WinterWolfSV/Cobblemon_Quests/issues/20)",
+    "changelog_url": null,
+    "date_published": "2025-03-27T21:20:28.510135Z",
+    "downloads": 1408,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "tMjNLrgv",
+        "hashes": {
+          "sha512": "119155203b43109021e473c251ef3284bb8f4f65a67a406bae08c5b72441ea26a0a2b30949ce724bb77a50870294ab0601e335bd5add9d579cfe5db247b58e99",
+          "sha1": "9d64ecb8a5c586d1c2ea814533d65c6d9f2b61a4"
+        },
+        "url": "https://cdn.modrinth.com/data/kZgRPg5R/versions/cwaHLjSa/cobblemon_quests-%5B1.21.1%5D-fabric-1.1.13.jar",
+        "filename": "cobblemon_quests-[1.21.1]-fabric-1.1.13.jar",
+        "primary": true,
+        "size": 58610,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "qXdpIng5",
+    "project_id": "kZgRPg5R",
+    "author_id": "aW5kSgjc",
+    "featured": false,
+    "name": "Cobblemon Quests [1.1.12 - Fabric]",
+    "version_number": "1.1.12",
+    "changelog": "## Changelog \n- Update to minecraft 1.21.1 and cobblemon 1.6\n\n## Dependencies\n- Requires [FTB Quests](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-fabric) and all its dependencies to function\n- Requires Cobblemon\n- Requires Architectury",
+    "changelog_url": null,
+    "date_published": "2024-12-30T15:40:16.136860Z",
+    "downloads": 136743,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "qmAQ6m3v",
+        "hashes": {
+          "sha1": "8ccc3f0e1227cd6b536e353b24a46404830bb57b",
+          "sha512": "a9bb9175ebefb8a5e85256cbe7b1edf539da171bbfebf92e89d1b14c505fafdf01680a46994f2df60bc9ff9dd9be497404ba861706a22035f8b7199428770835"
+        },
+        "url": "https://cdn.modrinth.com/data/kZgRPg5R/versions/qXdpIng5/cobblemon_quests-%5B1.21.1%5D-fabric-1.1.12.jar",
+        "filename": "cobblemon_quests-[1.21.1]-fabric-1.1.12.jar",
+        "primary": true,
+        "size": 49159,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

@@ -1,0 +1,378 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "Srt2YL8E",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.11.23-Fabric",
+    "version_number": "1.11.23",
+    "changelog": "Battle Tower 1.11.23\n\n- Fixed party and boss Pokemon rendering in the Battle Tower GUI for Cobblemon 1.8.x.\n- Fixed opponent team creation after floor 100. Endless floors now repeat the strongest floor 30+ team pool.\n- Added floor 101+ support to the tower display with a black and red endless-tier theme.\n- Updated tower colors to match enemy progression: Tera at floor 5, Dynamax at floor 10, Mega and Z-Moves at floor 15, and legendary teams at floor 30.",
+    "changelog_url": null,
+    "date_published": "2026-09-18T16:11:29.549238Z",
+    "downloads": 27680,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "41XTYcGi",
+        "hashes": {
+          "sha1": "f421b4a1834e2bca8db5ddcef3c11231c0d7b19f",
+          "sha512": "c09374d94a99c46579dcea0680208a8e31301ce5d033adc4f17d35e9bae5f6ad9879c02b8cfa18d3e95cb6abeba573f0438bb81e64aa941e4b1eee542caef807"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/Srt2YL8E/cobblemon_battle_tower-fabric-1.11.23.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.11.23.jar",
+        "primary": true,
+        "size": 52072791,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "PkRUcN3J",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.10.22-Fabric",
+    "version_number": "1.10.22",
+    "changelog": "### Added\n- Added configs to adjust cobbledollars payouts or to disable it entirely.",
+    "changelog_url": null,
+    "date_published": "2026-04-20T18:26:49.680091Z",
+    "downloads": 426177,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Iku5kwv4",
+        "hashes": {
+          "sha1": "8821e865948c0760355b1d380610a13b3c8904e0",
+          "sha512": "20616890daa978ca47c51ab46a51104ac6d44b0daeb99420c4447a2f1f404b2e9fa26848900a941b480abf1edebe24626d609356699bb65db4f81d5188a13d41"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/PkRUcN3J/cobblemon_battle_tower-fabric-1.10.22.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.10.22.jar",
+        "primary": true,
+        "size": 52072177,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "cQ32y2Xc",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.10.21-Fabric",
+    "version_number": "1.10.21",
+    "changelog": "### Fixes\n- Fixed NPC trainer legendary battle clones being treated as wild Pokemon by spawn notification mods, preventing false wild legendary announcements during Battle Tower battles.",
+    "changelog_url": null,
+    "date_published": "2026-04-17T13:27:51.887578Z",
+    "downloads": 2335,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "KnSscqEg",
+        "hashes": {
+          "sha512": "c7f3589f655e7e105fc9e1a1742f3bbaa765d46f9e7d72841579b86915df4ffc77d2955748098f5c0c07a28fb535325d59e8e60be92ece1c9a56411cb9dea0f3",
+          "sha1": "1ab6302e7be99a7c3add1ab2dc824796f3cdc0c4"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/cQ32y2Xc/cobblemon_battle_tower-fabric-1.10.21.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.10.21.jar",
+        "primary": true,
+        "size": 52068929,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "KM1g7oTo",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.10.20-Fabric",
+    "version_number": "1.10.20",
+    "changelog": "- Fixed NPC Dynamax/Gigantamax attempts freezing Battle Tower battles when Mega Showdown tried to resolve an owner player for trainer-owned Pokemon.\n- Fixed trainer gimmick setup so G-Max eligibility is based on each Pokemon's G-Max factor instead of the Z-move floor tier.",
+    "changelog_url": null,
+    "date_published": "2026-04-17T07:38:16.897232Z",
+    "downloads": 136,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "mOK0KI6J",
+        "hashes": {
+          "sha1": "36074fffead1d6535465d6664f456ff8ddc4d0e5",
+          "sha512": "bbe19aa21ea958aa977cabfaa7d0f7262b45be4c10e806d8c96a4d9ebfe9bc18bc84b88f7c01a407c8abcdef924e173445cc501cb5a624072db937fd6a6a8fa3"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/KM1g7oTo/cobblemon_battle_tower-fabric-1.10.20.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.10.20.jar",
+        "primary": true,
+        "size": 52067730,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "vyTnAW3y",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.10.19-Fabric",
+    "version_number": "1.10.19",
+    "changelog": "### Fixes\n- Fixed a disruptive Battle Tower disconnect that could randomly happen when a player's Pokemon fainted while Cobblemon: Mega Showdown was cleaning up battle gimmicks, which could otherwise force an unintended forfeit.",
+    "changelog_url": null,
+    "date_published": "2026-03-30T00:24:05.246098Z",
+    "downloads": 122073,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "9YKvbYgj",
+        "hashes": {
+          "sha1": "4cafeb141744057f3cc48310da4e065923da5950",
+          "sha512": "4947bbdfdbb866c51f67e74d383cb8784899e08f8a3c705bd761ebfebdbc44aa1f861a3220f021d8d27623b1801b5707f28ab34cefdc7e3a70c5445d03edbd9c"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/vyTnAW3y/cobblemon_battle_tower-fabric-1.10.19.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.10.19.jar",
+        "primary": true,
+        "size": 52066797,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4",
+      "1.21.5",
+      "1.21.6",
+      "1.21.7",
+      "1.21.8",
+      "1.21.9",
+      "1.21.10",
+      "1.21.11"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "uLAh77Oy",
+    "project_id": "v19DG9nW",
+    "author_id": "RMc5grVu",
+    "featured": false,
+    "name": "Cobblemon Battle Tower 1.10.18",
+    "version_number": "1.10.18",
+    "changelog": "**Added**\n- Added a full Battle Tower Tasks system with challenge tracking, reward claiming, and a dedicated tasks tab in the tower GUI.\n- Added a new Guide tab with built-in localized tips for Singles, Doubles, Co-Op, Boss Mode, team modes, rewards, and boss hold-item suggestions.\n- Added editable task config support through config/cobblemon_battle_tower/tasks.json, including support for extending, overriding, or removing tasks.\n- Added a separate bp_boss_mode.json config for Boss Mode BP rewards and a dedicated Boss Mode banned Pokemon list.\n\n**Fixes**\nFixed BP shop item names so normal shop entries now use Cobblemon or Mega Showdown item translations instead of fallback English config text.\n\n**Adjustments**\nExtended /bt reload to reload tasks and related config changes, and added /bt tasks reset for admin task refresh control.",
+    "changelog_url": null,
+    "date_published": "2026-03-20T12:08:42.471896Z",
+    "downloads": 7474,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "Erwc7XXp",
+        "hashes": {
+          "sha512": "a6747c9f8df8b018b683ca1866190b3cc7a1797e05c3d8778478b4223a09f6b51c0ead1cf6f20676ac3dea769822b32d4c1d564a3adaa26f6891f4ffa7824ac5",
+          "sha1": "55f13cbf3c200c3888a1974a6d9f52692ef70a42"
+        },
+        "url": "https://cdn.modrinth.com/data/v19DG9nW/versions/uLAh77Oy/cobblemon_battle_tower-fabric-1.10.18.jar",
+        "filename": "cobblemon_battle_tower-fabric-1.10.18.jar",
+        "primary": true,
+        "size": 52064455,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "CBfM2yw7",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "v7VZE8kh",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 """Isolated local integration audit. Does not touch the server or source profile."""
-import hashlib, json, os, pathlib, zipfile, urllib.request, concurrent.futures, sys
+import hashlib, json, os, pathlib, zipfile, urllib.request, concurrent.futures, sys, shutil
 
 REPO = pathlib.Path(__file__).resolve().parents[1]
 OUT = REPO / 'integration'
@@ -70,4 +70,59 @@ def audit():
         dump(OUT/'reference-config-archive.json',{'entries':z.namelist(),'count':len(z.namelist())})
     print('AUDIT DONE',flush=True)
 
-if __name__=='__main__': audit()
+def download_version(v):
+    f=next((f for f in v['files'] if f.get('primary')),v['files'][0])
+    dest=LOCAL/'downloads'/f['filename']
+    dest.parent.mkdir(parents=True,exist_ok=True)
+    if not dest.exists():
+        print('DOWNLOAD',f['filename'],flush=True)
+        urllib.request.urlretrieve(f['url'],dest)
+    for algo,h in f['hashes'].items():
+        if digest(dest,algo)!=h:raise ValueError('Download hash mismatch: '+str(dest))
+    return dest
+
+def prepare():
+    if TARGET.exists():raise RuntimeError('Target already exists; refusing overwrite')
+    if not (LOCAL/'source-all-files-private.json').exists():raise RuntimeError('Run audit before prepare')
+    TARGET.mkdir()
+    for name in ['mods','config','datapacks','resourcepacks','defaultconfigs','fancymenu_data','licenses','shaderpacks']:
+        if (SOURCE/name).exists():shutil.copytree(SOURCE/name,TARGET/name)
+    # Copy options only, never account data, worlds, logs, caches or updater identity.
+    shutil.copy2(SOURCE/'options.txt',TARGET/'options.txt')
+    additions=[]
+    downloads=pathlib.Path.home()/'Downloads'
+    for name in ['ftb-library-fabric-2101.1.37.jar','ftb-teams-fabric-2101.1.11.jar','ftb-quests-fabric-2101.1.37.jar','cobblemon-pc-enhancements-1.1.0.jar']:
+        src=downloads/name
+        shutil.copy2(src,TARGET/'mods'/name)
+        additions.append(dict(source='user-supplied-download',**mod(src)))
+    q=downloads/'Cobbleverse Questsbook v4.1.zip'
+    with zipfile.ZipFile(q) as z:
+        for entry in z.infolist():
+            if entry.is_dir():continue
+            rel=pathlib.PurePosixPath(entry.filename)
+            if rel.is_absolute() or '..' in rel.parts or rel.parts[0] not in ['config','resourcepacks']:raise ValueError('Unsafe questbook entry')
+            dest=TARGET.joinpath(*rel.parts)
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            dest.write_bytes(z.read(entry))
+    options=TARGET/'options.txt'
+    lines=options.read_text(encoding='utf-8').splitlines()
+    for i,line in enumerate(lines):
+        if line.startswith('resourcePacks:'):
+            packs=json.loads(line.split(':',1)[1]); pack='file/!Cobbleverse Questsbook Resourcepack.zip'
+            if pack not in packs:packs.append(pack)
+            lines[i]='resourcePacks:'+json.dumps(packs,ensure_ascii=False,separators=(',',':'))
+    options.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    dump(OUT/'questbook-input.json',{'filename':q.name,'sha256':digest(q),'status':'installed; runtime validation pending','chapters':len(list((TARGET/'config/ftbquests/quests/chapters').glob('*.snbt')))})
+    for slug in ['cobblemon-battle-tower','cobblemon-quests']:
+        versions=json.loads((OUT/'official'/(slug+'.json')).read_text(encoding='utf-8'))
+        v=versions[0]; src=download_version(v)
+        shutil.copy2(src,TARGET/'mods'/src.name)
+        additions.append(dict(project_id=v['project_id'],version_id=v['id'],downloads=v['files'],**mod(src)))
+    dump(OUT/'added-mods.json',additions)
+    dump(OUT/'prepared-mods.json',[mod(p) for p in sorted((TARGET/'mods').glob('*.jar'))])
+    print('PREPARED',str(TARGET),flush=True)
+    for a in additions:print(a['id'],a['version'],a['depends'],flush=True)
+
+if __name__=='__main__':
+    if len(sys.argv)>1 and sys.argv[1]=='prepare':prepare()
+    else:audit()

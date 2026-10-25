@@ -1,0 +1,17 @@
+finding_count=16
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_class|com/cobblemon/vocalized/api/voice/VoiceController||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_field_owner@20|com/cobblemon/vocalized/common/client/VocalizedVoice||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_field_ref_desc@20|com/cobblemon/vocalized/common/client/VocalizedVoice||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_handle_owner@20|com/cobblemon/vocalized/common/client/VocalizedVoice||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_indy_desc@20|com/cobblemon/vocalized/common/client/VocalizedVoice||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_indy_type@20|com/cobblemon/vocalized/common/voice/pipeline/VocalizedVoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_indy_type@30|com/cobblemon/vocalized/api/voice/VoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_method_desc|com/cobblemon/vocalized/api/voice/VoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_method_owner@30|com/cobblemon/vocalized/api/voice/VoiceController||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_method_owner@44|com/cobblemon/vocalized/common/voice/pipeline/VocalizedVoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_method_ref_desc@44|com/cobblemon/vocalized/api/voice/VoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/CheerController|missing_type_type@44|com/cobblemon/vocalized/common/voice/pipeline/VocalizedVoicePipeline||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/RaidDensVocalizedCompat|missing_type_field_owner@10|com/cobblemon/vocalized/common/api_impl/VoiceRegistryImpl||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/RaidDensVocalizedCompat|missing_type_field_ref_desc@10|com/cobblemon/vocalized/common/api_impl/VoiceRegistryImpl||
+cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar|com/necro/raid/dens/common/compat/vocalized/RaidDensVocalizedCompat|missing_type_method_owner@10|com/cobblemon/vocalized/common/api_impl/VoiceRegistryImpl||
+rctapi-fabric-1.21.1-0.16.2-beta.jar|com/gitlab/srcmc/rctapi/api/ai/utils/BattleEffects$Pokemon$State|missing_field@190|com/cobblemon/mod/common/CobblemonItems|IRON_BALL|Lnet/minecraft/class_1798;

@@ -2,4 +2,6 @@ out/
 *.tmp
 *.log
 .test-work/
+__pycache__/
+*.pyc
 
