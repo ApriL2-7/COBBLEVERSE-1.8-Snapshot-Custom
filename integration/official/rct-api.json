@@ -1,0 +1,252 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "DoQNDXAU",
+    "project_id": "CBfM2yw7",
+    "author_id": "Xa2ZxfbX",
+    "featured": false,
+    "name": "Version 0.16.2-beta",
+    "version_number": "0.16.2-beta",
+    "changelog": "# Changelog\n\n## [0.16.2-beta] - 2026-10-12\n\n**Changed:**\n\n- *#136* Bump min required version of Cobblemon to `1.8.2`\n\n**Fixed:**\n\n- *#135* Crashes related to changes in some items in Cobblemon `1.8.2` (e.g. Iron Ball)\n",
+    "changelog_url": null,
+    "date_published": "2026-10-12T19:03:01.630257Z",
+    "downloads": 35744,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "G3pbIWqa",
+        "hashes": {
+          "sha512": "e53f223229454f101a5cdc25c0a85a964b680535b4f85b490f7bca0e9481309e4db40c029be0fd2ed6473c9f1b58657c5dc84e01d16f66e85ddce232abbb02b9",
+          "sha1": "3514532fea28e2e1160894428302eb1000af8459"
+        },
+        "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/DoQNDXAU/rctapi-fabric-1.21.1-0.16.2-beta.jar",
+        "filename": "rctapi-fabric-1.21.1-0.16.2-beta.jar",
+        "primary": true,
+        "size": 267864,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "bgmxNN26",
+    "project_id": "CBfM2yw7",
+    "author_id": "Xa2ZxfbX",
+    "featured": false,
+    "name": "Version 0.16.1-beta",
+    "version_number": "0.16.1-beta",
+    "changelog": "# Changelog\n\n## [0.16.1-beta] - 2026-09-14\n\n**Added:**\n\n- *#134* `GsonUtil`: Static helpers to create preconfigured *GSON* instances\n\n**Changed:**\n\n- *#133* Added very basic scripting support to `rct` battle AI. The configuration now has a new property, `battleScript`, a list of actions to perform in the provided order:\n  - Available actions are: `move:<moveId>` (showdown move id, e.g. `tackle`), `switch:<position>` (`0` - `5`) and `item:<itemId>` (showdown item name, e.g. `potion` or `x_attack`)\n  - If the `<type>:` prefix is ommitted a `<moveId>` is assumed\n  - Targets are chosen based of the default AI evaluation\n  - The AI will fallback to its usual behaviour if a scripted action was not possible (e.g. a pokemon does not have the selected move) or all scripted actions have been performed\n  - There is no validation if an action succeeded (e.g. it is not possible to distinguish if a move hit or not)\n\n**Fixed:**\n\n- *#132* Battle softlocks caused by pokemon fainting on both sides\n",
+    "changelog_url": null,
+    "date_published": "2026-09-14T03:37:31.074093Z",
+    "downloads": 78782,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "LYmMQsVR",
+        "hashes": {
+          "sha512": "a74e6b070b310e377e3775f2a484fdebe2b3bddee63146f1e2f8d47f3a2261fd698a4fdcb5ac8f1f95e9859b8a4bd4eea7d35a48fe5ea4496543d0a16a113b50",
+          "sha1": "194ffc5f183b3a1c4f21d02edbbcf67524492ee2"
+        },
+        "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/bgmxNN26/rctapi-fabric-1.21.1-0.16.1-beta.jar",
+        "filename": "rctapi-fabric-1.21.1-0.16.1-beta.jar",
+        "primary": true,
+        "size": 267961,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "poXTxoNY",
+    "project_id": "CBfM2yw7",
+    "author_id": "Xa2ZxfbX",
+    "featured": false,
+    "name": "Version 0.16.0-beta",
+    "version_number": "0.16.0-beta",
+    "changelog": "# Changelog\n\n## [0.16.0-beta] - 2026-09-06\n\n**Changed:**\n\n- *#131* Min required Cobblemon version to `1.8`\n",
+    "changelog_url": null,
+    "date_published": "2026-09-06T23:05:33.321353Z",
+    "downloads": 35778,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "wE9e6JUP",
+        "hashes": {
+          "sha512": "71dc2caeea39d5b76889e35cab882a00b5be49b98ccba3ad6f09eb6308e9851b4917c118ba0e5265831f891478dc33e777ecee3db5600c1b6ecf3923be6e94ba",
+          "sha1": "0f4b58e94373344cb3a61674488a6f537ec14e31"
+        },
+        "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/poXTxoNY/rctapi-fabric-1.21.1-0.16.0-beta.jar",
+        "filename": "rctapi-fabric-1.21.1-0.16.0-beta.jar",
+        "primary": true,
+        "size": 257750,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "9OZx0coL",
+    "project_id": "CBfM2yw7",
+    "author_id": "Xa2ZxfbX",
+    "featured": false,
+    "name": "Version 0.15.2-beta",
+    "version_number": "0.15.2-beta",
+    "changelog": "# Changelog\n\nAs of version `0.15.0-beta`, RCTApi may only be redistributed under the terms of the [MCOML License](https://gitlab.com/srcmc/rct/api/-/raw/1.21.1/LICENSE.txt?ref_type=heads).\n\n## [0.15.2-beta] - 2026-04-19\n\n**Fixed:**\n\n- *#130* Battle error related to oversight in fix *#129* (*multi gimmick usage fix*)\n",
+    "changelog_url": null,
+    "date_published": "2026-04-19T19:58:36.982829Z",
+    "downloads": 1659147,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "9ILJoLYL",
+        "hashes": {
+          "sha1": "a75bb662e507c3932304d80ed514ec57e5dbf69b",
+          "sha512": "f0e740fed61051e2e4a35345e8900d0dcf59c6e69de59ae5c8f1a88e06c8f4aa711e7c2480c7d86d95b1e03a1b9466031d092d9eea1bcb3d2362c8db746c4150"
+        },
+        "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/9OZx0coL/rctapi-fabric-1.21.1-0.15.2-beta.jar",
+        "filename": "rctapi-fabric-1.21.1-0.15.2-beta.jar",
+        "primary": true,
+        "size": 234250,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_or_server_prefers_both",
+    "id": "7cUZXy2w",
+    "project_id": "CBfM2yw7",
+    "author_id": "Xa2ZxfbX",
+    "featured": false,
+    "name": "Version 0.15.1-beta",
+    "version_number": "0.15.1-beta",
+    "changelog": "# Changelog\n\nAs of version `0.15.0-beta`, RCTApi may only be redistributed under the terms of the [MCOML License](https://gitlab.com/srcmc/rct/api/-/raw/1.21.1/LICENSE.txt?ref_type=heads).\n\n## [0.15.1-beta] - 2026-04-17\n\n**Fixed:**\n\n- *#129* Trainers attempting to use multiple gimmicks at the same time, that are not permitted to be used together in one battle, if they have more than one pokemon on the field (e.g. mega + mega or zmove + zmove)\n",
+    "changelog_url": null,
+    "date_published": "2026-04-17T21:05:59.420698Z",
+    "downloads": 5191,
+    "version_type": "beta",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "TyXhvxiB",
+        "hashes": {
+          "sha1": "54ce018737ade2c1eb4fdb0d7fcf83a35711be48",
+          "sha512": "f0a0621b6ea2791518e7a29091d4a190d8f9d70b7bf91f45088e22ccf06b2feaad0736b99e576f1a8c83896b99ec5d114f027984730dbb61d3a3a3cdf41e3fc3"
+        },
+        "url": "https://cdn.modrinth.com/data/CBfM2yw7/versions/7cUZXy2w/rctapi-fabric-1.21.1-0.15.1-beta.jar",
+        "filename": "rctapi-fabric-1.21.1-0.15.1-beta.jar",
+        "primary": true,
+        "size": 234254,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

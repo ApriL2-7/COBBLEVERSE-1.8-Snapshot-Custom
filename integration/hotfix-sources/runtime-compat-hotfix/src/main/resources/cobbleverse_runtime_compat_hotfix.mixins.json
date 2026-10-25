@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "kr.cobbleverse.runtime.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FightOrFlightMoveMixin",
+    "PositionBlockFinderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

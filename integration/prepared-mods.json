@@ -1,0 +1,6590 @@
+[
+  {
+    "filename": "accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+    "sha256": "51e6f6d52cb2523199ad36e5bc04802230f86904c35ac3dbf36e59c86b2c30d1",
+    "sha1": "fa0b11de088893bb14aff945d0e8efdee165457b",
+    "size": 1095802,
+    "id": "accessories",
+    "version": "1.1.0-beta.53+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabric-api": ">=0.116.0",
+      "minecraft": ">=1.21",
+      "owo": ">=0.12.15.1+1.21"
+    },
+    "breaks": {
+      "accessories_compat_layer": "<=0.1.9"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "io.wispforest.accessories.fabric.AccessoriesFabric"
+      ],
+      "client": [
+        "io.wispforest.accessories.fabric.client.AccessoriesClientFabric"
+      ],
+      "rei_client": [
+        "io.wispforest.accessories.compat.rei.AccessoriesClientREIPlugin"
+      ],
+      "emi": [
+        "io.wispforest.accessories.compat.emi.AccessoriesClientEMIPlugin"
+      ],
+      "jei": [
+        "io.wispforest.accessories.compat.jei.AccessoriesClientJEIPlugin"
+      ]
+    },
+    "mixins": [
+      "accessories-fabric.mixins.json",
+      "accessories-common.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/owo-sentinel-0.12.15.4+1.21.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://wispforest.io/",
+      "sources": "https://github.com/wisp-forest/accessories"
+    }
+  },
+  {
+    "filename": "accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
+    "sha256": "c77c281616618ee51bb4f9bced4708be6d1baa690b3e8564a68d04df9f080980",
+    "sha1": "44acb001881c063aa15fe66a26de5fae88e6564f",
+    "size": 398321,
+    "id": "accessories_compat_layer",
+    "version": "0.1.12",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "owo": ">=0.12.15.4+1.21",
+      "accessories": ">=1.1.0-beta.53+1.21.1"
+    },
+    "breaks": {
+      "trinkets": "<3.10.0"
+    },
+    "conflicts": null,
+    "recommends": {
+      "trinkets": ">=3.10.0"
+    },
+    "entrypoints": {
+      "mixinsquared": [
+        "io.wispforest.accessories_compat.curios.CuriosCompatMixinCanceller"
+      ]
+    },
+    "mixins": [
+      "accessories_compat_layer-fabric.mixins.json",
+      "accessories_compat_layer-common.mixins.json",
+      "accessories_compat_layer-trinkets.mixins.json",
+      "accessories_compat_layer-curios.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mixinsquared-fabric-0.3.4.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/wisp-forest/accessories-compat-layer",
+      "sourcepage": "https://github.com/wisp-forest/accessories-compat-layer",
+      "issuepage": "https://github.com/wisp-forest/accessories-compat-layer/issues"
+    }
+  },
+  {
+    "filename": "advancementdisable-fabric-1.0.1+1.21.jar",
+    "sha256": "53e5c47d485b0a0dd417c2255523679a0b4bba059ae796cdab746112ad1440d6",
+    "sha1": "32190447e74e705c799641d4a7392b396df63962",
+    "size": 430411,
+    "id": "advancementdisable",
+    "version": "1.0.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "1.21.x",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      "advancementdisable.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/cschierig/AdvancementDisable",
+      "issues": "https://github.com/cschierig/AdvancementDisable/issues"
+    }
+  },
+  {
+    "filename": "AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+    "sha256": "dda6cc159edd450d05b9ff15832747b951dacd068c601018c219bca833ce5bef",
+    "sha1": "e3a5a514bbcc18e2c4e3bc251eb9f48e64217405",
+    "size": 195505,
+    "id": "advancementplaques",
+    "version": "1.6.8",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "iceberg": ">=1.2.2"
+    },
+    "breaks": null,
+    "conflicts": {
+      "canvas": "*"
+    },
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.anthonyhilyard.advancementplaques.fabric.AdvancementPlaquesFabric"
+      ],
+      "client": [
+        "com.anthonyhilyard.advancementplaques.fabric.client.AdvancementPlaquesFabricClient"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "homepage": "https://anthonyhilyard.com/",
+      "sources": "https://github.com/AHilyard/AdvancementPlaques",
+      "discord": "https://discord.gg/S5NQjbXPnb"
+    }
+  },
+  {
+    "filename": "architectury-13.0.8-fabric.jar",
+    "sha256": "10cbbb6f5f96a2f1853b0cc68428424cec8903409517b299ff02350756b6399d",
+    "sha1": "e71346a43c563e5784580dd096338acfb45f49d4",
+    "size": 600915,
+    "id": "architectury",
+    "version": "13.0.8",
+    "environment": "*",
+    "depends": {
+      "minecraft": "~1.21-",
+      "fabricloader": ">=0.15.11",
+      "fabric-api": ">=0.100.0"
+    },
+    "breaks": {
+      "optifabric": "<1.13.0"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.architectury.utils.fabric.GameInstanceImpl::init"
+      ],
+      "server": [
+        "dev.architectury.init.fabric.ArchitecturyServer::init"
+      ],
+      "client": [
+        "dev.architectury.init.fabric.ArchitecturyClient::init"
+      ],
+      "modmenu": [
+        "dev.architectury.compat.fabric.ModMenuCompatibility"
+      ]
+    },
+    "mixins": [
+      "architectury-common.mixins.json",
+      "architectury.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "issues": "https://github.com/architectury/architectury-api/issues",
+      "sources": "https://github.com/architectury/architectury-api",
+      "homepage": "https://architectury.github.io/architectury-documentations/"
+    }
+  },
+  {
+    "filename": "athena-fabric-1.21.1-4.0.6.jar",
+    "sha256": "e17aad84c690ac4e46300a4180b3ae4077ffa4f526dbc82d117afbbff4ee83e4",
+    "sha1": "92534d85cad33ab1fee598068443c685f4bb06e0",
+    "size": 88425,
+    "id": "athena",
+    "version": "4.0.6",
+    "environment": "*",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "earth.terrarium.athena.impl.client.DefaultModels::init",
+        "earth.terrarium.athena.api.client.fabric.AthenaFabricClient"
+      ]
+    },
+    "mixins": [
+      "athena.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "website": "https://modrinth.com/mod/athena-ctm",
+      "repo": "https://github.com/terrarium-earth/athena",
+      "issues": "https://github.com/terrarium-earth/athena/issues"
+    }
+  },
+  {
+    "filename": "BadOptimizations-2.4.1-1.21.1.jar",
+    "sha256": "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba",
+    "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+    "size": 283566,
+    "id": "badoptimizations",
+    "version": "2.4.1",
+    "environment": "client",
+    "depends": {
+      "minecraft": ">=1.21.1",
+      "fabricloader": ">=0.15.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "modmenu": [
+        "fabric.me.thosea.badoptimizations.fabric.modmenu.BadOptimizationsModMenu"
+      ]
+    },
+    "mixins": [
+      "fabric-badoptimizations.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-mixinextras-fabric-0.2.2.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/badoptimizations/",
+      "sources": "https://github.com/imthosea/BadOptimizations/",
+      "issues": "https://github.com/imthosea/BadOptimizations/issues/"
+    }
+  },
+  {
+    "filename": "balm-fabric-1.21.1-21.0.63.jar",
+    "sha256": "4c3604961b74e9cbc91efb1a93daa2f4e55354a46afc93cb74f0de543fd86391",
+    "sha1": "e6a6596688e23ca00e69249c26e316541a086ca2",
+    "size": 809717,
+    "id": "balm",
+    "version": "21.0.63",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.3",
+      "fabric-api": "*",
+      "minecraft": ">=1.21.1",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.balm.fabric.FabricBalm"
+      ],
+      "client": [
+        "net.blay09.mods.balm.fabric.client.FabricBalmClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.balm.fabric.compat.ModMenuIntegration"
+      ],
+      "jade": [
+        "net.blay09.mods.balm.fabric.compat.hudinfo.FabricJadeModCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.blay09.mods.balm.platform.compatibility.recipeviewer.internal.jei.CommonJeiPlugin"
+      ]
+    },
+    "mixins": [
+      "balm.mixins.json",
+      "balm.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/kuma-api-fabric-21.0.8+1.21.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://balm.twelveiterations.com/",
+      "sources": "https://github.com/TwelveIterations/Balm",
+      "issues": "https://github.com/TwelveIterations/Balm/issues"
+    }
+  },
+  {
+    "filename": "beautify-2.0.0+1.21.1.jar",
+    "sha256": "134da1a8e3841f0a14004e839bd1e0a9d091cc5769a82b0052cebda2804ac4fd",
+    "sha1": "7b22fbf4997200c8f210a016f7af36309f52a1e1",
+    "size": 837607,
+    "id": "beautify",
+    "version": "2.0.0+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "cloth-config": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "io.github.suel_ki.beautify.Beautify"
+      ],
+      "client": [
+        "io.github.suel_ki.beautify.client.BeautifyClient"
+      ],
+      "jade": [
+        "io.github.suel_ki.beautify.compat.jade.JadePlugin"
+      ],
+      "modmenu": [
+        "io.github.suel_ki.beautify.util.ModMenuConfig"
+      ]
+    },
+    "mixins": [
+      "beautify.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/beautify-refabricated",
+      "sources": "https://github.com/Suel-ki/Beautify-Refabricated",
+      "issues": "https://github.com/Suel-ki/Beautify-Refabricated/issues"
+    }
+  },
+  {
+    "filename": "better-pokedex-scanner-1.0.0.jar",
+    "sha256": "bc19f882a78aeda4e6294e96abd3d35dc866f56f854b0ee057a0dcf2e42af6c9",
+    "sha1": "3af2c2ed2757256d778e68f39ff5000f673c48d3",
+    "size": 348359,
+    "id": "better_pokedex_scanner",
+    "version": "1.0.0",
+    "environment": "*",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-language-kotlin": ">=1.13.6+kotlin.2.2.20",
+      "cobblemon": ">=1.7.3"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.joshiki.betterpokedexscanner.BetterPokedexScanner"
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "com.joshiki.betterpokedexscanner.BetterPokedexScannerClient"
+        }
+      ]
+    },
+    "mixins": [
+      "betterpokedexscanner.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "betterbeds-fabric-1.4.0.jar",
+    "sha256": "d707f5df1c45150eb18b3135380519e74dd9103673a71032ef3de2b9038424aa",
+    "sha1": "18bc5c4f40ff6e47d65526a59244c9ea57b83e3f",
+    "size": 39918,
+    "id": "betterbeds",
+    "version": "1.4.0",
+    "environment": "client",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "eu.midnightdust.fabric.betterbeds.BetterBedsFabric"
+      ]
+    },
+    "mixins": [
+      "betterbeds.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.midnightdust.eu/",
+      "sources": "https://github.com/TeamMidnightDust/BetterBeds",
+      "issues": "https://github.com/TeamMidnightDust/BetterBeds/issues"
+    }
+  },
+  {
+    "filename": "BetterF1-Fabric-1.1+1.21.7.jar",
+    "sha256": "abfb3f37f130ae4dea89e282f1d0fc0e9c4b2235762745931329defb9387bbdf",
+    "sha1": "218c3aa2ae3356309997deae0861133e9f861581",
+    "size": 22834,
+    "id": "betterf1",
+    "version": "1.1",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.7.4",
+      "minecraft": "~1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      {
+        "config": "betterf1.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "BetterF3-11.0.3-Fabric-1.21.1.jar",
+    "sha256": "e0e4bb25fbe23b16b7574474ee9fde5cdc9757d05885bc43978f4ea5e8e258ad",
+    "sha1": "22442f5594bd537ab603cb36fba70363ebb7992a",
+    "size": 1810710,
+    "id": "betterf3",
+    "version": "11.0.3",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "modmenu": ">=10.0.0"
+    },
+    "entrypoints": {
+      "client": [
+        "me.cominixo.betterf3.BetterF3Fabric"
+      ],
+      "modmenu": [
+        "me.cominixo.betterf3.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "betterf3.mixins.json",
+      "betterf3.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cloth-config-fabric-15.0.127-fabric.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-resource-loader-v0-1.3.0+565991296a.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/betterf3",
+      "sources": "https://github.com/TreyRuffy/BetterF3.git",
+      "issues": "https://github.com/TreyRuffy/BetterF3/issues/"
+    }
+  },
+  {
+    "filename": "BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+    "sha256": "f9ec9dc6508b20d32a3c770ecc77641e8f87c98e298d58e2757a6ef14abbb457",
+    "sha1": "ea0dd2747e5d52d1b64dd29498e59602e79d9b69",
+    "size": 52188,
+    "id": "betterthirdperson",
+    "version": "1.9.0",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "io.socol.betterthirdperson.BetterThirdPerson"
+      ],
+      "modmenu": [
+        "io.socol.betterthirdperson.integration.modmenu.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "betterthirdperson.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://injected.coffee/",
+      "issues": "https://www.curseforge.com/minecraft/mc-mods/better-third-person/issues"
+    }
+  },
+  {
+    "filename": "biomereplacer-2.1-hippo-fabric.jar",
+    "sha256": "ec6eeda3d4d32d9740c3e6f24177db3fcfa06866f73e341c0ad4ea090d0055ac",
+    "sha1": "8e3573f3384e7031afa663d7fe3dbbd0011bae9c",
+    "size": 138694,
+    "id": "biome_replacer",
+    "version": "2.1-hippo",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16",
+      "minecraft": ">=1.19.4 <1.21.2"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.werdei.biome_replacer.Platform"
+      ]
+    },
+    "mixins": [
+      "biome_replacer.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mixinsquared-fabric-0.3.3.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/biome-replacer",
+      "sources": "https://github.com/WerDei/Biome-Replacer",
+      "issues": "https://github.com/WerDei/Biome-Replacer/issues"
+    }
+  },
+  {
+    "filename": "brb-1.10.0-rc5+1.21.jar",
+    "sha256": "7ddc4761bf5ca59c34703d9586e6edaf6c7a7a3939ed7cdb6c103ab9fec6707b",
+    "sha1": "5831fc725b9834cef7b445913a701310536b17ab",
+    "size": 1213168,
+    "id": "brb",
+    "version": "1.10.0-rc5+1.21",
+    "environment": "client",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.21",
+      "architectury": ">=11"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "marsh.town.brb.fabric.BetterRecipeBookFabric"
+      ],
+      "modmenu": [
+        "marsh.town.brb.fabric.ModMenuFabric"
+      ]
+    },
+    "mixins": [
+      "mixins.brb.json",
+      "mixins.brb-common.json",
+      "mixins.brb-common-compat.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cloth-config-fabric-15.0.127-fabric.jar"
+      }
+    ],
+    "contact": {
+      "issues": "https://github.com/marshamallow/BetterRecipeBook",
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/brb"
+    }
+  },
+  {
+    "filename": "c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar",
+    "sha256": "6a77c69140f3da10e20b25ee8a75da039c5835b73f9c7a03615fbd968b574e5e",
+    "sha1": "3a0a64877ba57d1f1198c7c6805719581859337d",
+    "size": 3757044,
+    "id": "c2me",
+    "version": "0.4.0-alpha.0.23+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.18.3",
+      "java": ">=21",
+      "minecraft": [
+        "=1.21.1",
+        "=1.21"
+      ],
+      "c2me-base": "*"
+    },
+    "breaks": {
+      "tic_tacs": "*",
+      "optifabric": "*"
+    },
+    "conflicts": {
+      "dynview": "*",
+      "betterchunkloading": "*"
+    },
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.ishland.c2me.C2MEMod"
+      ],
+      "preLaunch": [
+        "com.ishland.c2me.PreLaunchHandler"
+      ]
+    },
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/asyncutil-0.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-base-mc1.21.1-0.4.0-alpha.0.23-all.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-client-uncapvd-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-fixes-chunkio-threading-issues-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-fixes-general-threading-issues-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-fixes-worldgen-threading-issues-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-fixes-worldgen-vanilla-bugs-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-notickvd-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-allocs-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-chunkio-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-dfc-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-math-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-natives-math-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-scheduling-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-worldgen-general-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-opts-worldgen-vanilla-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-rewrites-chunk-system-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-rewrites-chunkio-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-server-utils-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/c2me-fabric-threading-lighting-mc1.21.1-0.4.0-alpha.0.23.jar"
+      },
+      {
+        "file": "META-INF/jars/caffeine-3.2.1.jar"
+      },
+      {
+        "file": "META-INF/jars/core-3.6.5.jar"
+      },
+      {
+        "file": "META-INF/jars/exp4j-0.4.8.jar"
+      },
+      {
+        "file": "META-INF/jars/jctools-core-4.0.5.jar"
+      },
+      {
+        "file": "META-INF/jars/mixinsquared-fabric-0.3.7-beta.1.jar"
+      },
+      {
+        "file": "META-INF/jars/reactive-streams-1.0.4.jar"
+      },
+      {
+        "file": "META-INF/jars/rxjava-3.1.12.jar"
+      },
+      {
+        "file": "META-INF/jars/toml-3.6.5.jar"
+      }
+    ],
+    "contact": {
+      "sources": "https://github.com/RelativityMC/C2ME-fabric",
+      "issues": "https://github.com/RelativityMC/C2ME-fabric/issues",
+      "discord": "https://discord.gg/Kdy8NM5HW4",
+      "homepage": "https://modrinth.com/mod/c2me-fabric"
+    }
+  },
+  {
+    "filename": "capturexp-fabric-1.7.3-1.3.0.jar",
+    "sha256": "84f5e6a941da6b64eff7619732eb2ca73d9ad4adfccb06c52158db21794ea7c5",
+    "sha1": "44d6d1dba175ce70422e832496b07c3294706d4f",
+    "size": 22496,
+    "id": "capture_xp",
+    "version": "1.7.3-fabric-1.3.0",
+    "environment": "*",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabric": "*",
+      "cobblemon": ">=1.7.3",
+      "tim_core": ">=1.7.3-fabric-1.31.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "us.timinc.mc.cobblemon.capturexp.fabric.CaptureXpFabric"
+        }
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "homepage": "https://discord.com/invite/WKAR27SdSv",
+      "issues": "https://github.com/timinc-cobble/cobblemon-capture-xp/issues",
+      "sources": "https://github.com/timinc-cobble/cobblemon-capture-xp"
+    }
+  },
+  {
+    "filename": "Carved Wood-fabric-1.21.1-1.9.7-B.jar",
+    "sha256": "90b0784cd66b656343ec4b42c9e5562e92175f15ed91404a03a39e386a23847c",
+    "sha1": "af0a1cf8ad03421cb3e5522db432b5c224317309",
+    "size": 2891665,
+    "id": "carved_wood",
+    "version": "1.9.7-B",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.im_maker.carved_wood.CarvedWoodFabric"
+      ],
+      "client": [
+        "net.im_maker.carved_wood.CarvedWoodClient"
+      ],
+      "jei_mod_plugin": [
+        "net.im_maker.carved_wood.compatibility.jei.JEICompat"
+      ]
+    },
+    "mixins": [
+      "carved_wood.mixins.json",
+      "carved_wood.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cardinal-components-base-6.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-block-6.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-entity-6.1.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "catchindicator-fabric-1.7.0.jar",
+    "sha256": "bcebcfa5692f93de8d8aff33973510517a7434d48656c5ad167d33df841bc122",
+    "sha1": "afe92fe750372efe83d9d85480f0e98401fdef1b",
+    "size": 318477,
+    "id": "catchindicator",
+    "version": "1.7.0",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.17.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.levelscraft7.catchindicator.fabric.client.CatchIndicatorFabricClient"
+      ],
+      "modmenu": [
+        "com.levelscraft7.catchindicator.fabric.client.CatchIndicatorModMenu"
+      ]
+    },
+    "mixins": [
+      "catchindicator-common.mixins.json",
+      "catchindicator-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "catchrate-display-fabric-2.8.22.jar",
+    "sha256": "afa99396bceb69071a08f325f6bad4299500634329b0a863605aaf2e94eaaabe",
+    "sha1": "8a3bdc63e67cc96a056c7e5fab71b4eacc2685f3",
+    "size": 258716,
+    "id": "catchrate-display",
+    "version": "2.8.22",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.21 <1.22",
+      "cobblemon": ">=1.6.0",
+      "fabric-language-kotlin": ">=1.13.4"
+    },
+    "breaks": {
+      "cobblemon": "<1.6.0"
+    },
+    "conflicts": null,
+    "recommends": {
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "com.catchrate.fabric.CatchRateDisplayFabric"
+        }
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "com.catchrate.fabric.CatchRateDisplayFabricClient"
+        }
+      ]
+    },
+    "mixins": [
+      "catchrate-display-common.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/mod/catchrate-display",
+      "sources": "https://github.com/Akkiruk/catchrate-display",
+      "issues": "https://github.com/Akkiruk/catchrate-display/issues"
+    }
+  },
+  {
+    "filename": "cloth-config-15.0.140-fabric.jar",
+    "sha256": "33894e95da3af59014b39d126586d5241e07ea39f8618763e30dab637405f95f",
+    "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
+    "size": 1157166,
+    "id": "cloth-config",
+    "version": "15.0.140",
+    "environment": null,
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.21-"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "me.shedaniel.autoconfig.example.ExampleInits::exampleCommonInit"
+      ],
+      "modmenu": [
+        "me.shedaniel.clothconfig2.fabric.ClothConfigModMenuDemo"
+      ]
+    },
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/basic-math-0.6.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://minecraft.curseforge.com/projects/cloth-config",
+      "sources": "https://github.com/shedaniel/ClothConfig",
+      "issues": "https://github.com/shedaniel/ClothConfig/issues"
+    }
+  },
+  {
+    "filename": "cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
+    "sha256": "1737e2823eb9806af1f7f4aabad779f7a14bcfbbb237f0aa8741d09ee1f25cf6",
+    "sha1": "1948fb9797b080a4ddfbcd71ed50d64933fe3c50",
+    "size": 16364367,
+    "id": "cobblebase",
+    "version": "2.0.0+1.7.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "fabric-language-kotlin": "*",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "value": "notlown.cobblebase.fabric.CobblebaseFabric",
+          "adapter": "kotlin"
+        }
+      ],
+      "client": [
+        {
+          "value": "notlown.cobblebase.fabric.client.CobblebaseFabricClient",
+          "adapter": "kotlin"
+        }
+      ],
+      "modmenu": [
+        "notlown.cobblebase.fabric.client.CobblebaseModMenu"
+      ]
+    },
+    "mixins": [
+      "cobblebase.mixins.json",
+      "cobblebase-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "issues": "https://github.com/notlown/cobblebase/issues",
+      "sources": "https://github.com/notlown/cobblebase",
+      "homepage": "https://modrinth.com/project/cobblebase",
+      "discord": "https://discord.gg/6As3sVZgVT",
+      "kofi": "https://ko-fi.com/notlown"
+    }
+  },
+  {
+    "filename": "cobblecuisine-2.0.1-1.7.rc1-api119fix.jar",
+    "sha256": "18f10ea9444db0360ed75649941f52f61b87909c37c5eb021be8ab30f205bf00",
+    "sha1": "4aa6fef25b3f4f6064585be5018260e0cf0e1b60",
+    "size": 683158,
+    "id": "cobblecuisine",
+    "version": "2.0.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.fyre.cobblecuisine.client.CobbleCuisineClient"
+      ],
+      "main": [
+        "com.fyre.cobblecuisine.CobbleCuisine"
+      ],
+      "modmenu": [
+        "com.fyre.cobblecuisine.config.CobbleCuisineModMenuCompat"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {}
+  },
+  {
+    "filename": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+    "sha256": "5d8690980ecc79b5f33005dd274d148d0b9b7713ff5e8223c7011aa8bb08401a",
+    "sha1": "48a2a30fb22e088ca9357fc95bdb4247ddc80b17",
+    "size": 369528,
+    "id": "cobbledollars",
+    "version": "2.0.0+Beta-5.1+1.21.1",
+    "environment": "*",
+    "depends": {
+      "minecraft": ">=1.21.1",
+      "fabricloader": ">=0.16.5",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6.0+1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "fr.harmex.cobbledollars.fabric.FabricBootstrap"
+      ],
+      "client": [
+        "fr.harmex.cobbledollars.fabric.client.CobbleDollarsFabricClient"
+      ],
+      "modmenu": [
+        "fr.harmex.cobbledollars.fabric.client.ModMenuImpl"
+      ]
+    },
+    "mixins": [
+      "mixins.cobbledollars-fabric.json",
+      "mixins.cobbledollars-common.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/mod/cobbledollars",
+      "issues": "https://curseforge.com/minecraft/mc-mods/cobbledollars/issues"
+    }
+  },
+  {
+    "filename": "CobbleFurnies-fabric-1.2.jar",
+    "sha256": "c1230a58ca2369b973bfade68a0ffcac86ffcbf9dd2a845999ed8c5348bfef93",
+    "sha1": "a71f20907c3350680a11054584cf96963f5875e5",
+    "size": 2337235,
+    "id": "cobblefurnies",
+    "version": "1.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "athena": ">=4.0.2",
+      "cobblemon": ">=1.7.1",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.lunazstudios.cobblefurnies.fabric.CobbleFurniesFabric"
+      ],
+      "client": [
+        "com.lunazstudios.cobblefurnies.fabric.client.CobbleFurniesFabricClient"
+      ],
+      "rei_client": [
+        "com.lunazstudios.cobblefurnies.fabric.compat.CobbleFurniesREIClient"
+      ],
+      "jei_mod_plugin": [
+        "com.lunazstudios.cobblefurnies.compat.JEICobbleFurniesPlugin"
+      ]
+    },
+    "mixins": [
+      "cobblefurnies.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/cobblefurnies",
+      "issues": "https://github.com/gifluana/CobbleFurnies/issues"
+    }
+  },
+  {
+    "filename": "cobblemon-additions-4.1.6.jar",
+    "sha256": "c40eeee13943aa3b2ed532a25de5b55f5db4c76222e2a61c98d0bc35c028357d",
+    "sha1": "293c0fd6354114cd45d2dd8e4e771d48b1d89200",
+    "size": 1961229,
+    "id": "cobblemon-additions",
+    "version": "4.1.6",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "fabric-language-kotlin": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "value": "io.strikeknight57.bca.CobblemonAdditions"
+        }
+      ],
+      "client": [
+        {
+          "value": "io.strikeknight57.bca.CobblemonAdditionsClient"
+        }
+      ]
+    },
+    "mixins": [
+      "bca.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://discord.gg/Ge5dqkSupd/",
+      "sources": "https://github.com/strikeknight57/BCA-CE"
+    }
+  },
+  {
+    "filename": "cobblemon-battle-extras-fabric-1.13.45-api119fix.jar",
+    "sha256": "4117044ccd53309a866318370b0b2cbbe63304488347203a1f4dbfcd89abaab2",
+    "sha1": "013168aecaa68e77cdaec4a62fa5f128a316c7e2",
+    "size": 1516021,
+    "id": "cobblemon-battle-extras",
+    "version": "1.13.45",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6"
+    },
+    "breaks": {
+      "cobblemon-ui-tweaks": "*",
+      "cobblestats": "*",
+      "cobblemon_move_inspector": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "name.modid.fabric.CobblemonBattleExtrasFabric"
+      ],
+      "client": [
+        "name.modid.fabric.client.CobblemonBattleExtrasFabricClient"
+      ],
+      "modmenu": [
+        "name.modid.fabric.client.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "cobblemon-battle-extras-common.mixins.json",
+      {
+        "config": "cobblemon-battle-extras.client.mixins.json",
+        "environment": "client"
+      },
+      {
+        "config": "cobblemon-battle-extras.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "cobblemon-battle-positions-1.1.3.jar",
+    "sha256": "d76bbd753763dde4a552d1a86b8bc6ceee9abcb00fa1bd29b6c2e389079437ed",
+    "sha1": "2edbf7224a689b3463327f2970b481fd8e4ceae8",
+    "size": 58572,
+    "id": "cobblemonbattlepositions",
+    "version": "1.1.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0",
+      "rctapi": ">=0.14.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.pokemon.battlepositions.CobblemonBattlePositions"
+      ]
+    },
+    "mixins": [
+      "cobblemonbattlepositions.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/ramen/cobblemon-battle-positions",
+      "sources": "https://github.com/ramen/cobblemon-battle-positions",
+      "issues": "https://github.com/ramen/cobblemon-battle-positions/issues"
+    }
+  },
+  {
+    "filename": "Cobblemon-fabric-1.8.3+1.21.1.jar",
+    "sha256": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "sha1": "9155e84912d3bb0dad9aa88586e547c88c37eb1d",
+    "size": 139963795,
+    "id": "cobblemon",
+    "version": "1.8.3+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric-api": ">=0.116.6+1.21.1",
+      "minecraft": "1.21.1",
+      "java": "21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.cobblemon.mod.fabric.FabricBootstrap"
+      ],
+      "client": [
+        "com.cobblemon.mod.fabric.client.CobblemonFabricClient"
+      ],
+      "fabric-datagen": [
+        "com.cobblemon.mod.fabric.data.generator.CobblemonFabricDataGenerator"
+      ],
+      "jei_mod_plugin": [
+        "com.cobblemon.mod.common.integration.jei.CobblemonJeiPlugin"
+      ],
+      "dynamiclights": [
+        "com.cobblemon.mod.common.compat.lambdynamiclights.LambDynamicLightsInitializer"
+      ],
+      "modmenu": [
+        "com.cobblemon.mod.fabric.client.integration.modmenu.CobblemonModMenu"
+      ],
+      "appleskin": [
+        "com.cobblemon.mod.fabric.client.integration.appleskin.AppleSkinClientEventHandler"
+      ]
+    },
+    "mixins": [
+      "mixins.cobblemon-common.json",
+      "mixins.cobblemon-fabric.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-language-kotlin-1.13.6+kotlin.2.2.20.jar"
+      },
+      {
+        "file": "META-INF/jars/graal-sdk-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/icu4j-71.1.jar"
+      },
+      {
+        "file": "META-INF/jars/js-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/mongodb-driver-core-4.10.2.jar"
+      },
+      {
+        "file": "META-INF/jars/mongodb-driver-sync-4.10.2.jar"
+      },
+      {
+        "file": "META-INF/jars/regex-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/truffle-api-22.3.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://cobblemon.com/",
+      "sources": "https://gitlab.com/cable-mc/cobblemon",
+      "issues": "https://gitlab.com/cable-mc/cobblemon/-/issues"
+    }
+  },
+  {
+    "filename": "cobblemon-pc-enhancements-1.1.0.jar",
+    "sha256": "4aa66d161bc041005d6c015ee95e2d6203a6f0b48d932e0309969331c550fbe0",
+    "sha1": "a93d46d4b50f4bb604a689d255d8e8f9eb3fca37",
+    "size": 48594,
+    "id": "pcenhancements",
+    "version": "1.1.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.ramen.pcenhancements.PCEnhancements"
+      ],
+      "client": [
+        "com.ramen.pcenhancements.client.PCEnhancementsClient"
+      ]
+    },
+    "mixins": [
+      "pcenhancements.mixins.json"
+    ],
+    "jars": null,
+    "contact": {}
+  },
+  {
+    "filename": "cobblemon_battle_tower-fabric-1.11.23.jar",
+    "sha256": "3e0c349f989a6103f9aaa072bec5ed805ccbbe6c159be94f958dd4b2fdbadd97",
+    "sha1": "f421b4a1834e2bca8db5ddcef3c11231c0d7b19f",
+    "size": 52072791,
+    "id": "cobblemon_battle_tower",
+    "version": "1.11.23",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": "*",
+      "wild_battle_api": ">=1.0.0",
+      "rctapi": ">=0.14.6-beta"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "battle.tower.fabric.BattleTowerFabric"
+      ],
+      "client": [
+        "battle.tower.fabric.client.BattleTowerFabricClient"
+      ]
+    },
+    "mixins": [
+      "cobblemon_battle_tower.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "cobblemon_party_extras-fabric-1.8.15.jar",
+    "sha256": "02cb7394ea15e2bc3e303d077e156ff9daafa28cfbb242bad7958d62771a6af2",
+    "sha1": "0664f677a24adc0fe4da92ee723a84758e392ba1",
+    "size": 394695,
+    "id": "cobblemon_party_extras",
+    "version": "1.8.15",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "party.extras.cobblemon.fabric.CobblemonPartyExtrasFabric"
+      ],
+      "client": [
+        "party.extras.fabric.client.PartyExtrasFabricClient"
+      ],
+      "modmenu": [
+        "party.extras.fabric.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "cobblemon_party_extras.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "cobblemon_quests-[1.21.1]-fabric-1.2.0.jar",
+    "sha256": "2d6321bf24532d036a261b1ad06eb386a931354446453e66ebac7a0a5dbc7d0d",
+    "sha1": "fe7624abe1bf1c2995bb10653ea8c5a7609fe65a",
+    "size": 61946,
+    "id": "cobblemon_quests",
+    "version": "1.2.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "architectury": ">=13.0.0",
+      "ftbquests": ">=2101.0.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "winterwolfsv.cobblemon_quests.fabric.Cobblemon_QuestsFabric"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "repo": "https://github.com/winterwolfsv/cobblemon_quests"
+    }
+  },
+  {
+    "filename": "cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar",
+    "sha256": "16b3c81c5cf6fa28d5ae5fcb094918accdef848119aeda5702166ec6cd2474cb",
+    "sha1": "5b24480f4870af3577c772a34468759dcb1e023f",
+    "size": 2690220,
+    "id": "cobblemonraiddens",
+    "version": "0.11.3+1.21.1",
+    "environment": "*",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "geckolib": ">=4.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.necro.raid.dens.fabric.CobblemonRaidDensFabric"
+      ],
+      "client": [
+        "com.necro.raid.dens.fabric.CobblemonRaidDensFabricClient"
+      ],
+      "jade": [
+        "com.necro.raid.dens.common.compat.jade.RaidDensJadePlugin"
+      ],
+      "modmenu": [
+        "com.necro.raid.dens.fabric.compat.modmenu.RaidDensModMenuIntegration"
+      ],
+      "jei_mod_plugin": [
+        "com.necro.raid.dens.common.compat.jei.RaidDensJEIPlugin"
+      ],
+      "rei_client": [
+        "com.necro.raid.dens.common.compat.rei.RaidDensREIPlugin"
+      ],
+      "emi": [
+        "com.necro.raid.dens.common.compat.emi.RaidDensEMIPlugin"
+      ]
+    },
+    "mixins": [
+      "cobblemonraiddens-common.mixins.json",
+      "cobblemonraiddens-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cloth-config-fabric-15.0.140-fabric.jar"
+      }
+    ],
+    "contact": null
+  },
+  {
+    "filename": "cobblenav-fabric-2.3.3-cobblemon1.8-api-fix.jar",
+    "sha256": "477c64ad89cae46477fd2bc193af2b9e59f89522e1d0899c7e3da5c38336a3c7",
+    "sha1": "c30a93f779e5392e2bf3ef6b4e15916ebac70153",
+    "size": 1086521,
+    "id": "cobblenav",
+    "version": "2.3.3-cobblemon1.8-api-fix",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.metacontent.cobblenav.CobblenavFabric"
+      ],
+      "client": [
+        "com.metacontent.cobblenav.client.CobblenavFabricClient"
+      ]
+    },
+    "mixins": [
+      "cobblenav.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "cobbleverse-battle-extras-hotfix-1.0.0.jar",
+    "sha256": "a2d2bee59a708cbd2286f37cd15f86d8a840f626f951006ffc1f54b2739338ed",
+    "sha1": "2b6faa635c4a7d3a1fae79c3182fcd05b7889e2e",
+    "size": 3622,
+    "id": "cobbleverse_battle_extras_hotfix",
+    "version": "1.0.0",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      "cobbleverse_battle_extras_hotfix.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "cobbleverse-client-pack-guard-2026.08.29.3.jar",
+    "sha256": "e41ab4d7d6852cd345d37b4e6a69ec28c332f4098f6811e6f7a1fc70287c1ac4",
+    "sha1": "352e8e683ca60e1bc8ae729da5f1d41d91c8643e",
+    "size": 5721,
+    "id": "cobbleverse_client_pack_guard",
+    "version": "2026.08.29.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "kr.cobbleverse.packguard.CobbleversePackGuard"
+      ],
+      "client": [
+        "kr.cobbleverse.packguard.CobbleversePackGuardClient"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "cobbleverse-compat-api119-hotfix-1.0.0.jar",
+    "sha256": "78e82a33c5d6b32139a39dd9dd4e268b667bc3bd739d5b73dade1374b386122f",
+    "sha1": "bdf9db09fd84a4af0f88e539ffeb9d5285be6779",
+    "size": 4946,
+    "id": "cobbleverse_compat_api119_hotfix",
+    "version": "1.0.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "cobblemon": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": null,
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "cobbleverse-mount-sync-hotfix-1.0.0.jar",
+    "sha256": "4424dde8a3f7ad2ed2b806bc3b96cb0c1e442b6f88fd715adee2cc6de0fc7a09",
+    "sha1": "b844b7edf26d6a3a4a1e52771a35d20a2707654d",
+    "size": 6155,
+    "id": "cobbleverse_mount_sync_hotfix",
+    "version": "1.0.0",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      "cobbleverse_mount_sync_hotfix.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "CobbleverseBadges-1.3.jar",
+    "sha256": "d215d075d4ae80a4ed5e20cb5caf442bb3f3607d2a41dc134ebad035f6a8da77",
+    "sha1": "8e213de6013b6a58485ba8ddfcff5c91b3beb41d",
+    "size": 137015,
+    "id": "cobbleversebadges",
+    "version": "1.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "~1.21.1",
+      "java": ">=17",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadges"
+      ],
+      "client": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadgesClient"
+      ],
+      "fabric-datagen": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadgesDataGenerator"
+      ]
+    },
+    "mixins": [],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.lumyverse.com/cobbleverse",
+      "issues": "https://discord.lumy.fun"
+    }
+  },
+  {
+    "filename": "Cobbreeding-fabric-2.2.2-cobbleverse-pcfix.jar",
+    "sha256": "3aec503e0d514f95fbd5eb578d60344ad7d333c01543c43ab0fd99c6eaaeed3d",
+    "sha1": "af333734e948f8abf88dce9aff3ccaa01e6d045b",
+    "size": 475628,
+    "id": "cobbreeding",
+    "version": "2.2.2",
+    "environment": "*",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": "1.21.1",
+      "architectury": "13.x",
+      "cloth-config": ">=15",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "value": "ludichat.cobbreeding.fabric.Cobbreeding"
+        }
+      ],
+      "client": [
+        {
+          "value": "ludichat.cobbreeding.fabric.CobbreedingClient"
+        }
+      ],
+      "modmenu": [
+        "ludichat.cobbreeding.fabric.ConfigScreen"
+      ]
+    },
+    "mixins": [
+      "cobbreeding.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://gitlab.com/ludichat/Cobbreeding",
+      "issues": "https://gitlab.com/ludichat/Cobbreeding/-/issues"
+    }
+  },
+  {
+    "filename": "comforts-fabric-9.0.5+1.21.1.jar",
+    "sha256": "73ff17028967a2e30731ea79aee2e18dd8e2d59a5dcd075facd6491cae1b2231",
+    "sha1": "e47d6c2f0213abed8865dfa51ee05dea86c1baa9",
+    "size": 914494,
+    "id": "comforts",
+    "version": "9.0.5+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "fabric-datagen": [
+        "com.illusivesoulworks.comforts.data.ComfortsDataGenerator"
+      ],
+      "main": [
+        "com.illusivesoulworks.comforts.ComfortsFabricMod"
+      ],
+      "client": [
+        "com.illusivesoulworks.comforts.ComfortsFabricClientMod"
+      ],
+      "spectrelib-config": [
+        "com.illusivesoulworks.comforts.ComfortsConfigInitializer"
+      ],
+      "cardinal-components-entity": [
+        "com.illusivesoulworks.comforts.common.ComfortsComponents"
+      ]
+    },
+    "mixins": [
+      "comforts.mixins.json",
+      "comforts.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/spectrelib-fabric-0.17.2+1.21.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-base-6.1.2.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-entity-6.1.2.jar"
+      }
+    ],
+    "contact": {
+      "sources": "https://github.com/illusivesoulworks/comforts",
+      "issues": "https://github.com/illusivesoulworks/comforts/issues"
+    }
+  },
+  {
+    "filename": "configurable-3.5.2+1.21.1-fabric.jar",
+    "sha256": "70f7728d67ff8c420a53ef3c08ec73732517882317ab20a084b273773aa1e5e2",
+    "sha1": "2c7302944b3dbdb7a20ebdba8425ccae52f7f46a",
+    "size": 545247,
+    "id": "configurable",
+    "version": "3.5.2",
+    "environment": "*",
+    "depends": {
+      "minecraft": "~1.21.1",
+      "fabric-api": "*",
+      "fabricloader": ">=0.16.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.bawnorton.configurable.platform.ConfigurableEntrypoint"
+      ],
+      "client": [
+        "com.bawnorton.configurable.platform.ConfigurableClientEntrypoint"
+      ],
+      "fabric-datagen": [
+        "com.bawnorton.configurable.data.ConfigurableDataGen"
+      ]
+    },
+    "mixins": [
+      "configurable.mixins.json",
+      {
+        "environment": "client",
+        "config": "configurable.client.mixins.json"
+      }
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/auto-service-1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/core-3.8.3.jar"
+      },
+      {
+        "file": "META-INF/jars/gson-0.3.1.jar"
+      },
+      {
+        "file": "META-INF/jars/json-0.3.1.jar"
+      },
+      {
+        "file": "META-INF/jars/toml-3.8.3.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/Bawnorton/Configurable",
+      "sources": "https://github.com/Bawnorton/Configurable",
+      "issues": "https://github.com/Bawnorton/Configurable/issues"
+    }
+  },
+  {
+    "filename": "continuity-3.0.0+1.21.jar",
+    "sha256": "99fd46b834874d167ea2349a9a72947cbfa7192f927aa99bbeb4b0637aa208d4",
+    "sha1": "c7f09b53512604c2ba6803b1247bc70e4d0f8f8c",
+    "size": 1014044,
+    "id": "continuity",
+    "version": "3.0.0+1.21",
+    "environment": "client",
+    "depends": {
+      "minecraft": ">=1.21 <=1.21.1",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.100.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "me.pepperbell.continuity.client.ContinuityClient"
+      ],
+      "modmenu": [
+        "me.pepperbell.continuity.client.config.ModMenuApiImpl"
+      ]
+    },
+    "mixins": [
+      "continuity.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/mod/continuity",
+      "issues": "https://github.com/PepperCode1/Continuity/issues",
+      "sources": "https://github.com/PepperCode1/Continuity"
+    }
+  },
+  {
+    "filename": "Controlling-fabric-1.21.1-19.0.5.jar",
+    "sha256": "c0150c5bfbc77f27b92f24a5a9c2edc462eba8c8f912635757c5deb3a0a93f8d",
+    "sha1": "22d2407311298d0185b606aa1dd03ae33b98dff3",
+    "size": 83679,
+    "id": "controlling",
+    "version": "19.0.5",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "searchables": ">=1.0.1",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {},
+    "mixins": [
+      {
+        "config": "controlling.mixins.json",
+        "environment": "client"
+      },
+      {
+        "config": "controlling.fabric.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/controlling",
+      "sources": "https://github.com/jaredlll08/controlling",
+      "issues": "https://github.com/jaredlll08/controlling/issues"
+    }
+  },
+  {
+    "filename": "customsplashscreen-2.2.0.jar",
+    "sha256": "142aacb23fc97e467ded7e279a72b00252018c43d12d803d928d07d4fe8d8678",
+    "sha1": "bb79f8974e619e077d60a6bdffe389913b84defd",
+    "size": 660554,
+    "id": "customsplashscreen",
+    "version": "2.2.0",
+    "environment": "client",
+    "depends": {
+      "midnightlib": "*"
+    },
+    "breaks": {
+      "splash": "*",
+      "dark-loading-screen": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "eu.midnightdust.customsplashscreen.CustomSplashScreenClient"
+      ]
+    },
+    "mixins": [
+      "customsplashscreen.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/midnightlib-1.5.7-fabric.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.midnightdust.eu/",
+      "sources": "https://github.com/TeamMidnightDust/CustomSplashScreen",
+      "issues": "https://github.com/TeamMidnightDust/CustomSplashScreen/issues"
+    }
+  },
+  {
+    "filename": "Debugify-1.21.1+1.0.jar",
+    "sha256": "e61e83875190150337a2366d9374f04865654de7bdf83e6ab29d9915899f8d7a",
+    "sha1": "6fb7d4ec9c2d2dc5b58577324b47671d3e28d7a4",
+    "size": 292202,
+    "id": "debugify",
+    "version": "1.21.1+1.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-resource-loader-v0": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "yet_another_config_lib_v3": "*",
+      "modmenu": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.isxander.debugify.Debugify::onInitialize"
+      ],
+      "client": [
+        "dev.isxander.debugify.client.DebugifyClient::onInitializeClient"
+      ],
+      "preLaunch": [
+        "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+      ],
+      "modmenu": [
+        "dev.isxander.debugify.client.integrations.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "debugify.mixins.json",
+      {
+        "config": "debugify.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://isxander.dev",
+      "issues": "https://github.com/isXander/Debugify/issues",
+      "sources": "https://github.com/isXander/Debugify"
+    }
+  },
+  {
+    "filename": "defaultoptions-fabric-1.21.1-21.1.7.jar",
+    "sha256": "8fff8fad699028a6578c61df3d1690d6fb5abbdc9a7c436e94cc9f51138be790",
+    "sha1": "1eed10a37b1f4a45f51e76044beb44e23b6bd678",
+    "size": 105044,
+    "id": "defaultoptions",
+    "version": "21.1.7",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [],
+      "client": [
+        "net.blay09.mods.defaultoptions.fabric.client.FabricDefaultOptionsClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.defaultoptions.fabric.compat.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "defaultoptions.mixins.json",
+      "defaultoptions.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://mods.twelveiterations.com/minecraft/defaultoptions",
+      "sources": "https://github.com/TwelveIterations/DefaultOptions",
+      "issues": "https://github.com/TwelveIterations/DefaultOptions/issues"
+    }
+  },
+  {
+    "filename": "entity_model_features-3.2.4-1.21-fabric.jar",
+    "sha256": "3c3f800b4bf911a158435c36dac0cf4176bec36d837c0696fdfae39d7ec5f976",
+    "sha1": "4538d0eec804c3a8f8c3a6809f687e362df588cf",
+    "size": 565280,
+    "id": "entity_model_features",
+    "version": "3.2.4",
+    "environment": "client",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": "*",
+      "entity_texture_features": ">=7.1"
+    },
+    "breaks": {
+      "optifabric": "*",
+      "cem": "*",
+      "entity_texture_features": "<7.1",
+      "entity_sound_features": "<=0.8"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "traben.entity_model_features.EMFInit"
+      ],
+      "modmenu": [
+        "traben.entity_model_features.config.EMFModMenu"
+      ],
+      "ebe_v1": [
+        "traben.entity_model_features.mod_compat.EBEConfigModifier"
+      ]
+    },
+    "mixins": [
+      "entity_model_features.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/entity-model-features",
+      "sources": "https://github.com/Traben-0/Entity_Model_Features",
+      "issues": "https://github.com/Traben-0/Entity_Model_Features/issues",
+      "discord": "https://discord.gg/rURmwrzUcz"
+    }
+  },
+  {
+    "filename": "entity_texture_features_1.21-fabric-7.1.jar",
+    "sha256": "d1b54ad6fd34eaf7187fb62556f2c5cacdc2ea3023a6217e3b2d823285aea148",
+    "sha1": "2020e3884ada68d7aba1d54f182d32d511c40e5f",
+    "size": 745421,
+    "id": "entity_texture_features",
+    "version": "7.1",
+    "environment": "client",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": "*"
+    },
+    "breaks": {
+      "optifabric": "*",
+      "entity_model_features": "<3.1",
+      "entity_sound_features": "<0.8"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "traben.entity_texture_features.ETFInit"
+      ],
+      "modmenu": [
+        "traben.entity_texture_features.config.ETFModMenu"
+      ]
+    },
+    "mixins": [
+      "entity_texture_features.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric",
+      "sources": "https://github.com/Traben-0/Entity_Texture_Features",
+      "issues": "https://github.com/Traben-0/Entity_Texture_Features/issues",
+      "discord": "https://discord.gg/rURmwrzUcz"
+    }
+  },
+  {
+    "filename": "entityculling-fabric-1.10.5-mc1.21.1.jar",
+    "sha256": "cfb5491f5ed9609784cf3d6a926bef046ca80cb74c7856e6134335d7d0ce839e",
+    "sha1": "7e8c9c44049e6575e75d1fe38d6006306b8d5623",
+    "size": 1595131,
+    "id": "entityculling",
+    "version": "1.10.5",
+    "environment": null,
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api": "*"
+    },
+    "breaks": {
+      "tlskincape": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "dev.tr7zw.entityculling.EntityCullingMod"
+      ],
+      "modmenu": [
+        "dev.tr7zw.entityculling.config.EntityCullingModMenu"
+      ]
+    },
+    "mixins": [
+      "entityculling.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/TRansition-1.0.21-1.21.1-fabric-SNAPSHOT.jar"
+      },
+      {
+        "file": "META-INF/jars/TRender-1.0.15-1.21.1-fabric-SNAPSHOT.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/entityculling",
+      "sources": "https://github.com/tr7zw/EntityCulling"
+    }
+  },
+  {
+    "filename": "EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+    "sha256": "b42bd00c7ab6e044d21f845dedc58a4524e45643f3685bf1c2343098e74d662e",
+    "sha1": "2a596436fca404cf497c1e9228d6cd9748d1fbf2",
+    "size": 4296552,
+    "id": "euphoria_patcher",
+    "version": "1.9.3-r5.8.1-fabric",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.14.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.euphoriapatches.euphoria_patcher.fabric.ClientEuphoriaPatcher"
+      ]
+    },
+    "mixins": [
+      "euphoria_patcher.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://euphoriapatches.com",
+      "sources": "https://euphoriapatches.com/github",
+      "issues": "https://euphoriapatches.com/contact"
+    }
+  },
+  {
+    "filename": "fabric-1.8.0+1.21.1-20260824.133257-119.jar",
+    "sha256": "c103905e94e00c059da80027131363ecd7148493846aa06723606a23aa88370b",
+    "sha1": "6b3dcf65157a566d64793e70781467fe340ad296",
+    "size": 147204900,
+    "id": "cobblemon",
+    "version": "1.8.0+1.21.1-HEAD-e053d28",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric-api": ">=0.116.6+1.21.1",
+      "minecraft": "1.21.1",
+      "java": "21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.cobblemon.mod.fabric.FabricBootstrap"
+      ],
+      "client": [
+        "com.cobblemon.mod.fabric.client.CobblemonFabricClient"
+      ],
+      "fabric-datagen": [
+        "com.cobblemon.mod.fabric.data.generator.CobblemonFabricDataGenerator"
+      ],
+      "jei_mod_plugin": [
+        "com.cobblemon.mod.common.integration.jei.CobblemonJeiPlugin"
+      ],
+      "dynamiclights": [
+        "com.cobblemon.mod.common.compat.lambdynamiclights.LambDynamicLightsInitializer"
+      ],
+      "modmenu": [
+        "com.cobblemon.mod.fabric.client.integration.modmenu.CobblemonModMenu"
+      ]
+    },
+    "mixins": [
+      "mixins.cobblemon-common.json",
+      "mixins.cobblemon-fabric.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-language-kotlin-1.13.6+kotlin.2.2.20.jar"
+      },
+      {
+        "file": "META-INF/jars/graal-sdk-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/icu4j-71.1.jar"
+      },
+      {
+        "file": "META-INF/jars/js-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/mongodb-driver-core-4.10.2.jar"
+      },
+      {
+        "file": "META-INF/jars/mongodb-driver-sync-4.10.2.jar"
+      },
+      {
+        "file": "META-INF/jars/regex-22.3.0.jar"
+      },
+      {
+        "file": "META-INF/jars/truffle-api-22.3.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://cobblemon.com/",
+      "sources": "https://gitlab.com/cable-mc/cobblemon",
+      "issues": "https://gitlab.com/cable-mc/cobblemon/-/issues"
+    }
+  },
+  {
+    "filename": "fabric-api-0.116.14+1.21.1.jar",
+    "sha256": "333f15bceb117a0ac41e3396eac9873fa6c325c31e746d679809f9a7a0228196",
+    "sha1": "1bc9caf399a9eadddaec3215e31594ca40fc9485",
+    "size": 2451978,
+    "id": "fabric-api",
+    "version": "0.116.14+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": ">=1.21- <1.21.2-"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-api-base-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-api-lookup-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-biome-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-block-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-block-view-api-v2-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-blockrenderlayer-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-client-tags-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-command-api-v2-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-content-registries-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-convention-tags-v2-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-crash-report-info-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-data-attachment-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-data-generation-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-dimensions-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-entity-events-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-events-interaction-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-game-rule-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-item-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-item-group-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-key-binding-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-lifecycle-events-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-loot-api-v3-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-message-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-model-loading-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-networking-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-object-builder-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-particles-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-recipe-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-registry-sync-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-renderer-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-renderer-indigo-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-fluids-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-resource-conditions-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-resource-loader-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-screen-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-screen-handler-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-sound-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-tag-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-transfer-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-transitive-access-wideners-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-command-api-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-commands-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-convention-tags-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-keybindings-v0-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-loot-api-v2-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-renderer-registries-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-data-attachment-v1-0.116.14.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-v0-0.116.14.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://fabricmc.net",
+      "irc": "irc://irc.esper.net:6667/fabric",
+      "issues": "https://github.com/FabricMC/fabric/issues",
+      "sources": "https://github.com/FabricMC/fabric"
+    }
+  },
+  {
+    "filename": "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
+    "sha256": "34ccdacf13bb9351fe43ce61912c2e09b72364e43e787d36ba3d2d04dec75a52",
+    "sha1": "620cb137a9dc69ce86f3114f19d9eedab16366f5",
+    "size": 8076363,
+    "id": "fabric-language-kotlin",
+    "version": "1.13.13+kotlin.2.4.10",
+    "environment": null,
+    "depends": {
+      "fabricloader": ">=0.16.9"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/atomicfu-jvm-0.33.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlin-reflect-2.4.10.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlin-stdlib-2.4.10.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlin-stdlib-jdk7-2.4.10.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlin-stdlib-jdk8-2.4.10.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-coroutines-core-jvm-1.11.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-coroutines-jdk8-1.11.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-datetime-jvm-0.8.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-io-bytestring-jvm-0.9.1.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-io-core-jvm-0.9.1.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-serialization-cbor-jvm-1.11.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-serialization-core-jvm-1.11.0.jar"
+      },
+      {
+        "file": "META-INF/jars/kotlinx-serialization-json-jvm-1.11.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://minecraft.curseforge.com/projects/fabric-language-kotlin",
+      "irc": "irc://irc.esper.net:6667/fabric",
+      "issues": "https://github.com/FabricMC/fabric-language-kotlin/issues",
+      "sources": "https://github.com/FabricMC/fabric-language-kotlin"
+    }
+  },
+  {
+    "filename": "fancymenu_fabric_3.9.8_MC_1.21.1.jar",
+    "sha256": "19e5faf15a769ba4841815fb2320f1efc9f97ddffbc24c95299b6480b50af201",
+    "sha1": "72cf81b069075a39996d4b2360ffca3299ab539e",
+    "size": 25757227,
+    "id": "fancymenu",
+    "version": "3.9.8",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "fabric": ">=0.104.0",
+      "konkrete": ">=1.9.4",
+      "melody": ">=1.0.6",
+      "minecraft": ">=1.21.1",
+      "java": ">=17"
+    },
+    "breaks": {
+      "drippyloadingscreen": "<3.0.0",
+      "fmextension_audio": "*",
+      "fmextension_video": "*",
+      "rrls": "<4.0.1",
+      "watermedia": "<3.0.0.19"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.fancymenu.FancyMenuFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "mixins": [
+      "fancymenu.mixins.json",
+      "fancymenu.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/animated-gif-lib-for-java-animated-gif-lib-1.7.jar"
+      },
+      {
+        "file": "META-INF/jars/japng-0.5.3.jar"
+      },
+      {
+        "file": "META-INF/jars/mixinextras-fabric-0.4.1.jar"
+      }
+    ],
+    "contact": {}
+  },
+  {
+    "filename": "ferritecore-7.0.3-fabric.jar",
+    "sha256": "98c3ab1d5aab8f14b5d082d3f1a467727fd335f02d124555c94339761c4c18f2",
+    "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
+    "size": 123450,
+    "id": "ferritecore",
+    "version": "7.0.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": ">=1.21.1 <1.22"
+    },
+    "breaks": {
+      "hydrogen": "<=0.3"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      "ferritecore.accessors.mixin.json",
+      "ferritecore.blockstatecache.mixin.json",
+      "ferritecore.dedupmultipart.mixin.json",
+      "ferritecore.fastmap.mixin.json",
+      "ferritecore.mrl.mixin.json",
+      "ferritecore.predicates.mixin.json",
+      "ferritecore.dedupbakedquad.mixin.json",
+      "ferritecore.threaddetec.mixin.json",
+      "ferritecore.modelsides.mixin.json",
+      "ferritecore.datacomponents.mixin.json",
+      "ferritecore.fabric.mixin.json"
+    ],
+    "jars": null,
+    "contact": {
+      "issues": "https://github.com/malte0811/FerriteCore/issues",
+      "source": "https://github.com/malte0811/FerriteCore",
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric"
+    }
+  },
+  {
+    "filename": "fightorflight-fabric-0.10.9.jar",
+    "sha256": "7eee034d17281b43324cbdcc41a3836b6c44a93798d40a608538ed12a72279c1",
+    "sha1": "9928e06e1ebe166980480b073cea542eed753d73",
+    "size": 1424525,
+    "id": "fightorflight",
+    "version": "0.10.9",
+    "environment": "*",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabricloader": ">=0.16.9",
+      "fabric": "*",
+      "cobblemon": ">=1.7.2",
+      "architectury": ">=13.0.8",
+      "cloth-config": ">=15.0.140"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "me.rufia.fightorflight.CobblemonFightOrFlightFabric"
+      ],
+      "client": [
+        "me.rufia.fightorflight.FabricClient"
+      ]
+    },
+    "mixins": [
+      "fightorflight.mixins_fabric.json",
+      "fightorflight.mixins_common.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cloth-config-fabric-15.0.140-fabric.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+    "sha256": "2e3a8f0e3bda85a7d722720e7ce879cbd9d028d9395c6fc224d329b3c982d9b1",
+    "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee",
+    "size": 633065,
+    "id": "forgeconfigapiport",
+    "version": "21.1.6",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric-api": ">=0.102.0",
+      "minecraft": "1.21.1",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "modmenu": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "fuzs.forgeconfigapiport.fabric.impl.ForgeConfigAPIPortFabric"
+      ],
+      "client": [
+        "fuzs.forgeconfigapiport.fabric.impl.client.ForgeConfigAPIPortFabricClient"
+      ],
+      "modmenu": [
+        "fuzs.forgeconfigapiport.fabric.impl.integration.modmenu.ModMenuApiImpl"
+      ]
+    },
+    "mixins": [
+      "forgeconfigapiport.common.mixins.json",
+      "forgeconfigapiport.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/core-3.8.0.jar"
+      },
+      {
+        "file": "META-INF/jars/toml-3.8.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/Fuzss/forgeconfigapiport",
+      "issues": "https://github.com/Fuzss/forgeconfigapiport/issues",
+      "sources": "https://github.com/Fuzss/forgeconfigapiport"
+    }
+  },
+  {
+    "filename": "forgivingvoid-fabric-1.21.1-21.1.7.jar",
+    "sha256": "ee45266cc7c10b0a17d9a87b021a57fb8616529e4c33af0fff5a506de71960b1",
+    "sha1": "be9be65f0b23bc751f0768af9c921a1483a06aa9",
+    "size": 78531,
+    "id": "forgivingvoid",
+    "version": "21.1.7",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.forgivingvoid.fabric.FabricForgivingVoid"
+      ],
+      "client": [],
+      "modmenu": [
+        "net.blay09.mods.forgivingvoid.fabric.compat.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "forgivingvoid.mixins.json",
+      "forgivingvoid.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://mods.twelveiterations.com/minecraft/forgiving-void",
+      "sources": "https://github.com/TwelveIterations/ForgivingVoid",
+      "issues": "https://github.com/TwelveIterations/ForgivingVoid/issues"
+    }
+  },
+  {
+    "filename": "ftb-library-fabric-2101.1.37.jar",
+    "sha256": "399e62acd6c343dab0780ac34aa0e86b4acaa6861eb5d65e826adb03ce9ec6c1",
+    "sha1": "3e7de2621365a2975bff3b3227c9027b12469dec",
+    "size": 1435726,
+    "id": "ftblibrary",
+    "version": "2101.1.37",
+    "environment": "*",
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.6"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftblibrary.fabric.FTBLibraryFabric"
+      ],
+      "rei_client": [
+        "dev.ftb.mods.ftblibrary.integration.REIIntegration"
+      ],
+      "emi": [
+        "dev.ftb.mods.ftblibrary.integration.EMIIntegration"
+      ],
+      "jei_mod_plugin": [
+        "dev.ftb.mods.ftblibrary.integration.JEIIntegration"
+      ]
+    },
+    "mixins": [
+      "ftblibrary-common.mixins.json",
+      "ftblibrary-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Library",
+      "issues": "https://github.com/FTBTeam/FTB-Library/issues"
+    }
+  },
+  {
+    "filename": "ftb-quests-fabric-2101.1.37.jar",
+    "sha256": "2f060bcdde671d07af48ecee49cb1331307b2d187f061c62efff0ccb7974ead0",
+    "sha1": "00d40114e5a8e40d31d8b1abf2af16902bc45430",
+    "size": 1632287,
+    "id": "ftbquests",
+    "version": "2101.1.37",
+    "environment": null,
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.36",
+      "ftbteams": ">=2101.1.9"
+    },
+    "breaks": {
+      "ftbxmodcompat": "<21.1.7"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbquests.fabric.FTBQuestsFabric"
+      ],
+      "rei_client": []
+    },
+    "mixins": [
+      "ftbquests-common.mixins.json",
+      "ftbquests-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/energy-4.1.0.jar"
+      }
+    ],
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Quests",
+      "issues": "https://github.com/FTBTeam/FTB-Mods-Issues/issues"
+    }
+  },
+  {
+    "filename": "ftb-teams-fabric-2101.1.11.jar",
+    "sha256": "39e34b438e0232a614a8cf1269fcff2705b85fde8b930a03d558bc66a03c7cf6",
+    "sha1": "9b07ff01ed801d40c5574d8b2c3dd3d7a00dc099",
+    "size": 303801,
+    "id": "ftbteams",
+    "version": "2101.1.11",
+    "environment": null,
+    "depends": {
+      "fabric": ">=0.100.1+1.21",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.30"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbteams.fabric.FTBTeamsFabric"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/FTBTeam/FTB-Teams",
+      "issues": "https://go.ftb.team/support-mod-issues"
+    }
+  },
+  {
+    "filename": "fusion-1.2.12-fabric-mc1.21.jar",
+    "sha256": "904b53bd8e0aacf200c700997c7467bc0c66cca1fb4a17c9999afb8eb62942e8",
+    "sha1": "6c5ef883ab46b3e6ab5f53b7c1b0b369162f9110",
+    "size": 515411,
+    "id": "fusion",
+    "version": "1.2.12",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.fusion.Fusion"
+      ],
+      "client": [
+        "com.supermartijn642.fusion.FusionClient"
+      ]
+    },
+    "mixins": [
+      "fusion.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/fusion-connected-textures",
+      "sources": "https://github.com/SuperMartijn642/Fusion"
+    }
+  },
+  {
+    "filename": "fzzy_config-0.7.6+1.21.jar",
+    "sha256": "323dc065cc3aaeb7f908be7e5d31070a25d4188b433ed770a79700ef8f5e8f7d",
+    "sha1": "cff21f254e911a323fe49015d12e548d3e3b8d7c",
+    "size": 2365335,
+    "id": "fzzy_config",
+    "version": "0.7.6+1.21",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": "*",
+      "fabric-language-kotlin": ">=1.12.1+kotlin.2.0.20",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.FC"
+        }
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.FCC"
+        }
+      ],
+      "modmenu": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.impl.ConfigModMenuCompat"
+        }
+      ]
+    },
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/tomlkt-jvm-0.3.7.jar"
+      },
+      {
+        "file": "META-INF/jars/jankson-1.2.3.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-permissions-api-0.3.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/fzzy-config",
+      "issues": "https://github.com/fzzyhmstrs/fconfig/issues",
+      "sources": "https://github.com/fzzyhmstrs/fconfig"
+    }
+  },
+  {
+    "filename": "geckolib-fabric-1.21.1-4.9.2.jar",
+    "sha256": "eac4cf55e1cb99b22cb91ea87c774d2a670c1711a80f4aff50e6ad56b6c58e7e",
+    "sha1": "b95b1d631baeada54c6773ca8f6ede40d57fea46",
+    "size": 660416,
+    "id": "geckolib",
+    "version": "4.9.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17",
+      "fabric-api": ">=0.100.0+1.21",
+      "java": ">=17",
+      "minecraft": ">=1.21.1"
+    },
+    "breaks": {
+      "geckoanimfix": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "software.bernie.geckolib.GeckoLib"
+      ],
+      "client": [
+        "software.bernie.geckolib.GeckoLibClient"
+      ]
+    },
+    "mixins": [
+      "geckolib.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/geckolib",
+      "issues": "https://github.com/bernie-g/geckolib/issues",
+      "sources": "https://github.com/bernie-g/geckolib"
+    }
+  },
+  {
+    "filename": "globalpacks-fabric-1.21.1-21.0.6.jar",
+    "sha256": "391d960afb1d8f0b63ccfb677970512d68642102b6928a4830ebcd6d3fdba2cc",
+    "sha1": "6a0c4ccf2a8bc916173defc3c49c8e95285e66b9",
+    "size": 394707,
+    "id": "globalpacks",
+    "version": "21.0.6",
+    "environment": "*",
+    "depends": {
+      "minecraft": ">=1.21",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {},
+    "mixins": [
+      "globalpacks.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/core-3.8.0.jar"
+      },
+      {
+        "file": "META-INF/jars/toml-3.8.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/drp-global-datapack",
+      "issues": "https://github.com/DarkRoleplay/Global-Data-and-Resourcepacks/issues",
+      "sources": "https://github.com/DarkRoleplay/Global-Data-and-Resourcepacks"
+    }
+  },
+  {
+    "filename": "handcrafted-fabric-1.21.1-4.0.3.jar",
+    "sha256": "9609c27e2eeaed4c633ade2d68ad980cfbed0442a10239846a67e9c62bc1b230",
+    "sha1": "a9579fecd7ed429c282be21d5c921d220197acc6",
+    "size": 7127377,
+    "id": "handcrafted",
+    "version": "4.0.3",
+    "environment": "*",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.21",
+      "resourcefullib": ">=3.0.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "earth.terrarium.handcrafted.fabric.HandcraftedFabric::init"
+      ],
+      "client": [
+        "earth.terrarium.handcrafted.client.fabric.HandcraftedClientFabric::init"
+      ]
+    },
+    "mixins": [
+      "handcrafted-common.mixins.json",
+      "handcrafted.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "website": "https://modrinth.com/mod/handcrafted",
+      "repo": "https://github.com/terrarium-earth/handcrafted",
+      "issues": "https://github.com/terrarium-earth/handcrafted/issues"
+    }
+  },
+  {
+    "filename": "highlight-fabric-1.21-3.0.0.jar",
+    "sha256": "08932afc913f74e9676b9a59a87bdf817d959cf6d861a9269897778240f11df2",
+    "sha1": "68c9d99f271cd8ef8421358369d2d663dd7074fe",
+    "size": 457352,
+    "id": "highlight",
+    "version": "3.0.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.9",
+      "minecraft": ">=1.20.5",
+      "resourcefullib": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/resourcefullib-fabric-1.21-3.0.1.jar"
+      }
+    ],
+    "contact": {
+      "issues": "https://github.com/Team-Resourceful/Highlight/issues",
+      "sources": "https://github.com/Team-Resourceful/Highlight",
+      "homepage": "https://teamresourceful.com"
+    }
+  },
+  {
+    "filename": "huge-structure-blocks-fabric-1.1.6.jar",
+    "sha256": "759071bd7b1db4367f232db35872ce6a30e8adee57a8543d0967d0b39b37819d",
+    "sha1": "e47182aa7c96a04e79eab7db8851f4d7615d3f40",
+    "size": 100230,
+    "id": "hugestructureblocks",
+    "version": "1.1.6",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17",
+      "minecraft": ">=1.21 <=1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.convallyria.hugestructureblocks.fabric.HSBFabric"
+      ]
+    },
+    "mixins": [
+      "hugestructureblocks.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.convallyria.com",
+      "sources": "https://github.com/SamB440/huge-structure-blocks",
+      "issues": "https://github.com/SamB440/huge-structure-blocks/issues"
+    }
+  },
+  {
+    "filename": "Iceberg-1.21.1-fabric-1.3.2.jar",
+    "sha256": "9214790af6fb75c19ef6b95e0e47999addf018e8c7a1630a5118c4252e6d8d36",
+    "sha1": "170e30bf93ccba6d80dd481eedddae16cb549d29",
+    "size": 413302,
+    "id": "iceberg",
+    "version": "1.3.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "1.21.1",
+      "java": ">=21"
+    },
+    "breaks": {
+      "advancementplaques": "<1.6.3",
+      "legendarytooltips": "<1.5.2",
+      "equipmentcompare": "<1.3.13",
+      "merchantmarkers": "<1.3.4",
+      "itemborders": "<1.2.4"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.anthonyhilyard.iceberg.fabric.client.IcebergFabricClient"
+      ],
+      "server": [
+        "com.anthonyhilyard.iceberg.fabric.server.IcebergFabricServer"
+      ]
+    },
+    "mixins": [
+      "iceberg.mixins.json",
+      "iceberg.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://anthonyhilyard.com/",
+      "sources": "https://github.com/AHilyard/Iceberg",
+      "discord": "https://discord.gg/S5NQjbXPnb"
+    }
+  },
+  {
+    "filename": "ImmediatelyFast-Fabric-1.6.11+1.21.1.jar",
+    "sha256": "05a5f3c716ae631af3cc925c8144894368c632156f2d581dd8295cc223ea2f6d",
+    "sha1": "e4e125088d8654f91562e78a00bdec22f74bc07f",
+    "size": 336763,
+    "id": "immediatelyfast",
+    "version": "1.6.11+1.21.1",
+    "environment": "client",
+    "depends": {
+      "java": ">=21",
+      "minecraft": ">=1.21 <=1.21.1",
+      "fabricloader": ">=0.16.0"
+    },
+    "breaks": {
+      "vulkanmod": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      "immediatelyfast-common.mixins.json",
+      "immediatelyfast-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/Reflect-1.6.2.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/RaphiMC/ImmediatelyFast",
+      "sources": "https://github.com/RaphiMC/ImmediatelyFast",
+      "issues": "https://github.com/RaphiMC/ImmediatelyFast/issues"
+    }
+  },
+  {
+    "filename": "infinite-music-0.4.6.jar",
+    "sha256": "f90123fa679e170163f976819c851fc4bd6840d19cf95dde3ff8fe3682eed343",
+    "sha1": "72ac27231cd80aab7ea509da6694c3696dc4c96a",
+    "size": 45913,
+    "id": "infinite-music",
+    "version": "0.4.6",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.14.19",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "dev.plasticstraw.inf_music.InfiniteMusic"
+      ],
+      "modmenu": [
+        "dev.plasticstraw.inf_music.ModMenuImpl"
+      ]
+    },
+    "mixins": [
+      {
+        "config": "inf_music.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/PlasticStrawActivist/Infinite-music-mod",
+      "homepage": "https://modrinth.com/mod/OJLdOa8k",
+      "issues": "https://github.com/PlasticStrawActivist/Infinite-music-mod/issues"
+    }
+  },
+  {
+    "filename": "interactic-0.2.3+1.21.jar",
+    "sha256": "fad6a5321f0a69c70dcbe62c631166b6549b1d9656929c011e6c1d57b1dea0da",
+    "sha1": "1bb259b6b82f75f9f7302b2f08efafc146ae576e",
+    "size": 118011,
+    "id": "interactic",
+    "version": "0.2.3+1.21",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric": "*",
+      "minecraft": ">=1.20.3",
+      "owo": ">=0.11.3"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "interactic.InteracticInit"
+      ],
+      "client": [
+        "interactic.InteracticClientInit"
+      ]
+    },
+    "mixins": [
+      "interactic.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/owo-sentinel-0.12.10+1.21.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/interactic",
+      "sources": "https://github.com/gliscowo/interactic",
+      "issues": "https://github.com/gliscowo/interactic/issues"
+    }
+  },
+  {
+    "filename": "InventoryProfilesNext-fabric-1.21.1-2.2.6.jar",
+    "sha256": "b69ac6f98e99042d6edd755242bf76d35eea4342559d2b1d88160e556c629177",
+    "sha1": "a99471cb13f2c3c355ab3a61483580ccfa0d3693",
+    "size": 1331935,
+    "id": "inventoryprofilesnext",
+    "version": "2.2.6",
+    "environment": "client",
+    "depends": {
+      "minecraft": ">=1.21.1 <1.21.2",
+      "libipn": ">=6.6.3 <6.7",
+      "fabric-language-kotlin": ">=1.13.10+kotlin.2.3.20"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "org.anti_ad.mc.ipnext.InventoryProfilesKt::init"
+      ],
+      "modmenu": [
+        "org.anti_ad.mc.ipnext.compat.ModMenuApiImpl"
+      ]
+    },
+    "mixins": [
+      "mixins.ipnext.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://inventory-profiles-next.github.io/",
+      "issues": "https://discord.gg/23YCxmveUM"
+    }
+  },
+  {
+    "filename": "iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+    "sha256": "0ceb694040b4628bf3fa02286cfe5f0db833195669ab07f8caa4001359763eff",
+    "sha1": "6776c0340845887477bfa463acc736ce7fcb6de5",
+    "size": 2791343,
+    "id": "iris",
+    "version": "1.8.14-beta.1+mc1.21.1",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.12.3",
+      "minecraft": [
+        "1.21.1"
+      ],
+      "sodium": [
+        "0.8.x"
+      ]
+    },
+    "breaks": {
+      "embeddium": "*",
+      "iris-explorer": "*",
+      "originsenhanced": "<=1.3.2",
+      "colormatic": "<=3.0.0",
+      "bedrockwaters": "<=1.6.0",
+      "batchedentityrendering": "*",
+      "canvas": "*",
+      "optifabric": "*",
+      "worldeditcui": "<1.18.1",
+      "physicsmod": "<=3.0.13",
+      "distanthorizons": "<=2.1.99",
+      "immersive_portals": "<=1.4.2"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "modmenu": [
+        "net.irisshaders.iris.compat.modmenu.ModMenuIntegration"
+      ],
+      "sodium:config_api_user": [
+        "net.irisshaders.iris.compat.sodium.config.IrisConfig"
+      ]
+    },
+    "mixins": [
+      "mixins.iris.json",
+      "mixins.iris.fabric.json",
+      "iris-batched-entity-rendering.mixins.json",
+      "mixins.iris.fantastic.json",
+      "mixins.iris.vertexformat.json",
+      "mixins.iris.bettermipmaps.json",
+      "mixins.iris.compat.sodium.json",
+      "mixins.iris.compat.dh.json",
+      "mixins.iris.fixes.maxfpscrash.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/antlr4-runtime-4.13.1.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-api-base-0.4.42+6573ed8c19.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-key-binding-api-v1-1.0.47+0af3f5a719.jar"
+      },
+      {
+        "file": "META-INF/jars/glsl-transformer-3.0.0-pre3.jar"
+      },
+      {
+        "file": "META-INF/jars/jcpp-1.4.14.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/IrisShaders/Iris",
+      "sources": "https://github.com/IrisShaders/Iris.git",
+      "issues": "https://github.com/IrisShaders/Iris/issues"
+    }
+  },
+  {
+    "filename": "konkrete_fabric_1.9.9_MC_1.21.jar",
+    "sha256": "06e912f99d59bf81c0676f1db936150ad4443d5674f59b3c55604540ba620841",
+    "sha1": "c521e23a8be17a941f4f95a76feba9df5e3de5d0",
+    "size": 786695,
+    "id": "konkrete",
+    "version": "1.9.9",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": ">=0.100.1",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": {
+      "drippyloadingscreen": "<3.0.1",
+      "fancymenu": "<3.1.0"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.konkrete.KonkreteFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "mixins": [
+      "konkrete.mixins.json",
+      "konkrete.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mixinextras-fabric-0.3.2.jar"
+      }
+    ],
+    "contact": {}
+  },
+  {
+    "filename": "krypton-0.2.8.jar",
+    "sha256": "94f195819b24e5da64effdc9da15cdd84836cc75e8ff0fd098bab6bc2f49e3fe",
+    "sha1": "73e792eb5f120787becda4b87b6ff18b26caea50",
+    "size": 161045,
+    "id": "krypton",
+    "version": "0.2.8",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.11.3",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "me.steinborn.krypton.mod.client.KryptonClientInitializer"
+      ],
+      "server": [
+        "me.steinborn.krypton.mod.server.KryptonServerInitializer"
+      ],
+      "main": [
+        "me.steinborn.krypton.mod.shared.KryptonSharedInitializer"
+      ]
+    },
+    "mixins": [
+      "krypton.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/velocity-native-3.3.0-SNAPSHOT.jar"
+      }
+    ],
+    "contact": {
+      "website": "https://github.com/astei/krypton",
+      "repo": "https://github.com/astei/krypton"
+    }
+  },
+  {
+    "filename": "LegendaryMonuments-Cobbleverse.jar",
+    "sha256": "34901d7c95bff58242384c44abc6acc50c2e06310b85f7e80bcd70f7c7e5b0b6",
+    "sha1": "9c86e9dfda8be63bbc01ab03160c8bf5ae8185ac",
+    "size": 5736792,
+    "id": "legendarymonuments",
+    "version": "Cobbleverse",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0",
+      "cobblefurnies": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "github.jorgaomc.LegendaryMonuments"
+      ],
+      "client": [
+        "github.jorgaomc.LegendaryMonumentsClient"
+      ],
+      "fabric-datagen": [
+        "github.jorgaomc.LegendaryMonumentsDataGenerator"
+      ]
+    },
+    "mixins": [
+      "legendarymonuments.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "lenientdeath-1.2.5+1.21.1.jar",
+    "sha256": "117175de6d7a8cc9cf36d48fd55a8460183dd30f4d25c0e7230ba8fe470f79b4",
+    "sha1": "cca7eb614db1053e9b8f8f413bc7bc82edcd472a",
+    "size": 920915,
+    "id": "lenientdeath",
+    "version": "1.2.5+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.20.5",
+      "fabric-api": "*",
+      "fabric-permissions-api-v0": "*",
+      "jackfredlib-lying": ">=0.5.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "red.jackf.lenientdeath.LenientDeath"
+      ]
+    },
+    "mixins": [
+      "lenientdeath.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-permissions-api-0.2-SNAPSHOT.jar"
+      },
+      {
+        "file": "META-INF/jars/server-translations-api-2.3.1+1.21-pre2.jar"
+      },
+      {
+        "file": "META-INF/jars/jackfredlib-base-1.4.0+1.21.jar"
+      },
+      {
+        "file": "META-INF/jars/jackfredlib-config-0.2.3+1.21.jar"
+      },
+      {
+        "file": "META-INF/jars/jackfredlib-colour-1.1.0+1.21.jar"
+      },
+      {
+        "file": "META-INF/jars/jackfredlib-lying-0.5.5+1.21.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/lenient-death",
+      "sources": "https://github.com/JackFred2/LenientDeath",
+      "issues": "https://github.com/JackFred2/LenientDeath/issues",
+      "wiki": "https://github.com/JackFred2/LenientDeath/wiki"
+    }
+  },
+  {
+    "filename": "libIPN-fabric-1.21.1-6.6.3.jar",
+    "sha256": "e26e788c5c3542353c0c45fba231e9208a01b182d890815c22df40a1946b903e",
+    "sha1": "0fdc425d1fc0ad8703256f43deadcadee4328eea",
+    "size": 636114,
+    "id": "libipn",
+    "version": "6.6.3",
+    "environment": "client",
+    "depends": {
+      "minecraft": ">=1.21.1 <1.21.3",
+      "fabric-language-kotlin": ">=1.13.7+kotlin.2.2.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "org.anti_ad.mc.common.LibIPNKt::init"
+      ],
+      "modmenu": [
+        "org.anti_ad.mc.libipn.modmenu.ModMenuApiImpl"
+      ]
+    },
+    "mixins": [
+      "mixins.libIPN-common.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/blackd/libIPN",
+      "issues": "https://discord.gg/23YCxmveUM"
+    }
+  },
+  {
+    "filename": "libjf-3.17.5.jar",
+    "sha256": "93789892f45d03bec95894ab644f9f909868e84f1a0755a61bdf22ae378629f5",
+    "sha1": "67c0111a22b4b058e6f08c1e607d8e9605612716",
+    "size": 1282450,
+    "id": "libjf",
+    "version": "3.17.5",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.12.0",
+      "minecraft": "*",
+      "fabric-resource-loader-v0": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-command-api-v2": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {},
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/libjf-config-commands-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-config-network-v0-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-unsafe-v0-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-translate-v1-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-web-v1-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-config-ui-tiny-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-base-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-resource-pack-entry-widgets-v0-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-config-core-v2-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-data-v0-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-data-manipulation-v0-3.17.3.jar"
+      },
+      {
+        "file": "META-INF/jars/libjf-mainhttp-v0-3.17.3.jar"
+      }
+    ],
+    "contact": {
+      "email": "projects.contact@frohnmeyer-wds.de",
+      "homepage": "https://jfronny.gitlab.io",
+      "issues": "https://git.frohnmeyer-wds.de/JfMods/LibJF/issues",
+      "sources": "https://git.frohnmeyer-wds.de/JfMods/LibJF"
+    }
+  },
+  {
+    "filename": "lithium-fabric-0.15.4+mc1.21.1.jar",
+    "sha256": "92329d98c57f5a22091a0adb509fdb1d60113a5602c708b799b13134bad13baa",
+    "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+    "size": 797454,
+    "id": "lithium",
+    "version": "0.15.4+mc1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.1",
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ]
+    },
+    "breaks": {
+      "optifabric": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.caffeinemc.mods.lithium.fabric.LithiumFabricMod"
+      ]
+    },
+    "mixins": [
+      "lithium.mixins.json",
+      "lithium-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://jellysquid.me/projects/",
+      "sources": "https://github.com/CaffeineMC/lithium-fabric",
+      "issues": "https://github.com/CaffeineMC/lithium-fabric/issues"
+    }
+  },
+  {
+    "filename": "Luckys-Cozyhome-Refurnished-1.1.20.jar",
+    "sha256": "0915e3e54c12fe40622cab94005418d32cbde011fa9c2d7c27756eb7d5313a66",
+    "sha1": "e65e20f982be0be2bf5e94101f560049b0463ab3",
+    "size": 3121070,
+    "id": "cozyhome",
+    "version": "1.1.20",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.luckystudio.cozyhome.CozyHome"
+      ],
+      "fabric-datagen": [
+        "net.luckystudio.cozyhome.CozyHomeDataGenerator"
+      ],
+      "client": [
+        "net.luckystudio.cozyhome.CozyHomeClient"
+      ]
+    },
+    "mixins": [],
+    "jars": null,
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "LumyMon-0.6.6.jar",
+    "sha256": "00ad0ddb4bbac26b6f1b83ad80255008be98ab72056d89de3eb9107b01d7eefb",
+    "sha1": "983104ced5cadd78d75a3c512bd68d486e59f82f",
+    "size": 2331858,
+    "id": "lumymon",
+    "version": "0.6.6",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.lumyverse.lumymon.LumyMon"
+      ],
+      "client": [
+        "com.lumyverse.lumymon.LumyMonClient"
+      ],
+      "fabric-datagen": [
+        "com.lumyverse.lumymon.LumyMonDataGenerator"
+      ]
+    },
+    "mixins": [
+      "lumymon.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-permissions-api-0.3.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.lumyverse.com",
+      "issues": "https://discord.lumy.fun"
+    }
+  },
+  {
+    "filename": "LumyREI-1.1.3.jar",
+    "sha256": "e6ac62bb3a858af78948397b0310efb281b911f4cda31392c989c9cdaf9ed4b1",
+    "sha1": "072739522438162a2d30f120a0415b5def96cd4b",
+    "size": 66283,
+    "id": "lumyrei",
+    "version": "1.1.3",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "roughlyenoughitems": "*"
+    },
+    "entrypoints": {
+      "rei_client": [
+        "com.lumyverse.lumyrei.LumyREI"
+      ]
+    },
+    "mixins": [
+      "lumyrei.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.lumyverse.com",
+      "issues": "https://discord.lumy.fun"
+    }
+  },
+  {
+    "filename": "mega_showdown-fabric-1.9.5+1.7.3+1.21.1-cobblemon1.8-api119fix.jar",
+    "sha256": "67a5546dabb68a262fefa459fc36c77f2c73982836b7cf80c69fe91456069a15",
+    "sha1": "9a8e7760d79586b1d93a8c8a55968ff79cdaa329",
+    "size": 20086034,
+    "id": "mega_showdown",
+    "version": "1.9.5+1.7.3+1.21.1",
+    "environment": "*",
+    "depends": {
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.3",
+      "accessories": ">=1.1.0-beta.52+1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.github.yajatkaul.mega_showdown.fabric.MegaShowdownFabric"
+      ],
+      "client": [
+        "com.github.yajatkaul.mega_showdown.fabric.MegaShowdownFabricClient"
+      ],
+      "jade": [
+        "com.github.yajatkaul.mega_showdown.plugin.JadePlugin"
+      ]
+    },
+    "mixins": [
+      "mega_showdown.mixins.json",
+      "mega_showdown.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/yajatkaul"
+    }
+  },
+  {
+    "filename": "melody_fabric_1.0.10_MC_1.21.jar",
+    "sha256": "223ab859b9cc246d8d6e5cec5e734f97be3aac545de6cda7743750262428ed83",
+    "sha1": "5624eea73f251c70a9489192d326f9b4aab3b13c",
+    "size": 188035,
+    "id": "melody",
+    "version": "1.0.10",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": ">=0.100.1",
+      "minecraft": ">=1.21",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.melody.MelodyFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "mixins": [
+      "melody.mixins.json",
+      "melody.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mixinextras-fabric-0.3.2.jar"
+      }
+    ],
+    "contact": {}
+  },
+  {
+    "filename": "midnightlib-1.7.5-fabric+1.21.1.jar",
+    "sha256": "b75155a638d15df61922bb635e2c5aae6102897ccaa1e226060a7f5ff4218091",
+    "sha1": "c32c79bd001e400ec7ebaccfffaed465daf42835",
+    "size": 62853,
+    "id": "midnightlib",
+    "version": "1.7.5",
+    "environment": "*",
+    "depends": {
+      "fabric-resource-loader-v0": "*",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "server": [
+        "eu.midnightdust.fabric.core.MidnightLibFabric"
+      ],
+      "client": [
+        "eu.midnightdust.fabric.core.MidnightLibFabric"
+      ],
+      "modmenu": [
+        "eu.midnightdust.lib.config.AutoModMenu"
+      ]
+    },
+    "mixins": [
+      "midnightlib.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.midnightdust.eu/",
+      "sources": "https://github.com/TeamMidnightDust/MidnightLib",
+      "issues": "https://github.com/TeamMidnightDust/MidnightLib/issues"
+    }
+  },
+  {
+    "filename": "moar-concrete-1.3.1.jar",
+    "sha256": "0e6e7b95b55ca13a50233743ba008a5285f4abf4cca7642bda40b27145f4f43f",
+    "sha1": "541410660ff1198e24b99e007267a7ec256498e2",
+    "size": 777538,
+    "id": "moarconcrete",
+    "version": "1.3.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.mcjamweasel.moarconcrete.MoarConcrete"
+      ],
+      "client": [
+        "net.mcjamweasel.moarconcrete.MoarConcreteClient"
+      ],
+      "fabric-datagen": [
+        "net.mcjamweasel.moarconcrete.MoarConcreteDataGenerator"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "MobsBeGone-0.0.7.jar",
+    "sha256": "ad45c9c1bfe8c018d372f9fb6eb3e95507d6252b6cb4204478d04653d9634e98",
+    "sha1": "6335518bd5ebce9734669f5ed5fb0df3e7ceabb4",
+    "size": 9837,
+    "id": "mobsbegone",
+    "version": "0.0.7",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "fabric": "*",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "moe.okaeri.mobsbegone.MobsBeGone"
+      ]
+    },
+    "mixins": [
+      "mobsbegone.mixins.json"
+    ],
+    "jars": null,
+    "contact": {}
+  },
+  {
+    "filename": "modernfix-fabric-5.25.1+mc1.21.1.jar",
+    "sha256": "3ce5a9ce75066961b7fa5382692bb1387cc3536cc984b064ab7d70b97f3c674c",
+    "sha1": "4ab39e9c736e7204146792c545ec5b29fc0a3872",
+    "size": 471258,
+    "id": "modernfix",
+    "version": "5.25.1+mc1.21.1",
+    "environment": "*",
+    "depends": {
+      "minecraft": ">=1.16.2",
+      "fabricloader": ">=0.16.10"
+    },
+    "breaks": {
+      "dashloader": "<5.0.0-beta.1"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "org.embeddedt.modernfix.ModernFixFabric"
+      ],
+      "client": [
+        "org.embeddedt.modernfix.ModernFixClientFabric"
+      ],
+      "modmenu": [
+        "org.embeddedt.modernfix.fabric.modmenu.ModernFixModMenuApiImpl"
+      ],
+      "preLaunch": [
+        "org.embeddedt.modernfix.ModernFixPreLaunchFabric"
+      ]
+    },
+    "mixins": [
+      "modernfix-fabric.mixins.json",
+      "modernfix-common.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/embeddedt/ModernFix",
+      "homepage": "https://modrinth.com/mod/modernfix",
+      "issues": "https://github.com/embeddedt/ModernFix/issues"
+    }
+  },
+  {
+    "filename": "modmenu-11.0.4.jar",
+    "sha256": "a88e0d67c82b0434cbf56776c482587c275ed660f635d33f53ba485dfa30dcc3",
+    "sha1": "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a",
+    "size": 973059,
+    "id": "modmenu",
+    "version": "11.0.4",
+    "environment": "client",
+    "depends": {
+      "fabric-resource-loader-v0": "*",
+      "fabric-screen-api-v1": ">=1.0.4",
+      "fabric-key-binding-api-v1": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabricloader": ">=0.15.10",
+      "minecraft": ">=1.21-beta.2"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.terraformersmc.modmenu.ModMenu"
+      ],
+      "modmenu": [
+        "com.terraformersmc.modmenu.ModMenuModMenuCompat"
+      ]
+    },
+    "mixins": [
+      "mixins.modmenu.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-api-base-0.4.42+6573ed8c90.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-resource-loader-v0-1.1.3+b559734490.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-screen-api-v1-2.0.24+b559734490.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-key-binding-api-v1-1.0.47+0af3f5a790.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-lifecycle-events-v1-2.3.9+98a7dbbb90.jar"
+      },
+      {
+        "file": "META-INF/jars/placeholder-api-2.4.0-pre.2+1.21.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/modmenu",
+      "sources": "https://github.com/TerraformersMC/ModMenu",
+      "issues": "https://github.com/TerraformersMC/ModMenu/issues"
+    }
+  },
+  {
+    "filename": "MoreCobblemonTweaks-fabric-1.3.3.jar",
+    "sha256": "3c8dabb89c35a32f56a1edc24393d0f0781ac81bf5326fc2e6eabcd8ea8169fb",
+    "sha1": "ff12867279b27e6748af67c9a136c93c1ba23563",
+    "size": 136312,
+    "id": "more_cobblemon_tweaks",
+    "version": "1.3.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "me.justahuman.more_cobblemon_tweaks.MoreCobblemonTweaksFabric"
+      ],
+      "modmenu": [
+        "me.justahuman.more_cobblemon_tweaks.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "more_cobblemon_tweaks.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/mod/more-cobblemon-tweaks",
+      "sources": "https://github.com/JustAHuman-xD/MoreCobblemonTweaks",
+      "issues": "https://github.com/JustAHuman-xD/MoreCobblemonTweaks/issues",
+      "discord": "https://discord.gg/y6fV6pbgHB"
+    }
+  },
+  {
+    "filename": "moreculling-fabric-1.21.1-1.0.8.jar",
+    "sha256": "19c7e65794511ab21eed63cab9e2efbf43a29fd2ea20234b23f92cb71c6a2aa2",
+    "sha1": "fcacddf1cecc0fdc9ba937197c74402fd436e9c7",
+    "size": 332100,
+    "id": "moreculling",
+    "version": "1.0.8",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.21",
+      "java": ">=21",
+      "cloth-config": ">=15.0.0"
+    },
+    "breaks": {
+      "sodium": "<=0.6.6"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "ca.fxco.moreculling.MoreCullingFabric"
+      ],
+      "modmenu": [
+        "ca.fxco.moreculling.config.ModMenuCompat"
+      ],
+      "sodium:config_api_user": [
+        "ca.fxco.moreculling.config.sodium.MoreCullingSodiumConfigBuilder"
+      ]
+    },
+    "mixins": [
+      "moreculling.mixins.json",
+      "moreculling.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/conditional-mixin-fabric-0.6.3.jar"
+      },
+      {
+        "file": "META-INF/jars/mixinsquared-fabric-0.2.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/moreculling",
+      "sources": "https://github.com/fxmorin/moreculling",
+      "issues": "https://github.com/fxmorin/moreculling/issues"
+    }
+  },
+  {
+    "filename": "MouseTweaks-fabric-mc1.21-2.26.jar",
+    "sha256": "3e9fa4800fafef616fbf1545d62f5898f55c83fbd4126ce2b48b5e0077243fc0",
+    "sha1": "ee81af33a5606ef2cd057e075833d7c69836c210",
+    "size": 75984,
+    "id": "mousetweaks",
+    "version": "2.26",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "yalter.mousetweaks.fabric.MouseTweaksFabric"
+      ],
+      "modmenu": [
+        "yalter.mousetweaks.ModMenuApiImpl"
+      ]
+    },
+    "mixins": [
+      "mousetweaks.mixins.json",
+      "mousetweaks-fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks",
+      "issues": "https://github.com/YaLTeR/MouseTweaks/issues",
+      "sources": "https://github.com/YaLTeR/MouseTweaks"
+    }
+  },
+  {
+    "filename": "musicnotification-fabric-3.0.0+mc1.21.1.jar",
+    "sha256": "747b2527aa373a76e9d378ad1059369400c66fb50fb3ab22a409ac6d8154a614",
+    "sha1": "c27e43fec57825e2ac45d39a9366150b45d409ec",
+    "size": 139713,
+    "id": "musicnotification",
+    "version": "3.0.0",
+    "environment": "client",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api-base": "*",
+      "cloth-config": ">=15.0.130"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "modmenu": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "net.kosmo.music.fabric.MusicNotificationClientFabric"
+      ],
+      "modmenu": [
+        "net.kosmo.music.fabric.compat.ModMenuCompatibility"
+      ]
+    },
+    "mixins": [
+      "musicnotification-common.mixins.json",
+      "musicnotification.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://mod.kosmo.ovh/",
+      "sources": "https://github.com/KosmoMoustache/MusicNotification",
+      "issues": "https://github.com/KosmoMoustache/MusicNotification/issues",
+      "wiki": "https://github.com/KosmoMoustache/MusicNotification/wiki"
+    }
+  },
+  {
+    "filename": "neruina-3.3.3+1.21.1-fabric.jar",
+    "sha256": "a3a49320128920256b43857e5254e5cd2a481417da61d0999a249aceb6125b20",
+    "sha1": "33cfda42d642db4854c3617b75f511669ff43d6b",
+    "size": 860092,
+    "id": "neruina",
+    "version": "3.3.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "~1.21.1",
+      "configurable": "~3.5.2"
+    },
+    "breaks": {
+      "eer": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.bawnorton.neruina.platform.NeruinaWrapper"
+      ],
+      "fabric-datagen": [
+        "com.bawnorton.neruina.data.NeruinaDataGen"
+      ]
+    },
+    "mixins": [
+      "neruina.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/github-api-2.0-rc.6.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/Bawnorton/Neruina",
+      "sources": "https://github.com/Bawnorton/Neruina",
+      "issues": "https://github.com/Bawnorton/Neruina/issues"
+    }
+  },
+  {
+    "filename": "nethermap-4.0.0-1.21.1.jar",
+    "sha256": "5d5243434984d64c904d21397530f2c7817105ca091bf409aa23f3842b9f3634",
+    "sha1": "4a4849b36757a268253a3a87b4a02b60f59816a6",
+    "size": 21464,
+    "id": "nethermap",
+    "version": "4.0.0-1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": "*",
+      "minecraft": ">=1.21.1",
+      "java": ">=17",
+      "cloth-config2": ">=15.0.130"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.jummit.nethermap.NetherMap"
+      ],
+      "modmenu": [
+        "com.jummit.nethermap.config.NetherMapModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "nethermap.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/mod/better-nether-map",
+      "issues": "https://github.com/Jummit/better-nether-map/issues",
+      "sources": "https://github.com/Jummit/better-nether-map"
+    }
+  },
+  {
+    "filename": "netherportalfix-fabric-1.21.1-21.1.3.jar",
+    "sha256": "c6589e3a95ee6dbced2442682caeec53789999bc6a2883f9919e039b1bee98c6",
+    "sha1": "970677295778926b09c3539b38e884854bc4d3c7",
+    "size": 213294,
+    "id": "netherportalfix",
+    "version": "21.1.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.netherportalfix.fabric.FabricNetherPortalFix"
+      ]
+    },
+    "mixins": [
+      "netherportalfix.mixins.json",
+      "netherportalfix.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://mods.twelveiterations.com/mc/netherportalfix",
+      "sources": "https://github.com/TwelveIterationMods/NetherPortalFix",
+      "issues": "https://github.com/TwelveIterationMods/NetherPortalFix/issues"
+    }
+  },
+  {
+    "filename": "NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+    "sha256": "bc8b10f71e17822ca274936e487104e6572f60e8969b81bfe23f30fc11300a94",
+    "sha1": "853d8af1282c0dac0a9814e336c9ebfe2776ca25",
+    "size": 9907,
+    "id": "nochatrestrictions",
+    "version": "Fabric-MC1.21.11-v1.0.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16",
+      "minecraft": ">=1.21 <=1.21.11",
+      "java": ">=21",
+      "fabric": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.aizistral.nochatrestrictions.NoChatRestrictions"
+      ]
+    },
+    "mixins": [
+      "nochatrestrictions.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://modrinth.com/project/no-chat-restrictions",
+      "sources": "https://github.com/Aizistral-Studios/No-Chat-Restrictions",
+      "issues": "https://github.com/Aizistral-Studios/No-Chat-Restrictions/issues"
+    }
+  },
+  {
+    "filename": "notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+    "sha256": "12e3bded47f6669030edf57b615e77de8d080f38d0313dd892c6d18833fc39fd",
+    "sha1": "96c0939713956165b31bb65d8416770a21ea52ef",
+    "size": 1948132,
+    "id": "notenoughanimations",
+    "version": "1.12.4",
+    "environment": null,
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api": "*"
+    },
+    "breaks": {
+      "tlskincape": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "dev.tr7zw.notenoughanimations.NEAnimationsMod"
+      ],
+      "modmenu": [
+        "dev.tr7zw.notenoughanimations.NEAModMenu"
+      ]
+    },
+    "mixins": [
+      "notenoughanimations.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/TRansition-1.0.21-1.21.1-fabric-SNAPSHOT.jar"
+      },
+      {
+        "file": "META-INF/jars/TRender-1.0.15-1.21.1-fabric-SNAPSHOT.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://modrinth.com/mod/not-enough-animations",
+      "sources": "https://github.com/tr7zw/NotEnoughAnimations"
+    }
+  },
+  {
+    "filename": "notenoughcrashes-fabric-4.4.9+1.21.1.jar",
+    "sha256": "1a3a0ec9e7bb60f9c15938ca4287beaf5e49e81183ac273d1a02d734aa327a74",
+    "sha1": "0de122f1e94b85308bcecb0ebc40ac48c13367a9",
+    "size": 601087,
+    "id": "notenoughcrashes",
+    "version": "4.4.9+1.21.1",
+    "environment": null,
+    "depends": {
+      "minecraft": ">=1.17",
+      "fabricloader": ">=0.12.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "fudge.notenoughcrashes.fabric.NotEnoughCrashesFabric"
+      ],
+      "modmenu": [
+        "fudge.notenoughcrashes.fabric.config.ModMenuConfigIntegration"
+      ]
+    },
+    "mixins": [
+      "notenoughcrashes.mixins.json",
+      "notenoughcrashes.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "issues": "https://github.com/natanfudge/Not-Enough-Crashes/issues",
+      "sources": "https://github.com/natanfudge/Not-Enough-Crashes",
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes"
+    }
+  },
+  {
+    "filename": "Only Bottle Caps-1.3.0-api119fix.jar",
+    "sha256": "6414d5a0e08f270713236e65db3fccda2bd4fe5ccdeecd2b34904be99a6a5853",
+    "sha1": "0dbff72418d6b4006e2e58ced576868048de3dd7",
+    "size": 250494,
+    "id": "obc",
+    "version": "1.3.0",
+    "environment": "*",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "supermartijn642configlib": ">=1.1.8"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.pcrgaming.obc.Obc"
+      ]
+    },
+    "mixins": null,
+    "jars": [
+      {
+        "file": "META-INF/jars/supermartijn642s-config-lib-1.1.8-fabric-mc1.21.jar"
+      }
+    ],
+    "contact": null
+  },
+  {
+    "filename": "owo-lib-0.12.15.4+1.21.jar",
+    "sha256": "825180ce17bc012fb450653b14df9f32479dcdd073fc3f133bb47462f5a63cec",
+    "sha1": "45725e6d33b624e565a7a6e5d3627af40814288d",
+    "size": 1183559,
+    "id": "owo",
+    "version": "0.12.15.4+1.21",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "fabric": ">=0.100",
+      "minecraft": ">=1.21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "io.wispforest.owo.client.OwoClient"
+      ],
+      "main": [
+        "io.wispforest.owo.Owo"
+      ],
+      "rei_client": [
+        "io.wispforest.owo.compat.rei.OwoReiPlugin"
+      ],
+      "emi": [
+        "io.wispforest.owo.compat.emi.OwoEmiPlugin"
+      ],
+      "modmenu": [
+        "io.wispforest.owo.compat.modmenu.OwoModMenuPlugin"
+      ]
+    },
+    "mixins": [
+      "owo.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/endec-0.1.5.1.jar"
+      },
+      {
+        "file": "META-INF/jars/netty-0.1.2.jar"
+      },
+      {
+        "file": "META-INF/jars/gson-0.1.3.1.jar"
+      },
+      {
+        "file": "META-INF/jars/jankson-0.1.3.1.jar"
+      },
+      {
+        "file": "META-INF/jars/jankson-1.2.2.jar"
+      }
+    ],
+    "contact": {}
+  },
+  {
+    "filename": "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+    "sha256": "2979a8a3f44e5d5df4f9f6315d18c220f3debf736bb8a2c2740acdfb13bd820f",
+    "sha1": "a8bb6e25807682e72c23bf4065f3cd5f6373ece3",
+    "size": 46623,
+    "id": "packetfixer",
+    "version": "3.3.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.20.5"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {},
+    "mixins": [
+      "packetfixer.v1_20_5.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "repo": "https://github.com/TonimatasDEV/PacketFixer"
+    }
+  },
+  {
+    "filename": "paginatedadvancements-2.5.1.jar",
+    "sha256": "776d8006401781bc036199acc9ba80f7dce6c3bcebbbfa260a774add750c4d2d",
+    "sha1": "23a4570fb52d62135d705156079e52ddfe980b94",
+    "size": 71859,
+    "id": "paginatedadvancements",
+    "version": "2.5.1",
+    "environment": "client",
+    "depends": {
+      "minecraft": ">=1.21",
+      "fabricloader": "*",
+      "fabric-api": ">=0.102.0",
+      "cloth-config": "*"
+    },
+    "breaks": {
+      "advancements-enlarger": "*",
+      "advancementinfo": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "de.dafuqs.paginatedadvancements.PaginatedAdvancementsClient"
+      ],
+      "modmenu": [
+        "de.dafuqs.paginatedadvancements.config.ModMenuConfig"
+      ]
+    },
+    "mixins": [
+      "paginatedadvancements.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/DaFuqs/",
+      "sources": "https://github.com/DaFuqs/PaginatedAdvancements",
+      "issues": "https://github.com/DaFuqs/PaginatedAdvancements/issues"
+    }
+  },
+  {
+    "filename": "particle_core-0.3.3+1.21.jar",
+    "sha256": "e7cfef3eb16d5b73c00915a5f2b820d66555c23d13e0636125d7b07384a443e4",
+    "sha1": "21134697c26b73cde41d1575c725ab30736d6b17",
+    "size": 147812,
+    "id": "particle_core",
+    "version": "0.3.3+1.21",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-language-kotlin": ">=1.10.18+kotlin.1.9.22",
+      "minecraft": ">=1.21",
+      "java": ">=21",
+      "fzzy_config": ">=0.7.5"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.particle_core.PcConfig"
+        }
+      ]
+    },
+    "mixins": [
+      "particle_core.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/conditional-mixin-0.5.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/particle-core",
+      "issues": "https://github.com/fzzyhmstrs/pc/issues",
+      "sources": "https://github.com/fzzyhmstrs/pc"
+    }
+  },
+  {
+    "filename": "particlerain-4.0.0-beta.10+1.21.1-fabric.jar",
+    "sha256": "49bf60c5b95ea954efa51c63609f0a4668230e12f870f0eb6bdb63d207a22dc8",
+    "sha1": "348a457458609372069b4101a6c88a12b55211a7",
+    "size": 608651,
+    "id": "particlerain",
+    "version": "4.0.0-beta.10",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.12.8",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "pigcart.particlerain.loaders.fabric.FabricEntrypoint"
+      ],
+      "modmenu": [
+        "pigcart.particlerain.loaders.fabric.ModMenuEntrypoint"
+      ]
+    },
+    "mixins": [
+      {
+        "config": "particlerain.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/PigCart/particle-rain",
+      "issues": "https://github.com/PigCart/particle-rain/issues?q=is%3Aissue",
+      "homepage": "https://modrinth.com/mod/particle-rain"
+    }
+  },
+  {
+    "filename": "particular-1.21.1-Fabric-1.5.5.jar",
+    "sha256": "47d724637888227d18e4bc49a11f67b50f0e39d21f4d494cf92215be96f8873c",
+    "sha1": "de3740c49c41a32c6034d2cdc817f3aea96b4bb1",
+    "size": 285813,
+    "id": "particular",
+    "version": "1.5.5",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "forgeconfigapiport": "*",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "modmenu": "*",
+      "iris": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.leclowndu93150.particular.Main"
+      ],
+      "client": [
+        "com.leclowndu93150.particular.Main"
+      ]
+    },
+    "mixins": [
+      "particular.mixins.json",
+      "particular.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "sources": "https://github.com/Leclowndu93150/ParticularReforgedMultiloader"
+    }
+  },
+  {
+    "filename": "pastureLoot-1.0.5+1.21.1.jar",
+    "sha256": "48a705eb70a3f129d64af565ff79cfe164d0e59fe2bbc20a903024d0cc844b8f",
+    "sha1": "cc6bbf60b6a08d5b4f5c6416aa0279d92f761c73",
+    "size": 45871,
+    "id": "pasture-loot",
+    "version": "1.0.5+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.1+1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.dremixam.pastureLoot.client.PastureLootClient"
+      ],
+      "main": [
+        "com.dremixam.pastureLoot.PastureLoot"
+      ]
+    },
+    "mixins": [
+      "pasture-loot.mixins.json",
+      {
+        "config": "pasture-loot.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {}
+  },
+  {
+    "filename": "Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+    "sha256": "9ba63ca5f33c86d0ce3aec2b04fafcc2fbcb8e705e46a7be20ff66382331c3e3",
+    "sha1": "647c326ed26a8d085e75b04d3fbc9846cf974799",
+    "size": 152703,
+    "id": "pingwheel",
+    "version": "1.12.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": ">=1.21 <=1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "nx.pingwheel.fabric.FabricClient"
+      ],
+      "main": [
+        "nx.pingwheel.fabric.FabricMain"
+      ],
+      "modmenu": [
+        "nx.pingwheel.fabric.integration.ModMenuIntegration"
+      ],
+      "voicechat": [
+        "nx.pingwheel.common.integration.VoiceChatIntegration"
+      ]
+    },
+    "mixins": [
+      "pingwheel.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/ping-wheel",
+      "sources": "https://github.com/LukenSkyne/Minecraft-Ping-Wheel",
+      "issues": "https://github.com/LukenSkyne/Minecraft-Ping-Wheel/issues"
+    }
+  },
+  {
+    "filename": "Platform-fabric-1.21.1-1.3.3.jar",
+    "sha256": "52f49993d4440d266fa3a077090e8091983cd1bda5942f176ae75f3e9e350779",
+    "sha1": "b3302ad9158171874d01e863d69c8bf4db8faef9",
+    "size": 735744,
+    "id": "platform",
+    "version": "1.3.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.12",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.blackgear.platform.fabric.PlatformFabric"
+      ]
+    },
+    "mixins": [
+      "platform.mixins.json",
+      "platform-common.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/platform",
+      "sources": "https://github.com/ItsBlackGear/Platform"
+    }
+  },
+  {
+    "filename": "playerxp-fabric-1.0.9+1.21.1.jar",
+    "sha256": "22133f464ea4442b481d0bc814ab928b0473890a86bf36fa90884ed660e3edf9",
+    "sha1": "34804e9a9d39dc741dbf4952ddab0223e92820cd",
+    "size": 10818,
+    "id": "playerxp",
+    "version": "1.0.9+1.21.1",
+    "environment": "*",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.6.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "chadlymasterson.playerxp.PlayerXp"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "pokeblocks-1.4.0-1.21.1.jar",
+    "sha256": "c113f9e61a7bef35c3bacc57651a7508f3f07c20218b51eade31766899f1176d",
+    "sha1": "74a6bb7102596b326d07f64281ee80aca0eedaa6",
+    "size": 1606467,
+    "id": "pokeblocks",
+    "version": "1.4.0-1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.22",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "geckolib": ">=4.7.3"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.mrshawn.pokeblocks.Pokeblocks"
+      ],
+      "client": [
+        "dev.mrshawn.pokeblocks.PokeblocksClient"
+      ],
+      "fabric-datagen": [
+        "dev.mrshawn.pokeblocks.PokeblocksDataGenerator"
+      ]
+    },
+    "mixins": [
+      "pokeblocks.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://discord.gg/BnnDnBc33T",
+      "sources": "https://github.com/Shawn11564/Pokeblocks"
+    }
+  },
+  {
+    "filename": "rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix.jar",
+    "sha256": "831d6d22e43f28501c014bd11c9f1a950381f22c7578c9ec9497fbb0e739d538",
+    "sha1": "31899d4d8d62012f45b47ce719ffc604bc344b1c",
+    "size": 234189,
+    "id": "rctapi",
+    "version": "0.15.2-beta",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.2",
+      "cobblemon": ">=1.7",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.gitlab.srcmc.rctapi.fabric.FabricCommon"
+      ],
+      "client": [
+        "com.gitlab.srcmc.rctapi.fabric.client.FabricClient"
+      ]
+    },
+    "mixins": [
+      "rctapi.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "rctapi-fabric-1.21.1-0.16.2-beta.jar",
+    "sha256": "02534113700d1ddfcdd1c1b00fdf42637413804773f8e67437a823150809bd15",
+    "sha1": "3514532fea28e2e1160894428302eb1000af8459",
+    "size": 267864,
+    "id": "rctapi",
+    "version": "0.16.2-beta",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.18.0",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.2",
+      "cobblemon": ">=1.8.2",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.gitlab.srcmc.rctapi.fabric.FabricCommon"
+      ],
+      "client": [
+        "com.gitlab.srcmc.rctapi.fabric.client.FabricClient"
+      ]
+    },
+    "mixins": [
+      "rctapi.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+    "sha256": "92951d3be475a0433f8ef508439730723e2e901dd1e3b2509c29205031d4eb51",
+    "sha1": "00bf82e254bddb804529222567e5719310524085",
+    "size": 6757956,
+    "id": "rctmod",
+    "version": "0.18.1-beta",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "rctapi": ">=0.15.0-beta",
+      "cobblemon": ">=1.7.0",
+      "forgeconfigapiport": ">=21.1.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.gitlab.srcmc.rctmod.fabric.FabricCommon"
+      ],
+      "client": [
+        "com.gitlab.srcmc.rctmod.fabric.client.FabricClient"
+      ],
+      "server": [
+        "com.gitlab.srcmc.rctmod.fabric.server.FabricServer"
+      ]
+    },
+    "mixins": [
+      "rctmod.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/jgrapht-core-1.5.2.jar"
+      },
+      {
+        "file": "META-INF/jars/jgrapht-ext-1.5.2.jar"
+      },
+      {
+        "file": "META-INF/jars/jgraphx-4.2.2.jar"
+      }
+    ],
+    "contact": null
+  },
+  {
+    "filename": "rechiseled-1.2.4-fabric-mc1.21.jar",
+    "sha256": "621eb411d88470508a1f1ad6797e569510ca8a63e650728e615b8a65c377b773",
+    "sha1": "52df3c871d9634cef497575ed214ed35a960bbfe",
+    "size": 11913849,
+    "id": "rechiseled",
+    "version": "1.2.4",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.21.2",
+      "java": ">=21",
+      "supermartijn642corelib": ">=1.1.20 <1.2.0",
+      "supermartijn642configlib": ">=1.1.6",
+      "fusion": ">=1.2.12"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.rechiseled.Rechiseled"
+      ],
+      "client": [
+        "com.supermartijn642.rechiseled.RechiseledClient"
+      ],
+      "jei_mod_plugin": [
+        "com.supermartijn642.rechiseled.compat.jei.ChiselingJEIPlugin"
+      ],
+      "rei_client": [
+        "com.supermartijn642.rechiseled.compat.rei.ChiselingREIPlugin"
+      ]
+    },
+    "mixins": [
+      "rechiseled.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/rechiseled",
+      "sources": "https://github.com/SuperMartijn642/Rechiseled"
+    }
+  },
+  {
+    "filename": "reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar",
+    "sha256": "6f5a2964656552da24e015b6f6e03d4baac8cfed919978785e94920f3fd0f568",
+    "sha1": "aca62b29c1b2a9ec73f321aceeeceaeaaec53744",
+    "size": 259211,
+    "id": "reeses-sodium-options",
+    "version": "2.2.3+mc1.21.1",
+    "environment": "client",
+    "depends": {
+      "minecraft": "1.21.1",
+      "sodium": ">=0.8.12"
+    },
+    "breaks": {
+      "iris": "<1.1.4",
+      "sodiumoptionsapi": "*",
+      "sodium-extra": "<0.5.3",
+      "sodium": "<0.5.8"
+    },
+    "conflicts": null,
+    "recommends": {
+      "sodium-extra": ">=0.4.2"
+    },
+    "entrypoints": {
+      "controlify": [
+        "me.flashyreese.mods.reeses_sodium_options.client.controlify.ReeseSodiumOptionsControlifyEntrypoint"
+      ],
+      "sodium:config_api_user": [
+        "me.flashyreese.mods.reeses_sodium_options.client.config.ReeseSodiumOptionsConfigEntryPoint"
+      ]
+    },
+    "mixins": [
+      "reeses-sodium-options.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/FlashyReese/reeses-sodium-options",
+      "issues": "https://github.com/FlashyReese/reeses-sodium-options/issues",
+      "sources": "https://github.com/FlashyReese/reeses-sodium-options.git"
+    }
+  },
+  {
+    "filename": "repurposed_structures-7.5.21+1.21.1-fabric.jar",
+    "sha256": "c3a6ab373dce927c57ce79d14c1ebc9ef4f49d58abcaf9e4caa89a38aab08b8c",
+    "sha1": "edbe14eb66baf532a59b5c0095cbec2ce2c8b950",
+    "size": 8202318,
+    "id": "repurposed_structures",
+    "version": "7.5.21+1.21.1-fabric",
+    "environment": "*",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.21.1",
+      "fabric": "*",
+      "midnightlib": ">=1.5.7"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.telepathicgrunt.repurposedstructures.RepurposedStructuresFabric"
+      ],
+      "modmenu": [
+        "com.telepathicgrunt.repurposedstructures.configs.ModMenuCompat"
+      ]
+    },
+    "mixins": [
+      "repurposed_structures-fabric.mixins.json",
+      "repurposed_structures-common.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/repurposed-structures",
+      "issues": "https://github.com/TelepathicGrunt/RepurposedStructures/issues"
+    }
+  },
+  {
+    "filename": "resourcefullib-fabric-1.21-3.0.12.jar",
+    "sha256": "93064c5aff85bf5e6385470f311fd1c7de172f58b02fefb1d2920db76f8cd8b5",
+    "sha1": "cb67e1302b5116953f45556cc61dbcf40d986ecd",
+    "size": 485586,
+    "id": "resourcefullib",
+    "version": "3.0.12",
+    "environment": "*",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20.5"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.teamresourceful.resourcefullib.fabric.ResourcefulLibFabricClient"
+      ],
+      "main": [
+        "com.teamresourceful.resourcefullib.ResourcefulLib::init"
+      ],
+      "server": [
+        "com.teamresourceful.resourcefullib.fabric.ResourcefulLibFabricServer"
+      ]
+    },
+    "mixins": [
+      "resourcefullib.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/yabn-1.0.3.jar"
+      },
+      {
+        "file": "META-INF/jars/bytecodecs-1.1.2.jar"
+      }
+    ],
+    "contact": {
+      "issues": "https://github.com/Team-Resourceful/ResourcefulLib/issues/new/choose",
+      "sources": "https://github.com/Team-Resourceful/ResourcefulLib",
+      "homepage": "https://resourcefulbees.com"
+    }
+  },
+  {
+    "filename": "ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+    "sha256": "5db1e3d3f07947ceb893ccd823a7660f62f8f794e2bf9a5b721a3c3d32dcbc59",
+    "sha1": "ea53b83821e3a584159d0bca490e2460e27c616d",
+    "size": 80827,
+    "id": "resourcepackoverrides",
+    "version": "21.1.0",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric-api": ">=0.102.0",
+      "minecraft": "1.21.1",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "fuzs.resourcepackoverrides.fabric.ResourcePackOverridesFabric"
+      ],
+      "client": [
+        "fuzs.resourcepackoverrides.fabric.client.ResourcePackOverridesFabricClient"
+      ]
+    },
+    "mixins": [
+      "resourcepackoverrides.common.mixins.json",
+      "resourcepackoverrides.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/Fuzss/resourcepackoverrides",
+      "issues": "https://github.com/Fuzss/resourcepackoverrides/issues",
+      "sources": "https://github.com/Fuzss/resourcepackoverrides"
+    }
+  },
+  {
+    "filename": "respackopts-4.14.0+1.21.1.4.jar",
+    "sha256": "8c38228c14841a01034e6371fada5754754a0abf13de843eea1e1d41dc8257f3",
+    "sha1": "f32957a737d953a0422d4aaa5111ed1c1fe4a2ba",
+    "size": 557358,
+    "id": "respackopts",
+    "version": "4.14.0+1.21.1.4",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.12.0",
+      "fabric-api": "*",
+      "minecraft": "*",
+      "libjf-base": ">=3.0.0",
+      "libjf-data-manipulation-v0": ">=3.17.0",
+      "libjf-config-core-v2": ">=3.17.0"
+    },
+    "breaks": null,
+    "conflicts": {
+      "libjf": "<3.0.0",
+      "feather": "*",
+      "quilt_loader": "*",
+      "connectormod": "*"
+    },
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.RespackoptsFabric"
+      ],
+      "client": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.RespackoptsClientFabric"
+      ],
+      "frex": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.integration.FrexCompat"
+      ],
+      "respackopts:save_hook": [
+        "io.gitlab.jfronny.respackopts.Respackopts"
+      ],
+      "respackopts:client_save_hook": [
+        "io.gitlab.jfronny.respackopts.integration.ShaderIntegration"
+      ],
+      "libjf:config": [
+        "io.gitlab.jfronny.respackopts.JFC_RespackoptsConfig"
+      ],
+      "libjf:resource_pack_entry_widget": [
+        "io.gitlab.jfronny.respackopts.RespackoptsPackWidget"
+      ],
+      "libjf:resource_pack_interceptor": [
+        "io.gitlab.jfronny.respackopts.filters.ValidationLayer$Pre",
+        "io.gitlab.jfronny.respackopts.filters.DirFilterEvents",
+        "io.gitlab.jfronny.respackopts.filters.FileFilterEvents",
+        "io.gitlab.jfronny.respackopts.filters.IOLogEvents",
+        "io.gitlab.jfronny.respackopts.filters.ValidationLayer$Post"
+      ],
+      "modmenu": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.integration.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "respackopts.mixins.json",
+      {
+        "config": "respackopts.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/muscript-all-2.0.0-SNAPSHOT.jar"
+      },
+      {
+        "file": "META-INF/jars/muscript-json-2.0.0-SNAPSHOT.jar"
+      }
+    ],
+    "contact": {
+      "email": "projects.contact@frohnmeyer-wds.de",
+      "homepage": "https://jfronny.gitlab.io",
+      "issues": "https://git.jfronny.dev/JfMods/Respackopts/issues",
+      "sources": "https://git.jfronny.dev/JfMods/Respackopts"
+    }
+  },
+  {
+    "filename": "RoughlyEnoughItems-16.0.799-fabric.jar",
+    "sha256": "098c840780940010f2ba48cb758b77c1b991e69ab3fbec8725af099351653c9d",
+    "sha1": "ea0efe8b13a52e9d8d5a18d062810117a7efec0f",
+    "size": 2451799,
+    "id": "roughlyenoughitems",
+    "version": "16.0.799",
+    "environment": null,
+    "depends": {
+      "minecraft": "~1.21-"
+    },
+    "breaks": {
+      "cloth-config2": "<6.2-"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "me.shedaniel.rei.impl.init.RoughlyEnoughItemsInitializer::onInitialize"
+      ],
+      "client": [
+        "me.shedaniel.rei.fabric.RoughlyEnoughItemsFabric",
+        "me.shedaniel.rei.impl.init.RoughlyEnoughItemsInitializer::onInitializeClient"
+      ],
+      "rei_common": [
+        "me.shedaniel.rei.plugin.common.DefaultPlugin",
+        "me.shedaniel.rei.plugin.common.runtime.DefaultRuntimePlugin"
+      ],
+      "rei_client": [
+        "me.shedaniel.rei.plugin.client.DefaultClientPlugin",
+        "me.shedaniel.rei.plugin.client.runtime.DefaultClientRuntimePlugin",
+        "me.shedaniel.rei.plugin.client.runtime.HideIngredientsFromTagsPlugin"
+      ]
+    },
+    "mixins": [
+      "rei.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/error-notifier-fabric-1.0.11.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items",
+      "sources": "https://github.com/shedaniel/RoughlyEnoughItems",
+      "issues": "https://github.com/shedaniel/RoughlyEnoughItems/issues"
+    }
+  },
+  {
+    "filename": "SafePastures-1.1.1+1.21.1.jar",
+    "sha256": "41d1c286db3e02a3249346a5efda6f95799ab895aa40c03a87cdcd81a95e4b45",
+    "sha1": "da4ca736f1390553380dd1f8b596f17d35fafded",
+    "size": 16518,
+    "id": "safepastures",
+    "version": "1.1.1+1.21.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "chadlymasterson.safepastures.SafePastures"
+      ]
+    },
+    "mixins": [
+      "safepastures.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "ScalableLux-0.1.0.1+fabric.d0d58ab-all.jar",
+    "sha256": "f32ed8d825c7af90b14ab9f7bbe1293818bcf411fea104ae20d18ecde30f8387",
+    "sha1": "2ce889d9b1b210eef005ea03c3bbb39289c26e3f",
+    "size": 177266,
+    "id": "scalablelux",
+    "version": "0.1.0.1+fabric.d0d58ab",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": ">=1.21.1"
+    },
+    "breaks": {
+      "phosphor": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "ca.spottedleaf.starlight.common.ScalableLuxEntrypoint"
+      ]
+    },
+    "mixins": [
+      "scalablelux.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "issues": "https://github.com/RelativityMC/ScalableLux/issues",
+      "sources": "https://github.com/RelativityMC/ScalableLux"
+    }
+  },
+  {
+    "filename": "Searchables-fabric-1.21.1-1.0.2.jar",
+    "sha256": "0b58a40a41db4a4af4ef84475b0ea330be3b18fdcac2eca68ede46d9f4df3d76",
+    "sha1": "2777db0b967e80e0659053154f32f14a0e99a7a7",
+    "size": 79531,
+    "id": "searchables",
+    "version": "1.0.2",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": "1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "fabric-api": "*"
+    },
+    "entrypoints": {},
+    "mixins": [
+      {
+        "config": "searchables.mixins.json",
+        "environment": "client"
+      },
+      {
+        "config": "searchables.fabric.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/searchables",
+      "sources": "https://github.com/jaredlll08/searchables",
+      "issues": "https://github.com/jaredlll08/searchables/issues"
+    }
+  },
+  {
+    "filename": "sodium-fabric-0.8.12+mc1.21.1.jar",
+    "sha256": "9ad11a616d1ca759867de8a5bbafcde5ab50b68dbd674110c7b90aeea251b793",
+    "sha1": "70381d969eb63c0aa09dc581ef4b9a79782c0123",
+    "size": 1573180,
+    "id": "sodium",
+    "version": "0.8.12+mc1.21.1",
+    "environment": "client",
+    "depends": {
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ],
+      "fabricloader": ">=0.16.0",
+      "fabric-block-view-api-v2": "*",
+      "fabric-renderer-api-v1": "*",
+      "fabric-rendering-data-attachment-v1": "*",
+      "fabric-rendering-fluids-v1": ">=2.0.0",
+      "fabric-resource-loader-v0": "*"
+    },
+    "breaks": {
+      "embeddium": "*",
+      "optifabric": "*",
+      "canvas": "*",
+      "vulkanmod": "*",
+      "sodium-blendingregistry": "*",
+      "ocrenderfix_sodium": "*",
+      "betterfpsdist": "<=1.21-4.5",
+      "bobby": "<5.2.4",
+      "chunksfadein": "<3.0.22-1.21",
+      "cull-less-leaves": "<=1.3.0",
+      "cullleaves": "<=3.4.0-fabric",
+      "custom_hud": "<3.4.2",
+      "farsight": "<=1.21-4.3",
+      "iceberg": "<1.2.7",
+      "iris": "<1.8.13",
+      "movingelevators": "<=1.4.7",
+      "notenoughcrashes": "<4.4.8",
+      "noxesium": "<2.3.3",
+      "reeses-sodium-options": "<1.8.0",
+      "sodium-extra": "<0.8.7",
+      "sspb": "<4.1.0",
+      "moreculling": "<1.0.8",
+      "simply-no-shading": "<7.6.2",
+      "betterend": "<=21.0.11",
+      "sodiumoptionsapi": "*",
+      "sodiumoptionsmodcompat": "*",
+      "sodiumextras": "*",
+      "sodiumdynamiclights": "*",
+      "sodiumleafculling": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "net.caffeinemc.mods.sodium.fabric.SodiumFabricMod"
+      ],
+      "preLaunch": [
+        "net.caffeinemc.mods.sodium.fabric.SodiumPreLaunch"
+      ]
+    },
+    "mixins": [
+      "sodium-common.mixins.json",
+      "sodium-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-api-base-0.4.42+6573ed8c19.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-block-view-api-v2-1.0.11+ebb2264e19.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-renderer-api-v1-3.4.1+b4d813fc19.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-data-attachment-v1-0.3.49+73761d2e19.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-rendering-fluids-v1-3.1.6+1daea21519.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-resource-loader-v0-1.3.1+5b5275af19.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/CaffeineMC/sodium",
+      "sources": "https://github.com/CaffeineMC/sodium",
+      "issues": "https://github.com/CaffeineMC/sodium/issues"
+    }
+  },
+  {
+    "filename": "sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+    "sha256": "2c099bfd5dc02ace6e73ffd9259940b0597cd4da7216a53a2c60c6732900d6aa",
+    "sha1": "7f6af600a58863dfcebe5e3d3ce5e2a4bcabcbd3",
+    "size": 988478,
+    "id": "sophisticatedbackpacks",
+    "version": "1.21.1-3.23.4.3.106",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "minecraft": "1.21.1",
+      "sophisticatedcore": ">=1.21.1-1.2.9.15 <1.22"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.SophisticatedBackpacks"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.client.SophisticatedBackpacksClient"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.data.DataGenerators"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.jei.SBPPlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.rei.REIClientCompat"
+      ]
+    },
+    "mixins": [
+      "sophisticatedbackpacks.mixins.json",
+      "compat/sophisticatedbackpacks.litematica.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks-unofficial-fabric-port",
+      "issues": "https://github.com/Salandora/SophisticatedBackpacks/issues",
+      "sources": "https://github.com/Salandora/SophisticatedBackpacks"
+    }
+  },
+  {
+    "filename": "sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+    "sha256": "3c71a04d5b03cdf9d9fe50e71849fdf11291dd1fab149621e35688ef6e516054",
+    "sha1": "43a95dfa338a2a6ba3ea33a5efa0ac040331e50c",
+    "size": 2996065,
+    "id": "sophisticatedcore",
+    "version": "1.21.1-1.2.9.21.168",
+    "environment": "*",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "forgeconfigapiport": ">=21.1.3",
+      "team_reborn_energy": ">=4.1.0"
+    },
+    "breaks": {
+      "jei": "<19.21.0.246"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedcore.SophisticatedCore"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedcore.client.ClientEventHandler"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedcore.data.DataGenerators"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.jei.CorePlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.rei.REIClientCompat"
+      ]
+    },
+    "mixins": [
+      "sophisticatedcore.mixins.json",
+      "compat/litematica.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/energy-4.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/item_abilities-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/loot-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/level_events-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/render_types-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/fluids-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/core-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/model_loader-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/mixinextras-fabric-0.5.0-beta.3.jar"
+      },
+      {
+        "file": "META-INF/jars/lazy_registration-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/transfer-3.1.0-beta.47+1.21.1.jar"
+      },
+      {
+        "file": "META-INF/jars/conditions-3.1.0-beta.47+1.21.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-core-unofficial-fabric-port",
+      "issues": "https://github.com/P3pp3rF1y/SophisticatedCore/issues",
+      "sources": "https://github.com/P3pp3rF1y/SophisticatedCore"
+    }
+  },
+  {
+    "filename": "sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+    "sha256": "0dbaf1ff069c33a8c4738518d983d1cab0cdca6871a6c7b7dc5727c531eca215",
+    "sha1": "328dcb51c60f7e6cf19c40874dc67335fd44b9f7",
+    "size": 1670672,
+    "id": "sophisticatedstorage",
+    "version": "1.21.1-1.3.7.9.139",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "minecraft": "1.21.1",
+      "sophisticatedcore": ">=1.21.1-1.2.9.15 <1.22"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedstorage.SophisticatedStorage"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedstorage.client.SophisticatedStorageClient"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedstorage.data.DataGenerators"
+      ],
+      "jade": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.jade.StorageJadePlugin"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.jei.StoragePlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.rei.REIClientCompat"
+      ]
+    },
+    "mixins": null,
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/sophisticated-storage-unofficial-fabric-port",
+      "issues": "https://github.com/Salandora/SophisticatedStorage/issues",
+      "sources": "https://github.com/Salandora/SophisticatedStorage"
+    }
+  },
+  {
+    "filename": "sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+    "sha256": "8884ded0f53f97a6cb2fca9ef035947af8c3376a406e0bdaa8309bfe87801799",
+    "sha1": "07d9f758338ad5be38b7fa1eb32c71a7c4840ea0",
+    "size": 205671,
+    "id": "sound_physics_remastered",
+    "version": "1.21.1-1.5.1",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ],
+      "java": ">=21"
+    },
+    "breaks": {
+      "soundphysics": "*",
+      "voicechat": "<1.21-2.3.0"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.sonicether.soundphysics.FabricSoundPhysicsMod"
+      ],
+      "client": [
+        "com.sonicether.soundphysics.FabricSoundPhysicsMod"
+      ],
+      "modmenu": [
+        "com.sonicether.soundphysics.integration.ModMenuIntegration"
+      ],
+      "voicechat": [
+        "com.sonicether.soundphysics.integration.voicechat.SimpleVoiceChatPlugin"
+      ]
+    },
+    "mixins": [
+      "sound_physics_remastered.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered",
+      "issues": "https://github.com/henkelmax/sound-physics-remastered/issues",
+      "sources": "https://github.com/henkelmax/sound-physics-remastered",
+      "email": "info@modrepo.de"
+    }
+  },
+  {
+    "filename": "soundsbegone-fabric-1.5.2+mc1.21.jar",
+    "sha256": "88a0dd266a5639e89c33c9320685c57d482641738f9bc5b6e6800c3c34b80b32",
+    "sha1": "3ef45517426b434a2ef6092559c494a67ee1aff9",
+    "size": 6151935,
+    "id": "soundsbegone",
+    "version": "1.5.2",
+    "environment": "client",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.21",
+      "fabric-api": "*",
+      "cloth-config": ">=15.0.140"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "modmenu": ">=11.0.4"
+    },
+    "entrypoints": {
+      "main": [],
+      "client": [
+        "gg.meza.soundsbegone.SoundsBeGone"
+      ],
+      "modmenu": [
+        "gg.meza.soundsbegone.fabric.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      {
+        "config": "soundsbegone.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/meza_core-fabric-1.2.2+1.21.jar"
+      },
+      {
+        "file": "META-INF/jars/posthog-1.2.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/meza/SoundsBeGone",
+      "sources": "https://github.com/meza/SoundsBeGone"
+    }
+  },
+  {
+    "filename": "StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+    "sha256": "335627367b8212c17e58978866874ede8d0d9a159053fbb38e56123fff83d0f9",
+    "sha1": "c36982af69e6d9d9dbac52e4d6c43e8a64fc6163",
+    "size": 321213,
+    "id": "stackdeobfuscator",
+    "version": "1.4.3+08e71cc",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.11",
+      "minecraft": ">=1.14-alpha.18.49.a",
+      "java": ">=17"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.booky.stackdeobf.StackDeobfMod"
+      ]
+    },
+    "mixins": [
+      "stackdeobf.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mapping-io-0.6.1.jar"
+      },
+      {
+        "file": "META-INF/jars/StackDeobfuscatorCommon-1.4.3+08e71cc.jar"
+      }
+    ],
+    "contact": {
+      "issues": "https://github.com/booky10/StackDeobfuscator/issues",
+      "sources": "https://github.com/booky10/StackDeobfuscator"
+    }
+  },
+  {
+    "filename": "super_resolution-fabric-1.21..1.21.1-0.9.1-alpha.1+opengl.jar",
+    "sha256": "be7ad2af4a22da62eec5539e249bba11166f03e8214d95f01f770c3fc93c8881",
+    "sha1": "4a275d164b17d9509f78595d962166337355f66c",
+    "size": 33664155,
+    "id": "super_resolution",
+    "version": "0.9.1-alpha.1+opengl",
+    "environment": "client",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": [
+        "~1.21.1",
+        "~1.21"
+      ],
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": {
+      "resolutioncontrol-plus-plus": "*",
+      "resolutioncontrol-plus": "*",
+      "resolutioncontrol": "*",
+      "renderscale": "*",
+      "gpu_booster": "*",
+      "gpu_tape": "*"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "io.homo.superresolution.fabric.SuperResolutionFabric"
+      ],
+      "client": [
+        "io.homo.superresolution.fabric.SuperResolutionFabricClient"
+      ],
+      "modmenu": [
+        "io.homo.superresolution.fabric.compat.modmenu.ModMenu"
+      ],
+      "sodium:config_api_user": [
+        "io.homo.superresolution.fabric.compat.sodium.SodiumConfigBuilder"
+      ]
+    },
+    "mixins": [
+      "super_resolution.mixins.json",
+      "super_resolution.hack.mixins.json",
+      "super_resolution-fabric.mixins.json",
+      "super_resolution-fabric-compat.mixins.json",
+      "super_resolution.shadercompat.mixins.json",
+      "super_resolution_irisapi.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/bus-8.0.5.jar"
+      },
+      {
+        "file": "META-INF/jars/core-3.8.3.jar"
+      },
+      {
+        "file": "META-INF/jars/lwjgl-vma-3.3.4-natives-linux.jar"
+      },
+      {
+        "file": "META-INF/jars/lwjgl-vma-3.3.4-natives-windows.jar"
+      },
+      {
+        "file": "META-INF/jars/lwjgl-vma-3.3.4.jar"
+      },
+      {
+        "file": "META-INF/jars/lwjgl-vulkan-3.3.4.jar"
+      },
+      {
+        "file": "META-INF/jars/toml-3.8.3.jar"
+      },
+      {
+        "file": "META-INF/jars/typetools-0.6.3.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/187J3X1-114514/superresolution",
+      "issues": "https://github.com/187J3X1-114514/superresolution/issues"
+    }
+  },
+  {
+    "filename": "supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+    "sha256": "63a29f2acf4be2c5ca89a81a046c1100111ad2865d9638f638e27ca161e7211c",
+    "sha1": "8427e42f1db8ea7b4b6c21cc94bfcfa398f0ff63",
+    "size": 206993,
+    "id": "supermartijn642configlib",
+    "version": "1.1.8",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.configlib.ConfigLib"
+      ],
+      "client": [
+        "com.supermartijn642.configlib.ConfigLibClient"
+      ]
+    },
+    "mixins": [
+      "supermartijn642configlib.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib",
+      "sources": "https://github.com/SuperMartijn642/SuperMartijn642sConfigLib"
+    }
+  },
+  {
+    "filename": "supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+    "sha256": "462756caa1efeff760a752a29136d59d40c5ad6047603472785f65a44d1da6e3",
+    "sha1": "0091085edb9435f6eefc2ff562fcc8cffbc05981",
+    "size": 616830,
+    "id": "supermartijn642corelib",
+    "version": "1.1.21",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.21.2",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.core.CoreLib"
+      ],
+      "preLaunch": [
+        "com.supermartijn642.core.CoreLibPreLaunch"
+      ]
+    },
+    "mixins": [
+      "supermartijn642corelib.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-core-lib",
+      "sources": "https://github.com/SuperMartijn642/SuperMartijn642sCoreLib"
+    }
+  },
+  {
+    "filename": "tim_core-1.7.3-fabric-1.32.0-cobblemon1.8-test.jar",
+    "sha256": "4abb37ae232e870f58c7bb2f63b43a2b6d8f9d93f0a4ab7a9465bc87ef9478ae",
+    "sha1": "0f46e78eaf400b7f494f7f3b470e1cf5c8c33177",
+    "size": 304304,
+    "id": "tim_core",
+    "version": "1.7.3-fabric-1.32.0",
+    "environment": "*",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabric": "*",
+      "cobblemon": ">=1.7.3"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "us.timinc.mc.cobblemon.timcore.fabric.FabricTimCore"
+        }
+      ]
+    },
+    "mixins": [
+      "mixins.tim_core.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://discord.com/invite/WKAR27SdSv",
+      "issues": "https://github.com/timinc-cobble/cobblemon-tim-core/issues",
+      "sources": "https://github.com/timinc-cobble/cobblemon-tim-core"
+    }
+  },
+  {
+    "filename": "tmcraft-1.4.18+1.7.3-api119fix.jar",
+    "sha256": "9b89f7509dbb94fa072864e9a359f7360eb8a613a2cc7f8487189f8b931a5536",
+    "sha1": "0cc0610884efb4ca9accae8f89d8c090a4ec0fbb",
+    "size": 3360429,
+    "id": "tmcraft",
+    "version": "1.4.18+1.7.3",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.3"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "fabric-datagen": [
+        "kiwiapollo.tmcraft.datagen.DataGenerator"
+      ],
+      "main": [
+        "kiwiapollo.tmcraft.TMCraft"
+      ],
+      "client": [
+        "kiwiapollo.tmcraft.TMCraftClient"
+      ]
+    },
+    "mixins": [
+      "tmcraft.mixins.json",
+      {
+        "config": "tmcraft.client.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://fabricmc.net/",
+      "sources": "https://github.com/FabricMC/fabric-example-mod"
+    }
+  },
+  {
+    "filename": "toms_storage_fabric-1.21-2.3.0.jar",
+    "sha256": "fad39f7ed0ac20ab0345aeb7dbe1be0b2732fa11fd333b6874629e925c45d5d1",
+    "sha1": "3f851ab4ba33b0efca0a03f3aa92a266415f5a87",
+    "size": 1962781,
+    "id": "toms_storage",
+    "version": "2.3.0",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.7.4",
+      "fabric": ">=0.100.3",
+      "minecraft": ">=1.21 <1.21.2"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.tom.storagemod.StorageModClient"
+      ],
+      "main": [
+        "com.tom.storagemod.StorageMod"
+      ],
+      "modmenu": [
+        "com.tom.storagemod.ModMenu"
+      ],
+      "rei_client": [
+        "com.tom.storagemod.rei.REIPlugin"
+      ],
+      "emi": [
+        "com.tom.storagemod.emi.EMIPlugin"
+      ],
+      "jei_mod_plugin": [
+        "com.tom.storagemod.jei.JEIHandler"
+      ],
+      "cardinal-components": [
+        "com.tom.storagemod.StorageModComponents"
+      ],
+      "jade": [
+        "com.tom.storagemod.jade.JadePlugin"
+      ]
+    },
+    "mixins": [],
+    "jars": [
+      {
+        "file": "META-INF/jars/cardinal-components-base-6.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-block-6.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/cloth-config-fabric-15.0.127-fabric.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/toms-storage-fabric",
+      "sources": "https://github.com/tom5454/Toms-Storage/",
+      "issues": "https://github.com/tom5454/Toms-Storage/issues"
+    }
+  },
+  {
+    "filename": "tooltipfix-1.1.1-1.20.jar",
+    "sha256": "50c6c45d16c62b0d9a832692b7f6250d5561f0b28bf7729d8ab25fe1162c90d2",
+    "sha1": "de704792c691e3d19316c87c21c9ad2bee6c66c3",
+    "size": 12432,
+    "id": "tooltipfix",
+    "version": "1.1.1-1.20",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.12.5",
+      "fabric": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": null,
+    "mixins": [
+      {
+        "config": "tooltipfix.mixins.json",
+        "environment": "client"
+      }
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/tooltipfix",
+      "sources": "https://github.com/kyrptonaught/tooltipfix"
+    }
+  },
+  {
+    "filename": "trinkets-3.10.0.jar",
+    "sha256": "349fd2aa8930b232050ee5304db55e4ef738b017971afe7c84acd589a95fda2f",
+    "sha1": "f54756f938c7c273713b9f97d4a987eec551e892",
+    "size": 272944,
+    "id": "trinkets",
+    "version": "3.10.0",
+    "environment": "*",
+    "depends": {
+      "minecraft": ">1.18",
+      "fabricloader": ">=0.7.0",
+      "cardinal-components-base": ">=3.0.0-0",
+      "cardinal-components-entity": ">=3.0.0-0",
+      "fabric-api": ">=0.51.2"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "dev.emi.trinkets.TrinketsMain"
+      ],
+      "client": [
+        "dev.emi.trinkets.TrinketsClient"
+      ],
+      "cardinal-components-entity": [
+        "dev.emi.trinkets.TrinketsMain"
+      ],
+      "rei_client": [
+        "dev.emi.trinkets.compat.TrinketsREIPlugin"
+      ],
+      "emi": [
+        "dev.emi.trinkets.compat.TrinketsEmiPlugin"
+      ]
+    },
+    "mixins": [
+      "trinkets.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/cardinal-components-base-6.1.0.jar"
+      },
+      {
+        "file": "META-INF/jars/cardinal-components-entity-6.1.0.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/trinkets-fabric",
+      "sources": "https://github.com/emilyploszaj/trinkets"
+    }
+  },
+  {
+    "filename": "VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+    "sha256": "6aba8f56fd71b9b5b724812b22f14d11a71e9ca0bf7e84b52b4c8b91736e0734",
+    "sha1": "be520356ef53352b2d3e6ec84ca3abb7ca62f041",
+    "size": 54994072,
+    "id": "vanillabackport",
+    "version": "1.1.7.10",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.12",
+      "platform": ">=1.3.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "com.blackgear.vanillabackport.core.fabric.emissive.EmissiveModelHandler"
+      ],
+      "main": [
+        "com.blackgear.vanillabackport.core.fabric.VanillaBackportFabric"
+      ],
+      "fabric-datagen": [
+        "com.blackgear.vanillabackport.data.DataGenerator"
+      ],
+      "terrablender": [
+        "com.blackgear.vanillabackport.core.fabric.VanillaBackportTerrablender"
+      ]
+    },
+    "mixins": [
+      "vanillabackport.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/mixinsquared-fabric-0.1.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/vanilla-backport"
+    }
+  },
+  {
+    "filename": "villagerconfig-fabric-4.5.4+1.21.1.jar",
+    "sha256": "627483b71a24679d51321c618fa6c8abe8df64cf770b001b319412677adab49b",
+    "sha1": "0b9c27925a041b3dee88bd10aa5e06ef7ee4f08d",
+    "size": 355303,
+    "id": "villagerconfig",
+    "version": "4.5.4",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": {
+      "cloth-config": "*",
+      "modmenu": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "me.drex.villagerconfig.fabric.VillagerConfigFabric"
+      ],
+      "client": [
+        "me.drex.villagerconfig.fabric.VillagerConfigFabricClient"
+      ],
+      "modmenu": [
+        "me.drex.villagerconfig.fabric.config.modmenu.VillagerConfigModMenuEntry"
+      ],
+      "preLaunch": [
+        "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+      ],
+      "fabric-datagen": [
+        "me.drex.villagerconfig.fabric.datagen.VanillaDataGenerator"
+      ]
+    },
+    "mixins": [
+      "villagerconfig-common.mixins.json",
+      "villagerconfig-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fiber-0.23.0-2.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://github.com/DrexHD/VillagerConfig/wiki",
+      "issues": "https://github.com/DrexHD/VillagerConfig/issues",
+      "sources": "https://github.com/DrexHD/VillagerConfig"
+    }
+  },
+  {
+    "filename": "waystones-fabric-1.21.1-21.1.37.jar",
+    "sha256": "1cef833ec178bc6ea92a221b8a75bc6637e9e4d38d23f3963610fd772f1b2f95",
+    "sha1": "df61027d645c737d80f62eda56ae24c4b8e2b707",
+    "size": 1226801,
+    "id": "waystones",
+    "version": "21.1.37",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.waystones.fabric.FabricWaystones"
+      ],
+      "client": [
+        "net.blay09.mods.waystones.fabric.client.FabricWaystonesClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.waystones.compat.ModMenuIntegration"
+      ],
+      "fabric-datagen": [
+        "net.blay09.mods.waystones.datagen.ModDataGenerator"
+      ],
+      "rei_client": [
+        "net.blay09.mods.waystones.compat.rei.RoughlyEnoughItemsIntegration"
+      ],
+      "journeymap": [
+        "net.blay09.mods.waystones.compat.JourneyMapIntegration"
+      ],
+      "jade": [
+        "net.blay09.mods.waystones.compat.JadeIntegration"
+      ]
+    },
+    "mixins": [
+      "waystones.mixins.json",
+      "waystones.fabric.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://mods.twelveiterations.com/minecraft/waystones",
+      "sources": "https://github.com/TwelveIterations/Waystones",
+      "issues": "https://github.com/TwelveIterations/Waystones/issues"
+    }
+  },
+  {
+    "filename": "wild_battle_api-fabric-1.1.2.jar",
+    "sha256": "c25fee08e90ed8d28d2a0051f892bae28e1d6d8522c523131bd7dcbef9bcd0a8",
+    "sha1": "ca156e0cc210162f30b3a4a0d5179984a5ceb242",
+    "size": 253029,
+    "id": "wild_battle_api",
+    "version": "1.1.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.github.raguto.wildbattleapi.WildBattleAPIFabric"
+      ],
+      "client": [
+        "com.github.raguto.wildbattleapi.WildBattleAPIFabricClient"
+      ],
+      "modmenu": [
+        "com.github.raguto.wildbattleapi.fabric.ModMenuIntegration"
+      ]
+    },
+    "mixins": [
+      "wild_battle_api.mixins.json"
+    ],
+    "jars": null,
+    "contact": null
+  },
+  {
+    "filename": "worldedit-mod-7.3.8.jar",
+    "sha256": "5e7752c97876d87411e3760bcc573cc431f43c453722e6959fa7fe54db1b01ca",
+    "sha1": "924fe181a29bd66be6783f6d589968ab0ee02250",
+    "size": 6222854,
+    "id": "worldedit",
+    "version": "7.3.8+6939-7d32b45",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-command-api-v2": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-events-interaction-v0": "*",
+      "fabric-networking-api-v1": "*"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "com.sk89q.worldedit.fabric.FabricWorldEdit"
+      ]
+    },
+    "mixins": [
+      "worldedit-fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/fabric-api-base-0.4.42+6573ed8cd1.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-command-api-v2-2.2.27+6a6dfa19d1.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-lifecycle-events-v1-2.3.11+8f3583aed1.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-events-interaction-v0-0.7.10+e633f883d1.jar"
+      },
+      {
+        "file": "META-INF/jars/fabric-networking-api-v1-4.2.0+ab7edbacd1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://enginehub.org/worldedit/",
+      "sources": "https://github.com/EngineHub/WorldEdit"
+    }
+  },
+  {
+    "filename": "xaerominimap-fabric-1.21.1-26.4.2.jar",
+    "sha256": "85342f8f7c098e98f2f200fbba308a243af1204cb1afd7668360420e635aa2f8",
+    "sha1": "9293ef9b2626ae3180625c003290a838879cc0b4",
+    "size": 2233608,
+    "id": "xaerominimap",
+    "version": "26.4.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": "1.21.1",
+      "xaerolib": ">=1.0"
+    },
+    "breaks": {
+      "openpartiesandclaims": "<0.27.0",
+      "xaeroworldmap": "<1.44.0"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "xaero.minimap.XaeroMinimapFabric"
+      ],
+      "server": [
+        "xaero.minimap.XaeroMinimapFabric"
+      ],
+      "modmenu": [
+        "xaero.common.XaeroHudModMenu"
+      ]
+    },
+    "mixins": [
+      "xaerohud.mixins.json",
+      "xaerohud.fabric.mixins.json",
+      "xaerominimap.mixins.json",
+      "xaerominimap.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/xaerolib-fabric-1.21.1-1.7.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
+      "issues": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/issues"
+    }
+  },
+  {
+    "filename": "xaeroworldmap-fabric-1.21.1-1.44.2.jar",
+    "sha256": "cd6109af335ad83af9e97cdae5c25023112349e2dc4df95a97640022f38b3856",
+    "sha1": "9872f1275b6e491bc0a806b6288ae2320261b36a",
+    "size": 1448218,
+    "id": "xaeroworldmap",
+    "version": "1.44.2",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": ">1.20.6 <1.21.2",
+      "xaerolib": ">=1.0"
+    },
+    "breaks": {
+      "openpartiesandclaims": "<0.27.0",
+      "xaerominimap": "<26.4.0",
+      "xaerobetterpvp": "<26.4.0"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "xaero.map.WorldMapFabric"
+      ],
+      "server": [
+        "xaero.map.WorldMapFabric"
+      ],
+      "modmenu": [
+        "xaero.map.mods.XaeroWorldMapModMenu"
+      ]
+    },
+    "mixins": [
+      "xaeroworldmap.mixins.json",
+      "xaeroworldmap.fabric.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/xaerolib-fabric-1.21.1-1.7.1.jar"
+      }
+    ],
+    "contact": {
+      "issues": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/issues",
+      "homepage": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map"
+    }
+  },
+  {
+    "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+    "sha256": "6ab420b7d1326fc9851b96a8967504bd644da421ed6438ceb9a9d9c993a408b1",
+    "sha1": "e075503382f70715ab9fc6f66d603397a86eb3e0",
+    "size": 1131265,
+    "id": "yet_another_config_lib_v3",
+    "version": "3.8.2+1.21.1-fabric",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.0",
+      "minecraft": "~1.21 <1.21.2",
+      "java": ">=17",
+      "fabric-api": ">=0.104.0+1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        "dev.isxander.yacl3.platform.PlatformEntrypoint"
+      ]
+    },
+    "mixins": [
+      {
+        "config": "yacl.mixins.json",
+        "environment": "*"
+      },
+      {
+        "config": "yacl-fabric.mixins.json",
+        "environment": "*"
+      }
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/common-image-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/common-io-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/common-lang-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/gson-0.2.1.jar"
+      },
+      {
+        "file": "META-INF/jars/imageio-core-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/imageio-metadata-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/imageio-webp-3.12.0.jar"
+      },
+      {
+        "file": "META-INF/jars/json-0.2.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://isxander.dev",
+      "issues": "https://github.com/isXander/YetAnotherConfigLib/issues",
+      "sources": "https://github.com/isXander/YetAnotherConfigLib"
+    }
+  },
+  {
+    "filename": "zamega-fabric-1.7.6.jar",
+    "sha256": "115147202e72f3f8a06595ea403e2194ce2c7d82b17a6e5d30a49771dcd29751",
+    "sha1": "2ebe7aea45113c1ace9b524a34f760c2ea3518c8",
+    "size": 1082887,
+    "id": "zamega",
+    "version": "1.7.6",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7",
+      "mega_showdown": ">=1.9.0+1.7.3+1.21.1",
+      "accessories": ">=1.1.0-beta.52+1.21.1"
+    },
+    "breaks": null,
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "main": [
+        "org.zamega.zamega.fabric.ZamegaFabric"
+      ],
+      "client": [
+        "org.zamega.zamega.fabric.client.ZamegaFabricClient"
+      ]
+    },
+    "mixins": [
+      "zamega.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "homepage": "https://github.com/yajatkaul"
+    }
+  },
+  {
+    "filename": "zfastnoise-1.0.13+1.21.jar",
+    "sha256": "da1b8702dfbdbea125aca0c0b1b3da5f8c3eb483977dff6482f32178fd007684",
+    "sha1": "9cd00c39b86e81e9ed11ce8148739bc3889c7c60",
+    "size": 38857,
+    "id": "zfastnoise",
+    "version": "1.0.13+1.21",
+    "environment": "*",
+    "depends": {
+      "fabricloader": ">=0.18.4",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "breaks": {
+      "moonrise": "*",
+      "noisium": "*",
+      "noisiumed": "*",
+      "antixray": "*"
+    },
+    "conflicts": null,
+    "recommends": {
+      "c2me": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "org.codeberg.zenxarch.fastnoise.FastNoiseMod"
+      ]
+    },
+    "mixins": [
+      "zfastnoise.mixins.json"
+    ],
+    "jars": null,
+    "contact": {
+      "mastodon": "https://mastodon.social/@ZenXArch",
+      "discord": "https://discord.gg/RFSmd7debX",
+      "sources": "https://codeberg.org/ZenXArch/FastNoise",
+      "modrinth": "https://modrinth.com/mod/zfastnoise"
+    }
+  },
+  {
+    "filename": "zoomify-2.15.2+1.21.1.jar",
+    "sha256": "6c317987df28922e227ab3ac4e39090460d99b965bcb9c8da8f9a4493b705d00",
+    "sha1": "9ec9c47e1d3465ea0cbd595b6d9d12227239c9a6",
+    "size": 872937,
+    "id": "zoomify",
+    "version": "2.15.2+1.21.1",
+    "environment": "client",
+    "depends": {
+      "fabricloader": ">=0.18.0",
+      "fabric-language-kotlin": ">=1.13.8+kotlin.2.3.0",
+      "minecraft": "~1.21 <1.21.2",
+      "java": ">=17",
+      "yet_another_config_lib_v3": ">=3.6.6"
+    },
+    "breaks": {
+      "optifabric": "*",
+      "controlify": "<2"
+    },
+    "conflicts": null,
+    "recommends": null,
+    "entrypoints": {
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.Zoomify"
+        }
+      ],
+      "modmenu": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.integrations.ModMenuIntegration"
+        }
+      ],
+      "controlify": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.integrations.ControlifyIntegration"
+        }
+      ]
+    },
+    "mixins": [
+      "zoomify.mixins.json"
+    ],
+    "jars": [
+      {
+        "file": "META-INF/jars/ktoml-core-jvm-0.7.1.jar"
+      }
+    ],
+    "contact": {
+      "homepage": "https://isxander.dev",
+      "issues": "https://github.com/isXander/Zoomify/issues",
+      "sources": "https://github.com/isXander/Zoomify"
+    }
+  }
+]

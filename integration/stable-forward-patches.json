@@ -1,0 +1,109 @@
+[
+  {
+    "original": "Cobbreeding-fabric-2.2.2-cobbleverse-pcfix.jar",
+    "original_sha256": "3aec503e0d514f95fbd5eb578d60344ad7d333c01543c43ab0fd99c6eaaeed3d",
+    "patched": "Cobbreeding-fabric-2.2.2-cobbleverse-pcfix-stable18fix.jar",
+    "patched_sha256": "3a24bb76b0b1b214ac31e9b782ac4e7f18758c3ec14e3b50e86d2b645df067e8",
+    "changes": [
+      "ludichat/cobbreeding/BreedingUtilities.class field DESTINY_KNOT Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "ludichat/cobbreeding/BreedingUtilities.class field DESTINY_KNOT Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "ludichat/cobbreeding/BreedingUtilities.class field LIGHT_BALL Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "Adjusted field references=3, type constructors=0"
+    ]
+  },
+  {
+    "original": "cobbleverse-compat-api119-hotfix-1.0.0.jar",
+    "original_sha256": "78e82a33c5d6b32139a39dd9dd4e268b667bc3bd739d5b73dade1374b386122f",
+    "patched": "cobbleverse-compat-api119-hotfix-1.0.0-stable18fix.jar",
+    "patched_sha256": "16b1b78ccd7622f1147e5dd65e4dfb76cf1c5e5bb83a0ab55d162c48d40f27cf",
+    "changes": [
+      "Adjusted field references=0, type constructors=1"
+    ]
+  },
+  {
+    "original": "fightorflight-fabric-0.10.9.jar",
+    "original_sha256": "7eee034d17281b43324cbdcc41a3836b6c44a93798d40a608538ed12a72279c1",
+    "patched": "fightorflight-fabric-0.10.9-stable18fix.jar",
+    "patched_sha256": "12dbb8e759f480408fc62e87cf7a776091f2330c471fe551d6921f6a48ad65bb",
+    "changes": [
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field NEVER_MELT_ICE Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lcom/cobblemon/mod/common/item/WearableBlockItem;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field METAL_COAT Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field SPELL_TAG Lnet/minecraft/class_1798; -> Lcom/cobblemon/mod/common/item/WearableBlockItem;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field SOFT_SAND Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field MAGNET Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field LIFE_ORB Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "me/rufia/fightorflight/entity/PokemonAttackEffect.class field LIFE_ORB Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "Adjusted field references=7, type constructors=0"
+    ]
+  },
+  {
+    "original": "mega_showdown-fabric-1.9.5+1.7.3+1.21.1-cobblemon1.8-api119fix.jar",
+    "original_sha256": "67a5546dabb68a262fefa459fc36c77f2c73982836b7cf80c69fe91456069a15",
+    "patched": "mega_showdown-fabric-1.9.5+1.7.3+1.21.1-cobblemon1.8-api119fix-stable18fix.jar",
+    "patched_sha256": "cf00e74cc75eebd048d58ed4aad415fd669e824365fce7ce54e58a084be70b01",
+    "changes": [
+      "com/github/yajatkaul/mega_showdown/client/battle/hud/BattleHUD.class field LIFE_ORB Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "Adjusted field references=1, type constructors=0"
+    ]
+  },
+  {
+    "original": "rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix.jar",
+    "original_sha256": "831d6d22e43f28501c014bd11c9f1a950381f22c7578c9ec9497fbb0e739d538",
+    "patched": "rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix-stable18fix.jar",
+    "patched_sha256": "5b84271faf497d92a69f1f18012d0dbd53fa9d4fbe8935384d4ff20e8cf95aa3",
+    "changes": [
+      "com/gitlab/srcmc/rctapi/api/ai/utils/BattleEffects$Pokemon$State.class field IRON_BALL Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "Adjusted field references=1, type constructors=0"
+    ]
+  },
+  {
+    "original": "tmcraft-1.4.18+1.7.3-api119fix.jar",
+    "original_sha256": "9b89f7509dbb94fa072864e9a359f7360eb8a613a2cc7f8487189f8b931a5536",
+    "patched": "tmcraft-1.4.18+1.7.3-api119fix-stable18fix.jar",
+    "patched_sha256": "279285b8b5cb562b6c3f7b32de192f6f745b33d49794a7b00d575e28862fc10c",
+    "changes": [
+      "kiwiapollo/tmcraft/datagen/DiamondTMRecipeGenerator.class field ELECTIRIZER Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/DiamondTMRecipeGenerator.class field LIFE_ORB Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/DiamondTMRecipeGenerator.class field SPELL_TAG Lnet/minecraft/class_1798; -> Lcom/cobblemon/mod/common/item/WearableBlockItem;",
+      "kiwiapollo/tmcraft/datagen/EmeraldTMRecipeGenerator.class field SOFT_SAND Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/EmeraldTMRecipeGenerator.class field IRON_BALL Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/EmeraldTMRecipeGenerator.class field IRON_BALL Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/EmeraldTMRecipeGenerator.class field MAGNET Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/GoldTMRecipeGenerator.class field EJECT_BUTTON Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/GoldTMRecipeGenerator.class field DESTINY_KNOT Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/GoldTMRecipeGenerator.class field KINGS_ROCK Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lcom/cobblemon/mod/common/item/WearableBlockItem;",
+      "kiwiapollo/tmcraft/datagen/GoldTMRecipeGenerator.class field EJECT_BUTTON Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/GoldTMRecipeGenerator.class field LIFE_ORB Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "kiwiapollo/tmcraft/datagen/IronTMRecipeGenerator.class field IRON_BALL Lcom/cobblemon/mod/common/item/CobblemonItem; -> Lnet/minecraft/class_1798;",
+      "Adjusted field references=13, type constructors=0"
+    ]
+  },
+  {
+    "original": "cobblemon_quests-[1.21.1]-fabric-1.2.0.jar",
+    "original_sha256": "2d6321bf24532d036a261b1ad06eb386a931354446453e66ebac7a0a5dbc7d0d",
+    "patched": "cobblemon_quests-1.2.0-stable18fix.jar",
+    "patched_sha256": "324bb55e5fdf65281501957366f66ae28e32d0a1c5161139e04ecaa7ab3f5ac6",
+    "changes": [
+      "PokedexEntryProgress.CAUGHT -> OWNED",
+      "PokedexEntryProgress.ENCOUNTERED -> SEEN"
+    ]
+  },
+  {
+    "original": "better-pokedex-scanner-1.0.0.jar",
+    "original_sha256": "bc19f882a78aeda4e6294e96abd3d35dc866f56f854b0ee057a0dcf2e42af6c9",
+    "patched": "better-pokedex-scanner-1.0.0-stable18fix.jar",
+    "patched_sha256": "283cc8b71de7da03d769cc411e3e155b498339b1a13bfc8457ab880f3a8870bd",
+    "changes": [
+      "Adjusted field references=4, type constructors=0"
+    ]
+  },
+  {
+    "original": "cobblemon-battle-extras-fabric-1.13.45-api119fix.jar",
+    "original_sha256": "4117044ccd53309a866318370b0b2cbbe63304488347203a1f4dbfcd89abaab2",
+    "patched": "cobblemon-battle-extras-fabric-1.13.45-api119fix-stable18fix.jar",
+    "patched_sha256": "51205789a5173183d7eadfd0ca4eba9786cee216f354b7a0b288fc15960d1bb1",
+    "changes": [
+      "Adjusted field references=1, type constructors=0"
+    ]
+  }
+]

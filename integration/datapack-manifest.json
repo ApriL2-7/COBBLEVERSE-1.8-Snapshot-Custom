@@ -1,0 +1,101 @@
+[
+  {
+    "path": "datapacks/COBBLEVERSE - No Ender Dragon.zip",
+    "sha256": "f5cdae688e55951f36f22a4b13ec73f33da1ebb1368f55335d8b9d2cca8190af",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eNo Ender Dragon §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "required"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE - No Hunger.zip",
+    "sha256": "06de5f7ad7bd863cd6920334372053468a45c831eedb5b7991ac7a732efc6e8d",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eNo Hunger §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "required"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-DP-v31.zip",
+    "sha256": "c2ae123401b217c4c7b90c28db46e092fa2b138e6c3a8f52c70c77675008f410",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eMain Datapack §av31 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "required"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-Loot-DP-v11.zip",
+    "sha256": "68b07910f68d032cb12902115938c321c326819d85d60cc64c9f42e08be11e99",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eLoot §av11 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "required"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-RCT-DP-v20.zip",
+    "sha256": "54f0e8c1b061554bfba3de86dbcd9a6b39da4e8293e2b5141faa4254dc7ae400",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eTrainers §av20 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "required"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Hoenn-DP.zip",
+    "sha256": "68a1d6f49353eb75d970aaef03dbdba8eafe163d2259d45313c2430f8497817b",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eHoenn Datapack §av9 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "optional-region"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Johto-DP.zip",
+    "sha256": "6ec080be3acd58bdc48740da122efcb21a639d839e6607d656cdb3192397d45a",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eJohto Datapack §av9 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "optional-region"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Sinnoh-DP.zip",
+    "sha256": "b2e93ad20f27e96af87f589b8a9653c2f8ce7ed661adf412ba002d0ffec6cc32",
+    "pack": {
+      "pack": {
+        "description": "§c§lCOBBLE§b§lVERSE §eSinnoh Datapack §av5 §7| §fby §4§lLUMY§9§lVERSE",
+        "pack_format": 48
+      }
+    },
+    "activation": "optional-region"
+  },
+  {
+    "path": "datapacks/PokeCenterPCs-DP.zip",
+    "sha256": "e462e091ef376595c5b0efab2615fe0463b93b4c54e462cc841749a90ecefe31",
+    "pack": {
+      "pack": {
+        "pack_format": 48,
+        "description": "Cobblemon Addon that puts the PC block in every village PokeCenter"
+      }
+    },
+    "activation": "required"
+  }
+]

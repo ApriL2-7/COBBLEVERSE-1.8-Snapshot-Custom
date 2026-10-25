@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "cobbleverse_cobblebase_routing_hotfix",
+  "version": "${version}",
+  "name": "Cobbleverse Cobblebase Routing Hotfix",
+  "description": "Improves Cobblebase gatherer routing and places container category labels on the front of their containers.",
+  "authors": ["Cobbleverse Server"],
+  "license": "MIT",
+  "environment": "server",
+  "mixins": [
+    "cobbleverse_cobblebase_routing_hotfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "cobblebase": "2.0.0+1.7.0"
+  }
+}

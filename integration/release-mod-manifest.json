@@ -1,0 +1,4970 @@
+[
+  {
+    "id": "accessories",
+    "version": "1.1.0-beta.53+1.21.1",
+    "filename": "accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+    "sha256": "51e6f6d52cb2523199ad36e5bc04802230f86904c35ac3dbf36e59c86b2c30d1",
+    "sha1": "fa0b11de088893bb14aff945d0e8efdee165457b",
+    "sha512": "0d8baf9e5c3828edcc22fc6e10774e9d7fb94616dae137be3eeb30bea8292ec0148dd2d41ae7753c82714f1d9f163189d07d0f78321f95943c0c048288130e71",
+    "size": 1095802,
+    "install_path": "mods/accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabric-api": ">=0.116.0",
+      "minecraft": ">=1.21",
+      "owo": ">=0.12.15.1+1.21"
+    },
+    "entrypoints": {
+      "main": [
+        "io.wispforest.accessories.fabric.AccessoriesFabric"
+      ],
+      "client": [
+        "io.wispforest.accessories.fabric.client.AccessoriesClientFabric"
+      ],
+      "rei_client": [
+        "io.wispforest.accessories.compat.rei.AccessoriesClientREIPlugin"
+      ],
+      "emi": [
+        "io.wispforest.accessories.compat.emi.AccessoriesClientEMIPlugin"
+      ],
+      "jei": [
+        "io.wispforest.accessories.compat.jei.AccessoriesClientJEIPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/jtmvUHXj/versions/Xlt4eWBe/accessories-fabric-1.1.0-beta.53%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "accessories_compat_layer",
+    "version": "0.1.12",
+    "filename": "accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
+    "sha256": "c77c281616618ee51bb4f9bced4708be6d1baa690b3e8564a68d04df9f080980",
+    "sha1": "44acb001881c063aa15fe66a26de5fae88e6564f",
+    "sha512": "aee7f01996f4675df73018691fabc2d155a5c5865129b38479beefb8648b2a55598b07488f3546892ca8e215aaf436892457aedade81b185a3438c7fb9bedc9a",
+    "size": 398321,
+    "install_path": "mods/accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "owo": ">=0.12.15.4+1.21",
+      "accessories": ">=1.1.0-beta.53+1.21.1"
+    },
+    "entrypoints": {
+      "mixinsquared": [
+        "io.wispforest.accessories_compat.curios.CuriosCompatMixinCanceller"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ySnjMzLg/versions/pWxabbaf/accessories_compat_layer-fabric-0.1.12%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "advancementdisable",
+    "version": "1.0.0",
+    "filename": "advancementdisable-fabric-1.0.1+1.21.jar",
+    "sha256": "53e5c47d485b0a0dd417c2255523679a0b4bba059ae796cdab746112ad1440d6",
+    "sha1": "32190447e74e705c799641d4a7392b396df63962",
+    "sha512": "c31cda01802ee7f9274b9eea504249cdaf60fa5d3edff52fe1ba7db6cf759cfd70423c1433b8f010bc785aeac8b64ecebd40920cd6bac554e37ea328b142005a",
+    "size": 430411,
+    "install_path": "mods/advancementdisable-fabric-1.0.1+1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "1.21.x",
+      "java": ">=21"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/XIsVTmcm/versions/Txi9EkP3/advancementdisable-fabric-1.0.1%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "advancementplaques",
+    "version": "1.6.8",
+    "filename": "AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+    "sha256": "dda6cc159edd450d05b9ff15832747b951dacd068c601018c219bca833ce5bef",
+    "sha1": "e3a5a514bbcc18e2c4e3bc251eb9f48e64217405",
+    "sha512": "32afe425aecefaaca94abedec39d5a5bfaaa7361a0f36e92577ff70d4003cf9587750213b83693da0da8716f5e2da6e7f68932cc5c19f9ad330977144ab355b1",
+    "size": 195505,
+    "install_path": "mods/AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "CC BY-NC-ND 4.0",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "iceberg": ">=1.2.2"
+    },
+    "entrypoints": {
+      "main": [
+        "com.anthonyhilyard.advancementplaques.fabric.AdvancementPlaquesFabric"
+      ],
+      "client": [
+        "com.anthonyhilyard.advancementplaques.fabric.client.AdvancementPlaquesFabricClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/9NM0dXub/versions/g0SNjiMq/AdvancementPlaques-1.21.1-fabric-1.6.8.jar"
+    ]
+  },
+  {
+    "id": "architectury",
+    "version": "13.0.8",
+    "filename": "architectury-13.0.8-fabric.jar",
+    "sha256": "10cbbb6f5f96a2f1853b0cc68428424cec8903409517b299ff02350756b6399d",
+    "sha1": "e71346a43c563e5784580dd096338acfb45f49d4",
+    "sha512": "7a24a0481732c5504b07347d64a2843c10c29e748018af8e5f5844e5ea2f4517433886231025d823f90eb0b0271d1fa9849c27e7b0c81476c73753f79f19302a",
+    "size": 600915,
+    "install_path": "mods/architectury-13.0.8-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3",
+    "depends": {
+      "minecraft": "~1.21-",
+      "fabricloader": ">=0.15.11",
+      "fabric-api": ">=0.100.0"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.architectury.utils.fabric.GameInstanceImpl::init"
+      ],
+      "server": [
+        "dev.architectury.init.fabric.ArchitecturyServer::init"
+      ],
+      "client": [
+        "dev.architectury.init.fabric.ArchitecturyClient::init"
+      ],
+      "modmenu": [
+        "dev.architectury.compat.fabric.ModMenuCompatibility"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/lhGA9TYQ/versions/Wto0RchG/architectury-13.0.8-fabric.jar"
+    ]
+  },
+  {
+    "id": "athena",
+    "version": "4.0.6",
+    "filename": "athena-fabric-1.21.1-4.0.6.jar",
+    "sha256": "e17aad84c690ac4e46300a4180b3ae4077ffa4f526dbc82d117afbbff4ee83e4",
+    "sha1": "92534d85cad33ab1fee598068443c685f4bb06e0",
+    "sha512": "6fec9964e4ce654f3b0c7fd849e34ce28aaeed15557dc253bbef59c577add7b96fe2fb454ece6183aec8356bcfd8d9c7327f48ced154f48b75c78043dea7eb10",
+    "size": 88425,
+    "install_path": "mods/athena-fabric-1.21.1-4.0.6.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "client": [
+        "earth.terrarium.athena.impl.client.DefaultModels::init",
+        "earth.terrarium.athena.api.client.fabric.AthenaFabricClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/b1ZV3DIJ/versions/JfyYsWKP/athena-fabric-1.21.1-4.0.6.jar"
+    ]
+  },
+  {
+    "id": "badoptimizations",
+    "version": "2.4.1",
+    "filename": "BadOptimizations-2.4.1-1.21.1.jar",
+    "sha256": "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba",
+    "sha1": "1461d8e46391efd32a3085150e86094c9f6f5c9d",
+    "sha512": "2b66428bd98bd5ec0e09f2ec6af801cefb7b9b99cc4f0993daeaffe8d0ccc5ee0c2a73e9f38d4f92540ead0181704d2c9e946837ec05cf710fc3b20fce3b0cac",
+    "size": 283566,
+    "install_path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": null,
+    "depends": {
+      "minecraft": ">=1.21.1",
+      "fabricloader": ">=0.15.0"
+    },
+    "entrypoints": {
+      "modmenu": [
+        "fabric.me.thosea.badoptimizations.fabric.modmenu.BadOptimizationsModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/g96Z4WVZ/versions/S2qthD5S/BadOptimizations-2.4.1-1.21.1.jar"
+    ]
+  },
+  {
+    "id": "balm",
+    "version": "21.0.63",
+    "filename": "balm-fabric-1.21.1-21.0.63.jar",
+    "sha256": "4c3604961b74e9cbc91efb1a93daa2f4e55354a46afc93cb74f0de543fd86391",
+    "sha1": "e6a6596688e23ca00e69249c26e316541a086ca2",
+    "sha512": "4b60d64066333952021358905bf70f1d744f481f7ed3288224ff56df1897d55c35990cc977de970e514faae717d3190f3a09e107b8e48dcb45c6717fa2f9da6b",
+    "size": 809717,
+    "install_path": "mods/balm-fabric-1.21.1-21.0.63.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.16.3",
+      "fabric-api": "*",
+      "minecraft": ">=1.21.1",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.balm.fabric.FabricBalm"
+      ],
+      "client": [
+        "net.blay09.mods.balm.fabric.client.FabricBalmClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.balm.fabric.compat.ModMenuIntegration"
+      ],
+      "jade": [
+        "net.blay09.mods.balm.fabric.compat.hudinfo.FabricJadeModCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.blay09.mods.balm.platform.compatibility.recipeviewer.internal.jei.CommonJeiPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/MBAkmtvl/versions/R6U3hZRZ/balm-fabric-1.21.1-21.0.63.jar"
+    ]
+  },
+  {
+    "id": "beautify",
+    "version": "2.0.0+1.21.1",
+    "filename": "beautify-2.0.0+1.21.1.jar",
+    "sha256": "134da1a8e3841f0a14004e839bd1e0a9d091cc5769a82b0052cebda2804ac4fd",
+    "sha1": "7b22fbf4997200c8f210a016f7af36309f52a1e1",
+    "sha512": "629209361f6ddb27dccf1a9287c15ed8fa18ee53aa9513b2c12e1783185b6ab83b4c2110fd70e3af5f45b85877d45437b469b253e6f1db325a40c51a27fdc4f4",
+    "size": 837607,
+    "install_path": "mods/beautify-2.0.0+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "cloth-config": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "io.github.suel_ki.beautify.Beautify"
+      ],
+      "client": [
+        "io.github.suel_ki.beautify.client.BeautifyClient"
+      ],
+      "jade": [
+        "io.github.suel_ki.beautify.compat.jade.JadePlugin"
+      ],
+      "modmenu": [
+        "io.github.suel_ki.beautify.util.ModMenuConfig"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/DhSSvaxs/versions/ZyaUkJxq/beautify-2.0.0%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "better_pokedex_scanner",
+    "version": "1.0.0",
+    "filename": "better-pokedex-scanner-1.0.0-stable18fix.jar",
+    "sha256": "283cc8b71de7da03d769cc411e3e155b498339b1a13bfc8457ab880f3a8870bd",
+    "sha1": "b275caed63746cb0b7dc067b772e7ec4720fdc42",
+    "sha512": "daf15781d5fa237d5283df5c260f5920b5d3756af4915acd33ed974e5c24653d59451dd23bfd79454c75985a118ef47c2de53748df03324d35461add326f850f",
+    "size": 350330,
+    "install_path": "mods/better-pokedex-scanner-1.0.0-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-language-kotlin": ">=1.13.6+kotlin.2.2.20",
+      "cobblemon": ">=1.7.3"
+    },
+    "entrypoints": {
+      "main": [
+        "com.joshiki.betterpokedexscanner.BetterPokedexScanner"
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "com.joshiki.betterpokedexscanner.BetterPokedexScannerClient"
+        }
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "betterbeds",
+    "version": "1.4.0",
+    "filename": "betterbeds-fabric-1.4.0.jar",
+    "sha256": "d707f5df1c45150eb18b3135380519e74dd9103673a71032ef3de2b9038424aa",
+    "sha1": "18bc5c4f40ff6e47d65526a59244c9ea57b83e3f",
+    "sha512": "7aacef2c10e66c91a66fc79b5d7edb933ed3654faea9b7d3bae369979c7d29589bacf258d9620cef95e4dc142b2f9b6adf9031640fe842e149d305a1602ac34d",
+    "size": 39918,
+    "install_path": "mods/betterbeds-fabric-1.4.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "client": [
+        "eu.midnightdust.fabric.betterbeds.BetterBedsFabric"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/kKwy3HU9/versions/ZPmX9Uy3/betterbeds-fabric-1.4.0.jar"
+    ]
+  },
+  {
+    "id": "betterf1",
+    "version": "1.1",
+    "filename": "BetterF1-Fabric-1.1+1.21.7.jar",
+    "sha256": "abfb3f37f130ae4dea89e282f1d0fc0e9c4b2235762745931329defb9387bbdf",
+    "sha1": "218c3aa2ae3356309997deae0861133e9f861581",
+    "sha512": "cecf3f8740db3f418357effc230c81f21d0521c4103041ad56fc673b998db2a115558c6ea0c8a86cab2624f47b2419338b9e2d3b0a9c19e6eb07674b3f7773b5",
+    "size": 22834,
+    "install_path": "mods/BetterF1-Fabric-1.1+1.21.7.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.7.4",
+      "minecraft": "~1.21"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/2JIeCmxb/versions/S81P3LsG/BetterF1-Fabric-1.1%2B1.21.7.jar"
+    ]
+  },
+  {
+    "id": "betterf3",
+    "version": "11.0.3",
+    "filename": "BetterF3-11.0.3-Fabric-1.21.1.jar",
+    "sha256": "e0e4bb25fbe23b16b7574474ee9fde5cdc9757d05885bc43978f4ea5e8e258ad",
+    "sha1": "22442f5594bd537ab603cb36fba70363ebb7992a",
+    "sha512": "c90c9ed5e2860c99d8e42f374b1c34eb50257afed81c3c98a86e594ee7ed4d093c7d3a1dc1b53edb6357394b2e3c8112fa8746b206b6f94d4c9378628a8e20af",
+    "size": 1810710,
+    "install_path": "mods/BetterF3-11.0.3-Fabric-1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "client": [
+        "me.cominixo.betterf3.BetterF3Fabric"
+      ],
+      "modmenu": [
+        "me.cominixo.betterf3.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/8shC1gFX/versions/phATjGhF/BetterF3-11.0.3-Fabric-1.21.1.jar"
+    ]
+  },
+  {
+    "id": "betterthirdperson",
+    "version": "1.9.0",
+    "filename": "BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+    "sha256": "f9ec9dc6508b20d32a3c770ecc77641e8f87c98e298d58e2757a6ef14abbb457",
+    "sha1": "ea0dd2747e5d52d1b64dd29498e59602e79d9b69",
+    "sha512": "6aa3dcc8602a19fed96c6167a0039e645fffa3e64d78f083ea6af1baf2a188eed72525f45237eeefd70e2623188e1cfd02564266d6b6f0770486543615c54544",
+    "size": 52188,
+    "install_path": "mods/BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "client": [
+        "io.socol.betterthirdperson.BetterThirdPerson"
+      ],
+      "modmenu": [
+        "io.socol.betterthirdperson.integration.modmenu.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/G1s2WpNo/versions/QZTn8cTa/BetterThirdPerson-Fabric-1.21-1.9.0.jar"
+    ]
+  },
+  {
+    "id": "biome_replacer",
+    "version": "2.1-hippo",
+    "filename": "biomereplacer-2.1-hippo-fabric.jar",
+    "sha256": "ec6eeda3d4d32d9740c3e6f24177db3fcfa06866f73e341c0ad4ea090d0055ac",
+    "sha1": "8e3573f3384e7031afa663d7fe3dbbd0011bae9c",
+    "sha512": "97219d3e9591468e96042515254f76aafd0ba86b26a9b8ce4c4cacd34d9b67aafcaa626bf29a5cf809b4a82fa7f3ee6a0939de92368c193e6b340d657c962308",
+    "size": 138694,
+    "install_path": "mods/biomereplacer-2.1-hippo-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16",
+      "minecraft": ">=1.19.4 <1.21.2"
+    },
+    "entrypoints": {
+      "main": [
+        "net.werdei.biome_replacer.Platform"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/DAXbR0Wj/versions/IeQCQzcl/biomereplacer-2.1-hippo-fabric.jar"
+    ]
+  },
+  {
+    "id": "brb",
+    "version": "1.10.0-rc5+1.21",
+    "filename": "brb-1.10.0-rc5+1.21.jar",
+    "sha256": "7ddc4761bf5ca59c34703d9586e6edaf6c7a7a3939ed7cdb6c103ab9fec6707b",
+    "sha1": "5831fc725b9834cef7b445913a701310536b17ab",
+    "sha512": "0044ca62ec077034ac3c1bd7d592cc3dfe1bfd94fdab51bb0f23a28d3cefcad97261c6c0407a8afde15636137d49ab73d6af8b3f6ddbee216dc8540ea2940640",
+    "size": 1213168,
+    "install_path": "mods/brb-1.10.0-rc5+1.21.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.21",
+      "architectury": ">=11"
+    },
+    "entrypoints": {
+      "main": [
+        "marsh.town.brb.fabric.BetterRecipeBookFabric"
+      ],
+      "modmenu": [
+        "marsh.town.brb.fabric.ModMenuFabric"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/vWIaVOTE/versions/rj0f0Vtq/brb-1.10.0-rc5%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "c2me",
+    "version": "0.4.0-alpha.0.23+1.21.1",
+    "filename": "c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar",
+    "sha256": "6a77c69140f3da10e20b25ee8a75da039c5835b73f9c7a03615fbd968b574e5e",
+    "sha1": "3a0a64877ba57d1f1198c7c6805719581859337d",
+    "sha512": "4f05e0535115c7cdbdfe78a7556f719f38df2076dfb239c1a0e4c4f7e8ca1a228c9aae499eaa3c49e7e34039f20511c5c27bb357aab1f548e884a09c40390cc6",
+    "size": 3757044,
+    "install_path": "mods/c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.18.3",
+      "java": ">=21",
+      "minecraft": [
+        "=1.21.1",
+        "=1.21"
+      ],
+      "c2me-base": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.ishland.c2me.C2MEMod"
+      ],
+      "preLaunch": [
+        "com.ishland.c2me.PreLaunchHandler"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/VSNURh3q/versions/h8ey5B7D/c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar"
+    ]
+  },
+  {
+    "id": "capture_xp",
+    "version": "1.7.3-fabric-1.3.0",
+    "filename": "capturexp-fabric-1.7.3-1.3.0.jar",
+    "sha256": "84f5e6a941da6b64eff7619732eb2ca73d9ad4adfccb06c52158db21794ea7c5",
+    "sha1": "44d6d1dba175ce70422e832496b07c3294706d4f",
+    "sha512": "319a0a037ae218e593d31c461411a7fd94a3fa9ab4f0fa2384fe26ce24af87789c06bbb3d966438b62fef62375ad4d50f76a65a09b443bd3b41d1be7a5cd8d74",
+    "size": 22496,
+    "install_path": "mods/capturexp-fabric-1.7.3-1.3.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabric": "*",
+      "cobblemon": ">=1.7.3",
+      "tim_core": ">=1.7.3-fabric-1.31.0"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "us.timinc.mc.cobblemon.capturexp.fabric.CaptureXpFabric"
+        }
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "carved_wood",
+    "version": "1.9.7-B",
+    "filename": "Carved Wood-fabric-1.21.1-1.9.7-B.jar",
+    "sha256": "90b0784cd66b656343ec4b42c9e5562e92175f15ed91404a03a39e386a23847c",
+    "sha1": "af0a1cf8ad03421cb3e5522db432b5c224317309",
+    "sha512": "be1f1a67b76f5d92a0d7c56a7e25976062e40e33a17aa52246da988253e21ae879196939834b896739ffdc486de7149d23951639772524e59f7ac6b13ab5d84a",
+    "size": 2891665,
+    "install_path": "mods/Carved Wood-fabric-1.21.1-1.9.7-B.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Maker's Mods License",
+    "depends": {
+      "fabricloader": ">=0.14",
+      "fabric": "*",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "net.im_maker.carved_wood.CarvedWoodFabric"
+      ],
+      "client": [
+        "net.im_maker.carved_wood.CarvedWoodClient"
+      ],
+      "jei_mod_plugin": [
+        "net.im_maker.carved_wood.compatibility.jei.JEICompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/WuwijfrW/versions/h1wI9HyK/Carved%20Wood-fabric-1.21.1-1.9.7-B.jar"
+    ]
+  },
+  {
+    "id": "catchindicator",
+    "version": "1.7.0",
+    "filename": "catchindicator-fabric-1.7.0.jar",
+    "sha256": "bcebcfa5692f93de8d8aff33973510517a7434d48656c5ad167d33df841bc122",
+    "sha1": "afe92fe750372efe83d9d85480f0e98401fdef1b",
+    "sha512": "583600364c1c72dc8d63c0f974374011d8183b3b689b15635f7b2c0ed84051822d551718b02f56c80b1a71a01ac391ec9cd3747c11d2acb726852403b4400303",
+    "size": 318477,
+    "install_path": "mods/catchindicator-fabric-1.7.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "com.levelscraft7.catchindicator.fabric.client.CatchIndicatorFabricClient"
+      ],
+      "modmenu": [
+        "com.levelscraft7.catchindicator.fabric.client.CatchIndicatorModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/tpTcu2PM/versions/PMZ87iqE/catchindicator-fabric-1.7.0.jar"
+    ]
+  },
+  {
+    "id": "catchrate-display",
+    "version": "2.8.22",
+    "filename": "catchrate-display-fabric-2.8.22.jar",
+    "sha256": "afa99396bceb69071a08f325f6bad4299500634329b0a863605aaf2e94eaaabe",
+    "sha1": "8a3bdc63e67cc96a056c7e5fab71b4eacc2685f3",
+    "sha512": "97b6403624183d89d29ba071d059ef0a9aae05695682d2a8217554c85422306e57d28d2740c244ed810c4881d2ae42a33fdfceaa2230bd9f468db8cf82042a3b",
+    "size": 258716,
+    "install_path": "mods/catchrate-display-fabric-2.8.22.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.21 <1.22",
+      "cobblemon": ">=1.6.0",
+      "fabric-language-kotlin": ">=1.13.4"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "com.catchrate.fabric.CatchRateDisplayFabric"
+        }
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "com.catchrate.fabric.CatchRateDisplayFabricClient"
+        }
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cloth-config",
+    "version": "15.0.140",
+    "filename": "cloth-config-15.0.140-fabric.jar",
+    "sha256": "33894e95da3af59014b39d126586d5241e07ea39f8618763e30dab637405f95f",
+    "sha1": "5d82342a2df53fd6df712bfdd583a811572918a4",
+    "sha512": "1b3f5db4fc1d481704053db9837d530919374bf7518d7cede607360f0348c04fc6347a3a72ccfef355559e1f4aef0b650cd58e5ee79c73b12ff0fc2746797a00",
+    "size": 1157166,
+    "install_path": "mods/cloth-config-15.0.140-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU LGPLv3",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": ">=1.21-"
+    },
+    "entrypoints": {
+      "client": [
+        "me.shedaniel.autoconfig.example.ExampleInits::exampleCommonInit"
+      ],
+      "modmenu": [
+        "me.shedaniel.clothconfig2.fabric.ClothConfigModMenuDemo"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/9s6osm5g/versions/HpMb5wGb/cloth-config-15.0.140-fabric.jar"
+    ]
+  },
+  {
+    "id": "cobblebase",
+    "version": "2.0.0+1.7.0",
+    "filename": "cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
+    "sha256": "1737e2823eb9806af1f7f4aabad779f7a14bcfbbb237f0aa8741d09ee1f25cf6",
+    "sha1": "1948fb9797b080a4ddfbcd71ed50d64933fe3c50",
+    "sha512": "04809f102ddef8117b042fac8e5f0cfb87e56c291e575f0fcdd9b69938aaf91e09f4d2aa84689155abd1e607a45733ac99ea02bc9fc53d510f1b41f29b329f9a",
+    "size": 16364367,
+    "install_path": "mods/cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "fabric-language-kotlin": "*",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "value": "notlown.cobblebase.fabric.CobblebaseFabric",
+          "adapter": "kotlin"
+        }
+      ],
+      "client": [
+        {
+          "value": "notlown.cobblebase.fabric.client.CobblebaseFabricClient",
+          "adapter": "kotlin"
+        }
+      ],
+      "modmenu": [
+        "notlown.cobblebase.fabric.client.CobblebaseModMenu"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblecuisine",
+    "version": "2.0.1",
+    "filename": "cobblecuisine-2.0.1-1.7.rc1-api119fix.jar",
+    "sha256": "18f10ea9444db0360ed75649941f52f61b87909c37c5eb021be8ab30f205bf00",
+    "sha1": "4aa6fef25b3f4f6064585be5018260e0cf0e1b60",
+    "sha512": "aab2188eb1237e6f6e4a65be89db9be413859a74e8366327f148bf4254e4814504c5e2e5a92948882d4b68289905282f48ab9c266f48c105edc54b926e866a0f",
+    "size": 683158,
+    "install_path": "mods/cobblecuisine-2.0.1-1.7.rc1-api119fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "client": [
+        "com.fyre.cobblecuisine.client.CobbleCuisineClient"
+      ],
+      "main": [
+        "com.fyre.cobblecuisine.CobbleCuisine"
+      ],
+      "modmenu": [
+        "com.fyre.cobblecuisine.config.CobbleCuisineModMenuCompat"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbledollars",
+    "version": "2.0.0+Beta-5.1+1.21.1",
+    "filename": "CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+    "sha256": "5d8690980ecc79b5f33005dd274d148d0b9b7713ff5e8223c7011aa8bb08401a",
+    "sha1": "48a2a30fb22e088ca9357fc95bdb4247ddc80b17",
+    "sha512": "97fceefa211ab095f273a39b506d8c4fc53153f41325383bb7fd6735549c2694e844e25aae17d71dd6512c7b72a9ff16de882c214185bdca77d1a50419136b63",
+    "size": 369528,
+    "install_path": "mods/CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All rights reserved",
+    "depends": {
+      "minecraft": ">=1.21.1",
+      "fabricloader": ">=0.16.5",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6.0+1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "fr.harmex.cobbledollars.fabric.FabricBootstrap"
+      ],
+      "client": [
+        "fr.harmex.cobbledollars.fabric.client.CobbleDollarsFabricClient"
+      ],
+      "modmenu": [
+        "fr.harmex.cobbledollars.fabric.client.ModMenuImpl"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/s7N7AsqL/versions/cqsHXSXe/CobbleDollars-fabric-2.0.0%2BBeta-5.1%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "cobblefurnies",
+    "version": "1.2",
+    "filename": "CobbleFurnies-fabric-1.2.jar",
+    "sha256": "c1230a58ca2369b973bfade68a0ffcac86ffcbf9dd2a845999ed8c5348bfef93",
+    "sha1": "a71f20907c3350680a11054584cf96963f5875e5",
+    "sha512": "9cb5a3f1e4604bb30f89f1fa9acd83c260bf6852201ac7a50b40d13afc80b09549da655f74f9dd8ca090e5756422f02865db1a32ead857c74c664e2c96325ee0",
+    "size": 2337235,
+    "install_path": "mods/CobbleFurnies-fabric-1.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "athena": ">=4.0.2",
+      "cobblemon": ">=1.7.1",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.lunazstudios.cobblefurnies.fabric.CobbleFurniesFabric"
+      ],
+      "client": [
+        "com.lunazstudios.cobblefurnies.fabric.client.CobbleFurniesFabricClient"
+      ],
+      "rei_client": [
+        "com.lunazstudios.cobblefurnies.fabric.compat.CobbleFurniesREIClient"
+      ],
+      "jei_mod_plugin": [
+        "com.lunazstudios.cobblefurnies.compat.JEICobbleFurniesPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/AXY1OO9m/versions/54k31lEX/CobbleFurnies-fabric-1.2.jar"
+    ]
+  },
+  {
+    "id": "cobblemon-additions",
+    "version": "4.1.6",
+    "filename": "cobblemon-additions-4.1.6.jar",
+    "sha256": "c40eeee13943aa3b2ed532a25de5b55f5db4c76222e2a61c98d0bc35c028357d",
+    "sha1": "293c0fd6354114cd45d2dd8e4e771d48b1d89200",
+    "sha512": "7486248caac72775c49b0041ca2af27c947e4d89deecc58400779616a43b4b3df2cbc18c72778e3efba2b939d24cbdbad9ff7c6ed6ccea9d155ac24849e04a69",
+    "size": 1961229,
+    "install_path": "mods/cobblemon-additions-4.1.6.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC0-1.0",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "fabric-language-kotlin": "*"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "value": "io.strikeknight57.bca.CobblemonAdditions"
+        }
+      ],
+      "client": [
+        {
+          "value": "io.strikeknight57.bca.CobblemonAdditionsClient"
+        }
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/W2pr9jyL/versions/degN5DK4/cobblemon-additions-4.1.6.jar"
+    ]
+  },
+  {
+    "id": "cobblemon-battle-extras",
+    "version": "1.13.45",
+    "filename": "cobblemon-battle-extras-fabric-1.13.45-api119fix-stable18fix.jar",
+    "sha256": "51205789a5173183d7eadfd0ca4eba9786cee216f354b7a0b288fc15960d1bb1",
+    "sha1": "16c49297d5941453204e70841e592ab968aac30b",
+    "sha512": "e522361778786226f986e7ddf414acdeb20648dc89f5711878daf90b811a0c76f0f74f3be2add55336de687ab26cd9e9c01f679c0fdb0b23c82e060941845216",
+    "size": 1516032,
+    "install_path": "mods/cobblemon-battle-extras-fabric-1.13.45-api119fix-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6"
+    },
+    "entrypoints": {
+      "main": [
+        "name.modid.fabric.CobblemonBattleExtrasFabric"
+      ],
+      "client": [
+        "name.modid.fabric.client.CobblemonBattleExtrasFabricClient"
+      ],
+      "modmenu": [
+        "name.modid.fabric.client.ModMenuIntegration"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemonbattlepositions",
+    "version": "1.1.2",
+    "filename": "cobblemon-battle-positions-1.1.3.jar",
+    "sha256": "d76bbd753763dde4a552d1a86b8bc6ceee9abcb00fa1bd29b6c2e389079437ed",
+    "sha1": "2edbf7224a689b3463327f2970b481fd8e4ceae8",
+    "sha512": "1fa9df1e934ad432c35d119bafb64930aa222f4e12ca628f1e676948100291af1f9166e5855fe8ef2ff082f5c4524a3a9a3722bb2fdc6cc7143758c714cb1454",
+    "size": 58572,
+    "install_path": "mods/cobblemon-battle-positions-1.1.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0",
+      "rctapi": ">=0.14.0"
+    },
+    "entrypoints": {
+      "main": [
+        "com.pokemon.battlepositions.CobblemonBattlePositions"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemon",
+    "version": "1.8.3+1.21.1",
+    "filename": "Cobblemon-fabric-1.8.3+1.21.1.jar",
+    "sha256": "a977e741eec047ebc50559812be9b3296c9090254a632006f1c8b10ed1f7f40c",
+    "sha1": "9155e84912d3bb0dad9aa88586e547c88c37eb1d",
+    "sha512": "0cfcbc811c0434a6a8cbeda32fae5c39328a699e28b4292de635da99fc283f40166d25055594abf4eff56dd9a7a453313a5aa43f4a9969940d9e1a18dd222166",
+    "size": 139963795,
+    "install_path": "mods/Cobblemon-fabric-1.8.3+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric-api": ">=0.116.6+1.21.1",
+      "minecraft": "1.21.1",
+      "java": "21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.cobblemon.mod.fabric.FabricBootstrap"
+      ],
+      "client": [
+        "com.cobblemon.mod.fabric.client.CobblemonFabricClient"
+      ],
+      "fabric-datagen": [
+        "com.cobblemon.mod.fabric.data.generator.CobblemonFabricDataGenerator"
+      ],
+      "jei_mod_plugin": [
+        "com.cobblemon.mod.common.integration.jei.CobblemonJeiPlugin"
+      ],
+      "dynamiclights": [
+        "com.cobblemon.mod.common.compat.lambdynamiclights.LambDynamicLightsInitializer"
+      ],
+      "modmenu": [
+        "com.cobblemon.mod.fabric.client.integration.modmenu.CobblemonModMenu"
+      ],
+      "appleskin": [
+        "com.cobblemon.mod.fabric.client.integration.appleskin.AppleSkinClientEventHandler"
+      ]
+    },
+    "source": "official-exact-hash",
+    "project_id": "MdwFAVRL",
+    "version_id": "IgUZQKm8",
+    "downloads": [
+      "https://cdn.modrinth.com/data/MdwFAVRL/versions/IgUZQKm8/Cobblemon-fabric-1.8.3%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "pcenhancements",
+    "version": "1.1.0",
+    "filename": "cobblemon-pc-enhancements-1.1.0.jar",
+    "sha256": "4aa66d161bc041005d6c015ee95e2d6203a6f0b48d932e0309969331c550fbe0",
+    "sha1": "a93d46d4b50f4bb604a689d255d8e8f9eb3fca37",
+    "sha512": "2fb9c768d93d1246d73aa91f1c784e53769f06fc7646454015feafb84a8e5c9de7944dbd119610b194fdb23eb4f79d8248728d3c69908cd249312f6091707863",
+    "size": 48594,
+    "install_path": "mods/cobblemon-pc-enhancements-1.1.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "main": [
+        "com.ramen.pcenhancements.PCEnhancements"
+      ],
+      "client": [
+        "com.ramen.pcenhancements.client.PCEnhancementsClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemon_battle_tower",
+    "version": "1.11.23",
+    "filename": "cobblemon_battle_tower-fabric-1.11.23-api119fix.jar",
+    "sha256": "eda358e446ece8615fa9f951f1714be19163569dffcc126e199fa414363c145e",
+    "sha1": "960635924d83e0cb7b80f0df41d880f0ff61ce0e",
+    "sha512": "ebf58586e9f78718ae8a6d70ac6bb72f66e9c647c03b82418f7e19bf50daa1b118cbe67ae4f9b155e029a7b6188da0d4cc1f67f5e7c0254e5b94e4ac30c38762",
+    "size": 52072841,
+    "install_path": "mods/cobblemon_battle_tower-fabric-1.11.23-api119fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": "*",
+      "wild_battle_api": ">=1.0.0",
+      "rctapi": ">=0.14.6-beta"
+    },
+    "entrypoints": {
+      "main": [
+        "battle.tower.fabric.BattleTowerFabric"
+      ],
+      "client": [
+        "battle.tower.fabric.client.BattleTowerFabricClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemon_party_extras",
+    "version": "1.8.15",
+    "filename": "cobblemon_party_extras-fabric-1.8.15.jar",
+    "sha256": "02cb7394ea15e2bc3e303d077e156ff9daafa28cfbb242bad7958d62771a6af2",
+    "sha1": "0664f677a24adc0fe4da92ee723a84758e392ba1",
+    "sha512": "616823910ed94026d1486193290268d318fb3a058a583488b104ee11fa0cc6497818ce81c557a273ffb31d8b1bb1b1480be9acddcdc4494daedb82abab5db157",
+    "size": 394695,
+    "install_path": "mods/cobblemon_party_extras-fabric-1.8.15.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.6.0"
+    },
+    "entrypoints": {
+      "main": [
+        "party.extras.cobblemon.fabric.CobblemonPartyExtrasFabric"
+      ],
+      "client": [
+        "party.extras.fabric.client.PartyExtrasFabricClient"
+      ],
+      "modmenu": [
+        "party.extras.fabric.ModMenuIntegration"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemon_quests",
+    "version": "1.2.0",
+    "filename": "cobblemon_quests-1.2.0-stable18fix.jar",
+    "sha256": "324bb55e5fdf65281501957366f66ae28e32d0a1c5161139e04ecaa7ab3f5ac6",
+    "sha1": "8d355cee1e0becf1b41d250d0808c99b58807224",
+    "sha512": "68259ad2b883ea5181f51e81c6997b4e142370d06ee2ac2ec976b9bb856c6fabd5cb2a7efef7c910a65aa6c6497bff6b8e536dde23a52a89ca5b92b6578ee852",
+    "size": 61994,
+    "install_path": "mods/cobblemon_quests-1.2.0-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC-BY-NC-4.0",
+    "depends": {
+      "fabricloader": "*",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "architectury": ">=13.0.0",
+      "ftbquests": ">=2101.0.0"
+    },
+    "entrypoints": {
+      "main": [
+        "winterwolfsv.cobblemon_quests.fabric.Cobblemon_QuestsFabric"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblemonraiddens",
+    "version": "0.11.3+1.21.1",
+    "filename": "cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar",
+    "sha256": "16b3c81c5cf6fa28d5ae5fcb094918accdef848119aeda5702166ec6cd2474cb",
+    "sha1": "5b24480f4870af3577c772a34468759dcb1e023f",
+    "sha512": "00d19215cb04c9c25cf484ceb3ae2672448314bf549fb790acd716ed6dc1ac01db7e18e6145629a8cf5fce842cb8f5b28569f5d1bd2d769fa00c0c1a5cd3ff56",
+    "size": 2690220,
+    "install_path": "mods/cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "geckolib": ">=4.7.0"
+    },
+    "entrypoints": {
+      "main": [
+        "com.necro.raid.dens.fabric.CobblemonRaidDensFabric"
+      ],
+      "client": [
+        "com.necro.raid.dens.fabric.CobblemonRaidDensFabricClient"
+      ],
+      "jade": [
+        "com.necro.raid.dens.common.compat.jade.RaidDensJadePlugin"
+      ],
+      "modmenu": [
+        "com.necro.raid.dens.fabric.compat.modmenu.RaidDensModMenuIntegration"
+      ],
+      "jei_mod_plugin": [
+        "com.necro.raid.dens.common.compat.jei.RaidDensJEIPlugin"
+      ],
+      "rei_client": [
+        "com.necro.raid.dens.common.compat.rei.RaidDensREIPlugin"
+      ],
+      "emi": [
+        "com.necro.raid.dens.common.compat.emi.RaidDensEMIPlugin"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobblenav",
+    "version": "2.3.3-cobblemon1.8-api-fix",
+    "filename": "cobblenav-fabric-2.3.3-cobblemon1.8-api-fix.jar",
+    "sha256": "477c64ad89cae46477fd2bc193af2b9e59f89522e1d0899c7e3da5c38336a3c7",
+    "sha1": "c30a93f779e5392e2bf3ef6b4e15916ebac70153",
+    "sha512": "03882639b8cabfedb0fb45916694f98f293861cd53f615ca95e982f713aaed9160071544d773afe07ee01f0a4572f0974b2a3715912c6bfb654e133610ba2717",
+    "size": 1086521,
+    "install_path": "mods/cobblenav-fabric-2.3.3-cobblemon1.8-api-fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.metacontent.cobblenav.CobblenavFabric"
+      ],
+      "client": [
+        "com.metacontent.cobblenav.client.CobblenavFabricClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_battle_extras_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-battle-extras-hotfix-1.0.0.jar",
+    "sha256": "a2d2bee59a708cbd2286f37cd15f86d8a840f626f951006ffc1f54b2739338ed",
+    "sha1": "2b6faa635c4a7d3a1fae79c3182fcd05b7889e2e",
+    "sha512": "5ab5c3dfa1c0256aee873d5f52c15205e1773668a2d4db106f0c4b8d200012be166af34561ae61a38ebe0516fad5888646fad685608396b6d8a38ee5d461c926",
+    "size": 3622,
+    "install_path": "mods/cobbleverse-battle-extras-hotfix-1.0.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": "*"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_client_pack_guard",
+    "version": "2026.08.29.3",
+    "filename": "cobbleverse-client-pack-guard-2026.08.29.3.jar",
+    "sha256": "e41ab4d7d6852cd345d37b4e6a69ec28c332f4098f6811e6f7a1fc70287c1ac4",
+    "sha1": "352e8e683ca60e1bc8ae729da5f1d41d91c8643e",
+    "sha512": "a90eaf4840699d85b352abfcd95eb714ebb703342774852ffc869fb0b5d1a7e83be468fcbb48d5d2b30d392bf694d61478d16352f0dbcbe55d6d66b9f34f34e0",
+    "size": 5721,
+    "install_path": "mods/cobbleverse-client-pack-guard-2026.08.29.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": null,
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "kr.cobbleverse.packguard.CobbleversePackGuard"
+      ],
+      "client": [
+        "kr.cobbleverse.packguard.CobbleversePackGuardClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_cobblebase_routing_hotfix",
+    "version": "1.1.0",
+    "filename": "cobbleverse-cobblebase-routing-hotfix-1.1.0.jar",
+    "sha256": "8cdb1bdc7bbf72aa88ea47f7f03d1d4e52950b4cb4c57b4ed3bf055c31ea809e",
+    "sha1": "5288178726ae17fae98b8d3a093f7c2c3cd03680",
+    "sha512": "4bc12b7253db400789873f4958d9c8748054a809002df48170b1ab2e9a03f0d27f101284aa5e0812a65b8366121f011f3b0b829030777cc85d5855cff6a81328",
+    "size": 9470,
+    "install_path": "mods/cobbleverse-cobblebase-routing-hotfix-1.1.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblebase": "2.0.0+1.7.0"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_compat_api119_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-compat-api119-hotfix-1.0.0-stable18fix.jar",
+    "sha256": "16b1b78ccd7622f1147e5dd65e4dfb76cf1c5e5bb83a0ab55d162c48d40f27cf",
+    "sha1": "9840a6752205ef3901ddbbdfc50ec3c316a11076",
+    "sha512": "5f9533c493dc9f8de8731a4cee93f676df6d7f72db5627d1f407457ff80de8233fa250c34c4aea7a2bd01dbd0f5825075b81b2e0ede707586eaa0fcd9d0b0957",
+    "size": 5004,
+    "install_path": "mods/cobbleverse-compat-api119-hotfix-1.0.0-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": null,
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "cobblemon": "*"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_mount_sync_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-mount-sync-hotfix-1.0.0.jar",
+    "sha256": "4424dde8a3f7ad2ed2b806bc3b96cb0c1e442b6f88fd715adee2cc6de0fc7a09",
+    "sha1": "b844b7edf26d6a3a4a1e52771a35d20a2707654d",
+    "sha512": "a812d2261eb091c5676eca5622d8218c9bbbcc18a8c869a56fdb251e8e7140dca4dd77a37709d0f9725391031c01c7194db5e1a158d6d88ec7ac9312855b74f2",
+    "size": 6155,
+    "install_path": "mods/cobbleverse-mount-sync-hotfix-1.0.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_raiddens_gem_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-raiddens-gem-hotfix-1.0.0.jar",
+    "sha256": "71f1eaead1c3a08817ba393480a47fb85e4e657b5f9bab4bf25dfffbc067addb",
+    "sha1": "e032ec8532232263884ef33528ee0c3ed50bec7d",
+    "sha512": "75a67e17f6c6cf1953f80034f9e78eb9eeaa8c4e41c876624eec4c77c056de08dc03abfa66e511f616ca869d27d75ac5f8a5ab343a40c4040ee4a4839958a5ba",
+    "size": 3402,
+    "install_path": "mods/cobbleverse-raiddens-gem-hotfix-1.0.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": "*",
+      "cobblemonraiddens": "*"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_regional_evolution_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-regional-evolution-hotfix-1.0.0.jar",
+    "sha256": "85855879a8a82ad0ad1ec7013d54da56b008947861c041fb8b837d97ee217eab",
+    "sha1": "979a3afd4a2fba8aca8954066c147a01ae81372a",
+    "sha512": "201fc8f45a65fe5bcfe001d67da7bb92ba0dac00211cd211be09259acd212ba74921b33a6f05aa72480126705fe1d0ebb3ebb71e76630913ab1c4f2f6e713cc8",
+    "size": 6350,
+    "install_path": "mods/cobbleverse-regional-evolution-hotfix-1.0.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": ">=1.8.0 <1.9.0"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleverse_runtime_compat_hotfix",
+    "version": "1.0.0",
+    "filename": "cobbleverse-runtime-compat-hotfix-1.0.0.jar",
+    "sha256": "6c7034ee08cba2463aaa076e3fa6b1fecc0381cec81ed4395746b7221deba5d1",
+    "sha1": "89e0cacbe819d5a0c1e3f4cd53184e890d87a011",
+    "sha512": "046050367f79c26c97727f548df8609a73114d6ce850dadd2cbfb085e2033fdd2d8b05fbadd95e8b8498a093dee99e241b40d0d9963382612e724e2807829220",
+    "size": 4177,
+    "install_path": "mods/cobbleverse-runtime-compat-hotfix-1.0.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": "*",
+      "fightorflight": "*",
+      "cobblemonbattlepositions": "*"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "cobbleversebadges",
+    "version": "1.3",
+    "filename": "CobbleverseBadges-1.3.jar",
+    "sha256": "d215d075d4ae80a4ed5e20cb5caf442bb3f3607d2a41dc134ebad035f6a8da77",
+    "sha1": "8e213de6013b6a58485ba8ddfcff5c91b3beb41d",
+    "sha512": "c5ca78e885defa54d5cc530a3ed80e66c083cfc27c694d385a495ffd3d9506ed64c17ca2697599756d38803dfdbf099f4005f0fc231db6f8db3a3fb8f4ff76b8",
+    "size": 137015,
+    "install_path": "mods/CobbleverseBadges-1.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC BY-NC-ND 4.0",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "~1.21.1",
+      "java": ">=17",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadges"
+      ],
+      "client": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadgesClient"
+      ],
+      "fabric-datagen": [
+        "com.lumyverse.cobbleversebadges.CobbleverseBadgesDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/PHT3Zj0r/versions/3aQ0cMqp/CobbleverseBadges-1.3.jar"
+    ]
+  },
+  {
+    "id": "cobbreeding",
+    "version": "2.2.2",
+    "filename": "Cobbreeding-fabric-2.2.2-cobbleverse-pcfix-stable18fix.jar",
+    "sha256": "3a24bb76b0b1b214ac31e9b782ac4e7f18758c3ec14e3b50e86d2b645df067e8",
+    "sha1": "72191dc81dab9e46373fb52cf150002e4561af86",
+    "sha512": "09a39416ce431ce67e3917a993c46c0805cd525afb30969e38918dfcc0bc13d2afac28218e0b081a33e9e9244e09e321c222f62174f0dc4afbbd843b80add729",
+    "size": 476104,
+    "install_path": "mods/Cobbreeding-fabric-2.2.2-cobbleverse-pcfix-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": "1.21.1",
+      "architectury": "13.x",
+      "cloth-config": ">=15",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "value": "ludichat.cobbreeding.fabric.Cobbreeding"
+        }
+      ],
+      "client": [
+        {
+          "value": "ludichat.cobbreeding.fabric.CobbreedingClient"
+        }
+      ],
+      "modmenu": [
+        "ludichat.cobbreeding.fabric.ConfigScreen"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "comforts",
+    "version": "9.0.5+1.21.1",
+    "filename": "comforts-fabric-9.0.5+1.21.1.jar",
+    "sha256": "73ff17028967a2e30731ea79aee2e18dd8e2d59a5dcd075facd6491cae1b2231",
+    "sha1": "e47d6c2f0213abed8865dfa51ee05dea86c1baa9",
+    "sha512": "617711d65c0ac1ddb8069ed46051c7da5fd7f4a19adbefc1c6d417621d32a4a4929dd60bd76f204045537a151d29f5e518aa7d18d604012ef1f9b62de707530d",
+    "size": 914494,
+    "install_path": "mods/comforts-fabric-9.0.5+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-or-later",
+    "depends": {
+      "fabricloader": ">=0.15",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "fabric-datagen": [
+        "com.illusivesoulworks.comforts.data.ComfortsDataGenerator"
+      ],
+      "main": [
+        "com.illusivesoulworks.comforts.ComfortsFabricMod"
+      ],
+      "client": [
+        "com.illusivesoulworks.comforts.ComfortsFabricClientMod"
+      ],
+      "spectrelib-config": [
+        "com.illusivesoulworks.comforts.ComfortsConfigInitializer"
+      ],
+      "cardinal-components-entity": [
+        "com.illusivesoulworks.comforts.common.ComfortsComponents"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/SaCpeal4/versions/LUPOTXbk/comforts-fabric-9.0.5%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "configurable",
+    "version": "3.5.2",
+    "filename": "configurable-3.5.2+1.21.1-fabric.jar",
+    "sha256": "70f7728d67ff8c420a53ef3c08ec73732517882317ab20a084b273773aa1e5e2",
+    "sha1": "2c7302944b3dbdb7a20ebdba8425ccae52f7f46a",
+    "sha512": "30122272fd6cd5a4ca41788bf59ac82629d605de697995de1208b7636973eb03f2ff53e8bb871ac431e8cfc880bfe08eccd3e3991924cd5ee98a9bf9faec63c2",
+    "size": 545247,
+    "install_path": "mods/configurable-3.5.2+1.21.1-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "minecraft": "~1.21.1",
+      "fabric-api": "*",
+      "fabricloader": ">=0.16.0"
+    },
+    "entrypoints": {
+      "main": [
+        "com.bawnorton.configurable.platform.ConfigurableEntrypoint"
+      ],
+      "client": [
+        "com.bawnorton.configurable.platform.ConfigurableClientEntrypoint"
+      ],
+      "fabric-datagen": [
+        "com.bawnorton.configurable.data.ConfigurableDataGen"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/lGffrQ3O/versions/4IO3KqeL/configurable-3.5.2%2B1.21.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "continuity",
+    "version": "3.0.0+1.21",
+    "filename": "continuity-3.0.0+1.21.jar",
+    "sha256": "99fd46b834874d167ea2349a9a72947cbfa7192f927aa99bbeb4b0637aa208d4",
+    "sha1": "c7f09b53512604c2ba6803b1247bc70e4d0f8f8c",
+    "sha512": "3601ddb50f19142c087d32525bc0afcfb5f49a2e7477b6645a98ec191218739fdf3c6ac95cd298e826eb34fc533af43bb0e78c64e51292866ecabade4d14b13a",
+    "size": 1014044,
+    "install_path": "mods/continuity-3.0.0+1.21.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "minecraft": ">=1.21 <=1.21.1",
+      "fabricloader": ">=0.15.0",
+      "fabric-api": ">=0.100.1"
+    },
+    "entrypoints": {
+      "client": [
+        "me.pepperbell.continuity.client.ContinuityClient"
+      ],
+      "modmenu": [
+        "me.pepperbell.continuity.client.config.ModMenuApiImpl"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1IjD5062/versions/kSPJ4hQv/continuity-3.0.0%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "controlling",
+    "version": "19.0.5",
+    "filename": "Controlling-fabric-1.21.1-19.0.5.jar",
+    "sha256": "c0150c5bfbc77f27b92f24a5a9c2edc462eba8c8f912635757c5deb3a0a93f8d",
+    "sha1": "22d2407311298d0185b606aa1dd03ae33b98dff3",
+    "sha512": "2b172371037bdac4d37332f1fcfbd09c6e083524ba02ea62d980aab937c79cef4eeeea4e05353cbb0428dcb1d31f04ce0f6f148619d15db74587b983c6d04bc8",
+    "size": 83679,
+    "install_path": "mods/Controlling-fabric-1.21.1-19.0.5.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "searchables": ">=1.0.1",
+      "fabric-api": "*"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/xv94TkTM/versions/hGJDoW2W/Controlling-fabric-1.21.1-19.0.5.jar"
+    ]
+  },
+  {
+    "id": "customsplashscreen",
+    "version": "2.2.0",
+    "filename": "customsplashscreen-2.2.0.jar",
+    "sha256": "142aacb23fc97e467ded7e279a72b00252018c43d12d803d928d07d4fe8d8678",
+    "sha1": "bb79f8974e619e077d60a6bdffe389913b84defd",
+    "sha512": "08c99c6eb998ce7caeffc42567e07b08717a6c8cff617f623ab04006097ad86f7971ae3400e905174fbd5b64c2787017f9b8ee53048e2a793be9aaae80950683",
+    "size": 660554,
+    "install_path": "mods/customsplashscreen-2.2.0.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "midnightlib": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "eu.midnightdust.customsplashscreen.CustomSplashScreenClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/BwFQLeCh/versions/OIFSv9om/customsplashscreen-2.2.0.jar"
+    ]
+  },
+  {
+    "id": "debugify",
+    "version": "1.21.1+1.0",
+    "filename": "Debugify-1.21.1+1.0.jar",
+    "sha256": "e61e83875190150337a2366d9374f04865654de7bdf83e6ab29d9915899f8d7a",
+    "sha1": "6fb7d4ec9c2d2dc5b58577324b47671d3e28d7a4",
+    "sha512": "079e7bd774abf7e25a916b5d4bb8f08d0176a72881497be80bb48ca89a0c1317f9c347c46911c452ea5f71fe2514d7780b5b8e339a61b07c5c4fc7b5cecdb41d",
+    "size": 292202,
+    "install_path": "mods/Debugify-1.21.1+1.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPLv3",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-resource-loader-v0": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.isxander.debugify.Debugify::onInitialize"
+      ],
+      "client": [
+        "dev.isxander.debugify.client.DebugifyClient::onInitializeClient"
+      ],
+      "preLaunch": [
+        "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+      ],
+      "modmenu": [
+        "dev.isxander.debugify.client.integrations.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/QwxR6Gcd/versions/dO7QNiof/Debugify-1.21.1%2B1.0.jar"
+    ]
+  },
+  {
+    "id": "defaultoptions",
+    "version": "21.1.7",
+    "filename": "defaultoptions-fabric-1.21.1-21.1.7.jar",
+    "sha256": "8fff8fad699028a6578c61df3d1690d6fb5abbdc9a7c436e94cc9f51138be790",
+    "sha1": "1eed10a37b1f4a45f51e76044beb44e23b6bd678",
+    "sha512": "1aae0d6af43c1b4b50e93e0ba5b7f3c093ad4093edc7e8ff574014c05772bb9ae0209583645bf8da164f672c8fe007243680968cedbbab43c70b97363e6fb8c7",
+    "size": 105044,
+    "install_path": "mods/defaultoptions-fabric-1.21.1-21.1.7.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [],
+      "client": [
+        "net.blay09.mods.defaultoptions.fabric.client.FabricDefaultOptionsClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.defaultoptions.fabric.compat.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/WEg59z5b/versions/xaqHFEAN/defaultoptions-fabric-1.21.1-21.1.7.jar"
+    ]
+  },
+  {
+    "id": "entity_model_features",
+    "version": "3.2.4",
+    "filename": "entity_model_features-3.2.4-1.21-fabric.jar",
+    "sha256": "3c3f800b4bf911a158435c36dac0cf4176bec36d837c0696fdfae39d7ec5f976",
+    "sha1": "4538d0eec804c3a8f8c3a6809f687e362df588cf",
+    "sha512": "466bcc2bf542cafde4d308902bce030e3c0ac1719af327f41e6c16833d2fcfedbd6fdebb2ce323fb14e5cdc75fe6f6ff2ebb6f77a53c5d3af1e4c83eff786f0b",
+    "size": 565280,
+    "install_path": "mods/entity_model_features-3.2.4-1.21-fabric.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": "*",
+      "entity_texture_features": ">=7.1"
+    },
+    "entrypoints": {
+      "client": [
+        "traben.entity_model_features.EMFInit"
+      ],
+      "modmenu": [
+        "traben.entity_model_features.config.EMFModMenu"
+      ],
+      "ebe_v1": [
+        "traben.entity_model_features.mod_compat.EBEConfigModifier"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/4I1XuqiY/versions/NLDNY8vg/entity_model_features-3.2.4-1.21-fabric.jar"
+    ]
+  },
+  {
+    "id": "entity_texture_features",
+    "version": "7.1",
+    "filename": "entity_texture_features_1.21-fabric-7.1.jar",
+    "sha256": "d1b54ad6fd34eaf7187fb62556f2c5cacdc2ea3023a6217e3b2d823285aea148",
+    "sha1": "2020e3884ada68d7aba1d54f182d32d511c40e5f",
+    "sha512": "ee8ef05dab35287e4df9a5fac0f2b6379da217d79756620d9e5243e72f6e9033ada6f677fd520e70c4c655df0c8c808d785f7f14d25af0c00371047311602c40",
+    "size": 745421,
+    "install_path": "mods/entity_texture_features_1.21-fabric-7.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "traben.entity_texture_features.ETFInit"
+      ],
+      "modmenu": [
+        "traben.entity_texture_features.config.ETFModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/BVzZfTc1/versions/udcdeUXw/entity_texture_features_1.21-fabric-7.1.jar"
+    ]
+  },
+  {
+    "id": "entityculling",
+    "version": "1.10.5",
+    "filename": "entityculling-fabric-1.10.5-mc1.21.1.jar",
+    "sha256": "cfb5491f5ed9609784cf3d6a926bef046ca80cb74c7856e6134335d7d0ce839e",
+    "sha1": "7e8c9c44049e6575e75d1fe38d6006306b8d5623",
+    "sha512": "5072ddbfc8dbbef450cd80b1e4824a9bd9a5e084ac285eea15f92baef47ab2bf4c37991ec68b56cee47c8b29905ca699f79676ae1c6c964cc92632d2761dd21a",
+    "size": 1595131,
+    "install_path": "mods/entityculling-fabric-1.10.5-mc1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "tr7zw Protective License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "dev.tr7zw.entityculling.EntityCullingMod"
+      ],
+      "modmenu": [
+        "dev.tr7zw.entityculling.config.EntityCullingModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/NNAgCjsB/versions/hsWvcyFJ/entityculling-fabric-1.10.5-mc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "euphoria_patcher",
+    "version": "1.9.3-r5.8.1-fabric",
+    "filename": "EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+    "sha256": "b42bd00c7ab6e044d21f845dedc58a4524e45643f3685bf1c2343098e74d662e",
+    "sha1": "2a596436fca404cf497c1e9228d6cd9748d1fbf2",
+    "sha512": "c44bdb83f79ee4a63a3f3009e6bf003320e9d5bb3d681c4898e219d44214e44d7a63ccb0427f9e13f29b51fb3dc8fe027087f8b690d036be0e31cf37e7a3bb1e",
+    "size": 4296552,
+    "install_path": "mods/EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.14.0"
+    },
+    "entrypoints": {
+      "main": [
+        "com.euphoriapatches.euphoria_patcher.fabric.ClientEuphoriaPatcher"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/4H6sumDB/versions/7GNWrkGL/EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "fabric-api",
+    "version": "0.116.14+1.21.1",
+    "filename": "fabric-api-0.116.14+1.21.1.jar",
+    "sha256": "333f15bceb117a0ac41e3396eac9873fa6c325c31e746d679809f9a7a0228196",
+    "sha1": "1bc9caf399a9eadddaec3215e31594ca40fc9485",
+    "sha512": "50664e5f7c9e08475c5902a6b3bbf71950acb03de998271ae9e488527a2cda3c2b170d2093a40f4927412a0a132a1241b17021469ca3c1c63cd5cad676b6b2ff",
+    "size": 2451978,
+    "install_path": "mods/fabric-api-0.116.14+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Apache-2.0",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": ">=1.21- <1.21.2-"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/P7dR8mSH/versions/aUrTRV7H/fabric-api-0.116.14%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "fabric-language-kotlin",
+    "version": "1.13.13+kotlin.2.4.10",
+    "filename": "fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
+    "sha256": "34ccdacf13bb9351fe43ce61912c2e09b72364e43e787d36ba3d2d04dec75a52",
+    "sha1": "620cb137a9dc69ce86f3114f19d9eedab16366f5",
+    "sha512": "9a63c35a550b0362b7b25ff045d93709c7b0dae08c89076cba422813fdfb9e5f5dd021ed3afac9f82e74e95b88c249e8f68b240717151540ca3e88cc27fb9c77",
+    "size": 8076363,
+    "install_path": "mods/fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Apache-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.9"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Ha28R6CL/versions/bdhiINYC/fabric-language-kotlin-1.13.13%2Bkotlin.2.4.10.jar"
+    ]
+  },
+  {
+    "id": "fancymenu",
+    "version": "3.9.8",
+    "filename": "fancymenu_fabric_3.9.8_MC_1.21.1.jar",
+    "sha256": "19e5faf15a769ba4841815fb2320f1efc9f97ddffbc24c95299b6480b50af201",
+    "sha1": "72cf81b069075a39996d4b2360ffca3299ab539e",
+    "sha512": "08392134c84f0bacd0d0f33a9c2aac115916667ad7f7b27d4d46b99b5a6dfd56000ed3eaba709b8161bf5946cb593470c857599c4b9a2e567a3cac550315ecbb",
+    "size": 25757227,
+    "install_path": "mods/fancymenu_fabric_3.9.8_MC_1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "DSMSLv3 (DON'T SNATCH MA STUFF LICENSE v3)",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "fabric": ">=0.104.0",
+      "konkrete": ">=1.9.4",
+      "melody": ">=1.0.6",
+      "minecraft": ">=1.21.1",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.fancymenu.FancyMenuFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Wq5SjeWM/versions/d8MLo3sY/fancymenu_fabric_3.9.8_MC_1.21.1.jar"
+    ]
+  },
+  {
+    "id": "ferritecore",
+    "version": "7.0.3",
+    "filename": "ferritecore-7.0.3-fabric.jar",
+    "sha256": "98c3ab1d5aab8f14b5d082d3f1a467727fd335f02d124555c94339761c4c18f2",
+    "sha1": "a8a6a34fcda177da2828cedef44e0e538cf78aad",
+    "sha512": "3ad31620fac4ff44327dc7dedbe162b2d978f3f246dc16255a6e400ce9592a0d326fe36a626f3c1bf30a11f813093cbb4dcc107af039cff724d0cdf648541fdf",
+    "size": 123450,
+    "install_path": "mods/ferritecore-7.0.3-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.14.21",
+      "minecraft": ">=1.21.1 <1.22"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/uXXizFIs/versions/sOzRw3CG/ferritecore-7.0.3-fabric.jar"
+    ]
+  },
+  {
+    "id": "fightorflight",
+    "version": "0.10.9",
+    "filename": "fightorflight-fabric-0.10.9-stable18fix.jar",
+    "sha256": "12dbb8e759f480408fc62e87cf7a776091f2330c471fe551d6921f6a48ad65bb",
+    "sha1": "b62324258a7180af2c35cbbbf483d20541b2bd81",
+    "sha512": "68a7c36e1d914c3925b4cebe75a9dc2d53434d290b4aa71c3312aa6b8643ec6903ec7b243decb3326800137413a1c9f0a1cd949f9e9e82f18f7e8e28f1007f15",
+    "size": 1424591,
+    "install_path": "mods/fightorflight-fabric-0.10.9-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabricloader": ">=0.16.9",
+      "fabric": "*",
+      "cobblemon": ">=1.7.2",
+      "architectury": ">=13.0.8",
+      "cloth-config": ">=15.0.140"
+    },
+    "entrypoints": {
+      "main": [
+        "me.rufia.fightorflight.CobblemonFightOrFlightFabric"
+      ],
+      "client": [
+        "me.rufia.fightorflight.FabricClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "forgeconfigapiport",
+    "version": "21.1.6",
+    "filename": "ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+    "sha256": "2e3a8f0e3bda85a7d722720e7ce879cbd9d028d9395c6fc224d329b3c982d9b1",
+    "sha1": "18bf1f21cd2db6dcd4e42db85eae54e2a49a48ee",
+    "sha512": "cd9296e78ba969f7aed6e3692aa25eb61c102c79c55ca5f9592576bacaa26feab5d5d48fa30cf07ca852e0f1d42afc4d4558feff69a67b225183d2bc15898cf9",
+    "size": 633065,
+    "install_path": "mods/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric-api": ">=0.102.0",
+      "minecraft": "1.21.1",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "fuzs.forgeconfigapiport.fabric.impl.ForgeConfigAPIPortFabric"
+      ],
+      "client": [
+        "fuzs.forgeconfigapiport.fabric.impl.client.ForgeConfigAPIPortFabricClient"
+      ],
+      "modmenu": [
+        "fuzs.forgeconfigapiport.fabric.impl.integration.modmenu.ModMenuApiImpl"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ohNO6lps/versions/N5qzq0XV/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar"
+    ]
+  },
+  {
+    "id": "forgivingvoid",
+    "version": "21.1.7",
+    "filename": "forgivingvoid-fabric-1.21.1-21.1.7.jar",
+    "sha256": "ee45266cc7c10b0a17d9a87b021a57fb8616529e4c33af0fff5a506de71960b1",
+    "sha1": "be9be65f0b23bc751f0768af9c921a1483a06aa9",
+    "sha512": "5168f3bc0bc7b1bff828fb8f081463f612d6239453aa37ffa10d97d9e23be6450daeb194336ac025bad655ac307638c7aad96e6f63769e205df8e9a51e0c4c95",
+    "size": 78531,
+    "install_path": "mods/forgivingvoid-fabric-1.21.1-21.1.7.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.forgivingvoid.fabric.FabricForgivingVoid"
+      ],
+      "client": [],
+      "modmenu": [
+        "net.blay09.mods.forgivingvoid.fabric.compat.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1vkzEZjE/versions/HGbKoEgt/forgivingvoid-fabric-1.21.1-21.1.7.jar"
+    ]
+  },
+  {
+    "id": "ftblibrary",
+    "version": "2101.1.37",
+    "filename": "ftb-library-fabric-2101.1.37.jar",
+    "sha256": "399e62acd6c343dab0780ac34aa0e86b4acaa6861eb5d65e826adb03ce9ec6c1",
+    "sha1": "3e7de2621365a2975bff3b3227c9027b12469dec",
+    "sha512": "c4b3b8d4eacfde7c5b93477993ac7234723b8ff610a19f4350a1d182f0af9153826dd229dbbb8dec51f6ef0ef68c6bcf5c146a538e1d4e7ed6949a29f3f04896",
+    "size": 1435726,
+    "install_path": "mods/ftb-library-fabric-2101.1.37.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.6"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftblibrary.fabric.FTBLibraryFabric"
+      ],
+      "rei_client": [
+        "dev.ftb.mods.ftblibrary.integration.REIIntegration"
+      ],
+      "emi": [
+        "dev.ftb.mods.ftblibrary.integration.EMIIntegration"
+      ],
+      "jei_mod_plugin": [
+        "dev.ftb.mods.ftblibrary.integration.JEIIntegration"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "ftbquests",
+    "version": "2101.1.37",
+    "filename": "ftb-quests-fabric-2101.1.37.jar",
+    "sha256": "2f060bcdde671d07af48ecee49cb1331307b2d187f061c62efff0ccb7974ead0",
+    "sha1": "00d40114e5a8e40d31d8b1abf2af16902bc45430",
+    "sha512": "7f738e03fdf69b6e691061cd9cb3cfe4eeeec7fec8e439b474fd8cb852c73f5aa310b72b430aa38946cd2c3676859d562227875dbf836f8705c5ccb5571a47ec",
+    "size": 1632287,
+    "install_path": "mods/ftb-quests-fabric-2101.1.37.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabric": ">=0.102.1+1.21.1",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.36",
+      "ftbteams": ">=2101.1.9"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbquests.fabric.FTBQuestsFabric"
+      ],
+      "rei_client": []
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "ftbteams",
+    "version": "2101.1.11",
+    "filename": "ftb-teams-fabric-2101.1.11.jar",
+    "sha256": "39e34b438e0232a614a8cf1269fcff2705b85fde8b930a03d558bc66a03c7cf6",
+    "sha1": "9b07ff01ed801d40c5574d8b2c3dd3d7a00dc099",
+    "sha512": "04cd51e44c3c102932804876d673cb00201ca6e36fdd224167dd09d777955e62d5d03b061be30310049c6b7a676c0a82ed581082072073ea8e5ca68101233fb7",
+    "size": 303801,
+    "install_path": "mods/ftb-teams-fabric-2101.1.11.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabric": ">=0.100.1+1.21",
+      "minecraft": "~1.21.1",
+      "architectury": ">=13.0.8",
+      "ftblibrary": ">=2101.1.30"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.ftb.mods.ftbteams.fabric.FTBTeamsFabric"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "fusion",
+    "version": "1.2.12",
+    "filename": "fusion-1.2.12-fabric-mc1.21.jar",
+    "sha256": "904b53bd8e0aacf200c700997c7467bc0c66cca1fb4a17c9999afb8eb62942e8",
+    "sha1": "6c5ef883ab46b3e6ab5f53b7c1b0b369162f9110",
+    "sha512": "571db7262ae65a1e556013bb94843c701b8bc9c68527b736bb01bc3a62077a76924a7fea76623842b19acb42cfe987e11803d6e01be2f55350b0c804acaa505b",
+    "size": 515411,
+    "install_path": "mods/fusion-1.2.12-fabric-mc1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All rights reserved",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.fusion.Fusion"
+      ],
+      "client": [
+        "com.supermartijn642.fusion.FusionClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/p19vrgc2/versions/6fQXv7Yl/fusion-1.2.12-fabric-mc1.21.jar"
+    ]
+  },
+  {
+    "id": "fzzy_config",
+    "version": "0.7.6+1.21",
+    "filename": "fzzy_config-0.7.6+1.21.jar",
+    "sha256": "323dc065cc3aaeb7f908be7e5d31070a25d4188b433ed770a79700ef8f5e8f7d",
+    "sha1": "cff21f254e911a323fe49015d12e548d3e3b8d7c",
+    "sha512": "84f4176e371e65c838e7b78a7defdf18cad1fe5ad47dabe2a3fc5a940d900296d8af7a0320fb0c15040e38bf9be98d046f38a93d392a6ecaed71926de5158ddf",
+    "size": 2365335,
+    "install_path": "mods/fzzy_config-0.7.6+1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Timefall Development Licence - Modified 1.3",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": "*",
+      "fabric-language-kotlin": ">=1.12.1+kotlin.2.0.20",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.FC"
+        }
+      ],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.FCC"
+        }
+      ],
+      "modmenu": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.fzzy_config.impl.ConfigModMenuCompat"
+        }
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/hYykXjDp/versions/kOmySYD4/fzzy_config-0.7.6%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "geckolib",
+    "version": "4.9.2",
+    "filename": "geckolib-fabric-1.21.1-4.9.2.jar",
+    "sha256": "eac4cf55e1cb99b22cb91ea87c774d2a670c1711a80f4aff50e6ad56b6c58e7e",
+    "sha1": "b95b1d631baeada54c6773ca8f6ede40d57fea46",
+    "sha512": "2442ebe35e84ab9dc564f059d4003b6a9d2a3f304f02427e8710ad35b3547637f292b2aced021f765c4cbac7c4e9b5043fe9cb84ac85912151cf6d0e9c09696d",
+    "size": 660416,
+    "install_path": "mods/geckolib-fabric-1.21.1-4.9.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.17",
+      "fabric-api": ">=0.100.0+1.21",
+      "java": ">=17",
+      "minecraft": ">=1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "software.bernie.geckolib.GeckoLib"
+      ],
+      "client": [
+        "software.bernie.geckolib.GeckoLibClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/8BmcQJ2H/versions/dnJdtm0u/geckolib-fabric-1.21.1-4.9.2.jar"
+    ]
+  },
+  {
+    "id": "globalpacks",
+    "version": "21.0.6",
+    "filename": "globalpacks-fabric-1.21.1-21.0.6.jar",
+    "sha256": "391d960afb1d8f0b63ccfb677970512d68642102b6928a4830ebcd6d3fdba2cc",
+    "sha1": "6a0c4ccf2a8bc916173defc3c49c8e95285e66b9",
+    "sha512": "f49f202900e2753f154a06a48a40c57bdcd85e70bb265f80794f1b74f5924302d9109bb80c58dabf99944b15ed7031ba8156f4231fc6743e4008758f00be1840",
+    "size": 394707,
+    "install_path": "mods/globalpacks-fabric-1.21.1-21.0.6.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "ARR",
+    "depends": {
+      "minecraft": ">=1.21",
+      "java": ">=17"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/NRLPy2mk/versions/ErTctr3A/globalpacks-fabric-1.21.1-21.0.6.jar"
+    ]
+  },
+  {
+    "id": "handcrafted",
+    "version": "4.0.3",
+    "filename": "handcrafted-fabric-1.21.1-4.0.3.jar",
+    "sha256": "9609c27e2eeaed4c633ade2d68ad980cfbed0442a10239846a67e9c62bc1b230",
+    "sha1": "a9579fecd7ed429c282be21d5c921d220197acc6",
+    "sha512": "6274aa51bec1076faf9eef9783c676ab2a12cd87eaf9beb72258c50bf0478d702d9ea6a21e8f1fa6e4ba5084698f0aa0f7edcfe631d64b683c23e4db884c187f",
+    "size": 7127377,
+    "install_path": "mods/handcrafted-fabric-1.21.1-4.0.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Terrarium Licence",
+    "depends": {
+      "fabric-api": "*",
+      "minecraft": ">=1.21",
+      "resourcefullib": ">=3.0.0"
+    },
+    "entrypoints": {
+      "main": [
+        "earth.terrarium.handcrafted.fabric.HandcraftedFabric::init"
+      ],
+      "client": [
+        "earth.terrarium.handcrafted.client.fabric.HandcraftedClientFabric::init"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/pJmCFF0p/versions/f0pKpUWd/handcrafted-fabric-1.21.1-4.0.3.jar"
+    ]
+  },
+  {
+    "id": "highlight",
+    "version": "3.0.0",
+    "filename": "highlight-fabric-1.21-3.0.0.jar",
+    "sha256": "08932afc913f74e9676b9a59a87bdf817d959cf6d861a9269897778240f11df2",
+    "sha1": "68c9d99f271cd8ef8421358369d2d663dd7074fe",
+    "sha512": "bca053d6bfe0c0326cb502181d50021473577e3145db5f604d16d79abab29c14489291742f2438ee7b7a7ee42787e3074809a89fac92bfa4812d175512a74b84",
+    "size": 457352,
+    "install_path": "mods/highlight-fabric-1.21-3.0.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.9",
+      "minecraft": ">=1.20.5",
+      "resourcefullib": "*"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Vz96hXMh/versions/O0nda3pt/highlight-fabric-1.21-3.0.0.jar"
+    ]
+  },
+  {
+    "id": "hugestructureblocks",
+    "version": "1.1.6",
+    "filename": "huge-structure-blocks-fabric-1.1.6.jar",
+    "sha256": "759071bd7b1db4367f232db35872ce6a30e8adee57a8543d0967d0b39b37819d",
+    "sha1": "e47182aa7c96a04e79eab7db8851f4d7615d3f40",
+    "sha512": "1dc8769007e3f41010e9fbe53c2f39669a67b75b74bac27b780493f07184c0a62c8699dd624108229e4e577ff1a5a90cceb5c951602f59431e2f3de7e7bc19ff",
+    "size": 100230,
+    "install_path": "mods/huge-structure-blocks-fabric-1.1.6.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.17",
+      "minecraft": ">=1.21 <=1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.convallyria.hugestructureblocks.fabric.HSBFabric"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/AMLtKGdJ/versions/jZrAT0D5/huge-structure-blocks-fabric-1.1.6.jar"
+    ]
+  },
+  {
+    "id": "iceberg",
+    "version": "1.3.2",
+    "filename": "Iceberg-1.21.1-fabric-1.3.2.jar",
+    "sha256": "9214790af6fb75c19ef6b95e0e47999addf018e8c7a1630a5118c4252e6d8d36",
+    "sha1": "170e30bf93ccba6d80dd481eedddae16cb549d29",
+    "sha512": "d781cf25ac6a630477b7b8a016d9762655aff877f39a601ff6d7f44062534a47831ff0d58adcb94d776cbb1b9077993ff29b7a804714892e4e13da0278213684",
+    "size": 413302,
+    "install_path": "mods/Iceberg-1.21.1-fabric-1.3.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC BY-NC-ND 4.0",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "fabric-api": "*",
+      "minecraft": "1.21.1",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "client": [
+        "com.anthonyhilyard.iceberg.fabric.client.IcebergFabricClient"
+      ],
+      "server": [
+        "com.anthonyhilyard.iceberg.fabric.server.IcebergFabricServer"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/5faXoLqX/versions/7ITFAyW8/Iceberg-1.21.1-fabric-1.3.2.jar"
+    ]
+  },
+  {
+    "id": "immediatelyfast",
+    "version": "1.6.11+1.21.1",
+    "filename": "ImmediatelyFast-Fabric-1.6.11+1.21.1.jar",
+    "sha256": "05a5f3c716ae631af3cc925c8144894368c632156f2d581dd8295cc223ea2f6d",
+    "sha1": "e4e125088d8654f91562e78a00bdec22f74bc07f",
+    "sha512": "f80f7d1d046c65795a51f8338c3189d014eb7b7adcab382259c2d1174c196503640ef2e57fea6e89e17bdcb00e3f1847eafe9db1f283c2cd958cb6df28020920",
+    "size": 336763,
+    "install_path": "mods/ImmediatelyFast-Fabric-1.6.11+1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0-or-later",
+    "depends": {
+      "java": ">=21",
+      "minecraft": ">=1.21 <=1.21.1",
+      "fabricloader": ">=0.16.0"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/5ZwdcRci/versions/ATB4eNEP/ImmediatelyFast-Fabric-1.6.11%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "infinite-music",
+    "version": "0.4.6",
+    "filename": "infinite-music-0.4.6.jar",
+    "sha256": "f90123fa679e170163f976819c851fc4bd6840d19cf95dde3ff8fe3682eed343",
+    "sha1": "72ac27231cd80aab7ea509da6694c3696dc4c96a",
+    "sha512": "b5281b32b1d2eb9c3144bff6bd9957cb718cd5474ca2ed0f1b1712cac247c0c456335c6d169820fdb27515167e876c703b58d740f6c84802de8e5b3eb5f7040e",
+    "size": 45913,
+    "install_path": "mods/infinite-music-0.4.6.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.14.19",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "client": [
+        "dev.plasticstraw.inf_music.InfiniteMusic"
+      ],
+      "modmenu": [
+        "dev.plasticstraw.inf_music.ModMenuImpl"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/OJLdOa8k/versions/cIfcDLaq/infinite-music-0.4.6.jar"
+    ]
+  },
+  {
+    "id": "interactic",
+    "version": "0.2.3+1.21",
+    "filename": "interactic-0.2.3+1.21.jar",
+    "sha256": "fad6a5321f0a69c70dcbe62c631166b6549b1d9656929c011e6c1d57b1dea0da",
+    "sha1": "1bb259b6b82f75f9f7302b2f08efafc146ae576e",
+    "sha512": "181a73a05b335220bc7cbd18e87f02a6c6188ef0a6eaf29df534c276495fac8337361b995ccc6b8fad45d063930338fa249ca2d7626363f7b4c5a5e236f2b1f4",
+    "size": 118011,
+    "install_path": "mods/interactic-0.2.3+1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric": "*",
+      "minecraft": ">=1.20.3",
+      "owo": ">=0.11.3"
+    },
+    "entrypoints": {
+      "main": [
+        "interactic.InteracticInit"
+      ],
+      "client": [
+        "interactic.InteracticClientInit"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ErpAAAaf/versions/PGo6qQqQ/interactic-0.2.3%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "inventoryprofilesnext",
+    "version": "2.2.6",
+    "filename": "InventoryProfilesNext-fabric-1.21.1-2.2.6.jar",
+    "sha256": "b69ac6f98e99042d6edd755242bf76d35eea4342559d2b1d88160e556c629177",
+    "sha1": "a99471cb13f2c3c355ab3a61483580ccfa0d3693",
+    "sha512": "329ba98932110af7905e0108f96aef2750a2cc6a6eec6fdc7c4a6b3682a9886d91b695ecc9677c2a619d829642a1f795dd01c32564f18e0151a861c9e3a158b1",
+    "size": 1331935,
+    "install_path": "mods/InventoryProfilesNext-fabric-1.21.1-2.2.6.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "AGPL-3",
+    "depends": {
+      "minecraft": ">=1.21.1 <1.21.2",
+      "libipn": ">=6.6.3 <6.7",
+      "fabric-language-kotlin": ">=1.13.10+kotlin.2.3.20"
+    },
+    "entrypoints": {
+      "client": [
+        "org.anti_ad.mc.ipnext.InventoryProfilesKt::init"
+      ],
+      "modmenu": [
+        "org.anti_ad.mc.ipnext.compat.ModMenuApiImpl"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "iris",
+    "version": "1.8.14-beta.1+mc1.21.1",
+    "filename": "iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+    "sha256": "0ceb694040b4628bf3fa02286cfe5f0db833195669ab07f8caa4001359763eff",
+    "sha1": "6776c0340845887477bfa463acc736ce7fcb6de5",
+    "sha512": "a7fbb629793c52f0be8b049f787cb598879239b1ad8e1de62e103c8b9efff140e3232b93ef1f14e505d262897d8cf9505b1126396429ad4056bff969c8674e52",
+    "size": 2791343,
+    "install_path": "mods/iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.12.3",
+      "minecraft": [
+        "1.21.1"
+      ],
+      "sodium": [
+        "0.8.x"
+      ]
+    },
+    "entrypoints": {
+      "modmenu": [
+        "net.irisshaders.iris.compat.modmenu.ModMenuIntegration"
+      ],
+      "sodium:config_api_user": [
+        "net.irisshaders.iris.compat.sodium.config.IrisConfig"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/YL57xq9U/versions/bAo1Qhte/iris-fabric-1.8.14-beta.1%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "konkrete",
+    "version": "1.9.9",
+    "filename": "konkrete_fabric_1.9.9_MC_1.21.jar",
+    "sha256": "06e912f99d59bf81c0676f1db936150ad4443d5674f59b3c55604540ba620841",
+    "sha1": "c521e23a8be17a941f4f95a76feba9df5e3de5d0",
+    "sha512": "6d4c65a0a9d51b2b956ba61f926f642e901573c9621289cf7a387996370fcab23c69ee6e698596965e9bd68b86b1e96e44295172a880a979105347719228ecf8",
+    "size": 786695,
+    "install_path": "mods/konkrete_fabric_1.9.9_MC_1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Apache-2.0",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": ">=0.100.1",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.konkrete.KonkreteFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/J81TRJWm/versions/Qvrc7DuG/konkrete_fabric_1.9.9_MC_1.21.jar"
+    ]
+  },
+  {
+    "id": "krypton",
+    "version": "0.2.8",
+    "filename": "krypton-0.2.8.jar",
+    "sha256": "94f195819b24e5da64effdc9da15cdd84836cc75e8ff0fd098bab6bc2f49e3fe",
+    "sha1": "73e792eb5f120787becda4b87b6ff18b26caea50",
+    "sha512": "5f8cf96c79bfd4d893f1d70da582e62026bed36af49a7fa7b1e00fb6efb28d9ad6a1eec147020496b4fe38693d33fe6bfcd1eebbd93475612ee44290c2483784",
+    "size": 161045,
+    "install_path": "mods/krypton-0.2.8.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.11.3",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "client": [
+        "me.steinborn.krypton.mod.client.KryptonClientInitializer"
+      ],
+      "server": [
+        "me.steinborn.krypton.mod.server.KryptonServerInitializer"
+      ],
+      "main": [
+        "me.steinborn.krypton.mod.shared.KryptonSharedInitializer"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/fQEb0iXm/versions/Acz3ttTp/krypton-0.2.8.jar"
+    ]
+  },
+  {
+    "id": "legendarymonuments",
+    "version": "Cobbleverse",
+    "filename": "LegendaryMonuments-Cobbleverse.jar",
+    "sha256": "34901d7c95bff58242384c44abc6acc50c2e06310b85f7e80bcd70f7c7e5b0b6",
+    "sha1": "9c86e9dfda8be63bbc01ab03160c8bf5ae8185ac",
+    "sha512": "7c62183d6ef32ca43bcc745fb6082c50dc0814cd633fd81fc0a48cdc84b3801930ab5c792cfc6332311bf4da35461d2f871a956ff45ba5dc3eb25563924a87ad",
+    "size": 5736792,
+    "install_path": "mods/LegendaryMonuments-Cobbleverse.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0",
+      "cobblefurnies": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "github.jorgaomc.LegendaryMonuments"
+      ],
+      "client": [
+        "github.jorgaomc.LegendaryMonumentsClient"
+      ],
+      "fabric-datagen": [
+        "github.jorgaomc.LegendaryMonumentsDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/m6RyHSbV/versions/RtYJBrxd/LegendaryMonuments-Cobbleverse.jar"
+    ]
+  },
+  {
+    "id": "lenientdeath",
+    "version": "1.2.5+1.21.1",
+    "filename": "lenientdeath-1.2.5+1.21.1.jar",
+    "sha256": "117175de6d7a8cc9cf36d48fd55a8460183dd30f4d25c0e7230ba8fe470f79b4",
+    "sha1": "cca7eb614db1053e9b8f8f413bc7bc82edcd472a",
+    "sha512": "5129657af70a8c710481ab59989952d5ea190ab70fe7547379a2a09241f7935c1f56d743f83a7490aab5f0c257a7eb1a40eb068d4a5d2f19081b2f8adc55521a",
+    "size": 920915,
+    "install_path": "mods/lenientdeath-1.2.5+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.20.5",
+      "fabric-api": "*",
+      "fabric-permissions-api-v0": "*",
+      "jackfredlib-lying": ">=0.5.0"
+    },
+    "entrypoints": {
+      "main": [
+        "red.jackf.lenientdeath.LenientDeath"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Bfi1KBJV/versions/FUbtsgt9/lenientdeath-1.2.5%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "libipn",
+    "version": "6.6.3",
+    "filename": "libIPN-fabric-1.21.1-6.6.3.jar",
+    "sha256": "e26e788c5c3542353c0c45fba231e9208a01b182d890815c22df40a1946b903e",
+    "sha1": "0fdc425d1fc0ad8703256f43deadcadee4328eea",
+    "sha512": "765991facc85b2cbc5a40c5ddc506da16f18a5c43de7c42757195dbc8d43e09573504602d3695de0054e5a868c6368fca7ad982738f509ba17a68d373532d16c",
+    "size": 636114,
+    "install_path": "mods/libIPN-fabric-1.21.1-6.6.3.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "AGPL-3",
+    "depends": {
+      "minecraft": ">=1.21.1 <1.21.3",
+      "fabric-language-kotlin": ">=1.13.7+kotlin.2.2.21"
+    },
+    "entrypoints": {
+      "client": [
+        "org.anti_ad.mc.common.LibIPNKt::init"
+      ],
+      "modmenu": [
+        "org.anti_ad.mc.libipn.modmenu.ModMenuApiImpl"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "libjf",
+    "version": "3.17.5",
+    "filename": "libjf-3.17.5.jar",
+    "sha256": "93789892f45d03bec95894ab644f9f909868e84f1a0755a61bdf22ae378629f5",
+    "sha1": "67c0111a22b4b058e6f08c1e607d8e9605612716",
+    "sha512": "8e209148c313ecab6ac68d7980a2748efd415f956978076cd353c9daef39b005a19e342fa0c5a937be494c4921964c287ff22567e2417c1c83fc5f91101443fc",
+    "size": 1282450,
+    "install_path": "mods/libjf-3.17.5.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.12.0",
+      "minecraft": "*",
+      "fabric-resource-loader-v0": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-command-api-v2": "*"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/WKwQAwke/versions/WRFFw4eh/libjf-3.17.5.jar"
+    ]
+  },
+  {
+    "id": "lithium",
+    "version": "0.15.4+mc1.21.1",
+    "filename": "lithium-fabric-0.15.4+mc1.21.1.jar",
+    "sha256": "92329d98c57f5a22091a0adb509fdb1d60113a5602c708b799b13134bad13baa",
+    "sha1": "7d82a004403b7780d4443d8e40361a55cfd0ae63",
+    "sha512": "182064b00e6315e2255b857eaab8eb759e6b042ebd4cc8b855ff0d93f875a5a7188fac49f878d7b29d4ef7e6b6341190ad7f6f6f39f4a6d2c62003468b08e4c6",
+    "size": 797454,
+    "install_path": "mods/lithium-fabric-0.15.4+mc1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.15.1",
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ]
+    },
+    "entrypoints": {
+      "main": [
+        "net.caffeinemc.mods.lithium.fabric.LithiumFabricMod"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/gvQqBUqZ/versions/N08Z8wog/lithium-fabric-0.15.4%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "cozyhome",
+    "version": "1.1.20",
+    "filename": "Luckys-Cozyhome-Refurnished-1.1.20.jar",
+    "sha256": "0915e3e54c12fe40622cab94005418d32cbde011fa9c2d7c27756eb7d5313a66",
+    "sha1": "e65e20f982be0be2bf5e94101f560049b0463ab3",
+    "sha512": "8964b597c1a400970b834a1a4058df9332a687a7452ffc889ba8fe3cb35347d8512011d3679a24e7d1fa0f5f9904de3e1f7710b95f2e1fe6cb5b43b0c9f12847",
+    "size": 3121070,
+    "install_path": "mods/Luckys-Cozyhome-Refurnished-1.1.20.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "net.luckystudio.cozyhome.CozyHome"
+      ],
+      "fabric-datagen": [
+        "net.luckystudio.cozyhome.CozyHomeDataGenerator"
+      ],
+      "client": [
+        "net.luckystudio.cozyhome.CozyHomeClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/TNcLBDkY/versions/jJUWZCaQ/Luckys-Cozyhome-Refurnished-1.1.20.jar"
+    ]
+  },
+  {
+    "id": "lumymon",
+    "version": "0.6.6",
+    "filename": "LumyMon-0.6.6.jar",
+    "sha256": "00ad0ddb4bbac26b6f1b83ad80255008be98ab72056d89de3eb9107b01d7eefb",
+    "sha1": "983104ced5cadd78d75a3c512bd68d486e59f82f",
+    "sha512": "06bdfc1c17945bd218b24797b1d91ed6e70308d0c53d5ace5e3bde7f93dd14c8b9b897ea5fe03d379c0a831d419b7998e104cfba7e58ef13606f218be28c78f6",
+    "size": 2331858,
+    "install_path": "mods/LumyMon-0.6.6.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC BY-NC-ND 4.0",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21.1",
+      "java": ">=17",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.1"
+    },
+    "entrypoints": {
+      "main": [
+        "com.lumyverse.lumymon.LumyMon"
+      ],
+      "client": [
+        "com.lumyverse.lumymon.LumyMonClient"
+      ],
+      "fabric-datagen": [
+        "com.lumyverse.lumymon.LumyMonDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "project_id": "QAX8WiBc",
+    "version_id": "SSS3twZY",
+    "downloads": [
+      "https://cdn.modrinth.com/data/QAX8WiBc/versions/SSS3twZY/LumyMon-0.6.6.jar"
+    ]
+  },
+  {
+    "id": "lumyrei",
+    "version": "1.1.3",
+    "filename": "LumyREI-1.1.3.jar",
+    "sha256": "e6ac62bb3a858af78948397b0310efb281b911f4cda31392c989c9cdaf9ed4b1",
+    "sha1": "072739522438162a2d30f120a0415b5def96cd4b",
+    "sha512": "6433ffe3a37e60692bf2d02009b202e317b0fa08a2f743d0ff15abae40547ebbb8510ebb667642d41fc11b8bbc07b11ad2e6a089cf2d046aa1e75c6f58689873",
+    "size": 66283,
+    "install_path": "mods/LumyREI-1.1.3.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "GPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.1"
+    },
+    "entrypoints": {
+      "rei_client": [
+        "com.lumyverse.lumyrei.LumyREI"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/FVADf9wU/versions/PnYguaC2/LumyREI-1.1.3.jar"
+    ]
+  },
+  {
+    "id": "mega_showdown",
+    "version": "1.3.2+1.8.2+1.21.1-release",
+    "filename": "mega_showdown-fabric-1.3.2+1.8.2+1.21.1-release.jar",
+    "sha256": "759e55c791789dcf1690478625c5a670fbdc4d6e99d45c887c25dd409b21da59",
+    "sha1": "78f05e982d9b73c4635be77bcc8e3ba3c6e01d02",
+    "sha512": "15b3f9eea0a931458ffcf02ef0c5fe640727114ee983327b7c69b3032f62698383cef2c2e822b5ce5b3ff7214de4b7c52b3bb3330e2c72747e23f86f8618092e",
+    "size": 20263709,
+    "install_path": "mods/mega_showdown-fabric-1.3.2+1.8.2+1.21.1-release.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MEGA SHOWDOWN LICENSE v2.1",
+    "depends": {
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.8.0",
+      "accessories": ">=1.1.0-beta.52+1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "com.github.yajatkaul.mega_showdown.fabric.MegaShowdownFabric"
+      ],
+      "client": [
+        "com.github.yajatkaul.mega_showdown.fabric.MegaShowdownFabricClient"
+      ],
+      "jade": [
+        "com.github.yajatkaul.mega_showdown.plugin.JadePlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "project_id": "SszvX85I",
+    "version_id": "RFWTLHyO",
+    "downloads": [
+      "https://cdn.modrinth.com/data/SszvX85I/versions/RFWTLHyO/mega_showdown-fabric-1.3.2%2B1.8.2%2B1.21.1-release.jar"
+    ]
+  },
+  {
+    "id": "melody",
+    "version": "1.0.10",
+    "filename": "melody_fabric_1.0.10_MC_1.21.jar",
+    "sha256": "223ab859b9cc246d8d6e5cec5e734f97be3aac545de6cda7743750262428ed83",
+    "sha1": "5624eea73f251c70a9489192d326f9b4aab3b13c",
+    "sha512": "a7e13e66d3d406b26ee7e5394ae84653d1b9a4f1e4151a2f925fb07869576d6a3b419ba5702bd1ff5bad91054a66f5071720e17f85e1579e8e4f83664bc3dc5e",
+    "size": 188035,
+    "install_path": "mods/melody_fabric_1.0.10_MC_1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": ">=0.100.1",
+      "minecraft": ">=1.21",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "de.keksuccino.melody.MelodyFabric"
+      ],
+      "client": [],
+      "server": []
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/CVT4pFB2/versions/OqxSeb4n/melody_fabric_1.0.10_MC_1.21.jar"
+    ]
+  },
+  {
+    "id": "midnightlib",
+    "version": "1.7.5",
+    "filename": "midnightlib-1.7.5-fabric+1.21.1.jar",
+    "sha256": "b75155a638d15df61922bb635e2c5aae6102897ccaa1e226060a7f5ff4218091",
+    "sha1": "c32c79bd001e400ec7ebaccfffaed465daf42835",
+    "sha512": "5cf7c714cdc6c915665a872debf15840b994aa0aab5f9fce0ae65d2f0eff7bf9fcd98fb776ac512a9e2da0effaaad468feb860386196bf2e52a22628977aa7f4",
+    "size": 62853,
+    "install_path": "mods/midnightlib-1.7.5-fabric+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabric-resource-loader-v0": "*",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "server": [
+        "eu.midnightdust.fabric.core.MidnightLibFabric"
+      ],
+      "client": [
+        "eu.midnightdust.fabric.core.MidnightLibFabric"
+      ],
+      "modmenu": [
+        "eu.midnightdust.lib.config.AutoModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/codAaoxh/versions/vqqujBpd/midnightlib-1.7.5-fabric%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "moarconcrete",
+    "version": "1.3.1",
+    "filename": "moar-concrete-1.3.1.jar",
+    "sha256": "0e6e7b95b55ca13a50233743ba008a5285f4abf4cca7642bda40b27145f4f43f",
+    "sha1": "541410660ff1198e24b99e007267a7ec256498e2",
+    "sha512": "9edf8775a2c3ceb80d74bee9a2a1426114585cbdba66e16efd874e8c1b5b8da51f4f5aa9f1876a56b22ae9d51ddb0de956454e753e7d12e36c357b5877a6ff46",
+    "size": 777538,
+    "install_path": "mods/moar-concrete-1.3.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "net.mcjamweasel.moarconcrete.MoarConcrete"
+      ],
+      "client": [
+        "net.mcjamweasel.moarconcrete.MoarConcreteClient"
+      ],
+      "fabric-datagen": [
+        "net.mcjamweasel.moarconcrete.MoarConcreteDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/lXDzrLAm/versions/hG50ZysI/moar-concrete-1.3.1.jar"
+    ]
+  },
+  {
+    "id": "mobsbegone",
+    "version": "0.0.7",
+    "filename": "MobsBeGone-0.0.7.jar",
+    "sha256": "ad45c9c1bfe8c018d372f9fb6eb3e95507d6252b6cb4204478d04653d9634e98",
+    "sha1": "6335518bd5ebce9734669f5ed5fb0df3e7ceabb4",
+    "sha512": "ccb53610de6d477da5a307f75e74c4ec68984afff00e9a4497dd4c9c77d2d6bfd55973ebc760102a4e6a93c0cac41fb0f5c2b7aec03e5c824cdf6f6c7847efbd",
+    "size": 9837,
+    "install_path": "mods/MobsBeGone-0.0.7.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All-Rights-Reserved",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "fabric": "*",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "moe.okaeri.mobsbegone.MobsBeGone"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/hXvXSxxg/versions/B5tawRRL/MobsBeGone-0.0.7.jar"
+    ]
+  },
+  {
+    "id": "modernfix",
+    "version": "5.25.1+mc1.21.1",
+    "filename": "modernfix-fabric-5.25.1+mc1.21.1.jar",
+    "sha256": "3ce5a9ce75066961b7fa5382692bb1387cc3536cc984b064ab7d70b97f3c674c",
+    "sha1": "4ab39e9c736e7204146792c545ec5b29fc0a3872",
+    "sha512": "dc67d6e023e1fcdeaf7837917c477cba212c611dfc2463c6ea021319c644087c79b477e0ea8194e113ddd7332fd5c6d82baa47c291eaac7f4a86252507b4e19f",
+    "size": 471258,
+    "install_path": "mods/modernfix-fabric-5.25.1+mc1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0",
+    "depends": {
+      "minecraft": ">=1.16.2",
+      "fabricloader": ">=0.16.10"
+    },
+    "entrypoints": {
+      "main": [
+        "org.embeddedt.modernfix.ModernFixFabric"
+      ],
+      "client": [
+        "org.embeddedt.modernfix.ModernFixClientFabric"
+      ],
+      "modmenu": [
+        "org.embeddedt.modernfix.fabric.modmenu.ModernFixModMenuApiImpl"
+      ],
+      "preLaunch": [
+        "org.embeddedt.modernfix.ModernFixPreLaunchFabric"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/nmDcB62a/versions/NnNX8LBn/modernfix-fabric-5.25.1%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "modmenu",
+    "version": "11.0.4",
+    "filename": "modmenu-11.0.4.jar",
+    "sha256": "a88e0d67c82b0434cbf56776c482587c275ed660f635d33f53ba485dfa30dcc3",
+    "sha1": "8af1b0b9ee18eab5cd5e5c97c497f0e473c49e9a",
+    "sha512": "45ea8f7e0749bc0eb98900f94486e323f153b199617fa43977b46472e4196ee5a6739f41a1e7f68e270f84a367df5f7f53c2a1f46145ad7d349ede4297895396",
+    "size": 973059,
+    "install_path": "mods/modmenu-11.0.4.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabric-resource-loader-v0": "*",
+      "fabric-screen-api-v1": ">=1.0.4",
+      "fabric-key-binding-api-v1": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabricloader": ">=0.15.10",
+      "minecraft": ">=1.21-beta.2"
+    },
+    "entrypoints": {
+      "client": [
+        "com.terraformersmc.modmenu.ModMenu"
+      ],
+      "modmenu": [
+        "com.terraformersmc.modmenu.ModMenuModMenuCompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/mOgUt4GM/versions/v6Xx3fbU/modmenu-11.0.4.jar"
+    ]
+  },
+  {
+    "id": "more_cobblemon_tweaks",
+    "version": "1.3.3",
+    "filename": "MoreCobblemonTweaks-fabric-1.3.3.jar",
+    "sha256": "3c8dabb89c35a32f56a1edc24393d0f0781ac81bf5326fc2e6eabcd8ea8169fb",
+    "sha1": "ff12867279b27e6748af67c9a136c93c1ba23563",
+    "sha512": "9e1259b16daf98a5795118540cad9ac036f6b11dcf464788d20b54f6c3a3e84ad36d0a0d72bb00c56cd4e1b8ea687a6f5b73c0442424ec9cd1d8f0dd0396663b",
+    "size": 136312,
+    "install_path": "mods/MoreCobblemonTweaks-fabric-1.3.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "client": [
+        "me.justahuman.more_cobblemon_tweaks.MoreCobblemonTweaksFabric"
+      ],
+      "modmenu": [
+        "me.justahuman.more_cobblemon_tweaks.ModMenuIntegration"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "moreculling",
+    "version": "1.0.8",
+    "filename": "moreculling-fabric-1.21.1-1.0.8.jar",
+    "sha256": "19c7e65794511ab21eed63cab9e2efbf43a29fd2ea20234b23f92cb71c6a2aa2",
+    "sha1": "fcacddf1cecc0fdc9ba937197c74402fd436e9c7",
+    "sha512": "45a2744b8253af0b9f1ac087f44434b93c5652f222c5b801f25d03558179813bd01d8c469aa35ad28b6ecc0a8ff48164cceec51b9937a3f8435aad9849e96fee",
+    "size": 332100,
+    "install_path": "mods/moreculling-fabric-1.21.1-1.0.8.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "GPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "minecraft": ">=1.21",
+      "java": ">=21",
+      "cloth-config": ">=15.0.0"
+    },
+    "entrypoints": {
+      "client": [
+        "ca.fxco.moreculling.MoreCullingFabric"
+      ],
+      "modmenu": [
+        "ca.fxco.moreculling.config.ModMenuCompat"
+      ],
+      "sodium:config_api_user": [
+        "ca.fxco.moreculling.config.sodium.MoreCullingSodiumConfigBuilder"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/51shyZVL/versions/LekDmqLf/moreculling-fabric-1.21.1-1.0.8.jar"
+    ]
+  },
+  {
+    "id": "mousetweaks",
+    "version": "2.26",
+    "filename": "MouseTweaks-fabric-mc1.21-2.26.jar",
+    "sha256": "3e9fa4800fafef616fbf1545d62f5898f55c83fbd4126ce2b48b5e0077243fc0",
+    "sha1": "ee81af33a5606ef2cd057e075833d7c69836c210",
+    "sha512": "1744a48a47aedcbf19a0a93f78473cf0221fc4782852dca7fc02685719174664b4f9d95d353fcfc16902ac3815594511ba6d9ab14391f9b7e25ec9b2e777927a",
+    "size": 75984,
+    "install_path": "mods/MouseTweaks-fabric-mc1.21-2.26.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "BSD-3-Clause",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "client": [
+        "yalter.mousetweaks.fabric.MouseTweaksFabric"
+      ],
+      "modmenu": [
+        "yalter.mousetweaks.ModMenuApiImpl"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/aC3cM3Vq/versions/ylmBQ38A/MouseTweaks-fabric-mc1.21-2.26.jar"
+    ]
+  },
+  {
+    "id": "musicnotification",
+    "version": "3.0.0",
+    "filename": "musicnotification-fabric-3.0.0+mc1.21.1.jar",
+    "sha256": "747b2527aa373a76e9d378ad1059369400c66fb50fb3ab22a409ac6d8154a614",
+    "sha1": "c27e43fec57825e2ac45d39a9366150b45d409ec",
+    "sha512": "10ad3d070cecc949db1d8f6fff95f8d0d2317caa775bf4054afb05ab1d01a5e3895895ed8031d41509ffb34b38245bcc387da51322e31d7bedc5bf321970df82",
+    "size": 139713,
+    "install_path": "mods/musicnotification-fabric-3.0.0+mc1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api-base": "*",
+      "cloth-config": ">=15.0.130"
+    },
+    "entrypoints": {
+      "client": [
+        "net.kosmo.music.fabric.MusicNotificationClientFabric"
+      ],
+      "modmenu": [
+        "net.kosmo.music.fabric.compat.ModMenuCompatibility"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/A4YQgwzz/versions/IgzyHmxS/musicnotification-fabric-3.0.0%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "neruina",
+    "version": "3.3.3",
+    "filename": "neruina-3.3.3+1.21.1-fabric.jar",
+    "sha256": "a3a49320128920256b43857e5254e5cd2a481417da61d0999a249aceb6125b20",
+    "sha1": "33cfda42d642db4854c3617b75f511669ff43d6b",
+    "sha512": "f617b4d840c7fb2e68ae4154ae58e72c1f55052216579520c4a06bddc4f9edac773076694bd2f198efbe8261a61759ba863781aed385b8e643e77f605bb9f287",
+    "size": 860092,
+    "install_path": "mods/neruina-3.3.3+1.21.1-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "~1.21.1",
+      "configurable": "~3.5.2"
+    },
+    "entrypoints": {
+      "main": [
+        "com.bawnorton.neruina.platform.NeruinaWrapper"
+      ],
+      "fabric-datagen": [
+        "com.bawnorton.neruina.data.NeruinaDataGen"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1s5x833P/versions/S3RKG9zF/neruina-3.3.3%2B1.21.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "nethermap",
+    "version": "4.0.0-1.21.1",
+    "filename": "nethermap-4.0.0-1.21.1.jar",
+    "sha256": "5d5243434984d64c904d21397530f2c7817105ca091bf409aa23f3842b9f3634",
+    "sha1": "4a4849b36757a268253a3a87b4a02b60f59816a6",
+    "sha512": "78fd0e4cd88dc88b353ed3f924d645c66fdb323ce8ce2a809e99bd8d09ee5e0d6e20cf6267050f958bd7792ec2c12f8d18cb105a13044cac6456b3f37ac1c435",
+    "size": 21464,
+    "install_path": "mods/nethermap-4.0.0-1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric": "*",
+      "minecraft": ">=1.21.1",
+      "java": ">=17",
+      "cloth-config2": ">=15.0.130"
+    },
+    "entrypoints": {
+      "main": [
+        "com.jummit.nethermap.NetherMap"
+      ],
+      "modmenu": [
+        "com.jummit.nethermap.config.NetherMapModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/fdtm99de/versions/BEfm3cNd/nethermap-4.0.0-1.21.1.jar"
+    ]
+  },
+  {
+    "id": "netherportalfix",
+    "version": "21.1.3",
+    "filename": "netherportalfix-fabric-1.21.1-21.1.3.jar",
+    "sha256": "c6589e3a95ee6dbced2442682caeec53789999bc6a2883f9919e039b1bee98c6",
+    "sha1": "970677295778926b09c3539b38e884854bc4d3c7",
+    "sha512": "afbfb7999f7a3c3563cbf6037f52c9be3d20e122308799d9a3f22063113dde51fb2bde7463f754019798aadf5ecab113c77bb4cd04b88689d3c73c4b2e6ce369",
+    "size": 213294,
+    "install_path": "mods/netherportalfix-fabric-1.21.1-21.1.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.netherportalfix.fabric.FabricNetherPortalFix"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/nPZr02ET/versions/9KrnphgC/netherportalfix-fabric-1.21.1-21.1.3.jar"
+    ]
+  },
+  {
+    "id": "nochatrestrictions",
+    "version": "Fabric-MC1.21.11-v1.0.0",
+    "filename": "NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+    "sha256": "bc8b10f71e17822ca274936e487104e6572f60e8969b81bfe23f30fc11300a94",
+    "sha1": "853d8af1282c0dac0a9814e336c9ebfe2776ca25",
+    "sha512": "59bb3443e1cb5e19e652013b699700a7704df74ce7c60eac510af4b71d86e6f9d06d0b5f3238dfdd56350b66668a06a51beee41eb71389e4f9d998e4370c2de4",
+    "size": 9907,
+    "install_path": "mods/NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "WTFPL",
+    "depends": {
+      "fabricloader": ">=0.16",
+      "minecraft": ">=1.21 <=1.21.11",
+      "java": ">=21",
+      "fabric": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.aizistral.nochatrestrictions.NoChatRestrictions"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/z440MEwJ/versions/2fnDwqeV/NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar"
+    ]
+  },
+  {
+    "id": "notenoughanimations",
+    "version": "1.12.4",
+    "filename": "notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+    "sha256": "12e3bded47f6669030edf57b615e77de8d080f38d0313dd892c6d18833fc39fd",
+    "sha1": "96c0939713956165b31bb65d8416770a21ea52ef",
+    "sha512": "c5880052f030f6f26b00da5d5fdd4d2efa83174dafb89ec674da8fc9671beaecd1d07a17ab8154b718cdca1a953da827b61ffbd5de62b852191d40b67eddeb83",
+    "size": 1948132,
+    "install_path": "mods/notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "tr7zw Protective License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "dev.tr7zw.notenoughanimations.NEAnimationsMod"
+      ],
+      "modmenu": [
+        "dev.tr7zw.notenoughanimations.NEAModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/MPCX6s5C/versions/HyecdWuC/notenoughanimations-fabric-1.12.4-mc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "notenoughcrashes",
+    "version": "4.4.9+1.21.1",
+    "filename": "notenoughcrashes-fabric-4.4.9+1.21.1.jar",
+    "sha256": "1a3a0ec9e7bb60f9c15938ca4287beaf5e49e81183ac273d1a02d734aa327a74",
+    "sha1": "0de122f1e94b85308bcecb0ebc40ac48c13367a9",
+    "sha512": "fb9036e3415352afa046488e2e4172a607c255a62d5accc031ba621d5c9b5c2d89fa677eedbf1c4ae0fd98f9527c4dafe4f0faa3ee97cd3f6084e47fac5c9b2a",
+    "size": 601087,
+    "install_path": "mods/notenoughcrashes-fabric-4.4.9+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "minecraft": ">=1.17",
+      "fabricloader": ">=0.12.0"
+    },
+    "entrypoints": {
+      "main": [
+        "fudge.notenoughcrashes.fabric.NotEnoughCrashesFabric"
+      ],
+      "modmenu": [
+        "fudge.notenoughcrashes.fabric.config.ModMenuConfigIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/yM94ont6/versions/gR0LY1dB/notenoughcrashes-fabric-4.4.9%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "obc",
+    "version": "1.3.0",
+    "filename": "Only Bottle Caps-1.3.0-api119fix.jar",
+    "sha256": "6414d5a0e08f270713236e65db3fccda2bd4fe5ccdeecd2b34904be99a6a5853",
+    "sha1": "0dbff72418d6b4006e2e58ced576868048de3dd7",
+    "sha512": "6b51c6f712c8452df3b2c4ff16fd011bc5f19387c4d14bd53e8ad0b988e6a1ea4a84096bb1c25d4a35c543dc6fd8fc4e8fb92eec769edb05c6798cbe5ec026ba",
+    "size": 250494,
+    "install_path": "mods/Only Bottle Caps-1.3.0-api119fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0",
+      "supermartijn642configlib": ">=1.1.8"
+    },
+    "entrypoints": {
+      "main": [
+        "com.pcrgaming.obc.Obc"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "owo",
+    "version": "0.12.15.4+1.21",
+    "filename": "owo-lib-0.12.15.4+1.21.jar",
+    "sha256": "825180ce17bc012fb450653b14df9f32479dcdd073fc3f133bb47462f5a63cec",
+    "sha1": "45725e6d33b624e565a7a6e5d3627af40814288d",
+    "sha512": "b9c79035c912ef043722f2a1f0bc0166e0ca047ea5237a86f23198dea487289e0a0f92a96e46bd683ffc39e4190b95450d13456b14f6280587635b51c9393a1b",
+    "size": 1183559,
+    "install_path": "mods/owo-lib-0.12.15.4+1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.0",
+      "fabric": ">=0.100",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {
+      "client": [
+        "io.wispforest.owo.client.OwoClient"
+      ],
+      "main": [
+        "io.wispforest.owo.Owo"
+      ],
+      "rei_client": [
+        "io.wispforest.owo.compat.rei.OwoReiPlugin"
+      ],
+      "emi": [
+        "io.wispforest.owo.compat.emi.OwoEmiPlugin"
+      ],
+      "modmenu": [
+        "io.wispforest.owo.compat.modmenu.OwoModMenuPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ccKDOlHs/versions/JB1fLQnc/owo-lib-0.12.15.4%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "packetfixer",
+    "version": "3.3.1",
+    "filename": "packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+    "sha256": "2979a8a3f44e5d5df4f9f6315d18c220f3debf736bb8a2c2740acdfb13bd820f",
+    "sha1": "a8bb6e25807682e72c23bf4065f3cd5f6373ece3",
+    "sha512": "d0acfaa6ef394fc7d9e677022bda06a6c8be7851ba8860897999775b657b5e10878578fe626505b0c9dbc01d26f559dbb1214aabb081d076824648047094e2e1",
+    "size": 46623,
+    "install_path": "mods/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.20.5"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/c7m1mi73/versions/2C41Q8WX/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar"
+    ]
+  },
+  {
+    "id": "paginatedadvancements",
+    "version": "2.5.1",
+    "filename": "paginatedadvancements-2.5.1.jar",
+    "sha256": "776d8006401781bc036199acc9ba80f7dce6c3bcebbbfa260a774add750c4d2d",
+    "sha1": "23a4570fb52d62135d705156079e52ddfe980b94",
+    "sha512": "7efc3a342478f021d96c39d6d5a416bde82426ba7a2d4f0a4d6cdc4178fd00287a629123e08e86f71115264386471b230bfdc1d5ad1a09530d32cde6e40176a9",
+    "size": 71859,
+    "install_path": "mods/paginatedadvancements-2.5.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "minecraft": ">=1.21",
+      "fabricloader": "*",
+      "fabric-api": ">=0.102.0",
+      "cloth-config": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "de.dafuqs.paginatedadvancements.PaginatedAdvancementsClient"
+      ],
+      "modmenu": [
+        "de.dafuqs.paginatedadvancements.config.ModMenuConfig"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/pJogNFap/versions/fQnpir9a/paginatedadvancements-2.5.1.jar"
+    ]
+  },
+  {
+    "id": "particle_core",
+    "version": "0.3.3+1.21",
+    "filename": "particle_core-0.3.3+1.21.jar",
+    "sha256": "e7cfef3eb16d5b73c00915a5f2b820d66555c23d13e0636125d7b07384a443e4",
+    "sha1": "21134697c26b73cde41d1575c725ab30736d6b17",
+    "sha512": "2ab687c3bc7259b48f75502d9b9a78a197b4082497fcb42e3937521ee381aed938bc2dccfb53d4b54939c7918d8bce36fab4576569807d1f6ea215357eefb624",
+    "size": 147812,
+    "install_path": "mods/particle_core-0.3.3+1.21.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT License",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-language-kotlin": ">=1.10.18+kotlin.1.9.22",
+      "minecraft": ">=1.21",
+      "java": ">=21",
+      "fzzy_config": ">=0.7.5"
+    },
+    "entrypoints": {
+      "main": [],
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "me.fzzyhmstrs.particle_core.PcConfig"
+        }
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/RSeLon5O/versions/mau4pnKr/particle_core-0.3.3%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "particlerain",
+    "version": "4.0.0-beta.10",
+    "filename": "particlerain-4.0.0-beta.10+1.21.1-fabric.jar",
+    "sha256": "49bf60c5b95ea954efa51c63609f0a4668230e12f870f0eb6bdb63d207a22dc8",
+    "sha1": "348a457458609372069b4101a6c88a12b55211a7",
+    "sha512": "26f80b1bc1644f9087e869a697d3701a561c22dee58aca1869dce83e37aadcfce7e9e5fdbf6dea44783f9b03564518bbb56235853e1119c3d944721904567255",
+    "size": 608651,
+    "install_path": "mods/particlerain-4.0.0-beta.10+1.21.1-fabric.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.12.8",
+      "fabric-api": "*",
+      "minecraft": "1.21.1"
+    },
+    "entrypoints": {
+      "client": [
+        "pigcart.particlerain.loaders.fabric.FabricEntrypoint"
+      ],
+      "modmenu": [
+        "pigcart.particlerain.loaders.fabric.ModMenuEntrypoint"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/nrikgvxm/versions/ddaOLHgq/particlerain-4.0.0-beta.10%2B1.21.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "particular",
+    "version": "1.5.5",
+    "filename": "particular-1.21.1-Fabric-1.5.5.jar",
+    "sha256": "47d724637888227d18e4bc49a11f67b50f0e39d21f4d494cf92215be96f8873c",
+    "sha1": "de3740c49c41a32c6034d2cdc817f3aea96b4bb1",
+    "sha512": "182ce2f586af8100a7e492eaa695a37581ef0e7b7a9c7003e8a502c10c41f158cb00eb302ff3c77a87aa959c1cfc246e72ea4f7ce9b772b5815eac4b957f19e1",
+    "size": 285813,
+    "install_path": "mods/particular-1.21.1-Fabric-1.5.5.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.16.10",
+      "fabric-api": "*",
+      "minecraft": "~1.21.1",
+      "forgeconfigapiport": "*",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.leclowndu93150.particular.Main"
+      ],
+      "client": [
+        "com.leclowndu93150.particular.Main"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/pYFUU6cq/versions/PASRyKTR/particular-1.21.1-Fabric-1.5.5.jar"
+    ]
+  },
+  {
+    "id": "pasture-loot",
+    "version": "1.0.5+1.21.1",
+    "filename": "pastureLoot-1.0.5+1.21.1.jar",
+    "sha256": "48a705eb70a3f129d64af565ff79cfe164d0e59fe2bbc20a903024d0cc844b8f",
+    "sha1": "cc6bbf60b6a08d5b4f5c6416aa0279d92f761c73",
+    "sha512": "23ca054e7f3808e5e484c3a86bb416922f4a51959807c6e8338fe7600939eb5ded503a9c573938bbe83007e877a607d88f7ccc709ddcf9725d855e9b1a46d727",
+    "size": 45871,
+    "install_path": "mods/pastureLoot-1.0.5+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All-Rights-Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.1+1.21.1"
+    },
+    "entrypoints": {
+      "client": [
+        "com.dremixam.pastureLoot.client.PastureLootClient"
+      ],
+      "main": [
+        "com.dremixam.pastureLoot.PastureLoot"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/XP2jcAo0/versions/MYJtblOM/pastureLoot-1.0.5%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "pingwheel",
+    "version": "1.12.2",
+    "filename": "Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+    "sha256": "9ba63ca5f33c86d0ce3aec2b04fafcc2fbcb8e705e46a7be20ff66382331c3e3",
+    "sha1": "647c326ed26a8d085e75b04d3fbc9846cf974799",
+    "sha512": "d4d9e1317fba3338597c56ab3eb9266682df960eac824077ee152c189e2a4e373354cd608c6342489d25524e3ca905718db792d53323d7e679efef74510b54e7",
+    "size": 152703,
+    "install_path": "mods/Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "fabric-api": "*",
+      "minecraft": ">=1.21 <=1.21.1"
+    },
+    "entrypoints": {
+      "client": [
+        "nx.pingwheel.fabric.FabricClient"
+      ],
+      "main": [
+        "nx.pingwheel.fabric.FabricMain"
+      ],
+      "modmenu": [
+        "nx.pingwheel.fabric.integration.ModMenuIntegration"
+      ],
+      "voicechat": [
+        "nx.pingwheel.common.integration.VoiceChatIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/QQXAdCzh/versions/S05ir9dj/Ping-Wheel-1.12.2-fabric-1.21.1.jar"
+    ]
+  },
+  {
+    "id": "platform",
+    "version": "1.3.3",
+    "filename": "Platform-fabric-1.21.1-1.3.3.jar",
+    "sha256": "52f49993d4440d266fa3a077090e8091983cd1bda5942f176ae75f3e9e350779",
+    "sha1": "b3302ad9158171874d01e863d69c8bf4db8faef9",
+    "sha512": "ba5d968f08531d3cd1eac53bb6a02a0870a79e4b3a265c80aaf73b0f1836706b8a5fa099b43c7f1c81b2ebc9d223db5c74aa004e579dbbdfaa44a80d701d4dbe",
+    "size": 735744,
+    "install_path": "mods/Platform-fabric-1.21.1-1.3.3.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.16.12",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.blackgear.platform.fabric.PlatformFabric"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/i6fiqm5y/versions/BbIdNbF1/Platform-fabric-1.21.1-1.3.3.jar"
+    ]
+  },
+  {
+    "id": "playerxp",
+    "version": "1.0.9+1.21.1",
+    "filename": "playerxp-fabric-1.0.9+1.21.1.jar",
+    "sha256": "22133f464ea4442b481d0bc814ab928b0473890a86bf36fa90884ed660e3edf9",
+    "sha1": "34804e9a9d39dc741dbf4952ddab0223e92820cd",
+    "sha512": "9e310afa737eab745c7f52f5cb3a6ac238638062f71500f47fbf154558e22d5f1ef49034f755eac5a1faf3f78e82a9f1917285ae3bb5eca469022b05ffd7e364",
+    "size": 10818,
+    "install_path": "mods/playerxp-fabric-1.0.9+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.6.0"
+    },
+    "entrypoints": {
+      "main": [
+        "chadlymasterson.playerxp.PlayerXp"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/zlrbPCvu/versions/f6114Tas/playerxp-fabric-1.0.9%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "pokeblocks",
+    "version": "1.4.0-1.21.1",
+    "filename": "pokeblocks-1.4.0-1.21.1.jar",
+    "sha256": "c113f9e61a7bef35c3bacc57651a7508f3f07c20218b51eade31766899f1176d",
+    "sha1": "74a6bb7102596b326d07f64281ee80aca0eedaa6",
+    "sha512": "14c46fc6157fc796bf0d57ceabe3dad6c9196991e9e2a55c58b8f0f7207dd14644ba2a987b063c7197c02ab2be495e6c97dfd6154f3a3e980e249c6b90991581",
+    "size": 1606467,
+    "install_path": "mods/pokeblocks-1.4.0-1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "CC-BY-NC-4.0",
+    "depends": {
+      "fabricloader": ">=0.14.22",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "geckolib": ">=4.7.3"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.mrshawn.pokeblocks.Pokeblocks"
+      ],
+      "client": [
+        "dev.mrshawn.pokeblocks.PokeblocksClient"
+      ],
+      "fabric-datagen": [
+        "dev.mrshawn.pokeblocks.PokeblocksDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/hnOfcjSq/versions/AMYJbQsk/pokeblocks-1.4.0-1.21.1.jar"
+    ]
+  },
+  {
+    "id": "rctapi",
+    "version": "0.15.2-beta",
+    "filename": "rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix-stable18fix.jar",
+    "sha256": "5b84271faf497d92a69f1f18012d0dbd53fa9d4fbe8935384d4ff20e8cf95aa3",
+    "sha1": "3327b08611444786714ad63c99ce5ba25de5b6d0",
+    "sha512": "1d22423a7313cc6d3f44cc66345c2bab9173a3389a26544f159d0f96b21e3c4b11859d0e957f1454c3668ab708239a9fed97c001ce31b8534ea7bc2d35c4bb2d",
+    "size": 234204,
+    "install_path": "mods/rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU-LGPL-3",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.2",
+      "cobblemon": ">=1.7",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.gitlab.srcmc.rctapi.fabric.FabricCommon"
+      ],
+      "client": [
+        "com.gitlab.srcmc.rctapi.fabric.client.FabricClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "rctmod",
+    "version": "0.18.1-beta",
+    "filename": "rctmod-fabric-1.21.1-0.18.1-beta.jar",
+    "sha256": "92951d3be475a0433f8ef508439730723e2e901dd1e3b2509c29205031d4eb51",
+    "sha1": "00bf82e254bddb804529222567e5719310524085",
+    "sha512": "867fbd050afbcc76bf469942cbbe4294b1100ed870111a07917267568c4da3b674aaea4421cb89d6a8faa05713843e9d0cf37bbe1d9a258f28d331faca4a9e38",
+    "size": 6757956,
+    "install_path": "mods/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU-LGPL-3",
+    "depends": {
+      "fabricloader": ">=0.17.2",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "rctapi": ">=0.15.0-beta",
+      "cobblemon": ">=1.7.0",
+      "forgeconfigapiport": ">=21.1.1"
+    },
+    "entrypoints": {
+      "main": [
+        "com.gitlab.srcmc.rctmod.fabric.FabricCommon"
+      ],
+      "client": [
+        "com.gitlab.srcmc.rctmod.fabric.client.FabricClient"
+      ],
+      "server": [
+        "com.gitlab.srcmc.rctmod.fabric.server.FabricServer"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/lRwTUnD7/versions/gQx1F1dx/rctmod-fabric-1.21.1-0.18.1-beta.jar"
+    ]
+  },
+  {
+    "id": "rechiseled",
+    "version": "1.2.4",
+    "filename": "rechiseled-1.2.4-fabric-mc1.21.jar",
+    "sha256": "621eb411d88470508a1f1ad6797e569510ca8a63e650728e615b8a65c377b773",
+    "sha1": "52df3c871d9634cef497575ed214ed35a960bbfe",
+    "sha512": "75d8bb248863221aa957838a1cc386162e72319b33adb2fe104057246d4868bbd107605635bbb5cab39b19a8dbdab584205c9c9c45fc6d569a90cd5ae15cd9a6",
+    "size": 11913849,
+    "install_path": "mods/rechiseled-1.2.4-fabric-mc1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All rights reserved",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.21.2",
+      "java": ">=21",
+      "supermartijn642corelib": ">=1.1.20 <1.2.0",
+      "supermartijn642configlib": ">=1.1.6",
+      "fusion": ">=1.2.12"
+    },
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.rechiseled.Rechiseled"
+      ],
+      "client": [
+        "com.supermartijn642.rechiseled.RechiseledClient"
+      ],
+      "jei_mod_plugin": [
+        "com.supermartijn642.rechiseled.compat.jei.ChiselingJEIPlugin"
+      ],
+      "rei_client": [
+        "com.supermartijn642.rechiseled.compat.rei.ChiselingREIPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/B0g2vT6l/versions/Whwd5n82/rechiseled-1.2.4-fabric-mc1.21.jar"
+    ]
+  },
+  {
+    "id": "reeses-sodium-options",
+    "version": "2.2.3+mc1.21.1",
+    "filename": "reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar",
+    "sha256": "6f5a2964656552da24e015b6f6e03d4baac8cfed919978785e94920f3fd0f568",
+    "sha1": "aca62b29c1b2a9ec73f321aceeeceaeaaec53744",
+    "sha512": "9b5e2b4b883f5cfbed1fa6d90599202e8fb595f198efa37e739a80a4ef1d6ef27c3912669e2da64deb29c381f66284ccf85d5efe1612e26f4f8a48dc4262e750",
+    "size": 259211,
+    "install_path": "mods/reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "minecraft": "1.21.1",
+      "sodium": ">=0.8.12"
+    },
+    "entrypoints": {
+      "controlify": [
+        "me.flashyreese.mods.reeses_sodium_options.client.controlify.ReeseSodiumOptionsControlifyEntrypoint"
+      ],
+      "sodium:config_api_user": [
+        "me.flashyreese.mods.reeses_sodium_options.client.config.ReeseSodiumOptionsConfigEntryPoint"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Bh37bMuy/versions/jDOK2MQs/reeses-sodium-options-fabric-2.2.3%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "repurposed_structures",
+    "version": "7.5.21+1.21.1-fabric",
+    "filename": "repurposed_structures-7.5.21+1.21.1-fabric.jar",
+    "sha256": "c3a6ab373dce927c57ce79d14c1ebc9ef4f49d58abcaf9e4caa89a38aab08b8c",
+    "sha1": "edbe14eb66baf532a59b5c0095cbec2ce2c8b950",
+    "sha512": "08aa3dcc113ed8eb0da80e9fe5679c2462e3e081d2a107d231239dfd8435b48941b3a6e2d84cf61570bcb95e5f75687e93b43be80f48a941ae7b7d1dcb66e5a3",
+    "size": 8202318,
+    "install_path": "mods/repurposed_structures-7.5.21+1.21.1-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU Lesser General Public License v3.0",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.21.1",
+      "fabric": "*",
+      "midnightlib": ">=1.5.7"
+    },
+    "entrypoints": {
+      "main": [
+        "com.telepathicgrunt.repurposedstructures.RepurposedStructuresFabric"
+      ],
+      "modmenu": [
+        "com.telepathicgrunt.repurposedstructures.configs.ModMenuCompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/muf0XoRe/versions/4uDzF4B9/repurposed_structures-7.5.21%2B1.21.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "resourcefullib",
+    "version": "3.0.12",
+    "filename": "resourcefullib-fabric-1.21-3.0.12.jar",
+    "sha256": "93064c5aff85bf5e6385470f311fd1c7de172f58b02fefb1d2920db76f8cd8b5",
+    "sha1": "cb67e1302b5116953f45556cc61dbcf40d986ecd",
+    "sha512": "df8a9586eaa0e2f8e1e6a5651ba79ff6c95327b0ab89cdab4708cc6ed51c3da6829d00e8f176e7e7b7b37d4af8c5bd9e3df047f3a8a04fd1af925d80c774185b",
+    "size": 485586,
+    "install_path": "mods/resourcefullib-fabric-1.21-3.0.12.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabric": "*",
+      "minecraft": ">=1.20.5"
+    },
+    "entrypoints": {
+      "client": [
+        "com.teamresourceful.resourcefullib.fabric.ResourcefulLibFabricClient"
+      ],
+      "main": [
+        "com.teamresourceful.resourcefullib.ResourcefulLib::init"
+      ],
+      "server": [
+        "com.teamresourceful.resourcefullib.fabric.ResourcefulLibFabricServer"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/G1hIVOrD/versions/Hf91FuVF/resourcefullib-fabric-1.21-3.0.12.jar"
+    ]
+  },
+  {
+    "id": "resourcepackoverrides",
+    "version": "21.1.0",
+    "filename": "ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+    "sha256": "5db1e3d3f07947ceb893ccd823a7660f62f8f794e2bf9a5b721a3c3d32dcbc59",
+    "sha1": "ea53b83821e3a584159d0bca490e2460e27c616d",
+    "sha512": "ff2391f91ccac26260076cecb775fa6426ddbf1e8fb566b3aa33f824ab8375c8c73f233ec369fcf3e6378c95e4506c958314789ca782251a33d2e86e464eb155",
+    "size": 80827,
+    "install_path": "mods/ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MPL-2.0",
+    "depends": {
+      "fabricloader": ">=0.16.1",
+      "fabric-api": ">=0.102.0",
+      "minecraft": "1.21.1",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "fuzs.resourcepackoverrides.fabric.ResourcePackOverridesFabric"
+      ],
+      "client": [
+        "fuzs.resourcepackoverrides.fabric.client.ResourcePackOverridesFabricClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/YsFycamt/versions/MIxxajqC/ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar"
+    ]
+  },
+  {
+    "id": "respackopts",
+    "version": "4.14.0+1.21.1.4",
+    "filename": "respackopts-4.14.0+1.21.1.4.jar",
+    "sha256": "8c38228c14841a01034e6371fada5754754a0abf13de843eea1e1d41dc8257f3",
+    "sha1": "f32957a737d953a0422d4aaa5111ed1c1fe4a2ba",
+    "sha512": "7cf3eae0f90a8e8db95ada3782d1df74196c79ae7b70a8b345ede5b64e710ee8df36414a6ab471c97b4fb4e12f21e92a83698b685d2f7288daa493bc3ec05ddc",
+    "size": 557358,
+    "install_path": "mods/respackopts-4.14.0+1.21.1.4.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.12.0",
+      "fabric-api": "*",
+      "minecraft": "*",
+      "libjf-base": ">=3.0.0",
+      "libjf-data-manipulation-v0": ">=3.17.0",
+      "libjf-config-core-v2": ">=3.17.0"
+    },
+    "entrypoints": {
+      "main": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.RespackoptsFabric"
+      ],
+      "client": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.RespackoptsClientFabric"
+      ],
+      "frex": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.integration.FrexCompat"
+      ],
+      "respackopts:save_hook": [
+        "io.gitlab.jfronny.respackopts.Respackopts"
+      ],
+      "respackopts:client_save_hook": [
+        "io.gitlab.jfronny.respackopts.integration.ShaderIntegration"
+      ],
+      "libjf:config": [
+        "io.gitlab.jfronny.respackopts.JFC_RespackoptsConfig"
+      ],
+      "libjf:resource_pack_entry_widget": [
+        "io.gitlab.jfronny.respackopts.RespackoptsPackWidget"
+      ],
+      "libjf:resource_pack_interceptor": [
+        "io.gitlab.jfronny.respackopts.filters.ValidationLayer$Pre",
+        "io.gitlab.jfronny.respackopts.filters.DirFilterEvents",
+        "io.gitlab.jfronny.respackopts.filters.FileFilterEvents",
+        "io.gitlab.jfronny.respackopts.filters.IOLogEvents",
+        "io.gitlab.jfronny.respackopts.filters.ValidationLayer$Post"
+      ],
+      "modmenu": [
+        "io.gitlab.jfronny.respackopts.platform.fabric.integration.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/TiF5QWZY/versions/y5eBSMkZ/respackopts-4.14.0%2B1.21.1.4.jar"
+    ]
+  },
+  {
+    "id": "roughlyenoughitems",
+    "version": "16.0.799",
+    "filename": "RoughlyEnoughItems-16.0.799-fabric.jar",
+    "sha256": "098c840780940010f2ba48cb758b77c1b991e69ab3fbec8725af099351653c9d",
+    "sha1": "ea0efe8b13a52e9d8d5a18d062810117a7efec0f",
+    "sha512": "e4b16c69dc3cc4f7a13c1e285ff0914fd065ca1973450244ac0551f59bcd1247febedbef73c3f89ee4e684f037e3225a7b0d49138292df9303742c12f30010b6",
+    "size": 2451799,
+    "install_path": "mods/RoughlyEnoughItems-16.0.799-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "minecraft": "~1.21-"
+    },
+    "entrypoints": {
+      "main": [
+        "me.shedaniel.rei.impl.init.RoughlyEnoughItemsInitializer::onInitialize"
+      ],
+      "client": [
+        "me.shedaniel.rei.fabric.RoughlyEnoughItemsFabric",
+        "me.shedaniel.rei.impl.init.RoughlyEnoughItemsInitializer::onInitializeClient"
+      ],
+      "rei_common": [
+        "me.shedaniel.rei.plugin.common.DefaultPlugin",
+        "me.shedaniel.rei.plugin.common.runtime.DefaultRuntimePlugin"
+      ],
+      "rei_client": [
+        "me.shedaniel.rei.plugin.client.DefaultClientPlugin",
+        "me.shedaniel.rei.plugin.client.runtime.DefaultClientRuntimePlugin",
+        "me.shedaniel.rei.plugin.client.runtime.HideIngredientsFromTagsPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/nfn13YXA/versions/aWzTESNC/RoughlyEnoughItems-16.0.799-fabric.jar"
+    ]
+  },
+  {
+    "id": "safepastures",
+    "version": "1.1.1+1.21.1",
+    "filename": "SafePastures-1.1.1+1.21.1.jar",
+    "sha256": "41d1c286db3e02a3249346a5efda6f95799ab895aa40c03a87cdcd81a95e4b45",
+    "sha1": "da4ca736f1390553380dd1f8b596f17d35fafded",
+    "sha512": "c5bffd438c3e0267cdb07f4eacee40ba4fcb41387064c0f31172651e4e137443d53c552caf407addbb13b222c5d8ad4d0c1099593e6fdbdd1b60bf8b3fda89e0",
+    "size": 16518,
+    "install_path": "mods/SafePastures-1.1.1+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT License",
+    "depends": {
+      "fabricloader": ">=0.16.5",
+      "fabric": "*",
+      "minecraft": "1.21.1",
+      "cobblemon": ">=1.7.0"
+    },
+    "entrypoints": {
+      "main": [
+        "chadlymasterson.safepastures.SafePastures"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/qpe01spE/versions/ahfbSTCi/SafePastures-1.1.1%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "scalablelux",
+    "version": "0.1.0.1+fabric.d0d58ab",
+    "filename": "ScalableLux-0.1.0.1+fabric.d0d58ab-all.jar",
+    "sha256": "f32ed8d825c7af90b14ab9f7bbe1293818bcf411fea104ae20d18ecde30f8387",
+    "sha1": "2ce889d9b1b210eef005ea03c3bbb39289c26e3f",
+    "sha512": "bbfe02184c3bf3b0da28175574a5a236ce7c9acc00069addd69770857f2ac572924893f3eb033bbbc965afa9779c7a7f8fc54168f9e90481a40de92f6ee3645f",
+    "size": 177266,
+    "install_path": "mods/ScalableLux-0.1.0.1+fabric.d0d58ab-all.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": ">=1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "ca.spottedleaf.starlight.common.ScalableLuxEntrypoint"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/Ps1zyz6x/versions/Yx1tgJMI/ScalableLux-0.1.0.1%2Bfabric.d0d58ab-all.jar"
+    ]
+  },
+  {
+    "id": "searchables",
+    "version": "1.0.2",
+    "filename": "Searchables-fabric-1.21.1-1.0.2.jar",
+    "sha256": "0b58a40a41db4a4af4ef84475b0ea330be3b18fdcac2eca68ede46d9f4df3d76",
+    "sha1": "2777db0b967e80e0659053154f32f14a0e99a7a7",
+    "sha512": "1d57bd196a1122953a4f80d18af660be7ad791b9264e46666b273172c448df4de9acf2630fae7d196a4da8168c829fad18756c86b2cd3dd1068a0b453d8ec222",
+    "size": 79531,
+    "install_path": "mods/Searchables-fabric-1.21.1-1.0.2.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "java": ">=21",
+      "minecraft": "1.21.1"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/fuuu3xnx/versions/tRdr8Bg3/Searchables-fabric-1.21.1-1.0.2.jar"
+    ]
+  },
+  {
+    "id": "sodium",
+    "version": "0.8.12+mc1.21.1",
+    "filename": "sodium-fabric-0.8.12+mc1.21.1.jar",
+    "sha256": "9ad11a616d1ca759867de8a5bbafcde5ab50b68dbd674110c7b90aeea251b793",
+    "sha1": "70381d969eb63c0aa09dc581ef4b9a79782c0123",
+    "sha512": "8afe411eec65a9f677611ed6390ce656e5a3572f9be473e5dca51ae882a9426a547cd2e8c793278577bb14c17e48158030b11753108926ef33698614bd94ed7f",
+    "size": 1573180,
+    "install_path": "mods/sodium-fabric-0.8.12+mc1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "Polyform-Shield-1.0.0",
+    "depends": {
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ],
+      "fabricloader": ">=0.16.0",
+      "fabric-block-view-api-v2": "*",
+      "fabric-renderer-api-v1": "*",
+      "fabric-rendering-data-attachment-v1": "*",
+      "fabric-rendering-fluids-v1": ">=2.0.0",
+      "fabric-resource-loader-v0": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "net.caffeinemc.mods.sodium.fabric.SodiumFabricMod"
+      ],
+      "preLaunch": [
+        "net.caffeinemc.mods.sodium.fabric.SodiumPreLaunch"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/AANobbMI/versions/KIRFiWG4/sodium-fabric-0.8.12%2Bmc1.21.1.jar"
+    ]
+  },
+  {
+    "id": "sophisticatedbackpacks",
+    "version": "1.21.1-3.23.4.3.106",
+    "filename": "sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+    "sha256": "2c099bfd5dc02ace6e73ffd9259940b0597cd4da7216a53a2c60c6732900d6aa",
+    "sha1": "7f6af600a58863dfcebe5e3d3ce5e2a4bcabcbd3",
+    "sha512": "04c0c22489a16d782b644ec7ad6aa5bf4353614148a9fb1e152e9ec6c72be14d36b1c0793c25b720f2baf85aa299fc6585b4ee1991de25ac426166dc72fb0def",
+    "size": 988478,
+    "install_path": "mods/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU General Public License v3.0",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "minecraft": "1.21.1",
+      "sophisticatedcore": ">=1.21.1-1.2.9.15 <1.22"
+    },
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.SophisticatedBackpacks"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.client.SophisticatedBackpacksClient"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.data.DataGenerators"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.jei.SBPPlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedbackpacks.compat.rei.REIClientCompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/ouNrBQtq/versions/nHhuPdda/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar"
+    ]
+  },
+  {
+    "id": "sophisticatedcore",
+    "version": "1.21.1-1.2.9.21.168",
+    "filename": "sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+    "sha256": "3c71a04d5b03cdf9d9fe50e71849fdf11291dd1fab149621e35688ef6e516054",
+    "sha1": "43a95dfa338a2a6ba3ea33a5efa0ac040331e50c",
+    "sha512": "330489fa3434702a01aa1a98d46eca5d155cb4c2dd25b30c70f6afb29a8d027381cf395d5965b3c46df899bb96675536604302d9db6273f624ba959f4009ce25",
+    "size": 2996065,
+    "install_path": "mods/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU General Public License v3.0",
+    "depends": {
+      "minecraft": "1.21.1",
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "forgeconfigapiport": ">=21.1.3",
+      "team_reborn_energy": ">=4.1.0"
+    },
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedcore.SophisticatedCore"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedcore.client.ClientEventHandler"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedcore.data.DataGenerators"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.jei.CorePlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedcore.compat.rei.REIClientCompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/9jxwkYQL/versions/ZLVrtF0Q/sophisticatedcore-1.21.1-1.2.9.21.168.jar"
+    ]
+  },
+  {
+    "id": "sophisticatedstorage",
+    "version": "1.21.1-1.3.7.9.139",
+    "filename": "sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+    "sha256": "0dbaf1ff069c33a8c4738518d983d1cab0cdca6871a6c7b7dc5727c531eca215",
+    "sha1": "328dcb51c60f7e6cf19c40874dc67335fd44b9f7",
+    "sha512": "52a72f10e54cf21d1dc3a94812a815bf6292815410f6d3ff2dfc928d9091352314f1b1b9c6760b303c3e58132c76dea584e31b16e5479cd0ea2c4ea256854937",
+    "size": 1670672,
+    "install_path": "mods/sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GNU General Public License v3.0",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "fabric-api": ">=0.114.0+1.21.1",
+      "minecraft": "1.21.1",
+      "sophisticatedcore": ">=1.21.1-1.2.9.15 <1.22"
+    },
+    "entrypoints": {
+      "main": [
+        "net.p3pp3rf1y.sophisticatedstorage.SophisticatedStorage"
+      ],
+      "client": [
+        "net.p3pp3rf1y.sophisticatedstorage.client.SophisticatedStorageClient"
+      ],
+      "fabric-datagen": [
+        "net.p3pp3rf1y.sophisticatedstorage.data.DataGenerators"
+      ],
+      "jade": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.jade.StorageJadePlugin"
+      ],
+      "emi": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.emi.EmiCompat"
+      ],
+      "jei_mod_plugin": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.jei.StoragePlugin"
+      ],
+      "rei_common": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.rei.REIServerCompat"
+      ],
+      "rei_client": [
+        "net.p3pp3rf1y.sophisticatedstorage.compat.rei.REIClientCompat"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/iHtpVwJL/versions/kjNlOByJ/sophisticatedstorage-1.21.1-1.3.7.9.139.jar"
+    ]
+  },
+  {
+    "id": "sound_physics_remastered",
+    "version": "1.21.1-1.5.1",
+    "filename": "sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+    "sha256": "8884ded0f53f97a6cb2fca9ef035947af8c3376a406e0bdaa8309bfe87801799",
+    "sha1": "07d9f758338ad5be38b7fa1eb32c71a7c4840ea0",
+    "sha512": "72c69678b6afc5ec48027f6e40f7421370dffa1483e23767e0b5f1b36581be652308b33864848e186845df9052f512b79698c69242adb297058cdc3357b64d60",
+    "size": 205671,
+    "install_path": "mods/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GPL",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": [
+        "1.21",
+        "1.21.1"
+      ],
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.sonicether.soundphysics.FabricSoundPhysicsMod"
+      ],
+      "client": [
+        "com.sonicether.soundphysics.FabricSoundPhysicsMod"
+      ],
+      "modmenu": [
+        "com.sonicether.soundphysics.integration.ModMenuIntegration"
+      ],
+      "voicechat": [
+        "com.sonicether.soundphysics.integration.voicechat.SimpleVoiceChatPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/qyVF9oeo/versions/tVu2EZ4u/sound-physics-remastered-fabric-1.21.1-1.5.1.jar"
+    ]
+  },
+  {
+    "id": "soundsbegone",
+    "version": "1.5.2",
+    "filename": "soundsbegone-fabric-1.5.2+mc1.21.jar",
+    "sha256": "88a0dd266a5639e89c33c9320685c57d482641738f9bc5b6e6800c3c34b80b32",
+    "sha1": "3ef45517426b434a2ef6092559c494a67ee1aff9",
+    "sha512": "833f7cc00b8ff60dbb457e66f70e189e08607ce4ce11f51e77070280edb049bad5ff84bed4514e9ac2e5b6d6756fe94373d230969dc25842f48b0576c716ccce",
+    "size": 6151935,
+    "install_path": "mods/soundsbegone-fabric-1.5.2+mc1.21.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "GPL-3.0",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": ">=1.21",
+      "fabric-api": "*",
+      "cloth-config": ">=15.0.140"
+    },
+    "entrypoints": {
+      "main": [],
+      "client": [
+        "gg.meza.soundsbegone.SoundsBeGone"
+      ],
+      "modmenu": [
+        "gg.meza.soundsbegone.fabric.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/FOIvwGKz/versions/N0GVB9DV/soundsbegone-fabric-1.5.2%2Bmc1.21.jar"
+    ]
+  },
+  {
+    "id": "stackdeobfuscator",
+    "version": "1.4.3+08e71cc",
+    "filename": "StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+    "sha256": "335627367b8212c17e58978866874ede8d0d9a159053fbb38e56123fff83d0f9",
+    "sha1": "c36982af69e6d9d9dbac52e4d6c43e8a64fc6163",
+    "sha512": "ef851d54a60e223e90cfd21da91effcdc70175dd32b194366ca3ba29646c9ebdbfb60a1eaa88070c4e9f83bd654da1344e67226dfdf5c68140db4ef693361353",
+    "size": 321213,
+    "install_path": "mods/StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-only",
+    "depends": {
+      "fabricloader": ">=0.14.11",
+      "minecraft": ">=1.14-alpha.18.49.a",
+      "java": ">=17"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.booky.stackdeobf.StackDeobfMod"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/NusMqsjF/versions/pyiVLk9R/StackDeobfuscatorFabric-1.4.3%2B08e71cc.jar"
+    ]
+  },
+  {
+    "id": "super_resolution",
+    "version": "0.9.1-alpha.1+opengl",
+    "filename": "super_resolution-fabric-1.21..1.21.1-0.9.1-alpha.1+opengl.jar",
+    "sha256": "be7ad2af4a22da62eec5539e249bba11166f03e8214d95f01f770c3fc93c8881",
+    "sha1": "4a275d164b17d9509f78595d962166337355f66c",
+    "sha512": "81936861102d8fc36a61af51ddde854ad9d8ab79c40bba3b963dbf77a361672767186c9da0a9e25e6235943a2eb78dc979e58b0019a210d89e297ca91614dc05",
+    "size": 33664155,
+    "install_path": "mods/super_resolution-fabric-1.21..1.21.1-0.9.1-alpha.1+opengl.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": "*",
+      "minecraft": [
+        "~1.21.1",
+        "~1.21"
+      ],
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "io.homo.superresolution.fabric.SuperResolutionFabric"
+      ],
+      "client": [
+        "io.homo.superresolution.fabric.SuperResolutionFabricClient"
+      ],
+      "modmenu": [
+        "io.homo.superresolution.fabric.compat.modmenu.ModMenu"
+      ],
+      "sodium:config_api_user": [
+        "io.homo.superresolution.fabric.compat.sodium.SodiumConfigBuilder"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "supermartijn642configlib",
+    "version": "1.1.8",
+    "filename": "supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+    "sha256": "63a29f2acf4be2c5ca89a81a046c1100111ad2865d9638f638e27ca161e7211c",
+    "sha1": "8427e42f1db8ea7b4b6c21cc94bfcfa398f0ff63",
+    "sha512": "479838148fc1979409474b460de73162b7730c36b201eb903e299c144a056fed4f6dfb4498e0ded1e93a168379ff7efe0623279aa33a82b1b222c68468c477d6",
+    "size": 206993,
+    "install_path": "mods/supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All rights reserved",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.22",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.configlib.ConfigLib"
+      ],
+      "client": [
+        "com.supermartijn642.configlib.ConfigLibClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/LN9BxssP/versions/euSlaAtA/supermartijn642configlib-1.1.8-fabric-mc1.21.jar"
+    ]
+  },
+  {
+    "id": "supermartijn642corelib",
+    "version": "1.1.21",
+    "filename": "supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+    "sha256": "462756caa1efeff760a752a29136d59d40c5ad6047603472785f65a44d1da6e3",
+    "sha1": "0091085edb9435f6eefc2ff562fcc8cffbc05981",
+    "sha512": "845981e2819e80b94492a3606ee75400205026771309afca26186a43e64e170fd8ffc4526bb3dea5d31e1aff0e8fea017eabd1a94cd3b5faa0b668f05a754775",
+    "size": 616830,
+    "install_path": "mods/supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All rights reserved",
+    "depends": {
+      "fabricloader": ">=0.14.0",
+      "fabric": ">=0.100.7",
+      "minecraft": ">=1.21 <1.21.2",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "com.supermartijn642.core.CoreLib"
+      ],
+      "preLaunch": [
+        "com.supermartijn642.core.CoreLibPreLaunch"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/rOUBggPv/versions/blDCgrqh/supermartijn642corelib-1.1.21-fabric-mc1.21.jar"
+    ]
+  },
+  {
+    "id": "terralith",
+    "version": "2.5.8",
+    "filename": "Terralith_1.21.x_v2.5.8.jar",
+    "sha256": "00333a130ac38b7b9ca93700098d5e02e0612bdc2d3522aada2f36e5600621bf",
+    "sha1": "bee0cfb1a8cd4bf3d96bccea224fb45d74de9085",
+    "sha512": "f862ed5435ce4c11a97d2ea5c40eee9f817c908f3223b5fd3e3fff0562a55111d7429dc73a2f1ca0b1af7b1ff6fa0470ed6efebb5de13336c40bb70fb357dd60",
+    "size": 3115385,
+    "install_path": "mods/Terralith_1.21.x_v2.5.8.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Stardust Labs License",
+    "depends": {
+      "fabricloader": ">=0.12.7",
+      "fabric-api-base": "*",
+      "minecraft": ">=1.21"
+    },
+    "entrypoints": {},
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "tim_core",
+    "version": "1.7.3-fabric-1.32.0",
+    "filename": "tim_core-1.7.3-fabric-1.32.0-cobblemon1.8-test.jar",
+    "sha256": "4abb37ae232e870f58c7bb2f63b43a2b6d8f9d93f0a4ab7a9465bc87ef9478ae",
+    "sha1": "0f46e78eaf400b7f494f7f3b470e1cf5c8c33177",
+    "sha512": "877f812a9fcda4cdb668f2d519dcdc334be8ac7e44fa956b803a951cce480bb5eff58e17e9cc3b52b2b35f0e2d6ce6898242f893c4f29ad912a2b1b8a00cb552",
+    "size": 304304,
+    "install_path": "mods/tim_core-1.7.3-fabric-1.32.0-cobblemon1.8-test.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "java": ">=21",
+      "minecraft": "1.21.1",
+      "fabric": "*",
+      "cobblemon": ">=1.7.3"
+    },
+    "entrypoints": {
+      "main": [
+        {
+          "adapter": "kotlin",
+          "value": "us.timinc.mc.cobblemon.timcore.fabric.FabricTimCore"
+        }
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "tmcraft",
+    "version": "1.4.18+1.7.3",
+    "filename": "tmcraft-1.4.18+1.7.3-api119fix-stable18fix.jar",
+    "sha256": "279285b8b5cb562b6c3f7b32de192f6f745b33d49794a7b00d575e28862fc10c",
+    "sha1": "82ca28f69b9fed806c6fa620cb86676805101fa6",
+    "sha512": "7d0b73132527dd1cdf6db189550bb0af7672e1e36ab58e96425932a4cc504e324aee4869d23d13991712c2c7224ca44162673b571fddf5540e5c92d58f086ea2",
+    "size": 3360554,
+    "install_path": "mods/tmcraft-1.4.18+1.7.3-api119fix-stable18fix.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GPL-3.0",
+    "depends": {
+      "fabricloader": ">=0.16.9",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "fabric-api": "*",
+      "cobblemon": ">=1.7.3"
+    },
+    "entrypoints": {
+      "fabric-datagen": [
+        "kiwiapollo.tmcraft.datagen.DataGenerator"
+      ],
+      "main": [
+        "kiwiapollo.tmcraft.TMCraft"
+      ],
+      "client": [
+        "kiwiapollo.tmcraft.TMCraftClient"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "toms_storage",
+    "version": "2.3.0",
+    "filename": "toms_storage_fabric-1.21-2.3.0.jar",
+    "sha256": "fad39f7ed0ac20ab0345aeb7dbe1be0b2732fa11fd333b6874629e925c45d5d1",
+    "sha1": "3f851ab4ba33b0efca0a03f3aa92a266415f5a87",
+    "sha512": "e7bc2828cbf7cda7fa178c81d9f6935985c72fe44b3ccc33e383101c53f4964eb54c0a6e1b3a6a0e13466a30eb043bccd3021ede141b962ed211ddd2948daa2f",
+    "size": 1962781,
+    "install_path": "mods/toms_storage_fabric-1.21-2.3.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.7.4",
+      "fabric": ">=0.100.3",
+      "minecraft": ">=1.21 <1.21.2"
+    },
+    "entrypoints": {
+      "client": [
+        "com.tom.storagemod.StorageModClient"
+      ],
+      "main": [
+        "com.tom.storagemod.StorageMod"
+      ],
+      "modmenu": [
+        "com.tom.storagemod.ModMenu"
+      ],
+      "rei_client": [
+        "com.tom.storagemod.rei.REIPlugin"
+      ],
+      "emi": [
+        "com.tom.storagemod.emi.EMIPlugin"
+      ],
+      "jei_mod_plugin": [
+        "com.tom.storagemod.jei.JEIHandler"
+      ],
+      "cardinal-components": [
+        "com.tom.storagemod.StorageModComponents"
+      ],
+      "jade": [
+        "com.tom.storagemod.jade.JadePlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/XZNI4Cpy/versions/GwLz79tK/toms_storage_fabric-1.21-2.3.0.jar"
+    ]
+  },
+  {
+    "id": "tooltipfix",
+    "version": "1.1.1-1.20",
+    "filename": "tooltipfix-1.1.1-1.20.jar",
+    "sha256": "50c6c45d16c62b0d9a832692b7f6250d5561f0b28bf7729d8ab25fe1162c90d2",
+    "sha1": "de704792c691e3d19316c87c21c9ad2bee6c66c3",
+    "sha512": "75d85a093487ddd8c405cf7f8ce83cb3418ff7c2d3e6bf5aa38554d8bcf0ea45c87c88f3463a924e9cc8b5931d8b64f7be173efbd48ea7a0c150db95e1408f51",
+    "size": 12432,
+    "install_path": "mods/tooltipfix-1.1.1-1.20.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.12.5",
+      "fabric": "*"
+    },
+    "entrypoints": {},
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/2RKFTmiB/versions/B2L4LeMV/tooltipfix-1.1.1-1.20.jar"
+    ]
+  },
+  {
+    "id": "trinkets",
+    "version": "3.10.0",
+    "filename": "trinkets-3.10.0.jar",
+    "sha256": "349fd2aa8930b232050ee5304db55e4ef738b017971afe7c84acd589a95fda2f",
+    "sha1": "f54756f938c7c273713b9f97d4a987eec551e892",
+    "sha512": "3ea846c945a0559696501ff65b373c8ee8fd9b394604e9910b4ed710c3e07cadc674a615a2c3b385951a42253a418201975df951b3100053ed39afadc70221c9",
+    "size": 272944,
+    "install_path": "mods/trinkets-3.10.0.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MIT",
+    "depends": {
+      "minecraft": ">1.18",
+      "fabricloader": ">=0.7.0",
+      "cardinal-components-base": ">=3.0.0-0",
+      "cardinal-components-entity": ">=3.0.0-0",
+      "fabric-api": ">=0.51.2"
+    },
+    "entrypoints": {
+      "main": [
+        "dev.emi.trinkets.TrinketsMain"
+      ],
+      "client": [
+        "dev.emi.trinkets.TrinketsClient"
+      ],
+      "cardinal-components-entity": [
+        "dev.emi.trinkets.TrinketsMain"
+      ],
+      "rei_client": [
+        "dev.emi.trinkets.compat.TrinketsREIPlugin"
+      ],
+      "emi": [
+        "dev.emi.trinkets.compat.TrinketsEmiPlugin"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/5aaWibi9/versions/JagCscwi/trinkets-3.10.0.jar"
+    ]
+  },
+  {
+    "id": "vanillabackport",
+    "version": "1.1.7.10",
+    "filename": "VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+    "sha256": "6aba8f56fd71b9b5b724812b22f14d11a71e9ca0bf7e84b52b4c8b91736e0734",
+    "sha1": "be520356ef53352b2d3e6ec84ca3abb7ca62f041",
+    "sha512": "111395b0aff0d8093b59a21ae87f35711430d8cfc55e3dad268f98cac2c8a0e77e34b00e9d005388fc71d26b5ae2457a2912b38f0b6604e802e6d85ed3fff822",
+    "size": 54994072,
+    "install_path": "mods/VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "ARR",
+    "depends": {
+      "fabricloader": ">=0.16.12",
+      "platform": ">=1.3.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "client": [
+        "com.blackgear.vanillabackport.core.fabric.emissive.EmissiveModelHandler"
+      ],
+      "main": [
+        "com.blackgear.vanillabackport.core.fabric.VanillaBackportFabric"
+      ],
+      "fabric-datagen": [
+        "com.blackgear.vanillabackport.data.DataGenerator"
+      ],
+      "terrablender": [
+        "com.blackgear.vanillabackport.core.fabric.VanillaBackportTerrablender"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/6xwxDTgf/versions/ayvoY8lx/VanillaBackport-fabric-1.21.1-1.1.7.10.jar"
+    ]
+  },
+  {
+    "id": "villagerconfig",
+    "version": "4.5.4",
+    "filename": "villagerconfig-fabric-4.5.4+1.21.1.jar",
+    "sha256": "627483b71a24679d51321c618fa6c8abe8df64cf770b001b319412677adab49b",
+    "sha1": "0b9c27925a041b3dee88bd10aa5e06ef7ee4f08d",
+    "sha512": "b68155517a6e68ab9a71d4c73fcd9fdc556d38226a209816b7e244e08e596c9f1889c9bf6088fdd6e060c6d96959a6959a687edbee830b0dbcc34ac8aca086dc",
+    "size": 355303,
+    "install_path": "mods/villagerconfig-fabric-4.5.4+1.21.1.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPLv3",
+    "depends": {
+      "fabricloader": ">=0.16.14",
+      "java": ">=21",
+      "fabric-api": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "me.drex.villagerconfig.fabric.VillagerConfigFabric"
+      ],
+      "client": [
+        "me.drex.villagerconfig.fabric.VillagerConfigFabricClient"
+      ],
+      "modmenu": [
+        "me.drex.villagerconfig.fabric.config.modmenu.VillagerConfigModMenuEntry"
+      ],
+      "preLaunch": [
+        "com.llamalad7.mixinextras.MixinExtrasBootstrap::init"
+      ],
+      "fabric-datagen": [
+        "me.drex.villagerconfig.fabric.datagen.VanillaDataGenerator"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/OClpEDe3/versions/sb4XIWwK/villagerconfig-fabric-4.5.4%2B1.21.1.jar"
+    ]
+  },
+  {
+    "id": "waystones",
+    "version": "21.1.37",
+    "filename": "waystones-fabric-1.21.1-21.1.37.jar",
+    "sha256": "1cef833ec178bc6ea92a221b8a75bc6637e9e4d38d23f3963610fd772f1b2f95",
+    "sha1": "df61027d645c737d80f62eda56ae24c4b8e2b707",
+    "sha512": "18fc24d9b8ab002f199ca20cbf07ca56df715cd63e87dcfed0679b95d2aeca3647c15cde3b1d3a8749f5bf192e6093f01ab47770b8cd4a9731f93151f57bc3a6",
+    "size": 1226801,
+    "install_path": "mods/waystones-fabric-1.21.1-21.1.37.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "fabric-api": "*",
+      "balm-fabric": "*",
+      "minecraft": ">=1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "net.blay09.mods.waystones.fabric.FabricWaystones"
+      ],
+      "client": [
+        "net.blay09.mods.waystones.fabric.client.FabricWaystonesClient"
+      ],
+      "modmenu": [
+        "net.blay09.mods.waystones.compat.ModMenuIntegration"
+      ],
+      "fabric-datagen": [
+        "net.blay09.mods.waystones.datagen.ModDataGenerator"
+      ],
+      "rei_client": [
+        "net.blay09.mods.waystones.compat.rei.RoughlyEnoughItemsIntegration"
+      ],
+      "journeymap": [
+        "net.blay09.mods.waystones.compat.JourneyMapIntegration"
+      ],
+      "jade": [
+        "net.blay09.mods.waystones.compat.JadeIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/LOpKHB2A/versions/Ub2AL65v/waystones-fabric-1.21.1-21.1.37.jar"
+    ]
+  },
+  {
+    "id": "wild_battle_api",
+    "version": "1.1.2",
+    "filename": "wild_battle_api-fabric-1.1.2.jar",
+    "sha256": "c25fee08e90ed8d28d2a0051f892bae28e1d6d8522c523131bd7dcbef9bcd0a8",
+    "sha1": "ca156e0cc210162f30b3a4a0d5179984a5ceb242",
+    "sha512": "1154c26f932ff8a2db09c6698a182e0ca0aa290a8a319c873e6f118ef482c20dd130c41426a63f36787d785fe9574bd52517f0053160f977b13faa49852ef56e",
+    "size": 253029,
+    "install_path": "mods/wild_battle_api-fabric-1.1.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.github.raguto.wildbattleapi.WildBattleAPIFabric"
+      ],
+      "client": [
+        "com.github.raguto.wildbattleapi.WildBattleAPIFabricClient"
+      ],
+      "modmenu": [
+        "com.github.raguto.wildbattleapi.fabric.ModMenuIntegration"
+      ]
+    },
+    "source": "official-exact-hash",
+    "project_id": "v7VZE8kh",
+    "version_id": "GoEGm1Ea",
+    "downloads": [
+      "https://cdn.modrinth.com/data/v7VZE8kh/versions/GoEGm1Ea/wild_battle_api-fabric-1.1.2.jar"
+    ]
+  },
+  {
+    "id": "worldedit",
+    "version": "7.3.8+6939-7d32b45",
+    "filename": "worldedit-mod-7.3.8.jar",
+    "sha256": "5e7752c97876d87411e3760bcc573cc431f43c453722e6959fa7fe54db1b01ca",
+    "sha1": "924fe181a29bd66be6783f6d589968ab0ee02250",
+    "sha512": "e039492df0b486e7ce76d0eaf8cb11eadad2e78220600b8498ab8eef4642a29e310a6bcb4378257553b3639c6d0bc1ebf0f73df3a7a677c6af6baf86716b0bc7",
+    "size": 6222854,
+    "install_path": "mods/worldedit-mod-7.3.8.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "GPL3",
+    "depends": {
+      "fabricloader": ">=0.4.0",
+      "fabric-api-base": "*",
+      "fabric-command-api-v2": "*",
+      "fabric-lifecycle-events-v1": "*",
+      "fabric-events-interaction-v0": "*",
+      "fabric-networking-api-v1": "*"
+    },
+    "entrypoints": {
+      "main": [
+        "com.sk89q.worldedit.fabric.FabricWorldEdit"
+      ]
+    },
+    "source": "local-custom-or-unresolved"
+  },
+  {
+    "id": "xaerominimap",
+    "version": "26.4.2",
+    "filename": "xaerominimap-fabric-1.21.1-26.4.2.jar",
+    "sha256": "85342f8f7c098e98f2f200fbba308a243af1204cb1afd7668360420e635aa2f8",
+    "sha1": "9293ef9b2626ae3180625c003290a838879cc0b4",
+    "sha512": "153c2273971f2a8b0dbd25a60aff67eb4018b7b8c4786a6d3bdfa97860054200d7d69f634ae2d86f46cc00a66fba53370507bfda7c5f42ed5cc559dbb8d42a59",
+    "size": 2233608,
+    "install_path": "mods/xaerominimap-fabric-1.21.1-26.4.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": "1.21.1",
+      "xaerolib": ">=1.0"
+    },
+    "entrypoints": {
+      "client": [
+        "xaero.minimap.XaeroMinimapFabric"
+      ],
+      "server": [
+        "xaero.minimap.XaeroMinimapFabric"
+      ],
+      "modmenu": [
+        "xaero.common.XaeroHudModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1bokaNcj/versions/Tx54V6kI/xaerominimap-fabric-1.21.1-26.4.2.jar"
+    ]
+  },
+  {
+    "id": "xaeroworldmap",
+    "version": "1.44.2",
+    "filename": "xaeroworldmap-fabric-1.21.1-1.44.2.jar",
+    "sha256": "cd6109af335ad83af9e97cdae5c25023112349e2dc4df95a97640022f38b3856",
+    "sha1": "9872f1275b6e491bc0a806b6288ae2320261b36a",
+    "sha512": "991c8745dda265d9a669271a0f72873a2df1592265ca65338dc4f45cd864d1cf6a17217019b962bf5ebe345110796fea0d7bc602bf8f97cbbae75f33ed3569fc",
+    "size": 1448218,
+    "install_path": "mods/xaeroworldmap-fabric-1.21.1-1.44.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "All Rights Reserved",
+    "depends": {
+      "fabricloader": ">=0.13.0",
+      "fabric-api": ">=0.43.1",
+      "minecraft": ">1.20.6 <1.21.2",
+      "xaerolib": ">=1.0"
+    },
+    "entrypoints": {
+      "client": [
+        "xaero.map.WorldMapFabric"
+      ],
+      "server": [
+        "xaero.map.WorldMapFabric"
+      ],
+      "modmenu": [
+        "xaero.map.mods.XaeroWorldMapModMenu"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/NcUtCpym/versions/L2nO7ZYD/xaeroworldmap-fabric-1.21.1-1.44.2.jar"
+    ]
+  },
+  {
+    "id": "yet_another_config_lib_v3",
+    "version": "3.8.2+1.21.1-fabric",
+    "filename": "yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+    "sha256": "6ab420b7d1326fc9851b96a8967504bd644da421ed6438ceb9a9d9c993a408b1",
+    "sha1": "e075503382f70715ab9fc6f66d603397a86eb3e0",
+    "sha512": "353169f85fa63e73ce9bdd0d4ddce54e3cbc4d71153a93c982f74c68fd93325986663f94fc2f2b10f4427e8b15a0485c608c5587b3840d933204b50ea4cb6d4c",
+    "size": 1131265,
+    "install_path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "LGPL-3.0-or-later",
+    "depends": {
+      "fabricloader": ">=0.17.0",
+      "minecraft": "~1.21 <1.21.2",
+      "java": ">=17",
+      "fabric-api": ">=0.104.0+1.21.1"
+    },
+    "entrypoints": {
+      "client": [
+        "dev.isxander.yacl3.platform.PlatformEntrypoint"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/1eAoo2KR/versions/o3cDn8Vp/yet_another_config_lib_v3-3.8.2%2B1.21.1-fabric.jar"
+    ]
+  },
+  {
+    "id": "zamega",
+    "version": "1.8.2+1.8.2",
+    "filename": "zamega-fabric-1.8.2+1.8.2.jar",
+    "sha256": "816bdfad0324472535202f257b0aca9171432178766860ca5842904e817e65d4",
+    "sha1": "5f359593982f1f393169fdc7bb35d9a34f41756a",
+    "sha512": "1eadaf41f31cfebcb7f3347673eaa0463d9808a7854278be895f6712156ba9bfeda8697840aa67209c37611a54c6d4ea46204835c271bc24c7af433c2d74f725",
+    "size": 896936,
+    "install_path": "mods/zamega-fabric-1.8.2+1.8.2.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "MEGA SHOWDOWN LICENSE v2.1",
+    "depends": {
+      "fabricloader": ">=0.17.3",
+      "minecraft": "~1.21.1",
+      "java": ">=21",
+      "architectury": ">=13.0.8",
+      "fabric-api": "*",
+      "cobblemon": ">=1.8",
+      "mega_showdown": ">=1.0+1.8+1.21.1-beta",
+      "accessories": ">=1.1.0-beta.52+1.21.1"
+    },
+    "entrypoints": {
+      "main": [
+        "org.zamega.zamega.fabric.ZamegaFabric"
+      ],
+      "client": [
+        "org.zamega.zamega.fabric.client.ZamegaFabricClient"
+      ]
+    },
+    "source": "official-exact-hash",
+    "project_id": "2V1Y86sc",
+    "version_id": "CBalGwUD",
+    "downloads": [
+      "https://cdn.modrinth.com/data/2V1Y86sc/versions/CBalGwUD/zamega-fabric-1.8.2%2B1.8.2.jar"
+    ]
+  },
+  {
+    "id": "zfastnoise",
+    "version": "1.0.13+1.21",
+    "filename": "zfastnoise-1.0.13+1.21.jar",
+    "sha256": "da1b8702dfbdbea125aca0c0b1b3da5f8c3eb483977dff6482f32178fd007684",
+    "sha1": "9cd00c39b86e81e9ed11ce8148739bc3889c7c60",
+    "sha512": "48c9941719a49e7c9f8134408152090993ccec3dae00fca3b9b7c4e34068387bbbf0736922331381cce68b5fc3491b66ec5289716735452d110967c886fedb39",
+    "size": 38857,
+    "install_path": "mods/zfastnoise-1.0.13+1.21.jar",
+    "environment": "*",
+    "server_included": true,
+    "license": "Mozilla Public License 2.0",
+    "depends": {
+      "fabricloader": ">=0.18.4",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "entrypoints": {
+      "main": [
+        "org.codeberg.zenxarch.fastnoise.FastNoiseMod"
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/OnlVIpq5/versions/tss0FueO/zfastnoise-1.0.13%2B1.21.jar"
+    ]
+  },
+  {
+    "id": "zoomify",
+    "version": "2.15.2+1.21.1",
+    "filename": "zoomify-2.15.2+1.21.1.jar",
+    "sha256": "6c317987df28922e227ab3ac4e39090460d99b965bcb9c8da8f9a4493b705d00",
+    "sha1": "9ec9c47e1d3465ea0cbd595b6d9d12227239c9a6",
+    "sha512": "ce8db36e77f089f091986b6e8bea1c33433bbcffc7a47fa18d04dea5ecd4910286943600a85b4773fdf4ed5405f52f3c0dc08fea8b1551d7725a26e1f6ef2879",
+    "size": 872937,
+    "install_path": "mods/zoomify-2.15.2+1.21.1.jar",
+    "environment": "client",
+    "server_included": false,
+    "license": "LGPL-3.0-or-later",
+    "depends": {
+      "fabricloader": ">=0.18.0",
+      "fabric-language-kotlin": ">=1.13.8+kotlin.2.3.0",
+      "minecraft": "~1.21 <1.21.2",
+      "java": ">=17",
+      "yet_another_config_lib_v3": ">=3.6.6"
+    },
+    "entrypoints": {
+      "client": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.Zoomify"
+        }
+      ],
+      "modmenu": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.integrations.ModMenuIntegration"
+        }
+      ],
+      "controlify": [
+        {
+          "adapter": "kotlin",
+          "value": "dev.isxander.zoomify.integrations.ControlifyIntegration"
+        }
+      ]
+    },
+    "source": "official-exact-hash",
+    "downloads": [
+      "https://cdn.modrinth.com/data/w7ThoJFB/versions/6jrMC48Z/zoomify-2.15.2%2B1.21.1.jar"
+    ]
+  }
+]

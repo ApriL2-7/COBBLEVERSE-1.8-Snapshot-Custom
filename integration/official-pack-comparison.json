@@ -1,0 +1,121 @@
+{
+  "version_id": "4SKGla61",
+  "version": "1.7.42",
+  "dependencies": {
+    "fabric-loader": "0.18.4",
+    "minecraft": "1.21.1"
+  },
+  "official_files": 168,
+  "local_mods": 158,
+  "matched_official_mods": 121,
+  "override_changes": [
+    {
+      "path": "overrides/config/global_packs.toml",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/COBBLEVERSE - No Ender Dragon.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/COBBLEVERSE - No Hunger.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/COBBLEVERSE-DP-v31.zip",
+      "same_as_local": false
+    },
+    {
+      "path": "overrides/datapacks/COBBLEVERSE-Loot-DP-v11.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/COBBLEVERSE-RCT-DP-v20.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/extra/COBBLEVERSE-Hoenn-DP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/extra/COBBLEVERSE-Johto-DP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/extra/COBBLEVERSE-Sinnoh-DP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/datapacks/extra/Terralith-DP.zip",
+      "same_as_local": false
+    },
+    {
+      "path": "overrides/resourcepacks/ATMxMSD RP.zip",
+      "same_as_local": false
+    },
+    {
+      "path": "overrides/resourcepacks/CavsCobbleMons RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/CobbleMotion RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/COBBLEVERSE RCTmod RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/COBBLEVERSE RP.zip",
+      "same_as_local": false
+    },
+    {
+      "path": "overrides/resourcepacks/COBBLEVERSE Soundtrack.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/E19 Cobblemon Minimap Icons.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/GlitchDex RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/HydroReanimodel RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/LackingMons RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/MissingMons RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/MundialMons RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/MysticMons RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/OJsAnimations RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/PlanetaCobblemon RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/Pokemans RP.zip",
+      "same_as_local": true
+    },
+    {
+      "path": "overrides/resourcepacks/TDmon RP.zip",
+      "same_as_local": true
+    }
+  ]
+}

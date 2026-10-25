@@ -1,0 +1,411 @@
+{
+  "replacement_rule_count": 32,
+  "rules": [
+    [
+      "terralith:alpha_islands",
+      "minecraft:mushroom_fields"
+    ],
+    [
+      "terralith:alpha_islands_winter",
+      "minecraft:mushroom_fields"
+    ],
+    [
+      "terralith:basalt_cliffs",
+      "minecraft:badlands"
+    ],
+    [
+      "terralith:cave/infested_caves",
+      "minecraft:dripstone_caves"
+    ],
+    [
+      "terralith:cave/mantle_caves",
+      "minecraft:lush_caves"
+    ],
+    [
+      "terralith:cave/thermal_caves",
+      "minecraft:sulfur_caves"
+    ],
+    [
+      "terralith:cave/tuff_caves",
+      "minecraft:dripstone_caves"
+    ],
+    [
+      "terralith:desert_spires",
+      "minecraft:desert"
+    ],
+    [
+      "terralith:emerald_peaks",
+      "minecraft:stony_peaks"
+    ],
+    [
+      "terralith:fractured_savanna",
+      "minecraft:savanna_plateau"
+    ],
+    [
+      "terralith:frozen_cliffs",
+      "minecraft:snowy_plains"
+    ],
+    [
+      "terralith:granite_cliffs",
+      "minecraft:grove"
+    ],
+    [
+      "terralith:gravel_desert",
+      "minecraft:pale_garden"
+    ],
+    [
+      "terralith:haze_mountain",
+      "minecraft:windswept_forest"
+    ],
+    [
+      "terralith:highlands",
+      "minecraft:meadow"
+    ],
+    [
+      "terralith:jungle_mountains",
+      "minecraft:jungle"
+    ],
+    [
+      "terralith:painted_mountains",
+      "minecraft:snowy_slopes"
+    ],
+    [
+      "terralith:rocky_shrubland",
+      "minecraft:pale_garden"
+    ],
+    [
+      "terralith:savanna_badlands",
+      "minecraft:savanna_plateau"
+    ],
+    [
+      "terralith:scarlet_mountains",
+      "minecraft:wooded_badlands"
+    ],
+    [
+      "terralith:shield_clearing",
+      "minecraft:cherry_grove"
+    ],
+    [
+      "terralith:skylands_autumn",
+      "minecraft:lukewarm_ocean"
+    ],
+    [
+      "terralith:skylands_spring",
+      "minecraft:plains"
+    ],
+    [
+      "terralith:skylands_summer",
+      "minecraft:deep_lukewarm_ocean"
+    ],
+    [
+      "terralith:skylands_winter",
+      "minecraft:deep_cold_ocean"
+    ],
+    [
+      "terralith:snowy_maple_forest",
+      "minecraft:ice_spikes"
+    ],
+    [
+      "terralith:stony_spires",
+      "minecraft:stony_shore"
+    ],
+    [
+      "terralith:tropical_jungle",
+      "minecraft:sparse_jungle"
+    ],
+    [
+      "terralith:warped_mesa",
+      "minecraft:eroded_badlands"
+    ],
+    [
+      "terralith:white_mesa",
+      "minecraft:beach"
+    ],
+    [
+      "terralith:windswept_spires",
+      "minecraft:windswept_gravelly_hills"
+    ],
+    [
+      "terralith:yellowstone",
+      "minecraft:mushroom_fields"
+    ]
+  ],
+  "required_terralith_biomes": [
+    "terralith:alpine_highlands",
+    "terralith:amethyst_rainforest",
+    "terralith:arid_highlands",
+    "terralith:blooming_plateau",
+    "terralith:blooming_valley",
+    "terralith:brushland",
+    "terralith:cold_shrubland",
+    "terralith:desert_oasis",
+    "terralith:forested_highlands",
+    "terralith:glacial_chasm",
+    "terralith:hot_shrubland",
+    "terralith:lavender_valley",
+    "terralith:lush_desert",
+    "terralith:moonlight_grove",
+    "terralith:rocky_mountains",
+    "terralith:sakura_grove",
+    "terralith:sandstone_valley",
+    "terralith:shrubland",
+    "terralith:snowy_badlands",
+    "terralith:steppe",
+    "terralith:volcanic_peaks",
+    "terralith:wintry_lowlands",
+    "terralith:yosemite_cliffs"
+  ],
+  "replaced_structure_biomes": [],
+  "structures": {
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_blaine_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_brock_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_erika_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_giovanni_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_koga_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_league_tower.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_ltsurge_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_misty_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/tags/worldgen/structure/kanto_sabrina_gym.json": [],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/ash.json": [
+      "minecraft:plains"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/blaine.json": [
+      "minecraft:crimson_forest"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/brock.json": [
+      "minecraft:plains"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/crown_cemetery.json": [
+      "minecraft:old_growth_pine_taiga"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/crown_spire.json": [
+      "minecraft:snowy_plains"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/dawn_tower.json": [
+      "end_highlands"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/dusk_tower.json": [
+      "end_highlands"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/erika.json": [
+      "minecraft:flower_forest"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/giovanni.json": [
+      "#minecraft:has_structure/ancient_city"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/kanto_league.json": [
+      "end_highlands"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/koga.json": [
+      "minecraft:swamp"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/legendary/articuno.json": [
+      "minecraft:snowy_plains"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/legendary/moltres.json": [
+      "minecraft:nether_wastes"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/legendary/zapdos.json": [
+      "minecraft:stony_shore"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/ltsurge.json": [
+      "minecraft:savanna_plateau"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/misty.json": [
+      "minecraft:lukewarm_ocean"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/mythical/mew.json": [
+      "minecraft:jungle"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/sabrina.json": [
+      "minecraft:dark_forest"
+    ],
+    "COBBLEVERSE-DP-v31.zip:data/cobbleverse/worldgen/structure/team_rocket_tower.json": [
+      "minecraft:badlands"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_adriano_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_alice_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_fiammetta_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_league_complex.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_norman_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_petra_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_rudi_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_tell_pat_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/tags/worldgen/structure/hoenn_walter_gym.json": [],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/adriano.json": [
+      "minecraft:cold_ocean"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/alice.json": [
+      "terralith:moonlight_grove"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/dyna_tree.json": [
+      "terralith:sakura_grove"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/fiammetta.json": [
+      "terralith:forested_highlands"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/hoenn_league.json": [
+      "terralith:steppe"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/legendary/groudon.json": [
+      "minecraft:warm_ocean"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/legendary/kyogre.json": [
+      "minecraft:deep_cold_ocean"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/legendary/regice.json": [
+      "terralith:snowy_badlands"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/legendary/regirock.json": [
+      "terralith:lush_desert"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/legendary/registeel.json": [
+      "terralith:alpine_highlands"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/mythical/deoxys.json": [
+      "minecraft:small_end_islands"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/mythical/jirachi.json": [
+      "terralith:blooming_plateau"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/norman.json": [
+      "terralith:brushland"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/petra.json": [
+      "terralith:rocky_mountains"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/rudi.json": [
+      "terralith:yosemite_cliffs"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/secret_garden.json": [
+      "minecraft:deep_lukewarm_ocean"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/sky_pillar.json": [
+      "minecraft:deep_ocean"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/tell_pat.json": [
+      "terralith:amethyst_rainforest"
+    ],
+    "COBBLEVERSE-Hoenn-DP.zip:data/cobbleverse/worldgen/structure/walter.json": [
+      "terralith:arid_highlands"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_alfredo_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_angelo_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_chiara_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_furio_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_jasmine_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_league_tower.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_raffaello_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_sandra_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/tags/worldgen/structure/johto_valerio_gym.json": [],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/alfredo.json": [
+      "minecraft:ice_spikes"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/angelo.json": [
+      "minecraft:lush_caves"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/bell_tower.json": [
+      "minecraft:forest"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/burned_tower.json": [
+      "minecraft:birch_forest"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/celebi_shrine.json": [
+      "minecraft:taiga"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/chiara.json": [
+      "minecraft:cherry_grove"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/furio.json": [
+      "minecraft:desert"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/jasmine.json": [
+      "minecraft:taiga"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/johto_league.json": [
+      "end_highlands"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/raffaello.json": [
+      "minecraft:sparse_jungle"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/rocket_radio_tower.json": [
+      "minecraft:savanna"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/sandra.json": [
+      "minecraft:soul_sand_valley"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/valerio.json": [
+      "minecraft:windswept_hills"
+    ],
+    "COBBLEVERSE-Johto-DP.zip:data/cobbleverse/worldgen/structure/whirl_island.json": [
+      "minecraft:deep_cold_ocean"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_bianca_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_corrado_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_fannie_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_ferruccio_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_gardenia_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_league_castle.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_marzia_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_omar_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/tags/worldgen/structure/sinnoh_pedro_gym.json": [],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/bianca.json": [
+      "terralith:glacial_chasm"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/corrado.json": [
+      "terralith:shrubland"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/crescent_isle.json": [
+      "minecraft:ocean"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/eterna_building.json": [
+      "terralith:arid_highlands"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/fannie.json": [
+      "terralith:lavender_valley"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/ferruccio.json": [
+      "terralith:sandstone_valley"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/flower_paradise.json": [
+      "minecraft:warm_ocean"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/fullmoon_island.json": [
+      "minecraft:lukewarm_ocean"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/gardenia.json": [
+      "terralith:blooming_valley"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/marzia.json": [
+      "terralith:lush_desert"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/mythical/manaphy.json": [
+      "minecraft:deep_cold_ocean"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/omar.json": [
+      "minecraft:beach"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/pedro.json": [
+      "terralith:volcanic_peaks"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/sinnoh_league.json": [
+      "terralith:desert_oasis"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/snowpoint_temple.json": [
+      "terralith:wintry_lowlands"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/spear_pillar.json": [
+      "terralith:cold_shrubland"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/split_decision_temple.json": [
+      "terralith:hot_shrubland"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/team_galactic_hq.json": [
+      "terralith:steppe"
+    ],
+    "COBBLEVERSE-Sinnoh-DP.zip:data/cobbleverse/worldgen/structure/wind_plant.json": [
+      "terralith:blooming_plateau"
+    ]
+  },
+  "note": "No biome replacement rule or spawn-rate value changed. Optional regional packs remain progression-controlled."
+}

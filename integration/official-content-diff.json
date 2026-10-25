@@ -1,0 +1,29 @@
+[
+  {
+    "path": "datapacks/COBBLEVERSE-DP-v31.zip",
+    "only_official": [],
+    "only_custom": [],
+    "changed": [
+      "data/cobblemon/advancement/craft_poke_ball.json",
+      "data/cobblemon/advancement/craft_pokedex.json"
+    ]
+  },
+  {
+    "path": "resourcepacks/ATMxMSD RP.zip",
+    "only_official": [],
+    "only_custom": [],
+    "changed": [
+      "assets/cobblemon/bedrock/pokemon/resolvers/0027_sandshrew/1_sandshrew_alolan.json",
+      "assets/cobblemon/bedrock/pokemon/resolvers/0150_mewtwo/2_mewtwo_mega_y.json",
+      "assets/cobblemon/bedrock/pokemon/resolvers/0150_mewtwo/1_mewtwo_mega_x.json"
+    ]
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE RP.zip",
+    "only_official": [],
+    "only_custom": [],
+    "changed": [
+      "assets/cobblemon/bedrock/pokemon/models/0053_persian/persian_alolan.geo.json"
+    ]
+  }
+]

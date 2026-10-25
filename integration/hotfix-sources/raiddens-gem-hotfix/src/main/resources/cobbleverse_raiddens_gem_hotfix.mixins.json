@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "kr.cobbleverse.raiddens.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "GemTypeFunctionMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

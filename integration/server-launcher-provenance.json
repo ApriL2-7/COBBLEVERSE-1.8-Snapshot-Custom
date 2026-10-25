@@ -1,0 +1,7 @@
+{
+  "minecraft": "1.21.1",
+  "fabric_loader": "0.18.4",
+  "installer": "1.1.2",
+  "url": "https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.18.4/1.1.2/server/jar",
+  "sha256": "519ba43a17c80fe72266a6cab581bad05db0b1fd115fc1c29f29a305abbc68a9"
+}

@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "cobbleverse_regional_evolution_hotfix",
+  "version": "${version}",
+  "name": "Cobbleverse Regional Evolution Hotfix",
+  "description": "Prioritizes currently valid biome-specific evolutions over overlapping general evolutions.",
+  "authors": ["Cobbleverse Server"],
+  "license": "MIT",
+  "environment": "server",
+  "mixins": [
+    "cobbleverse_regional_evolution_hotfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "cobblemon": "1.8.0"
+  }
+}

@@ -1,0 +1,58 @@
+plugins {
+    id 'fabric-loom' version '1.13-SNAPSHOT'
+    id 'maven-publish'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    maven { url = 'https://maven.fabricmc.net/' }
+    mavenCentral()
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    modCompileOnly files('../mods/cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar')
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') {
+        expand 'version': project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+tasks.register('routingPolicyTest', JavaExec) {
+    group = 'verification'
+    description = 'Runs the dependency-free Cobblebase routing policy self-test.'
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'kr.cobbleverse.cobblebase.routing.RoutingPolicySelfTest'
+}
+
+tasks.register('installLocal', Copy) {
+    group = 'distribution'
+    description = 'Copies the remapped server hotfix into the local server pack mods directory.'
+    dependsOn remapJar
+    from(tasks.remapJar.archiveFile)
+    into('../mods')
+}
+
+check.dependsOn routingPolicyTest
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}

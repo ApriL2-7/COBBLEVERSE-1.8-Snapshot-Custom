@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "cobbleverse_raiddens_gem_hotfix",
+  "version": "${version}",
+  "name": "Cobbleverse Raid Dens Gem Hotfix",
+  "description": "Makes Raid Dens resolve type gems through the item registry on Cobblemon 1.8 snapshots.",
+  "authors": ["Cobbleverse Server"],
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "cobbleverse_raiddens_gem_hotfix.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "cobblemon": "*",
+    "cobblemonraiddens": "*"
+  }
+}

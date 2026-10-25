@@ -1,0 +1,342 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "RFWTLHyO",
+    "project_id": "SszvX85I",
+    "author_id": "ie9n0dZq",
+    "featured": false,
+    "name": "mega_showdown 1.3.2+1.8.2+1.21.1-release",
+    "version_number": "1.3.2+1.8.2+1.21.1-release",
+    "changelog": "# 1.3.2+1.8.2+1.21.1-release\r\n- Fixed alphas not changing size in dmax\r\n- Fixed rayquaza with z crystal\r\n- Fixed Eternatus species\r\n- Deleted unneeded spawns\r\n- Added baxcalibur line spawns",
+    "changelog_url": null,
+    "date_published": "2026-10-23T13:47:59.795349Z",
+    "downloads": 12782,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "sxEIJjS8",
+        "hashes": {
+          "sha1": "78f05e982d9b73c4635be77bcc8e3ba3c6e01d02",
+          "sha512": "15b3f9eea0a931458ffcf02ef0c5fe640727114ee983327b7c69b3032f62698383cef2c2e822b5ce5b3ff7214de4b7c52b3bb3330e2c72747e23f86f8618092e"
+        },
+        "url": "https://cdn.modrinth.com/data/SszvX85I/versions/RFWTLHyO/mega_showdown-fabric-1.3.2%2B1.8.2%2B1.21.1-release.jar",
+        "filename": "mega_showdown-fabric-1.3.2+1.8.2+1.21.1-release.jar",
+        "primary": true,
+        "size": 20263709,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "ccKDOlHs",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "jtmvUHXj",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "aNO1eGQi",
+    "project_id": "SszvX85I",
+    "author_id": "ie9n0dZq",
+    "featured": false,
+    "name": "mega_showdown 1.3.1+1.8.2+1.21.1-release",
+    "version_number": "1.3.1+1.8.2+1.21.1-release",
+    "changelog": "# 1.3.1+1.8.2+1.21.1-release\r\n- Gems to Tera-Shards\r\n- New Mega Pidgeot Model: By: definitely_skull11\r\n- New Minior Animations By: Quinn284 (Some fixes from Sherbet)\r\n- New Mega Gengar Model By: Quinn284\r\n- New Kyogre Model By: Quinn284\r\n- New Primal Kyogre Model By: Quinn284\r\n- Fixed Minior Ability\r\n- Fixed Some Form Changes Sounds (Kyogre/Groudon/Hoopa)\r\n- Fixed Missing Mega Abomasnow Model\r\n- Fixed Greninja Species File (Sizes issues)\r\n- Deleyed Mega Evolution Effect to fix some battle cry animations\r\n- Added german and jp translations",
+    "changelog_url": null,
+    "date_published": "2026-10-14T13:34:05.751789Z",
+    "downloads": 53212,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "QbpHJwTt",
+        "hashes": {
+          "sha512": "cf30442507a2f434c182efa7ae4a92173c29837d7e8d1ebe42984ef7e2d32de96b1a50054d983735ecf223582a7f6ae0ef6105bc6dd0cc9d74f3f0a8cc2bff0a",
+          "sha1": "fbb113c49ce448853b1dd28a0c3665608c330434"
+        },
+        "url": "https://cdn.modrinth.com/data/SszvX85I/versions/aNO1eGQi/mega_showdown-fabric-1.3.1%2B1.8.2%2B1.21.1-release.jar",
+        "filename": "mega_showdown-fabric-1.3.1+1.8.2+1.21.1-release.jar",
+        "primary": true,
+        "size": 20266478,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "ccKDOlHs",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "jtmvUHXj",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "Zmky5j93",
+    "project_id": "SszvX85I",
+    "author_id": "ie9n0dZq",
+    "featured": false,
+    "name": "mega_showdown 1.3.1+1.8.2+1.21.1-release",
+    "version_number": "1.3.1+1.8.2+1.21.1-release",
+    "changelog": "# 1.3.1+1.8.2+1.21.1-release\r\n- Gems to Tera-Shards\r\n- New Mega Pidgeot Model: By: definitely_skull11\r\n- New Minior Animations By: Quinn284 (Some fixes from Sherbet)\r\n- New Mega Gengar Model By: Quinn284\r\n- New Kyogre Model By: Quinn284\r\n- New Primal Kyogre Model By: Quinn284\r\n- Fixed Minior Ability\r\n- Fixed Some Form Changes Sounds (Kyogre/Groudon/Hoopa)\r\n- Fixed Missing Mega Abomasnow Model\r\n- Fixed Greninja Species File (Sizes issues)\r\n- Deleyed Mega Evolution Effect to fix some battle cry animations\r\n- Added german and jp translations",
+    "changelog_url": null,
+    "date_published": "2026-10-14T09:05:09.989625Z",
+    "downloads": 1653,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "FBdouuYh",
+        "hashes": {
+          "sha1": "fbb113c49ce448853b1dd28a0c3665608c330434",
+          "sha512": "cf30442507a2f434c182efa7ae4a92173c29837d7e8d1ebe42984ef7e2d32de96b1a50054d983735ecf223582a7f6ae0ef6105bc6dd0cc9d74f3f0a8cc2bff0a"
+        },
+        "url": "https://cdn.modrinth.com/data/SszvX85I/versions/Zmky5j93/mega_showdown-fabric-1.3.1%2B1.8.2%2B1.21.1-release.jar",
+        "filename": "mega_showdown-fabric-1.3.1+1.8.2+1.21.1-release.jar",
+        "primary": true,
+        "size": 20266478,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "jtmvUHXj",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "ccKDOlHs",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "fjbL00ng",
+    "project_id": "SszvX85I",
+    "author_id": "ie9n0dZq",
+    "featured": false,
+    "name": "mega_showdown 1.3.1+1.8.2+1.21.1-release",
+    "version_number": "1.3.1+1.8.2+1.21.1-release",
+    "changelog": "# 1.3.1+1.8.2+1.21.1-release\r\n- Gems to Tera-Shards\r\n- New Mega Pidgeot Model: By: definitely_skull11\r\n- New Minior Animations By: Quinn284 (Some fixes from Sherbet)\r\n- New Mega Gengar Model By: Quinn284\r\n- New Kyogre Model By: Quinn284\r\n- New Primal Kyogre Model By: Quinn284\r\n- Fixed Minior Ability\r\n- Fixed Some Form Changes Sounds (Kyogre/Groudon/Hoopa)\r\n- Fixed Missing Mega Abomasnow Model\r\n- Fixed Greninja Species File (Sizes issues)\r\n- Deleyed Mega Evolution Effect to fix some battle cry animations\r\n- Added german and jp translations",
+    "changelog_url": null,
+    "date_published": "2026-10-14T08:54:28.426337Z",
+    "downloads": 163,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "P7tls72l",
+        "hashes": {
+          "sha512": "cf30442507a2f434c182efa7ae4a92173c29837d7e8d1ebe42984ef7e2d32de96b1a50054d983735ecf223582a7f6ae0ef6105bc6dd0cc9d74f3f0a8cc2bff0a",
+          "sha1": "fbb113c49ce448853b1dd28a0c3665608c330434"
+        },
+        "url": "https://cdn.modrinth.com/data/SszvX85I/versions/fjbL00ng/mega_showdown-fabric-1.3.1%2B1.8.2%2B1.21.1-release.jar",
+        "filename": "mega_showdown-fabric-1.3.1+1.8.2+1.21.1-release.jar",
+        "primary": true,
+        "size": 20266478,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "ccKDOlHs",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "jtmvUHXj",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  },
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_and_server",
+    "id": "SymIA5nV",
+    "project_id": "SszvX85I",
+    "author_id": "ie9n0dZq",
+    "featured": false,
+    "name": "mega_showdown 1.3.1+1.8.2+1.21.1-release",
+    "version_number": "1.3.1+1.8.2+1.21.1-release",
+    "changelog": "# 1.3.1+1.8.2+1.21.1-release\r\n- Gems to Tera-Shards\r\n- New Mega Pidgeot Model: By: definitely_skull11\r\n- New Minior Animations By: Quinn284 (Some fixes from Sherbet)\r\n- New Mega Gengar Model By: Quinn284\r\n- New Kyogre Model By: Quinn284\r\n- New Primal Kyogre Model By: Quinn284\r\n- Fixed Minior Ability\r\n- Fixed Some Form Changes Sounds (Kyogre/Groudon/Hoopa)\r\n- Fixed Missing Mega Abomasnow Model\r\n- Fixed Greninja Species File (Sizes issues)\r\n- Deleyed Mega Evolution Effect to fix some battle cry animations\r\n- Added german and jp translations",
+    "changelog_url": null,
+    "date_published": "2026-10-14T08:44:48.627052Z",
+    "downloads": 142,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "ZdfBgWdE",
+        "hashes": {
+          "sha512": "cf30442507a2f434c182efa7ae4a92173c29837d7e8d1ebe42984ef7e2d32de96b1a50054d983735ecf223582a7f6ae0ef6105bc6dd0cc9d74f3f0a8cc2bff0a",
+          "sha1": "fbb113c49ce448853b1dd28a0c3665608c330434"
+        },
+        "url": "https://cdn.modrinth.com/data/SszvX85I/versions/SymIA5nV/mega_showdown-fabric-1.3.1%2B1.8.2%2B1.21.1-release.jar",
+        "filename": "mega_showdown-fabric-1.3.1+1.8.2+1.21.1-release.jar",
+        "primary": true,
+        "size": 20266478,
+        "file_type": null
+      }
+    ],
+    "dependencies": [
+      {
+        "version_id": null,
+        "project_id": "P7dR8mSH",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "lhGA9TYQ",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "ccKDOlHs",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "MdwFAVRL",
+        "file_name": null,
+        "dependency_type": "required"
+      },
+      {
+        "version_id": null,
+        "project_id": "jtmvUHXj",
+        "file_name": null,
+        "dependency_type": "required"
+      }
+    ]
+  }
+]

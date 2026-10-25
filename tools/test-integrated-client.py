@@ -2,14 +2,20 @@
 
 Uses installed Modrinth game assets and Java. Never reads account credentials.
 """
-import pathlib,os,json,subprocess,uuid
+import pathlib,os,json,subprocess,uuid,sys
 from importlib.machinery import SourceFileLoader
 
 base=pathlib.Path(__file__).resolve().parents[1]
+if '--approved' not in sys.argv:
+    raise RuntimeError('User approval required before the next interactive test. Relaunch with --approved only after explicit permission.')
 integration=SourceFileLoader('integration',str(base/'tools/integrate-local.py')).load_module()
 meta=pathlib.Path(os.environ['APPDATA'])/'ModrinthApp/meta'
 target=integration.TARGET
 if not target.is_dir():raise RuntimeError('Prepare isolated profile first')
+mods=[integration.mod(p) for p in (target/'mods').glob('*.jar')]
+ids=[m.get('id') for m in mods]
+duplicates=sorted({i for i in ids if ids.count(i)>1})
+if duplicates:raise RuntimeError('Duplicate active mod IDs: '+str(duplicates))
 version='1.21.1-0.18.4'
 v=json.loads((meta/'versions'/version/(version+'.json')).read_text())
 classpath=[]

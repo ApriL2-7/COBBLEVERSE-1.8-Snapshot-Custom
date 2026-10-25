@@ -1,0 +1,10 @@
+{
+  "archive_integrity": "passed",
+  "client_mods": 158,
+  "server_mods": 120,
+  "mod_hashes": "passed",
+  "excluded_private_runtime_paths": "passed",
+  "mrpack_bytes": 657820787,
+  "mrpack_sha256": "8c6adf9ed6117b9eb11ee157050444204f6b05bb4f0a30249c785c5549d74f0d",
+  "runtime_test": "not performed by this check"
+}

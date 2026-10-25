@@ -87,6 +87,15 @@ def prepare():
     TARGET.mkdir()
     for name in ['mods','config','datapacks','resourcepacks','defaultconfigs','fancymenu_data','licenses','shaderpacks']:
         if (SOURCE/name).exists():shutil.copytree(SOURCE/name,TARGET/name)
+    # Source can change while the user downloads content. Use the recorded baseline
+    # for the base game mod; do not let Fabric silently select a second Cobblemon.
+    baseline=json.loads((OUT/'source-mods.json').read_text(encoding='utf-8'))
+    selected={m['id']:m for m in baseline if m.get('id')}
+    for jar in (TARGET/'mods').glob('*.jar'):
+        metadata=mod(jar)
+        original=selected.get(metadata.get('id'))
+        if original and jar.name!=original['filename']:
+            jar.rename(jar.with_suffix('.jar.disabled'))
     # Copy options only, never account data, worlds, logs, caches or updater identity.
     shutil.copy2(SOURCE/'options.txt',TARGET/'options.txt')
     additions=[]
