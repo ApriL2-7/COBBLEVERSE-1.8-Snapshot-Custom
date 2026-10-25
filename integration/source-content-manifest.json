@@ -1,0 +1,2377 @@
+[
+  {
+    "path": "config/accessories.json5",
+    "size": 917,
+    "sha256": "fd46888e6b9fe618942368b167ba68ef40074063b3403bc31722623bf6b3488f"
+  },
+  {
+    "path": "config/accessories_compat.json5",
+    "size": 224,
+    "sha256": "f121e63f366d1aaa0f2a7bbe030d9f9e5473aeaa72eb2898493fd0292703f233"
+  },
+  {
+    "path": "config/advancementdisable.toml",
+    "size": 72,
+    "sha256": "5f164f8ff9dd3e1815326fe861d2e1faf59642a5b2f036b3dee255f09e783d86"
+  },
+  {
+    "path": "config/advancementplaques.toml",
+    "size": 3017,
+    "sha256": "c758366b2b0bcf6d5d175974eaf2df078778ccdbfedb628d4c87eca218788ec7"
+  },
+  {
+    "path": "config/badoptimizations.txt",
+    "size": 3460,
+    "sha256": "7de607165962952615803b9ffeb3773c0f31fc4e5803086d51333bdb8f5a6af7"
+  },
+  {
+    "path": "config/beautify.json",
+    "size": 118,
+    "sha256": "58cc17bfedb9baca10c8dafa01cf309a73e17dc0e9bfdceb47e3adbbd99c83d0"
+  },
+  {
+    "path": "config/betterf3.json",
+    "size": 2527,
+    "sha256": "5e7dacbfe6cf278896af46fd12ff248a5236d9a928684247e3bbfc55a5032c8e"
+  },
+  {
+    "path": "config/betterthirdperson.json5",
+    "size": 640,
+    "sha256": "7919d67c1cbb1f36ab67db0d26a1f9bfc35cde25645e3ae21510d945d5bc864a"
+  },
+  {
+    "path": "config/biome_replacer.properties",
+    "size": 1904,
+    "sha256": "c4803c6dbd66c106783dfe95a83551a2452fd02b5613477f0d1539c116b8f014"
+  },
+  {
+    "path": "config/brb.toml",
+    "size": 296,
+    "sha256": "15a793527b81599cef5f026d35622c8c734ef70547d7c749322c38d9697613c1"
+  },
+  {
+    "path": "config/c2me.toml",
+    "size": 8775,
+    "sha256": "c2deb14b200340ac4fe709a062afa755b94c18da642d04a184d960e480cdc71b"
+  },
+  {
+    "path": "config/capture_xp.json",
+    "size": 204,
+    "sha256": "e20d700e07c8e30bc262f052aa485fb5c0e60f38bc153907d7ddd4c22e84ab42"
+  },
+  {
+    "path": "config/cardinal-components-api.properties",
+    "size": 452,
+    "sha256": "8d3ae8c9240fc60475fbb98a87b7e2e0874703b173a449fb346fb0857ada7bba"
+  },
+  {
+    "path": "config/carved_wood-common.json",
+    "size": 704,
+    "sha256": "b61825cc46066aef1f2c675b8493586a706240d515407ff1520e0da239eb8367"
+  },
+  {
+    "path": "config/catchindicator-client.cfg",
+    "size": 1107,
+    "sha256": "062df5777b0a019bea0e50ba53042d5181a41672108562af44706e0b657dc151"
+  },
+  {
+    "path": "config/catchrate-display.json",
+    "size": 181,
+    "sha256": "58ef6267cb77a541130f858dcb25533161b0d322bc7aaf31010e1ee18fd3af16"
+  },
+  {
+    "path": "config/cobblebase/gatherer_categories.json",
+    "size": 2411,
+    "sha256": "3db392ffea29be7ea351d5d0694a7d809fd027b28988f08d58b3b1122a421b42"
+  },
+  {
+    "path": "config/cobblebase.json",
+    "size": 1463,
+    "sha256": "5cf75685938ffd7771c204ee1603214319f33dd2a40df99cedc8d92c76304854"
+  },
+  {
+    "path": "config/cobblecuisine.json",
+    "size": 3918,
+    "sha256": "0d4f07c2b5e2e716f5ae9fdfefd7029f8bbd05c2f9ae20b2c740ac6e50b7d62a"
+  },
+  {
+    "path": "config/cobbledollars/bank.json",
+    "size": 5574,
+    "sha256": "964fd3d3c22624c6196ead6d413c976f49428129049eddffb4466ab78c091b0e"
+  },
+  {
+    "path": "config/cobbledollars/client.json",
+    "size": 39,
+    "sha256": "7f772dbb3202da636736ea98587e32da7b4755cde1ec86917d56070c296cea8c"
+  },
+  {
+    "path": "config/cobbledollars/common.json",
+    "size": 155,
+    "sha256": "85e6704084d9bc94375b0d29aebcadffb9419705d3cfc4ee63eed8a4b5df54f2"
+  },
+  {
+    "path": "config/cobbledollars/default_shop.json",
+    "size": 2320,
+    "sha256": "9a8524c78b6627ee757a1ddf455e66ce40de38f496d396379d323226d296d26e"
+  },
+  {
+    "path": "config/cobblemon/main.json",
+    "size": 3868,
+    "sha256": "b49a01f6e0f58e92169e5d83aaf5f159451a42d2df5b46c4cf555b2d287f2486"
+  },
+  {
+    "path": "config/cobblemon/spawning/best-spawner-config.json",
+    "size": 537,
+    "sha256": "96a5b9cd10fc488c5a214e1c1b3b97c4c2371d5091f8346a2104e28f038e6e84"
+  },
+  {
+    "path": "config/cobblemon/starters.json",
+    "size": 3131,
+    "sha256": "bceb09d103826d8c94015e64b9c1ac65637a130a59e199aed72666e0cb2acae7"
+  },
+  {
+    "path": "config/cobblemon-additions/cobblemon-additions.json",
+    "size": 360,
+    "sha256": "19dfd7436d64bc4f00f8fed1ddf9e350e31a8f50c51239ec5348f5b83a2a11b2"
+  },
+  {
+    "path": "config/cobblemon-battle-extras-profiles.json",
+    "size": 100,
+    "sha256": "23fcc54007ae41a5ce7d5c1d8709cc38bc07867241e7fef0c768c38bca59fcd1"
+  },
+  {
+    "path": "config/cobblemon-battle-extras-server.json",
+    "size": 72,
+    "sha256": "6e3f0ed5aa64ae9843c1bb36c63f2122b726dc884d98f78d70dbbbde38c219f9"
+  },
+  {
+    "path": "config/cobblemon-battle-extras.json",
+    "size": 4032,
+    "sha256": "3c46702f464a8d3c070ec8e56206d6341e4eb34d5b50368be9fae4dbf5464e96"
+  },
+  {
+    "path": "config/cobblemon_party_extras.json",
+    "size": 897,
+    "sha256": "537906525a39b808a307545c625d88ced443a268870b60774d8a948bb00d2a40"
+  },
+  {
+    "path": "config/cobblemonbattlepositions.json",
+    "size": 163,
+    "sha256": "92831df993fcd6402fe818c44090419482b6c2a4011d6feb735b81e874595109"
+  },
+  {
+    "path": "config/cobblemonraiddens/blacklist.json5",
+    "size": 843,
+    "sha256": "3942833430233134123640078f9963498297ca29ad3b58caa5957de75e152846"
+  },
+  {
+    "path": "config/cobblemonraiddens/client.json5",
+    "size": 979,
+    "sha256": "179a91e0fa3778ca3296155c633953215c94a54b281642b8b2dc37b9918ff5e4"
+  },
+  {
+    "path": "config/cobblemonraiddens/common.json5",
+    "size": 2037,
+    "sha256": "0a2acc593ba6a656b69ca160b930e98382e4dfe9003a11a0ebefe7804cb7e9f4"
+  },
+  {
+    "path": "config/cobblemonraiddens/conditions.json5",
+    "size": 459,
+    "sha256": "ddc73b1a539e1f78e8daed69e4795734a19dc5fc511d5309e8b34b4585baed49"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_five.json5",
+    "size": 2267,
+    "sha256": "3e47d139ca0e463b8afce79695a4a37209acc93d1ae538dc811e2184125c519e"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_four.json5",
+    "size": 2226,
+    "sha256": "fd5e7e92a8af3eb378961096950c1dd6d89516f60f90bb0b60fdd81bd9d201a3"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_one.json5",
+    "size": 2136,
+    "sha256": "1e2ba2c3fc803dafc831ed8d0bcf0ff4f4dad73219ed2bf4be174e63cdcbc631"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_seven.json5",
+    "size": 2348,
+    "sha256": "663c3ae17f8d32563f51888f68b5afdf4d4ca8eb394d62db626cb2aeefd570bb"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_six.json5",
+    "size": 2306,
+    "sha256": "f7ff999edbbf55a43d45ef8007f95a1e0a7d2972792448c61214a90adf836378"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_three.json5",
+    "size": 2137,
+    "sha256": "beb06c33b28f9ebeadd173b446f95ff5128020cd3e1c5a0c83a41c13fd05890e"
+  },
+  {
+    "path": "config/cobblemonraiddens/tier_two.json5",
+    "size": 2137,
+    "sha256": "41abef2f4b9e39d1b307801fc26be821891e258a14d2596fb784363eb6c4b0eb"
+  },
+  {
+    "path": "config/cobblenav/client-config.json",
+    "size": 399,
+    "sha256": "ac73001ad97539c5f2f5262026e7dbf0cbb91e78fcedd64a12ef3cf90bf3f2ea"
+  },
+  {
+    "path": "config/cobblenav/server-config.json",
+    "size": 1095,
+    "sha256": "d9cdbe4c56f4f2099ba600319c833fe8b20d4eb52e060e5b4978bc2e6bf801f4"
+  },
+  {
+    "path": "config/cobbreeding/main.json",
+    "size": 999,
+    "sha256": "a38e3d7807feeeceeb6001a7069d5f11066a2ce3e66ad2debd2bb17f1bcc1867"
+  },
+  {
+    "path": "config/comforts-common.toml",
+    "size": 189,
+    "sha256": "1f21c10bfce9cd25aea641046a79df88867f68ba8ba3838a5e1662521f9f06a2"
+  },
+  {
+    "path": "config/comforts-server.toml",
+    "size": 1869,
+    "sha256": "089a30a8742040ca3a3a6e886f0863ef8357690e275236f020f3549fdf963881"
+  },
+  {
+    "path": "config/continuity.json",
+    "size": 122,
+    "sha256": "00267a602028cbb037dcb0b5f803db31bed284235ca9c1ea189ad4179311a2f4"
+  },
+  {
+    "path": "config/customsplashscreen/background.png",
+    "size": 3828524,
+    "sha256": "bdc10be005c7882d1f7d92be997ebfd4cf0a60262a777b5e21bd652c60c17c4f"
+  },
+  {
+    "path": "config/customsplashscreen/progressbar.png",
+    "size": 340,
+    "sha256": "e2e0555e30fd677e05570551f36d3a95fd844dcadc62b15e4f901c3442a5e3c7"
+  },
+  {
+    "path": "config/customsplashscreen/progressbar_background.png",
+    "size": 172,
+    "sha256": "6e2fa0adee9638b3e8f36e75ad048f0abb0de2d06b591961c6b2aff943fd46f2"
+  },
+  {
+    "path": "config/customsplashscreen/square_logo.png",
+    "size": 157919,
+    "sha256": "95216230964f85781d47349312391914f4e01a45b9a1d1a404153acabb3eb03d"
+  },
+  {
+    "path": "config/customsplashscreen/wide_logo.png",
+    "size": 11788,
+    "sha256": "27b2ea2946ca5b00841ce7d1813b42dfb7e36b12ad50c7c9bea09053ac226cf3"
+  },
+  {
+    "path": "config/customsplashscreen.json",
+    "size": 426,
+    "sha256": "5b6ae5d099b0d9d1ef2452cd22acd6061a5910120b94595b619898c0b9aed6c5"
+  },
+  {
+    "path": "config/defaultoptions/keybindings.txt",
+    "size": 6120,
+    "sha256": "e15b879dc5a397502a9edef319c18040e8f19a6886010d1a1d4736afb1d54b94"
+  },
+  {
+    "path": "config/defaultoptions/options.txt",
+    "size": 1893,
+    "sha256": "4049068286723464aad7d3948fc2d28cb353947b82d99e76027006210ad3891a"
+  },
+  {
+    "path": "config/defaultoptions/servers.dat",
+    "size": 17746,
+    "sha256": "befebf3a0de04b5c7be065e934dc54f3693fbaa86e2bd6dbaca46284aceb25df"
+  },
+  {
+    "path": "config/defaultoptions-common.toml",
+    "size": 1732,
+    "sha256": "829ec0bf5e127cfe4534864f285163d6a585d05cc0539884b053fd04fbc66232"
+  },
+  {
+    "path": "config/entity_model_features.json",
+    "size": 1206,
+    "sha256": "24b96b44263a5b8db218d02fe26038619946367041d78d7a8637010e703cd868"
+  },
+  {
+    "path": "config/entity_texture_features.json",
+    "size": 1423,
+    "sha256": "d9473213b2a72089873bdc20c3a5e4ec46fb64ea17951d6f1b5c059cb5ee035e"
+  },
+  {
+    "path": "config/entityculling.json",
+    "size": 2228,
+    "sha256": "5e248d194b74876d9860f122637430a837bf41bd2770c66630daff389db511d5"
+  },
+  {
+    "path": "config/etf_warnings.json",
+    "size": 28,
+    "sha256": "a5ba22e63061c1fb67f0f895f17681351eaeccc225faef966c29ee630593275e"
+  },
+  {
+    "path": "config/euphoria_patcher/.data.json",
+    "size": 163,
+    "sha256": "7eff89fe6f3adeb3a4d2c9dd26ce97f353620742e42495fc47cfcb26a2fb5401"
+  },
+  {
+    "path": "config/euphoria_patcher/settings.toml",
+    "size": 2636,
+    "sha256": "42c4920277f8e3ea7c7bb3d31a92a2460e98375316dd265c3d2c4b77622ff93e"
+  },
+  {
+    "path": "config/fabric/indigo-renderer.properties",
+    "size": 290,
+    "sha256": "fc51e3ade1984271f1ff29bb58df887a1e0f82d2c8d8c985e686f5e5828e0a5a"
+  },
+  {
+    "path": "config/fancymenu/assets/bg_test.png",
+    "size": 871140,
+    "sha256": "59abc872c323c7070831fa97b4ba48840776a1ac36367692bec56070627b0c26"
+  },
+  {
+    "path": "config/fancymenu/assets/cobbleverse_icon_16.png",
+    "size": 3634,
+    "sha256": "14adf48a74528cf7f44dc6063d261bf0c317e041e34be8b9832d6956a3d0dbfe"
+  },
+  {
+    "path": "config/fancymenu/assets/cobbleverse_icon_32.icns",
+    "size": 115281,
+    "sha256": "be8187136514e211c3176d065ca9cd49d40cd34869a1d3d6d125bb11c892b7f8"
+  },
+  {
+    "path": "config/fancymenu/assets/cobbleverse_icon_32.png",
+    "size": 5085,
+    "sha256": "29dd1b85f802bcd4cca9616bc8a0925baa210164c49a1f06e91bed52c4f5281d"
+  },
+  {
+    "path": "config/fancymenu/assets/cobbleverse_title.png",
+    "size": 227564,
+    "sha256": "0723ff1550de12f50402a398aaaa013b707f0a373c71245a4d313df68c96d7d3"
+  },
+  {
+    "path": "config/fancymenu/assets/discord_icon.png",
+    "size": 12789,
+    "sha256": "8506b0f5e3c85e76df4d1c0b4489d10fa85f47f22021b65e6361de2620e2abee"
+  },
+  {
+    "path": "config/fancymenu/assets/latias_latios_background.png",
+    "size": 2913129,
+    "sha256": "e70fd43f60909e24e45bc22305f80b159a61ef8ba7f392afe418677014005565"
+  },
+  {
+    "path": "config/fancymenu/assets/pokedex_menu.png",
+    "size": 250362,
+    "sha256": "2bc781bb67fea20b3f656b4f67e866119f77f957ffb69af6dd9b12ff0c4a9b40"
+  },
+  {
+    "path": "config/fancymenu/assets/slideshow_frame.png",
+    "size": 4382,
+    "sha256": "1408dccaaaac27395c49e220c690ee67bd493067c16fbbee44a1668d2af179eb"
+  },
+  {
+    "path": "config/fancymenu/custom_gui_screens.txt",
+    "size": 442,
+    "sha256": "27422fbddb9a4436af370cba7645f4e32b7f9b9252581842b782d92a9309c93d"
+  },
+  {
+    "path": "config/fancymenu/customizablemenus.txt",
+    "size": 143,
+    "sha256": "219214f6c36cf1f8fab920a734300788779900da90eaafe97f6ec502823cea49"
+  },
+  {
+    "path": "config/fancymenu/customization/cobbleverse_main.txt",
+    "size": 68965,
+    "sha256": "4388c504846d91b349e1f76adccf1202cfc0ddeb0cfce89da8744c314f4e996e"
+  },
+  {
+    "path": "config/fancymenu/customization/cobbleverse_multiplayer_screen.txt",
+    "size": 31950,
+    "sha256": "582fee26c393284331c1c7fb13325c555e8ab5ca9dc680c4027ddfb2caf9e77a"
+  },
+  {
+    "path": "config/fancymenu/customization/cobbleverse_pause_menu.txt",
+    "size": 47846,
+    "sha256": "e65e708b7578609185ee686231ae8777f108779111cdbf25bc23c573691b2d30"
+  },
+  {
+    "path": "config/fancymenu/customization/cobbleverse_resourcepack_selection.txt",
+    "size": 28388,
+    "sha256": "bf8f92c37faf9cfbcff23aa006f2dd3e2b10f3762f502774972a4d54e4916c0c"
+  },
+  {
+    "path": "config/fancymenu/layout_editor/widgets/element_layer_control.lewidget",
+    "size": 203,
+    "sha256": "fe7fb49317a13c8da9bdc3cd676dd98b9485357eb0f92374c4f954e806cdf325"
+  },
+  {
+    "path": "config/fancymenu/legacy_checklist.txt",
+    "size": 42,
+    "sha256": "9a25d3dc708e43eabafce5479a13c02dae15bc7f673afb2745b8b2ba48a97dc0"
+  },
+  {
+    "path": "config/fancymenu/listener_instances.txt",
+    "size": 1344,
+    "sha256": "5e2fd83603a75192a4b87bb127513b0a5baa2b3be6b2d554300a6f0c156876b3"
+  },
+  {
+    "path": "config/fancymenu/options.txt",
+    "size": 4553,
+    "sha256": "cca7e80025cb63c2cfc55af31eb674b50b2150777fa8b21154fed81453ae07e5"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/AlfredoGym.png",
+    "size": 363503,
+    "sha256": "7580f59c29a024ec3005fbb5081c8387f2f469faaadc635635933f16cede2cf9"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/AshHouse.png",
+    "size": 416308,
+    "sha256": "e399eb1832e0fb86d4a1d93398485afc8368c60cc7e67a5cabd0d53de3355082"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/BurnedTower.png",
+    "size": 302050,
+    "sha256": "0793ef68f05620af7d3ab19efdbe658a87ddfa236563a50a34c5d8e3d0e464d0"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/ChampionCamilla.png",
+    "size": 272597,
+    "sha256": "29619a18ca40b107f181d3fb208e85da77a46980d2404de0aed6dc1f76dcdd9a"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/CrownCemetery.png",
+    "size": 364738,
+    "sha256": "66970d090be713bdc89944c44a27731f84033deb6eda4b01982232957296d9a0"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/DeoxysMeteorite.png",
+    "size": 315510,
+    "sha256": "c6d9d8428efa02fcc1575dc3255dd51d39fcbd9e0bc21a587e934f80269903a8"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/DistortionWorld.png",
+    "size": 390440,
+    "sha256": "d0e677c8960800f918e4ab8b3beda08f909f882b4ea29a0bbff9d78e85ebb4e0"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/FannieGym.png",
+    "size": 329883,
+    "sha256": "59674a1d0c486dd6b61aab1857a7fad7edc80f487e79416c40668c36ae11d929"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/FlyingTaxi.png",
+    "size": 448203,
+    "sha256": "d11b3cdcdad8d6743e3fbe8528ff9fd2f71f055fc40d0d47a8d9e37b7c1ca993"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/FurioGym.png",
+    "size": 414132,
+    "sha256": "001051dc0994739bf92134f79b6639b0f3321167feebbd96df9498c48f9ca1a4"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/GengarGmax.png",
+    "size": 312456,
+    "sha256": "8ebf920aa55590f3278a5c115c247d14901d73ced90360d457d705bc31f6409d"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/GroudonVolcano.png",
+    "size": 399767,
+    "sha256": "e55cee53ca04844b601788e15205be5b8e62e54d8a12efc0b4aa995525e96958"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/HoennLeague.png",
+    "size": 408119,
+    "sha256": "8a1ae806f29b80423a868b9b92fd724377edfc6b364b842908870622e946d58a"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/HouseFurnitures.png",
+    "size": 357965,
+    "sha256": "e9fcf2702f3531f013ffdde6028bbfa6a1c7fb347c4248f838b3767ac35aed27"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/JohtoLeague.png",
+    "size": 278869,
+    "sha256": "b36f8ca18ba7c26afa4b4aceda0921594cacda4807c7e15247381cd744ffab03"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/KantoCartographer.png",
+    "size": 334955,
+    "sha256": "b6816c1a512ad611b032ac97d2881162a8e8a2665111be6af6b76de417cd34d1"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/KyogreTemple.png",
+    "size": 291554,
+    "sha256": "bf9d343531a2066c300f26268acfc0d13e72c34f5d34b8ce9e61ee781d75cf46"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/LakeVerity.png",
+    "size": 393397,
+    "sha256": "24ba6a94d14220bb29b450577195ada15fa8c94b069d7ea8c970d63553dd5df5"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/LegendaryBirds.png",
+    "size": 442680,
+    "sha256": "e22920ff455073d4d531313203fd16da99e58e636c856bc9414f063c3c6f2b5f"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/MegaZygardeVSMegaCharizardX.png",
+    "size": 309576,
+    "sha256": "a44e8da8b3bac2628b9b4ca0b26a01c050bcb561150af4b6501a7c1e9a6a4eeb"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/MistyGym.png",
+    "size": 396909,
+    "sha256": "53a54ecdb6c7d60093dc6924b5e313481eaaf8f1bfa273ba2bcc97e082d34f67"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/NecrozmaTowers.png",
+    "size": 364167,
+    "sha256": "f0d895c0b779fe211f457fb0bf57f9bb7ab90e8eeb2716d4ff68e4f53ff423a2"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/OriginTemple.png",
+    "size": 360871,
+    "sha256": "fc2d8f815f4d2b0235d260616082cc7f07751e0b037e6df84a824e86b12408c2"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/PokeMart.png",
+    "size": 401999,
+    "sha256": "196f73c361eb85fbafce2bb71b6d793bd6021c3ff79cec94531ec8d2bb20f358"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/PokemonCenter.png",
+    "size": 427416,
+    "sha256": "5c4ed1d87df40b3bb0704da64efe72b13f1c81a03652d8cc1109873827fbf89a"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/RadioTower.png",
+    "size": 311724,
+    "sha256": "aaa397cbdd4acf6f7339986a5756164be1ca8fc6f53ace953b640116fd8eac56"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/RegirockTemple.png",
+    "size": 411253,
+    "sha256": "4bb82c0aa93c322938829088e67970367942008c56ddbe43f19543e285bd8ea1"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/RegisteelTemple.png",
+    "size": 278721,
+    "sha256": "7fde70fa5390b1cfb8e9f82b0c8844c8e07d88dec05c75b6a11927ff4621f898"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/RidingTorterraTogether.png",
+    "size": 472200,
+    "sha256": "4fa32f7ad5532b9a5be31a957591a95af164b54a48e5861d93180c6561b1e2e5"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/SabrinaGym.png",
+    "size": 270673,
+    "sha256": "5daecf388821f33f2aa186b58a01fd1f48420564988d96146c06e4706effa16e"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/SecretGarden.png",
+    "size": 341900,
+    "sha256": "4a3a558bffcc6ac080584068871937db34b297f248a034db6975e2bfa7d9320c"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/SinnohLeague.png",
+    "size": 373808,
+    "sha256": "6ce3fb5b0262df8fb4e002bb564ba25d41248a8cd365529ac948b0458b63cadd"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/SnowpointTemple.png",
+    "size": 381593,
+    "sha256": "a8ec345804a8e30e2be217ed0a5b375e5ca4ab5e87ae108effe736027719a397"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/StarkMountain.png",
+    "size": 417673,
+    "sha256": "111c6280c5734f9c8eb8a797956008840386b0b059a24070e39a3a64fd5d6baf"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/TeamGalacticPharmacy.png",
+    "size": 373184,
+    "sha256": "57c322dc89f957ba7430233e18b1171428c147b1b4a98a6e8d23e8178b8b013c"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/TeamRocket.png",
+    "size": 224343,
+    "sha256": "70179b9768cd3e5e2bc7d82e580865f616f3e410b810d2de1de944e61b89f202"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/TeamRocketRadio.png",
+    "size": 330164,
+    "sha256": "5035f5738ce61305f52154d757096d5134bf98a76a3a5f5324fdc23430ae1bb9"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/images/WhirlIsland.png",
+    "size": 360905,
+    "sha256": "33dc6754230b09ea4148488d00cf5320b0ea39382bfa143b94064077bc606807"
+  },
+  {
+    "path": "config/fancymenu/slideshows/pokedex/properties.txt",
+    "size": 172,
+    "sha256": "9db668249deb507978c7fd3309d68a76b06f785b8dd5610a8411d4380b13157d"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/cherry_blossom.json",
+    "size": 9349,
+    "sha256": "993c16664fe2d1b9e8ad107bf1c19c1dbb244729c403ed058ca2e54616dc5452"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/cozy_campfire.json",
+    "size": 9347,
+    "sha256": "1e7505231b9d99e6315845043ce810dfc7004ce1d8f5a4ceddb4ecb96c03ac50"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/dark.json",
+    "size": 9329,
+    "sha256": "01e2a3b5d250c0259a7f97f0d353785bfeab6d7ee2e147c16bb910f1d23e9498"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/dark_high_contrast.json",
+    "size": 9359,
+    "sha256": "54316a2b309ddb472b9133f8ccb8694dce9b57be6ebcfb3c2e9d1bbfdade3f26"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/light.json",
+    "size": 9331,
+    "sha256": "a05e95f7b62f338049fe0045d9a6a50060d3aba52d5ab83ac1ed6ff55cac1153"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/light_high_contrast.json",
+    "size": 9361,
+    "sha256": "7c96ba2f2cb4d59d20eaf88960de7a9308ce8a3460c4e1757e07c42e174ea65a"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/pumpkin_soup.json",
+    "size": 9345,
+    "sha256": "7c6a5d5b19e53ca2f88371c2e867f51339b045697aab29864df5877a6bba9311"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/purple_void.json",
+    "size": 9343,
+    "sha256": "fa63577441fd576ebac90ecf06b7ded376cbf80ca5103d398bc9a73a25c6c2c0"
+  },
+  {
+    "path": "config/fancymenu/ui_themes/spooky_season.json",
+    "size": 9347,
+    "sha256": "cfa46554bbb027efe3c2184a073ee652000acac2500cd5136764f901355ec0cd"
+  },
+  {
+    "path": "config/fancymenu/user_variables.db",
+    "size": 23,
+    "sha256": "3d7d4cda73d6bde134a568ccbe4e8d2e7fbe701570012b71fa45acdb2258c823"
+  },
+  {
+    "path": "config/ferritecore.mixin.properties",
+    "size": 1615,
+    "sha256": "bdd54ad580fc678a117e4f559daaed5ebbe0dde176127ddb95dd2d5e5b4e4818"
+  },
+  {
+    "path": "config/fightorflight.json5",
+    "size": 17137,
+    "sha256": "bc16281c184d529a651e9ad0559ae207f3b20a0228c2346383fc8e52e6623326"
+  },
+  {
+    "path": "config/fightorflight_moves.json5",
+    "size": 8197,
+    "sha256": "fe35c57287a691a25fc16d5ba80b894e087edb240d1a55e6f02c8ace577bba1a"
+  },
+  {
+    "path": "config/fightorflight_visual_effect.json5",
+    "size": 1371,
+    "sha256": "20cdbce203900bf01f5fb4e7127e056947bf5eb275df5be8d0fb92efd48c1b93"
+  },
+  {
+    "path": "config/forgeconfigapiport.toml",
+    "size": 524,
+    "sha256": "aa7820e54c267335b6c9d1b3e674e92d586a155ce6e8b151c2255eda8cb09155"
+  },
+  {
+    "path": "config/forgivingvoid-common.toml",
+    "size": 2166,
+    "sha256": "7ec83d301212b45b8abd5bdf0ca5a2404bdb8fb6f5c57796af9f10381a2938a1"
+  },
+  {
+    "path": "config/fzzy_config/keybinds.toml",
+    "size": 6403,
+    "sha256": "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
+  },
+  {
+    "path": "config/global_packs.toml",
+    "size": 1174,
+    "sha256": "d7a28e552872125a961f45631c32e3ae8f6dd63acde561083f15cc9270f7a78a"
+  },
+  {
+    "path": "config/immediatelyfast.json",
+    "size": 1114,
+    "sha256": "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
+  },
+  {
+    "path": "config/infinite-music-options.json",
+    "size": 526,
+    "sha256": "51d1c18996c71d46a3d97bac12a8ee39a978cb21a181320d9d092d312fa1fdf0"
+  },
+  {
+    "path": "config/interactic.json5",
+    "size": 1026,
+    "sha256": "edcc1cd8f23f7ec6bd376b74e75fa8675798504035f6caf4b07adfe0c62d10db"
+  },
+  {
+    "path": "config/inventoryprofilesnext/127.0.0.1/villager-trading-config-v2.json",
+    "size": 1177,
+    "sha256": "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+  },
+  {
+    "path": "config/inventoryprofilesnext/integrationHints/exampleIntegrationHints.json",
+    "size": 1450,
+    "sha256": "ca413dea02cce69c69dccdc525fb0ec013236876eff2d142772c68db3d772d3a"
+  },
+  {
+    "path": "config/inventoryprofilesnext/inventoryprofiles.json",
+    "size": 360,
+    "sha256": "05638e1ed2ac3214b40bfedbb4e70ec34ccf44ae87e3ac36651cec10b1cf7b40"
+  },
+  {
+    "path": "config/inventoryprofilesnext/localhost/lockSlots.txt",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "config/inventoryprofilesnext/localhost/villager-trading-config-v2.json",
+    "size": 1177,
+    "sha256": "d8159a94fc4562651a5c47dc83e46a7fd71dd70e143fca53d7b288393a87b4ef"
+  },
+  {
+    "path": "config/inventoryprofilesnext/pvp.uy.to/lockSlots.txt",
+    "size": 43,
+    "sha256": "eeb08d073194099199386513bbefd2dc56a987813c013999075859c6a67c5171"
+  },
+  {
+    "path": "config/inventoryprofilesnext/pvp.uy.to/prev-villager-trading-config-v2.json",
+    "size": 1405,
+    "sha256": "fd7303f327ef2b5896535a064cefe3c7d3fe8ea18b413c69dd8b5adf1da752eb"
+  },
+  {
+    "path": "config/inventoryprofilesnext/pvp.uy.to/villager-trading-config-v2.json",
+    "size": 1405,
+    "sha256": "fd7303f327ef2b5896535a064cefe3c7d3fe8ea18b413c69dd8b5adf1da752eb"
+  },
+  {
+    "path": "config/iris-excluded.json",
+    "size": 31,
+    "sha256": "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
+  },
+  {
+    "path": "config/iris.properties",
+    "size": 300,
+    "sha256": "5518c9a6caf74ef459ac78261d436f4acb3f843b5e58864c7e0288a59d6b7f36"
+  },
+  {
+    "path": "config/iris.properties.bak-shadertest",
+    "size": 301,
+    "sha256": "a2d11d8e4f5c61975ee79379bbfc9cb3dee51a20652c9283898e5deae12efea2"
+  },
+  {
+    "path": "config/iris.properties.before-optimization-20260831-221155.bak",
+    "size": 301,
+    "sha256": "e327450fee7fb203afb070f182c68a92dc45dc33fc0d674552906b26e1ce8586"
+  },
+  {
+    "path": "config/konkrete/locals/de_de.local",
+    "size": 369,
+    "sha256": "79a34cfd15c2d9c06498dc221be79279507d9b57666cd44f8d2c2cf95d3582ef"
+  },
+  {
+    "path": "config/konkrete/locals/en_us.local",
+    "size": 426,
+    "sha256": "fdf1864fd049b3f1b9af1f8db6c5125a627be7d06a451c778da3329843d3c39a"
+  },
+  {
+    "path": "config/konkrete/locals/pl_pl.local",
+    "size": 313,
+    "sha256": "d38a7776e362e4de6082078d803c1c9358d9d40526edfe4bdfd29c552aef76d8"
+  },
+  {
+    "path": "config/konkrete/locals/pt_br.local",
+    "size": 322,
+    "sha256": "dca55a2792451b31424cd5c24037141ec57cdca51955d062dd908fa9ca6a3e9c"
+  },
+  {
+    "path": "config/lenientdeath.json5",
+    "size": 23088,
+    "sha256": "e1db0aa617729de8771c39258f2db98899cb995bf339228645e1d04741dcc95a"
+  },
+  {
+    "path": "config/libjf-config-core-v2.json5",
+    "size": 29,
+    "sha256": "fd865b43fb98266a3e8cb90ed6cdf2c18ed5f488e17f6844c051802cdc719e6c"
+  },
+  {
+    "path": "config/libjf-translate-v1.json5",
+    "size": 111,
+    "sha256": "ee06e87a5b40f4449f452c73c1cbe005101bd8361ef78dd0469371e7e168217f"
+  },
+  {
+    "path": "config/libjf-web-v1.json5",
+    "size": 125,
+    "sha256": "7df6520bed93bf9ce49e0c69a85b8e2bde423302c964383c1f9e57c547e3ef8e"
+  },
+  {
+    "path": "config/lithium.properties",
+    "size": 267,
+    "sha256": "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
+  },
+  {
+    "path": "config/lumymon.json",
+    "size": 310,
+    "sha256": "3b14c98314b5dc129b3025647ab220015509bc78757587d1af149535e6bd1c55"
+  },
+  {
+    "path": "config/mega_showdown/config.json",
+    "size": 574,
+    "sha256": "54139a27cd25f09ead2bd693e69e9365afc81b29bdd6dbc195bf9e1f1eba4a53"
+  },
+  {
+    "path": "config/midnightlib.json",
+    "size": 37,
+    "sha256": "b14c45c6447f9ee5474d70784a2ef96731abbeca1e92485b7599e76e9dce1444"
+  },
+  {
+    "path": "config/mobsbegone-blacklist.json",
+    "size": 1970,
+    "sha256": "601c47d93c883a13758a8413ed8f95f8a97dc3350b893bbc322eb3794675769f"
+  },
+  {
+    "path": "config/modernfix-mixins.properties",
+    "size": 4144,
+    "sha256": "c03abaae9129778eea5bb05201ffb5ecd8aaeae8d1eb16255d97caba0b96ca87"
+  },
+  {
+    "path": "config/modmenu.json",
+    "size": 830,
+    "sha256": "cc8edd6c6db571ff7e4505709931791b564aa91c571486c74e01e18ac94cb822"
+  },
+  {
+    "path": "config/more_cobblemon_tweaks.json",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "config/moreculling.toml",
+    "size": 985,
+    "sha256": "cb22f932d98a660d1c1b80324977923c681638357efcfa4f172bc363557cca2c"
+  },
+  {
+    "path": "config/MouseTweaks.cfg",
+    "size": 135,
+    "sha256": "438de2af36bf905993252e5015ad3b2f907473f0ad2722d6c79185728bb9b20b"
+  },
+  {
+    "path": "config/musicnotification.json",
+    "size": 580,
+    "sha256": "1350c703373661ffa8f7853f311100c5b5554e2770e043f3bd86528eb2bee1b5"
+  },
+  {
+    "path": "config/neruina.json5",
+    "size": 352,
+    "sha256": "048308f8eea4e73af57df117b82d4d7da7fa175e382804c884bbf0849a1496fd"
+  },
+  {
+    "path": "config/nethermap.toml",
+    "size": 138,
+    "sha256": "b07e929a45bed93594b8134b856c3b791f8ba678a8c698fb52a54df17ea488b9"
+  },
+  {
+    "path": "config/notenoughanimations.json",
+    "size": 1630,
+    "sha256": "89c63e5e8c982cb83b8c158b21a6f6097d1980daac7620fdec242a8635ba19c7"
+  },
+  {
+    "path": "config/notenoughcrashes.json",
+    "size": 156,
+    "sha256": "e604a3705ca2adf9499a412afefc61fb589448de43e4652db6232f94699e3950"
+  },
+  {
+    "path": "config/obc-common.toml",
+    "size": 720,
+    "sha256": "4b3293d51777b6346d784fbdd735bf89ab9bb526962477030e6452450afe6157"
+  },
+  {
+    "path": "config/packetfixer.properties",
+    "size": 488,
+    "sha256": "74c31a1b4e736002510122583f5ff71e94f8d383b579a561a24a1ff86efe0b06"
+  },
+  {
+    "path": "config/PaginatedAdvancements.json5",
+    "size": 367,
+    "sha256": "678d385ab09c7d610f80f1f45d990dd829cbe52b8a02b4b24b3dd919439a8cfb"
+  },
+  {
+    "path": "config/particle_core_config.toml",
+    "size": 378,
+    "sha256": "1c71524c0a4d4e955be85796e0d564d1a39d2bf4362d9b05d37d6f6dfc2490a7"
+  },
+  {
+    "path": "config/particle_core_disabled_optimizations_v2.json",
+    "size": 1758,
+    "sha256": "b7bc203723d72ea4be656397987c2994ead752d99677f003a8d2fd077f4a2e2a"
+  },
+  {
+    "path": "config/particlerain/config.json",
+    "size": 1191,
+    "sha256": "7329886bf0e0be96032d3591e9d331460ad0a7a2272e944a2ebd7e4162e4300b"
+  },
+  {
+    "path": "config/particlerain/particles.json",
+    "size": 279,
+    "sha256": "0c7fc392fa7ccdbb4ce855de3d4b55bc37f27dfdd6d2191228bbb1dc936ae14a"
+  },
+  {
+    "path": "config/particular-common.toml",
+    "size": 5736,
+    "sha256": "ea7edc4a534439bcf20b25027fb2ad5c3b623cff0ce34116a0e36aa05eae3c23"
+  },
+  {
+    "path": "config/PastureLoot.json",
+    "size": 1071,
+    "sha256": "362f68b210e4bc946c2a2e299092543c85fa48ada993963987f8d6061fc108db"
+  },
+  {
+    "path": "config/pingwheel.json",
+    "size": 410,
+    "sha256": "6878009a9f7ca2309feb78f6884556493b6752232f7f87e12901dbb6946ab5ea"
+  },
+  {
+    "path": "config/pingwheel.server.json",
+    "size": 111,
+    "sha256": "821d5d12d0c096996c82d1a65349ac803adffcc25b89420a146c727fb92b381a"
+  },
+  {
+    "path": "config/playerxp/playerxp.json",
+    "size": 227,
+    "sha256": "edd876332c126c1bf90e7e3467099efae1be7cb09eaa6abecaa615eca1c78991"
+  },
+  {
+    "path": "config/rctmod-client.toml",
+    "size": 807,
+    "sha256": "d3d43d652761b58b32d76003afb1ea065c76e9854beee93cd07182891d5474de"
+  },
+  {
+    "path": "config/rctmod-server.toml",
+    "size": 8777,
+    "sha256": "c99f2642dfa04f5fa467cc3b4721ce450cf9b27f537ed72c83b4b2043713bb1d"
+  },
+  {
+    "path": "config/reeses_sodium_options.json",
+    "size": 746,
+    "sha256": "1220e4b94bc4a9dc47b652560977e510af0e7b876627bb29c3c609515fabfc00"
+  },
+  {
+    "path": "config/repurposed_structures.json",
+    "size": 88,
+    "sha256": "14e4fe1ded11fa49bfc3479a8e7efdda0e5bc7333d6c9723b44c87306619d8ab"
+  },
+  {
+    "path": "config/resourcepackoverrides.json",
+    "size": 14066,
+    "sha256": "baa5c2dc4d03f683ad9d26d334cc223eb9893420bf67b60adee299905f63c196"
+  },
+  {
+    "path": "config/respackopts/_respackopts.conf",
+    "size": 525,
+    "sha256": "96374b899a80d55d9f3eee8ca603b3584257c4699f8008ffe127e1b279925743"
+  },
+  {
+    "path": "config/roughlyenoughitems/collapsible.json5",
+    "size": 1321158,
+    "sha256": "28affe67c9dca1efdf31c1012589d411bf6ea3ccd61711e26a6e51ea64e71a32"
+  },
+  {
+    "path": "config/roughlyenoughitems/config.json5",
+    "size": 59011,
+    "sha256": "86fcd3f9f1f45708223f71dd02c0ad068c80eb1409d8cbe1205918751094b122"
+  },
+  {
+    "path": "config/roughlyenoughitems/favorites.json5",
+    "size": 185,
+    "sha256": "8c6e275c7335353d99996e8003e7206c021c4ba3f62d33b8e73cc9aa9d3b53af"
+  },
+  {
+    "path": "config/roughlyenoughitems/hints.json",
+    "size": 63,
+    "sha256": "2deee3aaaabf6e48141e5f9f8df90d92428770821012c19f41b57edc23f2c8da"
+  },
+  {
+    "path": "config/roughlyenoughitems/pinyin.properties",
+    "size": 48,
+    "sha256": "6496c1c10f56eaba0a0e0a0813a0f518c84c80e10874f72ac15e45644c4f18d3"
+  },
+  {
+    "path": "config/roughlyenoughitems/pinyin_double.properties",
+    "size": 73,
+    "sha256": "d242ea2524b40eb6a72210c7a6c34fbc4375df145089f02023f1c1c0de85f7ae"
+  },
+  {
+    "path": "config/safepastures/safepastures.json",
+    "size": 1272,
+    "sha256": "fb5fcf1bbb70197d1548e68c009b5e964265e7d76e4a15ff2182e32c94491fbf"
+  },
+  {
+    "path": "config/scalablelux.properties",
+    "size": 84,
+    "sha256": "12ab6abf98b0edac3b4d49f2d813aad886bdb5b14b8f3a663eb2533aebabc8dd"
+  },
+  {
+    "path": "config/sodium-fingerprint.json",
+    "size": 427,
+    "sha256": "d8ec5651ec4f03c77a286901257c593cab44151375fe8fe4d2bcc88c7b3d5eaf"
+  },
+  {
+    "path": "config/sodium-mixins.properties",
+    "size": 258,
+    "sha256": "b627c4456e6fa0bc4b5f85e2f1cd949faedae3cb9afdaf2a5f52e6f3b6ae1f01"
+  },
+  {
+    "path": "config/sodium-options.json",
+    "size": 762,
+    "sha256": "6c39e5cbebf1e47d054ed1e20a30ddc4f915f8ee5ab4cbf18e8184de7b5632db"
+  },
+  {
+    "path": "config/sophisticatedbackpacks-common.toml",
+    "size": 119,
+    "sha256": "9b5ee63cbd89e3bd726f2da756a586faa8a120f3e11d4ab49c476583eef61593"
+  },
+  {
+    "path": "config/sophisticatedbackpacks-server.toml",
+    "size": 18706,
+    "sha256": "a55f9d37e35ace0d0fb0070fb99ca4581f93206066355dc36b74e81e0072f685"
+  },
+  {
+    "path": "config/sophisticatedcore-client.toml",
+    "size": 347,
+    "sha256": "c298f506a9243beba0f3a3ca52199dc8058ac6d1e5357a533549bfd18fbdc63e"
+  },
+  {
+    "path": "config/sophisticatedcore-common.toml",
+    "size": 9204,
+    "sha256": "9c4f2ec1b48bf307655150c3aa8ca804c4bd3294536ed588ba4b59f98e1804c2"
+  },
+  {
+    "path": "config/sophisticatedstorage-client.toml",
+    "size": 400,
+    "sha256": "d49bbbb0c1424252493d611acaa27994337ec330bf571e35aa9ff17c1ebc73c5"
+  },
+  {
+    "path": "config/sophisticatedstorage-common.toml",
+    "size": 186,
+    "sha256": "0c721ecf8a9a6fba8402b7ce73bf8580acdd078e9ac9c3b37c42245ca6d8c4b0"
+  },
+  {
+    "path": "config/sophisticatedstorage-server.toml",
+    "size": 24321,
+    "sha256": "ada3a614de51ec31fc6c11fb4f28921ad0df1db572841fe7b44b86cf7c8ffbda"
+  },
+  {
+    "path": "config/sound_physics_remastered/occlusion.properties",
+    "size": 4879,
+    "sha256": "273214a8ed3b42da98b0cf6abdad616dec72e00c9a4fe143ec50ee36176f9958"
+  },
+  {
+    "path": "config/sound_physics_remastered/reflectivity.properties",
+    "size": 4713,
+    "sha256": "e26b00784bb6239988759ed1a64551b9f301dc33c5a855d91e976ee4bf40ac8a"
+  },
+  {
+    "path": "config/sound_physics_remastered/sound_rates.properties",
+    "size": 116234,
+    "sha256": "e8a3b63d3c8e0f8d32756f5684c495e79c0826762e04270f680289d5429c1ff1"
+  },
+  {
+    "path": "config/sound_physics_remastered/soundphysics.properties",
+    "size": 5104,
+    "sha256": "d29dede3f214ee4b1aa03314f92c3f973c21ee6e26d173eba3d01a2083237b6d"
+  },
+  {
+    "path": "config/soundsbegone.json",
+    "size": 3473,
+    "sha256": "6f3abcd92b333d4eb1f9698f34c5fa77e0219c3fbb65bc837a5a89de88387ec7"
+  },
+  {
+    "path": "config/stackdeobf.json",
+    "size": 130,
+    "sha256": "ab7ea0a22b66e8d4b6eebbeace63fa71dfc830afaa0649c89a62c18df65a8808"
+  },
+  {
+    "path": "config/super_resolution/config.toml",
+    "size": 1196,
+    "sha256": "804d6ac28b38db8f75705ae8af2ba4771f18100af56a54a51e647489422c5070"
+  },
+  {
+    "path": "config/super_resolution/config.toml.before-dlss-20260902-112023.bak",
+    "size": 1196,
+    "sha256": "44ddb1c1e8b7544dfaa6dd0b96f95064951e49fb62653b17c48b0a67ce9a7cc7"
+  },
+  {
+    "path": "config/super_resolution/config.toml.before-vulkan-init-20260902-112250.bak",
+    "size": 1193,
+    "sha256": "14153426b91419f8e550fd040be198d974141a73bf31a0de068208de1c8b9030"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolution+win64+release.dll",
+    "size": 6128640,
+    "sha256": "28ffa1fda5d19e14db80c4269c2f190d5a35c22998d7cea3b2e99c923317c22a"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionD3D12Interop+win64+release.dll",
+    "size": 181760,
+    "sha256": "5215b8bcb3829e076a05bf2336767f6703b0a17556653546f61bf2de6fa8b0b9"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionFSR+win64+release.dll",
+    "size": 8311296,
+    "sha256": "fdbdfdb74f2f7ad12fbf2f6ff70d57ef5a1d7b78f3a350ff6e61b41c5b8f7aaf"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionFSR4+win64+release.dll",
+    "size": 131584,
+    "sha256": "bc058af985ef0f10e6a558aceb6ad41d69cab39592157b00eff0530bb74cd3a4"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionNGX+win64+release.dll",
+    "size": 593920,
+    "sha256": "e82432d7444ac7312d63f9402c3e531541c07d797c0080518f5c64681112b5b9"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionStreamline+win64+release.dll",
+    "size": 218624,
+    "sha256": "51e0f23c51f5c3cf18fbd12d4cce8f61a04276c2d6873fac4e461ecd33f05a9a"
+  },
+  {
+    "path": "config/super_resolution/libraries/libSuperResolutionXeSS+win64+release.dll",
+    "size": 130560,
+    "sha256": "a415da404657761a99188d67dfb7ba84cce5fd729ce00a295c1eea33eb56bd0c"
+  },
+  {
+    "path": "config/super_resolution/libraries/nvngx_dlss.dll",
+    "size": 58977904,
+    "sha256": "be6e434a94ca32499515eb62ca0e6c274526055d568d0426e4c652dcdfb6ee6e"
+  },
+  {
+    "path": "config/super_resolution/nvngx.log",
+    "size": 8568,
+    "sha256": "1e74a9637d4ca62abeb59150da05e5d2c17c8cae5b02e62c4f9abf5be3521abd"
+  },
+  {
+    "path": "config/super_resolution/nvngx_dlss_310_7_0.log",
+    "size": 49241,
+    "sha256": "0e48ee46b42f87efed4a1bf74d98cdbe7d78fbf54f64583a8000fa9f8ab9c3aa"
+  },
+  {
+    "path": "config/super_resolution/nvsdk_ngx.log",
+    "size": 1127,
+    "sha256": "cdd3d09f421ea06f9a045bf5412c7463df54629c73d81a9abe519d4735411b60"
+  },
+  {
+    "path": "config/super_resolution/shader_caches/50272460-a790-415c-a075-af9486331f2e.63781743d96f90bf28d074dbb24481cd.fragment.ogl.spv",
+    "size": 9700,
+    "sha256": "7fc15645cc77c9e5485e5d00a533e5da51ae58a8f509dd2b31e9a54966ed5a6f"
+  },
+  {
+    "path": "config/super_resolution/shader_caches/50272460-a790-415c-a075-af9486331f2e.63781743d96f90bf28d074dbb24481cd.vertex.ogl.spv",
+    "size": 1624,
+    "sha256": "b900c6bbfac83f6b5f2b01853bcff1a8d20b35387527736b7ba5b418c78d5108"
+  },
+  {
+    "path": "config/super_resolution/shader_caches/b35c5fb2-edac-4bf9-a79b-64ac8febb7e6.e4682a678b49e4cce9d1b56c534a1dbd.fragment.ogl.spv",
+    "size": 9700,
+    "sha256": "7fc15645cc77c9e5485e5d00a533e5da51ae58a8f509dd2b31e9a54966ed5a6f"
+  },
+  {
+    "path": "config/super_resolution/shader_caches/b35c5fb2-edac-4bf9-a79b-64ac8febb7e6.e4682a678b49e4cce9d1b56c534a1dbd.vertex.ogl.spv",
+    "size": 1624,
+    "sha256": "b900c6bbfac83f6b5f2b01853bcff1a8d20b35387527736b7ba5b418c78d5108"
+  },
+  {
+    "path": "config/tim_core.json",
+    "size": 762,
+    "sha256": "40004441a30200e1666be6d4097b3376e6abd5986890d4f4f741acac16c28975"
+  },
+  {
+    "path": "config/toms_storage.json",
+    "size": 448,
+    "sha256": "a92e31ec52f667ea5b552323913afca27db7b37262935798fc83a5d9a2765555"
+  },
+  {
+    "path": "config/transition.json",
+    "size": 97,
+    "sha256": "60420a41571a4658b91babfa2b47d6fefb7c1766eeea969f51ff98ab34c2431c"
+  },
+  {
+    "path": "config/trender.json",
+    "size": 47,
+    "sha256": "0a282f3623f7f9443a1d10b5768865f69e58b74e000dcfb4f40399626b7a6124"
+  },
+  {
+    "path": "config/vanillabackport-client.toml",
+    "size": 348,
+    "sha256": "dbb3dddcd72f1891a2b7d06b029bc4c045d47b88af084058a937d079a0cec483"
+  },
+  {
+    "path": "config/vanillabackport-common.toml",
+    "size": 3265,
+    "sha256": "9cf1b0998bb7de9b376c32c00e7c77c5b68dd0f5f8787adfa8f917940400fb3f"
+  },
+  {
+    "path": "config/VillagerConfig/villagerconfig.json5",
+    "size": 647,
+    "sha256": "5eff6162478691b82242f3574b7f2f5f008406c2ad330fdf4750860044d9f076"
+  },
+  {
+    "path": "config/waystones-common.toml",
+    "size": 8387,
+    "sha256": "e0a1c0a4f8168979daab26eb45a53355361deba89cba018eb12bb2a63b73103f"
+  },
+  {
+    "path": "config/xaero/lib/client.cfg",
+    "size": 30,
+    "sha256": "9c3364d411d47a70075c9e7053a212742e83bed73cee7ae67af44222ed465100"
+  },
+  {
+    "path": "config/xaero/lib/common.cfg",
+    "size": 240,
+    "sha256": "edb56656d532e8807b260da4a52f2cc8c2a0973a8840f56706b63ac8d2db30f9"
+  },
+  {
+    "path": "config/xaero/lib/profiles/cobbleverse.cfg",
+    "size": 129,
+    "sha256": "a09360f0d863650029bdc6d91587317807794d94f5fa11e136060b46ca7eee2b"
+  },
+  {
+    "path": "config/xaero/lib/server_profiles/cobbleverse.cfg",
+    "size": 83,
+    "sha256": "b953b427790d4e2614b7e99fb8843dfb5ecf8b9f465ca138f0da167b75263ad2"
+  },
+  {
+    "path": "config/xaero/minimap/client.cfg",
+    "size": 240,
+    "sha256": "9244abe5ffd73338e70cc57a6d96402b6335657ad31a15c6c9f650f0d27b7471"
+  },
+  {
+    "path": "config/xaero/minimap/common.cfg",
+    "size": 151,
+    "sha256": "b4ea3cffa53c87f4f8c3cb87f62470a5bebe54fe5e51974743c2c941cbcb8cf0"
+  },
+  {
+    "path": "config/xaero/minimap/default_radar_categories_client.json",
+    "size": 5642,
+    "sha256": "7f6b8401eb5006254f3484ff9701b686c0ad0b656fdd3170ec7986fdb66f818c"
+  },
+  {
+    "path": "config/xaero/minimap/default_radar_categories_server.json",
+    "size": 4749,
+    "sha256": "976c674c650f00c9b3ef5d14f93b897a63ccb04b086d3368e1e0f49ef0868f86"
+  },
+  {
+    "path": "config/xaero/minimap/profiles/cobbleverse.cfg",
+    "size": 3921,
+    "sha256": "694bb0f416c3f62b517cc01c4fa836adf09d6089d708c75679b10a7fcc3da97d"
+  },
+  {
+    "path": "config/xaero/minimap/profiles/entity_radar_categories/cobbleverse.cfg.json",
+    "size": 5641,
+    "sha256": "fb4ba7a5d59cc171a0c5774f4a991b04226339c665996aa6e7e27883a1b88242"
+  },
+  {
+    "path": "config/xaero/minimap/profiles/info_display_config/cobbleverse.cfg.txt",
+    "size": 683,
+    "sha256": "79120f2c6c8067ff95f7644e133df74ff5ab1d613931b861f91d0f4199325003"
+  },
+  {
+    "path": "config/xaero/minimap/server_profiles/cobbleverse.cfg",
+    "size": 83,
+    "sha256": "b953b427790d4e2614b7e99fb8843dfb5ecf8b9f465ca138f0da167b75263ad2"
+  },
+  {
+    "path": "config/xaero/world-map/client.cfg",
+    "size": 521,
+    "sha256": "abf37ee32d3d9e223d2e50450985b3aa9cb7ab6a7edc0e06b9ac89e1ca074008"
+  },
+  {
+    "path": "config/xaero/world-map/common.cfg",
+    "size": 145,
+    "sha256": "9fbd62a7b9acd5f89999507bfc31cdfcf264f45c16a2006f544d471c60f69582"
+  },
+  {
+    "path": "config/xaero/world-map/profiles/default.cfg",
+    "size": 1619,
+    "sha256": "5422abf9c83fedef6509144293fad20f588d4bb6ce0cf1af78cbcd2bcd0d2ccf"
+  },
+  {
+    "path": "config/xaero/world-map/server_profiles/cobbleverse.cfg",
+    "size": 83,
+    "sha256": "b953b427790d4e2614b7e99fb8843dfb5ecf8b9f465ca138f0da167b75263ad2"
+  },
+  {
+    "path": "config/xaerohud.txt",
+    "size": 123,
+    "sha256": "756210578d5050fcd0509a0d4c551764f6ec9f1d5c098e779439f40b11343a37"
+  },
+  {
+    "path": "config/xaeropatreon.txt",
+    "size": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "config/yacl.json5",
+    "size": 250,
+    "sha256": "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
+  },
+  {
+    "path": "config/zfastnoise.mixin.properties",
+    "size": 80,
+    "sha256": "a31c021f8e06585b4b272dc9e491f04b200363d99e82bab2e2ac36a4c69c9ea8"
+  },
+  {
+    "path": "config/zoomify.json",
+    "size": 709,
+    "sha256": "18ad037a0087eea89db518710cc69fa750dcd2122c52219c1dd4182cb55e0a42"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE - No Ender Dragon.zip",
+    "size": 9062,
+    "sha256": "f5cdae688e55951f36f22a4b13ec73f33da1ebb1368f55335d8b9d2cca8190af"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE - No Hunger.zip",
+    "size": 8925,
+    "sha256": "06de5f7ad7bd863cd6920334372053468a45c831eedb5b7991ac7a732efc6e8d"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-DP-v31.zip",
+    "size": 4478377,
+    "sha256": "c2ae123401b217c4c7b90c28db46e092fa2b138e6c3a8f52c70c77675008f410"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-DP-v31.zip.disabled",
+    "size": 4626446,
+    "sha256": "24344c64d49cad1e4743276472f5598ed32d1c002f5ebb881b9e0cf7bc1a77c6"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-Loot-DP-v11.zip",
+    "size": 147472,
+    "sha256": "68b07910f68d032cb12902115938c321c326819d85d60cc64c9f42e08be11e99"
+  },
+  {
+    "path": "datapacks/COBBLEVERSE-RCT-DP-v20.zip",
+    "size": 370553,
+    "sha256": "54f0e8c1b061554bfba3de86dbcd9a6b39da4e8293e2b5141faa4254dc7ae400"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Hoenn-DP.zip",
+    "size": 1338585,
+    "sha256": "68a1d6f49353eb75d970aaef03dbdba8eafe163d2259d45313c2430f8497817b"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Johto-DP.zip",
+    "size": 746704,
+    "sha256": "6ec080be3acd58bdc48740da122efcb21a639d839e6607d656cdb3192397d45a"
+  },
+  {
+    "path": "datapacks/extra/COBBLEVERSE-Sinnoh-DP.zip",
+    "size": 1562135,
+    "sha256": "b2e93ad20f27e96af87f589b8a9653c2f8ce7ed661adf412ba002d0ffec6cc32"
+  },
+  {
+    "path": "datapacks/extra/Terralith-DP.zip",
+    "size": 3112105,
+    "sha256": "d0f5b0f88152d494cb51c6c06f2b5e52617df9860b2f383d00c85338d81ab164"
+  },
+  {
+    "path": "datapacks/PokeCenterPCs-DP.zip",
+    "size": 386543,
+    "sha256": "e462e091ef376595c5b0efab2615fe0463b93b4c54e462cc841749a90ecefe31"
+  },
+  {
+    "path": "fancymenu_data/last_world.fmdata",
+    "size": 80,
+    "sha256": "5317fefe76a56b1864fcca8e8613eab2ffe0334905cc2ea8776453aca0fe196d"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/server_334389048b872a533002b34d73f8c29fd09efc50.png",
+    "size": 350104,
+    "sha256": "74bf6d12071c9bb1c1a3a8d9c9286d2290f6c5f26f83f309bd686b44fb35c535"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/server_4b84b15bff6ee5796152495a230e45e3d7e947d9.png",
+    "size": 1659386,
+    "sha256": "bf1c55f43ac367a2622c83df9a4d3dea0fe20e784c6950e9403b9e694a7d7047"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/server_7a20edb6c640d9c433b91cb2c50ddd70db3aa508.png",
+    "size": 4459135,
+    "sha256": "34e319b2a13c1ab8b9414878599ecb0faf86ebde0e3f310b858221f89a8d4e94"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_29935c2d06df1387c5c132c8bf3c6551412c51ca.png",
+    "size": 1097269,
+    "sha256": "5b07b1fbd6ab067c8f118b879279fc9cf2b79ea8b67b3b79b0daf60e7acf92b0"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_541f1d749421ab24425e6e4e87a1d08098071643.png",
+    "size": 1010995,
+    "sha256": "16d728ffa748d4a4387b3dc2bd6319ef902b67280218dd531c4a3cf9bce2b722"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_9dedbb64b242b1a1bb5ac47e8f3fefa8edecaaca.png",
+    "size": 4860597,
+    "sha256": "2a5f121991673ba6100d0cf077ba914f8ff7420b072ca4960c80d9bb612e726d"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_a35a38a6a579104e024a687e57a41c7ef78ccbfa.png",
+    "size": 4356651,
+    "sha256": "4cf90c6c44725ab9d4c004a3f734ec89bc4e7d9fe4d8275852dea4565d9aecc9"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_e107e2cc0c9494ec532a25f95cd2028a843ff479.png",
+    "size": 1027523,
+    "sha256": "d0ad89dc6eebe3f559fb43c19a5f33b0000ede9621e1de4a325c19fa998d9548"
+  },
+  {
+    "path": "fancymenu_data/seamless_world_loading/world_eb49c22a9d43838730031d781e075ec41d42e25c.png",
+    "size": 4925827,
+    "sha256": "4485e08790d61812e054ef1a9a5ea55c08aee026fb55267961e56043cc6f0694"
+  },
+  {
+    "path": "legendary-monuments-data/shrine_progress.json",
+    "size": 1436,
+    "sha256": "83441fc78e35152c03b6d972d9e44daed3793cf66b3d3c9c81bfdda3cbf6a5f9"
+  },
+  {
+    "path": "mods/accessories-fabric-1.1.0-beta.53+1.21.1.jar",
+    "size": 1095802,
+    "sha256": "51e6f6d52cb2523199ad36e5bc04802230f86904c35ac3dbf36e59c86b2c30d1"
+  },
+  {
+    "path": "mods/accessories_compat_layer-fabric-0.1.12+1.21.1.jar",
+    "size": 398321,
+    "sha256": "c77c281616618ee51bb4f9bced4708be6d1baa690b3e8564a68d04df9f080980"
+  },
+  {
+    "path": "mods/advancementdisable-fabric-1.0.1+1.21.jar",
+    "size": 430411,
+    "sha256": "53e5c47d485b0a0dd417c2255523679a0b4bba059ae796cdab746112ad1440d6"
+  },
+  {
+    "path": "mods/AdvancementPlaques-1.21.1-fabric-1.6.8.jar",
+    "size": 195505,
+    "sha256": "dda6cc159edd450d05b9ff15832747b951dacd068c601018c219bca833ce5bef"
+  },
+  {
+    "path": "mods/architectury-13.0.8-fabric.jar",
+    "size": 600915,
+    "sha256": "10cbbb6f5f96a2f1853b0cc68428424cec8903409517b299ff02350756b6399d"
+  },
+  {
+    "path": "mods/athena-fabric-1.21.1-4.0.6.jar",
+    "size": 88425,
+    "sha256": "e17aad84c690ac4e46300a4180b3ae4077ffa4f526dbc82d117afbbff4ee83e4"
+  },
+  {
+    "path": "mods/BadOptimizations-2.4.1-1.21.1.jar",
+    "size": 283566,
+    "sha256": "22e2467892d3706f43d1cf2aa637785bb8601c20b0098a82ab956e6a8fc4d2ba"
+  },
+  {
+    "path": "mods/balm-fabric-1.21.1-21.0.63.jar",
+    "size": 809717,
+    "sha256": "4c3604961b74e9cbc91efb1a93daa2f4e55354a46afc93cb74f0de543fd86391"
+  },
+  {
+    "path": "mods/beautify-2.0.0+1.21.1.jar",
+    "size": 837607,
+    "sha256": "134da1a8e3841f0a14004e839bd1e0a9d091cc5769a82b0052cebda2804ac4fd"
+  },
+  {
+    "path": "mods/better-pokedex-scanner-1.0.0.jar",
+    "size": 348359,
+    "sha256": "bc19f882a78aeda4e6294e96abd3d35dc866f56f854b0ee057a0dcf2e42af6c9"
+  },
+  {
+    "path": "mods/betterbeds-fabric-1.4.0.jar",
+    "size": 39918,
+    "sha256": "d707f5df1c45150eb18b3135380519e74dd9103673a71032ef3de2b9038424aa"
+  },
+  {
+    "path": "mods/BetterF1-Fabric-1.1+1.21.7.jar",
+    "size": 22834,
+    "sha256": "abfb3f37f130ae4dea89e282f1d0fc0e9c4b2235762745931329defb9387bbdf"
+  },
+  {
+    "path": "mods/BetterF3-11.0.3-Fabric-1.21.1.jar",
+    "size": 1810710,
+    "sha256": "e0e4bb25fbe23b16b7574474ee9fde5cdc9757d05885bc43978f4ea5e8e258ad"
+  },
+  {
+    "path": "mods/BetterThirdPerson-Fabric-1.21-1.9.0.jar",
+    "size": 52188,
+    "sha256": "f9ec9dc6508b20d32a3c770ecc77641e8f87c98e298d58e2757a6ef14abbb457"
+  },
+  {
+    "path": "mods/biomereplacer-2.1-hippo-fabric.jar",
+    "size": 138694,
+    "sha256": "ec6eeda3d4d32d9740c3e6f24177db3fcfa06866f73e341c0ad4ea090d0055ac"
+  },
+  {
+    "path": "mods/brb-1.10.0-rc5+1.21.jar",
+    "size": 1213168,
+    "sha256": "7ddc4761bf5ca59c34703d9586e6edaf6c7a7a3939ed7cdb6c103ab9fec6707b"
+  },
+  {
+    "path": "mods/c2me-fabric-mc1.21.1-0.4.0-alpha.0.23.jar",
+    "size": 3757044,
+    "sha256": "6a77c69140f3da10e20b25ee8a75da039c5835b73f9c7a03615fbd968b574e5e"
+  },
+  {
+    "path": "mods/capturexp-fabric-1.7.3-1.3.0.jar",
+    "size": 22496,
+    "sha256": "84f5e6a941da6b64eff7619732eb2ca73d9ad4adfccb06c52158db21794ea7c5"
+  },
+  {
+    "path": "mods/Carved Wood-fabric-1.21.1-1.9.7-B.jar",
+    "size": 2891665,
+    "sha256": "90b0784cd66b656343ec4b42c9e5562e92175f15ed91404a03a39e386a23847c"
+  },
+  {
+    "path": "mods/catchindicator-fabric-1.7.0.jar",
+    "size": 318477,
+    "sha256": "bcebcfa5692f93de8d8aff33973510517a7434d48656c5ad167d33df841bc122"
+  },
+  {
+    "path": "mods/catchrate-display-fabric-2.8.22.jar",
+    "size": 258716,
+    "sha256": "afa99396bceb69071a08f325f6bad4299500634329b0a863605aaf2e94eaaabe"
+  },
+  {
+    "path": "mods/cloth-config-15.0.140-fabric.jar",
+    "size": 1157166,
+    "sha256": "33894e95da3af59014b39d126586d5241e07ea39f8618763e30dab637405f95f"
+  },
+  {
+    "path": "mods/cobblebase-fabric-2.0.0+1.7.0-cobblemon1.8-gatherer-configurable-quiet.jar",
+    "size": 16364367,
+    "sha256": "1737e2823eb9806af1f7f4aabad779f7a14bcfbbb237f0aa8741d09ee1f25cf6"
+  },
+  {
+    "path": "mods/cobblecuisine-2.0.1-1.7.rc1-api119fix.jar",
+    "size": 683158,
+    "sha256": "18f10ea9444db0360ed75649941f52f61b87909c37c5eb021be8ab30f205bf00"
+  },
+  {
+    "path": "mods/CobbleDollars-fabric-2.0.0+Beta-5.1+1.21.1.jar",
+    "size": 369528,
+    "sha256": "5d8690980ecc79b5f33005dd274d148d0b9b7713ff5e8223c7011aa8bb08401a"
+  },
+  {
+    "path": "mods/CobbleFurnies-fabric-1.2.jar",
+    "size": 2337235,
+    "sha256": "c1230a58ca2369b973bfade68a0ffcac86ffcbf9dd2a845999ed8c5348bfef93"
+  },
+  {
+    "path": "mods/cobblemon-additions-4.1.6.jar",
+    "size": 1961229,
+    "sha256": "c40eeee13943aa3b2ed532a25de5b55f5db4c76222e2a61c98d0bc35c028357d"
+  },
+  {
+    "path": "mods/cobblemon-battle-extras-fabric-1.13.45-api119fix.jar",
+    "size": 1516021,
+    "sha256": "4117044ccd53309a866318370b0b2cbbe63304488347203a1f4dbfcd89abaab2"
+  },
+  {
+    "path": "mods/cobblemon-battle-positions-1.1.3.jar",
+    "size": 58572,
+    "sha256": "d76bbd753763dde4a552d1a86b8bc6ceee9abcb00fa1bd29b6c2e389079437ed"
+  },
+  {
+    "path": "mods/cobblemon_party_extras-fabric-1.8.15.jar",
+    "size": 394695,
+    "sha256": "02cb7394ea15e2bc3e303d077e156ff9daafa28cfbb242bad7958d62771a6af2"
+  },
+  {
+    "path": "mods/cobblemonraiddens-fabric-0.11.3+1.21.1-api119fix.jar",
+    "size": 2690220,
+    "sha256": "16b3c81c5cf6fa28d5ae5fcb094918accdef848119aeda5702166ec6cd2474cb"
+  },
+  {
+    "path": "mods/cobblenav-fabric-2.3.3-cobblemon1.8-api-fix.jar",
+    "size": 1086521,
+    "sha256": "477c64ad89cae46477fd2bc193af2b9e59f89522e1d0899c7e3da5c38336a3c7"
+  },
+  {
+    "path": "mods/cobbleverse-battle-extras-hotfix-1.0.0.jar",
+    "size": 3622,
+    "sha256": "a2d2bee59a708cbd2286f37cd15f86d8a840f626f951006ffc1f54b2739338ed"
+  },
+  {
+    "path": "mods/cobbleverse-client-pack-guard-2026.08.29.3.jar",
+    "size": 5721,
+    "sha256": "e41ab4d7d6852cd345d37b4e6a69ec28c332f4098f6811e6f7a1fc70287c1ac4"
+  },
+  {
+    "path": "mods/cobbleverse-compat-api119-hotfix-1.0.0.jar",
+    "size": 4946,
+    "sha256": "78e82a33c5d6b32139a39dd9dd4e268b667bc3bd739d5b73dade1374b386122f"
+  },
+  {
+    "path": "mods/cobbleverse-mount-sync-hotfix-1.0.0.jar",
+    "size": 6155,
+    "sha256": "4424dde8a3f7ad2ed2b806bc3b96cb0c1e442b6f88fd715adee2cc6de0fc7a09"
+  },
+  {
+    "path": "mods/CobbleverseBadges-1.3.jar",
+    "size": 137015,
+    "sha256": "d215d075d4ae80a4ed5e20cb5caf442bb3f3607d2a41dc134ebad035f6a8da77"
+  },
+  {
+    "path": "mods/Cobbreeding-fabric-2.2.2-cobbleverse-pcfix.jar",
+    "size": 475628,
+    "sha256": "3aec503e0d514f95fbd5eb578d60344ad7d333c01543c43ab0fd99c6eaaeed3d"
+  },
+  {
+    "path": "mods/comforts-fabric-9.0.5+1.21.1.jar",
+    "size": 914494,
+    "sha256": "73ff17028967a2e30731ea79aee2e18dd8e2d59a5dcd075facd6491cae1b2231"
+  },
+  {
+    "path": "mods/configurable-3.5.2+1.21.1-fabric.jar",
+    "size": 545247,
+    "sha256": "70f7728d67ff8c420a53ef3c08ec73732517882317ab20a084b273773aa1e5e2"
+  },
+  {
+    "path": "mods/continuity-3.0.0+1.21.jar",
+    "size": 1014044,
+    "sha256": "99fd46b834874d167ea2349a9a72947cbfa7192f927aa99bbeb4b0637aa208d4"
+  },
+  {
+    "path": "mods/Controlling-fabric-1.21.1-19.0.5.jar",
+    "size": 83679,
+    "sha256": "c0150c5bfbc77f27b92f24a5a9c2edc462eba8c8f912635757c5deb3a0a93f8d"
+  },
+  {
+    "path": "mods/customsplashscreen-2.2.0.jar",
+    "size": 660554,
+    "sha256": "142aacb23fc97e467ded7e279a72b00252018c43d12d803d928d07d4fe8d8678"
+  },
+  {
+    "path": "mods/Debugify-1.21.1+1.0.jar",
+    "size": 292202,
+    "sha256": "e61e83875190150337a2366d9374f04865654de7bdf83e6ab29d9915899f8d7a"
+  },
+  {
+    "path": "mods/defaultoptions-fabric-1.21.1-21.1.7.jar",
+    "size": 105044,
+    "sha256": "8fff8fad699028a6578c61df3d1690d6fb5abbdc9a7c436e94cc9f51138be790"
+  },
+  {
+    "path": "mods/entity_model_features-3.2.4-1.21-fabric.jar",
+    "size": 565280,
+    "sha256": "3c3f800b4bf911a158435c36dac0cf4176bec36d837c0696fdfae39d7ec5f976"
+  },
+  {
+    "path": "mods/entity_texture_features_1.21-fabric-7.1.jar",
+    "size": 745421,
+    "sha256": "d1b54ad6fd34eaf7187fb62556f2c5cacdc2ea3023a6217e3b2d823285aea148"
+  },
+  {
+    "path": "mods/entityculling-fabric-1.10.5-mc1.21.1.jar",
+    "size": 1595131,
+    "sha256": "cfb5491f5ed9609784cf3d6a926bef046ca80cb74c7856e6134335d7d0ce839e"
+  },
+  {
+    "path": "mods/EuphoriaPatcher-1.9.3-r5.8.1-fabric.jar",
+    "size": 4296552,
+    "sha256": "b42bd00c7ab6e044d21f845dedc58a4524e45643f3685bf1c2343098e74d662e"
+  },
+  {
+    "path": "mods/fabric-1.8.0+1.21.1-20260824.133257-119.jar",
+    "size": 147204900,
+    "sha256": "c103905e94e00c059da80027131363ecd7148493846aa06723606a23aa88370b"
+  },
+  {
+    "path": "mods/fabric-api-0.116.14+1.21.1.jar",
+    "size": 2451978,
+    "sha256": "333f15bceb117a0ac41e3396eac9873fa6c325c31e746d679809f9a7a0228196"
+  },
+  {
+    "path": "mods/fabric-language-kotlin-1.13.13+kotlin.2.4.10.jar",
+    "size": 8076363,
+    "sha256": "34ccdacf13bb9351fe43ce61912c2e09b72364e43e787d36ba3d2d04dec75a52"
+  },
+  {
+    "path": "mods/fancymenu_fabric_3.9.8_MC_1.21.1.jar",
+    "size": 25757227,
+    "sha256": "19e5faf15a769ba4841815fb2320f1efc9f97ddffbc24c95299b6480b50af201"
+  },
+  {
+    "path": "mods/ferritecore-7.0.3-fabric.jar",
+    "size": 123450,
+    "sha256": "98c3ab1d5aab8f14b5d082d3f1a467727fd335f02d124555c94339761c4c18f2"
+  },
+  {
+    "path": "mods/fightorflight-fabric-0.10.9.jar",
+    "size": 1424525,
+    "sha256": "7eee034d17281b43324cbdcc41a3836b6c44a93798d40a608538ed12a72279c1"
+  },
+  {
+    "path": "mods/ForgeConfigAPIPort-v21.1.6-1.21.1-Fabric.jar",
+    "size": 633065,
+    "sha256": "2e3a8f0e3bda85a7d722720e7ce879cbd9d028d9395c6fc224d329b3c982d9b1"
+  },
+  {
+    "path": "mods/forgivingvoid-fabric-1.21.1-21.1.7.jar",
+    "size": 78531,
+    "sha256": "ee45266cc7c10b0a17d9a87b021a57fb8616529e4c33af0fff5a506de71960b1"
+  },
+  {
+    "path": "mods/fusion-1.2.12-fabric-mc1.21.jar",
+    "size": 515411,
+    "sha256": "904b53bd8e0aacf200c700997c7467bc0c66cca1fb4a17c9999afb8eb62942e8"
+  },
+  {
+    "path": "mods/fzzy_config-0.7.6+1.21.jar",
+    "size": 2365335,
+    "sha256": "323dc065cc3aaeb7f908be7e5d31070a25d4188b433ed770a79700ef8f5e8f7d"
+  },
+  {
+    "path": "mods/geckolib-fabric-1.21.1-4.9.2.jar",
+    "size": 660416,
+    "sha256": "eac4cf55e1cb99b22cb91ea87c774d2a670c1711a80f4aff50e6ad56b6c58e7e"
+  },
+  {
+    "path": "mods/globalpacks-fabric-1.21.1-21.0.6.jar",
+    "size": 394707,
+    "sha256": "391d960afb1d8f0b63ccfb677970512d68642102b6928a4830ebcd6d3fdba2cc"
+  },
+  {
+    "path": "mods/handcrafted-fabric-1.21.1-4.0.3.jar",
+    "size": 7127377,
+    "sha256": "9609c27e2eeaed4c633ade2d68ad980cfbed0442a10239846a67e9c62bc1b230"
+  },
+  {
+    "path": "mods/highlight-fabric-1.21-3.0.0.jar",
+    "size": 457352,
+    "sha256": "08932afc913f74e9676b9a59a87bdf817d959cf6d861a9269897778240f11df2"
+  },
+  {
+    "path": "mods/huge-structure-blocks-fabric-1.1.6.jar",
+    "size": 100230,
+    "sha256": "759071bd7b1db4367f232db35872ce6a30e8adee57a8543d0967d0b39b37819d"
+  },
+  {
+    "path": "mods/Iceberg-1.21.1-fabric-1.3.2.jar",
+    "size": 413302,
+    "sha256": "9214790af6fb75c19ef6b95e0e47999addf018e8c7a1630a5118c4252e6d8d36"
+  },
+  {
+    "path": "mods/ImmediatelyFast-Fabric-1.6.11+1.21.1.jar",
+    "size": 336763,
+    "sha256": "05a5f3c716ae631af3cc925c8144894368c632156f2d581dd8295cc223ea2f6d"
+  },
+  {
+    "path": "mods/infinite-music-0.4.6.jar",
+    "size": 45913,
+    "sha256": "f90123fa679e170163f976819c851fc4bd6840d19cf95dde3ff8fe3682eed343"
+  },
+  {
+    "path": "mods/interactic-0.2.3+1.21.jar",
+    "size": 118011,
+    "sha256": "fad6a5321f0a69c70dcbe62c631166b6549b1d9656929c011e6c1d57b1dea0da"
+  },
+  {
+    "path": "mods/InventoryProfilesNext-fabric-1.21.1-2.2.6.jar",
+    "size": 1331935,
+    "sha256": "b69ac6f98e99042d6edd755242bf76d35eea4342559d2b1d88160e556c629177"
+  },
+  {
+    "path": "mods/iris-fabric-1.8.14-beta.1+mc1.21.1.jar",
+    "size": 2791343,
+    "sha256": "0ceb694040b4628bf3fa02286cfe5f0db833195669ab07f8caa4001359763eff"
+  },
+  {
+    "path": "mods/konkrete_fabric_1.9.9_MC_1.21.jar",
+    "size": 786695,
+    "sha256": "06e912f99d59bf81c0676f1db936150ad4443d5674f59b3c55604540ba620841"
+  },
+  {
+    "path": "mods/krypton-0.2.8.jar",
+    "size": 161045,
+    "sha256": "94f195819b24e5da64effdc9da15cdd84836cc75e8ff0fd098bab6bc2f49e3fe"
+  },
+  {
+    "path": "mods/LegendaryMonuments-Cobbleverse.jar",
+    "size": 5736792,
+    "sha256": "34901d7c95bff58242384c44abc6acc50c2e06310b85f7e80bcd70f7c7e5b0b6"
+  },
+  {
+    "path": "mods/lenientdeath-1.2.5+1.21.1.jar",
+    "size": 920915,
+    "sha256": "117175de6d7a8cc9cf36d48fd55a8460183dd30f4d25c0e7230ba8fe470f79b4"
+  },
+  {
+    "path": "mods/libIPN-fabric-1.21.1-6.6.3.jar",
+    "size": 636114,
+    "sha256": "e26e788c5c3542353c0c45fba231e9208a01b182d890815c22df40a1946b903e"
+  },
+  {
+    "path": "mods/libjf-3.17.5.jar",
+    "size": 1282450,
+    "sha256": "93789892f45d03bec95894ab644f9f909868e84f1a0755a61bdf22ae378629f5"
+  },
+  {
+    "path": "mods/lithium-fabric-0.15.4+mc1.21.1.jar",
+    "size": 797454,
+    "sha256": "92329d98c57f5a22091a0adb509fdb1d60113a5602c708b799b13134bad13baa"
+  },
+  {
+    "path": "mods/Luckys-Cozyhome-Refurnished-1.1.20.jar",
+    "size": 3121070,
+    "sha256": "0915e3e54c12fe40622cab94005418d32cbde011fa9c2d7c27756eb7d5313a66"
+  },
+  {
+    "path": "mods/LumyMon-0.6.6.jar",
+    "size": 2331858,
+    "sha256": "00ad0ddb4bbac26b6f1b83ad80255008be98ab72056d89de3eb9107b01d7eefb"
+  },
+  {
+    "path": "mods/LumyREI-1.1.3.jar",
+    "size": 66283,
+    "sha256": "e6ac62bb3a858af78948397b0310efb281b911f4cda31392c989c9cdaf9ed4b1"
+  },
+  {
+    "path": "mods/mega_showdown-fabric-1.9.5+1.7.3+1.21.1-cobblemon1.8-api119fix.jar",
+    "size": 20086034,
+    "sha256": "67a5546dabb68a262fefa459fc36c77f2c73982836b7cf80c69fe91456069a15"
+  },
+  {
+    "path": "mods/melody_fabric_1.0.10_MC_1.21.jar",
+    "size": 188035,
+    "sha256": "223ab859b9cc246d8d6e5cec5e734f97be3aac545de6cda7743750262428ed83"
+  },
+  {
+    "path": "mods/midnightlib-1.7.5-fabric+1.21.1.jar",
+    "size": 62853,
+    "sha256": "b75155a638d15df61922bb635e2c5aae6102897ccaa1e226060a7f5ff4218091"
+  },
+  {
+    "path": "mods/moar-concrete-1.3.1.jar",
+    "size": 777538,
+    "sha256": "0e6e7b95b55ca13a50233743ba008a5285f4abf4cca7642bda40b27145f4f43f"
+  },
+  {
+    "path": "mods/MobsBeGone-0.0.7.jar",
+    "size": 9837,
+    "sha256": "ad45c9c1bfe8c018d372f9fb6eb3e95507d6252b6cb4204478d04653d9634e98"
+  },
+  {
+    "path": "mods/modernfix-fabric-5.25.1+mc1.21.1.jar",
+    "size": 471258,
+    "sha256": "3ce5a9ce75066961b7fa5382692bb1387cc3536cc984b064ab7d70b97f3c674c"
+  },
+  {
+    "path": "mods/modmenu-11.0.4.jar",
+    "size": 973059,
+    "sha256": "a88e0d67c82b0434cbf56776c482587c275ed660f635d33f53ba485dfa30dcc3"
+  },
+  {
+    "path": "mods/MoreCobblemonTweaks-fabric-1.3.3.jar",
+    "size": 136312,
+    "sha256": "3c8dabb89c35a32f56a1edc24393d0f0781ac81bf5326fc2e6eabcd8ea8169fb"
+  },
+  {
+    "path": "mods/moreculling-fabric-1.21.1-1.0.8.jar",
+    "size": 332100,
+    "sha256": "19c7e65794511ab21eed63cab9e2efbf43a29fd2ea20234b23f92cb71c6a2aa2"
+  },
+  {
+    "path": "mods/MouseTweaks-fabric-mc1.21-2.26.jar",
+    "size": 75984,
+    "sha256": "3e9fa4800fafef616fbf1545d62f5898f55c83fbd4126ce2b48b5e0077243fc0"
+  },
+  {
+    "path": "mods/musicnotification-fabric-3.0.0+mc1.21.1.jar",
+    "size": 139713,
+    "sha256": "747b2527aa373a76e9d378ad1059369400c66fb50fb3ab22a409ac6d8154a614"
+  },
+  {
+    "path": "mods/neruina-3.3.3+1.21.1-fabric.jar",
+    "size": 860092,
+    "sha256": "a3a49320128920256b43857e5254e5cd2a481417da61d0999a249aceb6125b20"
+  },
+  {
+    "path": "mods/nethermap-4.0.0-1.21.1.jar",
+    "size": 21464,
+    "sha256": "5d5243434984d64c904d21397530f2c7817105ca091bf409aa23f3842b9f3634"
+  },
+  {
+    "path": "mods/netherportalfix-fabric-1.21.1-21.1.3.jar",
+    "size": 213294,
+    "sha256": "c6589e3a95ee6dbced2442682caeec53789999bc6a2883f9919e039b1bee98c6"
+  },
+  {
+    "path": "mods/NoChatRestrictions-Fabric-MC1.21.11-v1.0.0.jar",
+    "size": 9907,
+    "sha256": "bc8b10f71e17822ca274936e487104e6572f60e8969b81bfe23f30fc11300a94"
+  },
+  {
+    "path": "mods/notenoughanimations-fabric-1.12.4-mc1.21.1.jar",
+    "size": 1948132,
+    "sha256": "12e3bded47f6669030edf57b615e77de8d080f38d0313dd892c6d18833fc39fd"
+  },
+  {
+    "path": "mods/notenoughcrashes-fabric-4.4.9+1.21.1.jar",
+    "size": 601087,
+    "sha256": "1a3a0ec9e7bb60f9c15938ca4287beaf5e49e81183ac273d1a02d734aa327a74"
+  },
+  {
+    "path": "mods/Only Bottle Caps-1.3.0-api119fix.jar",
+    "size": 250494,
+    "sha256": "6414d5a0e08f270713236e65db3fccda2bd4fe5ccdeecd2b34904be99a6a5853"
+  },
+  {
+    "path": "mods/owo-lib-0.12.15.4+1.21.jar",
+    "size": 1183559,
+    "sha256": "825180ce17bc012fb450653b14df9f32479dcdd073fc3f133bb47462f5a63cec"
+  },
+  {
+    "path": "mods/packetfixer-3.3.1-1.20.5-1.21.X-merged.jar",
+    "size": 46623,
+    "sha256": "2979a8a3f44e5d5df4f9f6315d18c220f3debf736bb8a2c2740acdfb13bd820f"
+  },
+  {
+    "path": "mods/paginatedadvancements-2.5.1.jar",
+    "size": 71859,
+    "sha256": "776d8006401781bc036199acc9ba80f7dce6c3bcebbbfa260a774add750c4d2d"
+  },
+  {
+    "path": "mods/particle_core-0.3.3+1.21.jar",
+    "size": 147812,
+    "sha256": "e7cfef3eb16d5b73c00915a5f2b820d66555c23d13e0636125d7b07384a443e4"
+  },
+  {
+    "path": "mods/particlerain-4.0.0-beta.10+1.21.1-fabric.jar",
+    "size": 608651,
+    "sha256": "49bf60c5b95ea954efa51c63609f0a4668230e12f870f0eb6bdb63d207a22dc8"
+  },
+  {
+    "path": "mods/particular-1.21.1-Fabric-1.5.5.jar",
+    "size": 285813,
+    "sha256": "47d724637888227d18e4bc49a11f67b50f0e39d21f4d494cf92215be96f8873c"
+  },
+  {
+    "path": "mods/pastureLoot-1.0.5+1.21.1.jar",
+    "size": 45871,
+    "sha256": "48a705eb70a3f129d64af565ff79cfe164d0e59fe2bbc20a903024d0cc844b8f"
+  },
+  {
+    "path": "mods/Ping-Wheel-1.12.2-fabric-1.21.1.jar",
+    "size": 152703,
+    "sha256": "9ba63ca5f33c86d0ce3aec2b04fafcc2fbcb8e705e46a7be20ff66382331c3e3"
+  },
+  {
+    "path": "mods/Platform-fabric-1.21.1-1.3.3.jar",
+    "size": 735744,
+    "sha256": "52f49993d4440d266fa3a077090e8091983cd1bda5942f176ae75f3e9e350779"
+  },
+  {
+    "path": "mods/playerxp-fabric-1.0.9+1.21.1.jar",
+    "size": 10818,
+    "sha256": "22133f464ea4442b481d0bc814ab928b0473890a86bf36fa90884ed660e3edf9"
+  },
+  {
+    "path": "mods/pokeblocks-1.4.0-1.21.1.jar",
+    "size": 1606467,
+    "sha256": "c113f9e61a7bef35c3bacc57651a7508f3f07c20218b51eade31766899f1176d"
+  },
+  {
+    "path": "mods/rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix.jar",
+    "size": 234189,
+    "sha256": "831d6d22e43f28501c014bd11c9f1a950381f22c7578c9ec9497fbb0e739d538"
+  },
+  {
+    "path": "mods/rctmod-fabric-1.21.1-0.18.1-beta.jar",
+    "size": 6757956,
+    "sha256": "92951d3be475a0433f8ef508439730723e2e901dd1e3b2509c29205031d4eb51"
+  },
+  {
+    "path": "mods/rechiseled-1.2.4-fabric-mc1.21.jar",
+    "size": 11913849,
+    "sha256": "621eb411d88470508a1f1ad6797e569510ca8a63e650728e615b8a65c377b773"
+  },
+  {
+    "path": "mods/reeses-sodium-options-fabric-2.2.3+mc1.21.1.jar",
+    "size": 259211,
+    "sha256": "6f5a2964656552da24e015b6f6e03d4baac8cfed919978785e94920f3fd0f568"
+  },
+  {
+    "path": "mods/repurposed_structures-7.5.21+1.21.1-fabric.jar",
+    "size": 8202318,
+    "sha256": "c3a6ab373dce927c57ce79d14c1ebc9ef4f49d58abcaf9e4caa89a38aab08b8c"
+  },
+  {
+    "path": "mods/resourcefullib-fabric-1.21-3.0.12.jar",
+    "size": 485586,
+    "sha256": "93064c5aff85bf5e6385470f311fd1c7de172f58b02fefb1d2920db76f8cd8b5"
+  },
+  {
+    "path": "mods/ResourcePackOverrides-v21.1.0-1.21.1-Fabric.jar",
+    "size": 80827,
+    "sha256": "5db1e3d3f07947ceb893ccd823a7660f62f8f794e2bf9a5b721a3c3d32dcbc59"
+  },
+  {
+    "path": "mods/respackopts-4.14.0+1.21.1.4.jar",
+    "size": 557358,
+    "sha256": "8c38228c14841a01034e6371fada5754754a0abf13de843eea1e1d41dc8257f3"
+  },
+  {
+    "path": "mods/RoughlyEnoughItems-16.0.799-fabric.jar",
+    "size": 2451799,
+    "sha256": "098c840780940010f2ba48cb758b77c1b991e69ab3fbec8725af099351653c9d"
+  },
+  {
+    "path": "mods/SafePastures-1.1.1+1.21.1.jar",
+    "size": 16518,
+    "sha256": "41d1c286db3e02a3249346a5efda6f95799ab895aa40c03a87cdcd81a95e4b45"
+  },
+  {
+    "path": "mods/ScalableLux-0.1.0.1+fabric.d0d58ab-all.jar",
+    "size": 177266,
+    "sha256": "f32ed8d825c7af90b14ab9f7bbe1293818bcf411fea104ae20d18ecde30f8387"
+  },
+  {
+    "path": "mods/Searchables-fabric-1.21.1-1.0.2.jar",
+    "size": 79531,
+    "sha256": "0b58a40a41db4a4af4ef84475b0ea330be3b18fdcac2eca68ede46d9f4df3d76"
+  },
+  {
+    "path": "mods/sodium-fabric-0.8.12+mc1.21.1.jar",
+    "size": 1573180,
+    "sha256": "9ad11a616d1ca759867de8a5bbafcde5ab50b68dbd674110c7b90aeea251b793"
+  },
+  {
+    "path": "mods/sophisticatedbackpacks-1.21.1-3.23.4.3.106.jar",
+    "size": 988478,
+    "sha256": "2c099bfd5dc02ace6e73ffd9259940b0597cd4da7216a53a2c60c6732900d6aa"
+  },
+  {
+    "path": "mods/sophisticatedcore-1.21.1-1.2.9.21.168.jar",
+    "size": 2996065,
+    "sha256": "3c71a04d5b03cdf9d9fe50e71849fdf11291dd1fab149621e35688ef6e516054"
+  },
+  {
+    "path": "mods/sophisticatedstorage-1.21.1-1.3.7.9.139.jar",
+    "size": 1670672,
+    "sha256": "0dbaf1ff069c33a8c4738518d983d1cab0cdca6871a6c7b7dc5727c531eca215"
+  },
+  {
+    "path": "mods/sound-physics-remastered-fabric-1.21.1-1.5.1.jar",
+    "size": 205671,
+    "sha256": "8884ded0f53f97a6cb2fca9ef035947af8c3376a406e0bdaa8309bfe87801799"
+  },
+  {
+    "path": "mods/soundsbegone-fabric-1.5.2+mc1.21.jar",
+    "size": 6151935,
+    "sha256": "88a0dd266a5639e89c33c9320685c57d482641738f9bc5b6e6800c3c34b80b32"
+  },
+  {
+    "path": "mods/StackDeobfuscatorFabric-1.4.3+08e71cc.jar",
+    "size": 321213,
+    "sha256": "335627367b8212c17e58978866874ede8d0d9a159053fbb38e56123fff83d0f9"
+  },
+  {
+    "path": "mods/super_resolution-fabric-1.21..1.21.1-0.9.1-alpha.1+opengl.jar",
+    "size": 33664155,
+    "sha256": "be7ad2af4a22da62eec5539e249bba11166f03e8214d95f01f770c3fc93c8881"
+  },
+  {
+    "path": "mods/supermartijn642configlib-1.1.8-fabric-mc1.21.jar",
+    "size": 206993,
+    "sha256": "63a29f2acf4be2c5ca89a81a046c1100111ad2865d9638f638e27ca161e7211c"
+  },
+  {
+    "path": "mods/supermartijn642corelib-1.1.21-fabric-mc1.21.jar",
+    "size": 616830,
+    "sha256": "462756caa1efeff760a752a29136d59d40c5ad6047603472785f65a44d1da6e3"
+  },
+  {
+    "path": "mods/tim_core-1.7.3-fabric-1.32.0-cobblemon1.8-test.jar",
+    "size": 304304,
+    "sha256": "4abb37ae232e870f58c7bb2f63b43a2b6d8f9d93f0a4ab7a9465bc87ef9478ae"
+  },
+  {
+    "path": "mods/tmcraft-1.4.18+1.7.3-api119fix.jar",
+    "size": 3360429,
+    "sha256": "9b89f7509dbb94fa072864e9a359f7360eb8a613a2cc7f8487189f8b931a5536"
+  },
+  {
+    "path": "mods/toms_storage_fabric-1.21-2.3.0.jar",
+    "size": 1962781,
+    "sha256": "fad39f7ed0ac20ab0345aeb7dbe1be0b2732fa11fd333b6874629e925c45d5d1"
+  },
+  {
+    "path": "mods/tooltipfix-1.1.1-1.20.jar",
+    "size": 12432,
+    "sha256": "50c6c45d16c62b0d9a832692b7f6250d5561f0b28bf7729d8ab25fe1162c90d2"
+  },
+  {
+    "path": "mods/trinkets-3.10.0.jar",
+    "size": 272944,
+    "sha256": "349fd2aa8930b232050ee5304db55e4ef738b017971afe7c84acd589a95fda2f"
+  },
+  {
+    "path": "mods/VanillaBackport-fabric-1.21.1-1.1.7.10.jar",
+    "size": 54994072,
+    "sha256": "6aba8f56fd71b9b5b724812b22f14d11a71e9ca0bf7e84b52b4c8b91736e0734"
+  },
+  {
+    "path": "mods/villagerconfig-fabric-4.5.4+1.21.1.jar",
+    "size": 355303,
+    "sha256": "627483b71a24679d51321c618fa6c8abe8df64cf770b001b319412677adab49b"
+  },
+  {
+    "path": "mods/waystones-fabric-1.21.1-21.1.37.jar",
+    "size": 1226801,
+    "sha256": "1cef833ec178bc6ea92a221b8a75bc6637e9e4d38d23f3963610fd772f1b2f95"
+  },
+  {
+    "path": "mods/worldedit-mod-7.3.8.jar",
+    "size": 6222854,
+    "sha256": "5e7752c97876d87411e3760bcc573cc431f43c453722e6959fa7fe54db1b01ca"
+  },
+  {
+    "path": "mods/xaerominimap-fabric-1.21.1-26.4.2.jar",
+    "size": 2233608,
+    "sha256": "85342f8f7c098e98f2f200fbba308a243af1204cb1afd7668360420e635aa2f8"
+  },
+  {
+    "path": "mods/xaeroworldmap-fabric-1.21.1-1.44.2.jar",
+    "size": 1448218,
+    "sha256": "cd6109af335ad83af9e97cdae5c25023112349e2dc4df95a97640022f38b3856"
+  },
+  {
+    "path": "mods/yet_another_config_lib_v3-3.8.2+1.21.1-fabric.jar",
+    "size": 1131265,
+    "sha256": "6ab420b7d1326fc9851b96a8967504bd644da421ed6438ceb9a9d9c993a408b1"
+  },
+  {
+    "path": "mods/zamega-fabric-1.7.6.jar",
+    "size": 1082887,
+    "sha256": "115147202e72f3f8a06595ea403e2194ce2c7d82b17a6e5d30a49771dcd29751"
+  },
+  {
+    "path": "mods/zfastnoise-1.0.13+1.21.jar",
+    "size": 38857,
+    "sha256": "da1b8702dfbdbea125aca0c0b1b3da5f8c3eb483977dff6482f32178fd007684"
+  },
+  {
+    "path": "mods/zoomify-2.15.2+1.21.1.jar",
+    "size": 872937,
+    "sha256": "6c317987df28922e227ab3ac4e39090460d99b965bcb9c8da8f9a4493b705d00"
+  },
+  {
+    "path": "resourcepacks/ATMxMSD RP.zip",
+    "size": 4267167,
+    "sha256": "7cceb424a48b9dfa6e80589ab98d868065b25abd451d5a5d10c3e25af2b191fe"
+  },
+  {
+    "path": "resourcepacks/Canon PC Wallpapers.zip",
+    "size": 1423022,
+    "sha256": "c20da2ec31a91c3a961ba0b6fd771a405b7197001af592d5955750568d017d2c"
+  },
+  {
+    "path": "resourcepacks/CavsCobbleMons RP.zip",
+    "size": 194006,
+    "sha256": "e788c3925962b96decd9a6efeb54168a096ae10c9fe6cfacabc4f6ad481e4552"
+  },
+  {
+    "path": "resourcepacks/Classic Grass.zip",
+    "size": 7418,
+    "sha256": "4386b800db3f7710c23f5ead9c911c9f265831a02e74c704f7cc29fcd9070880"
+  },
+  {
+    "path": "resourcepacks/Cobblemon Interface Modded.zip",
+    "size": 1053517,
+    "sha256": "3175cde27f4528eb7c2dc6a53b9952d937e0d1ead2b2f0fdbf1809075e9eb7eb"
+  },
+  {
+    "path": "resourcepacks/Cobblemon Interface Modded.zip.rpo",
+    "size": 2,
+    "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+  },
+  {
+    "path": "resourcepacks/Cobblemon Interface.zip",
+    "size": 14108266,
+    "sha256": "eb40bd047c2e1443c43731e4d1ef1b9d7d0624476336f540b52a3e8fcb9eb315"
+  },
+  {
+    "path": "resourcepacks/Cobblemon Interface.zip.rpo",
+    "size": 75,
+    "sha256": "cd23a448bda028590c96b9b2b7ecfb4f0456d6aad02b934283ffe47d4d88046f"
+  },
+  {
+    "path": "resourcepacks/CobbleMotion RP.zip",
+    "size": 2754045,
+    "sha256": "eadcbd35fbbf2416f9a365c2257f2aad98b11e4c8579a9c13856928031ead596"
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE - Pokemon Adventure [Cobblemon]-1.7.41-CF-ko_kr-resource_pack.zip",
+    "size": 452094,
+    "sha256": "c475c9bb5adf388cb1a9f06320ac367ba851cf3e25cb0f33ce80067aae86eeeb"
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE RCTmod RP.zip",
+    "size": 5214902,
+    "sha256": "2cec17def69ce520b07fab67eea8c51a94a410a981d50ca4673e463453530e7b"
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE RP.zip",
+    "size": 2021279,
+    "sha256": "8ce6293120de9102674c01dd21d2ff8729fc5a40bf726e0357ea68b8bed48c99"
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE Soundtrack.zip",
+    "size": 179498515,
+    "sha256": "20da91164e6f1881e6141a2a294589e14e271de3e97859270ff6095cef738068"
+  },
+  {
+    "path": "resourcepacks/Cobbleverse-1.8-postport-assets.zip",
+    "size": 4674,
+    "sha256": "8b6e58ead2162b544298de7a46cf1b5cdea63cd7d3d5d3ae8043b9fae77f2cea"
+  },
+  {
+    "path": "resourcepacks/COBBLEVERSE-ko_kr-cobblemon1.8-fixed.zip",
+    "size": 4669198,
+    "sha256": "1dcbae59a361c5d8ce1de69d8e4cd42c4a1165c2e617824d284c83e65c7175c5"
+  },
+  {
+    "path": "resourcepacks/Comforts Modernized.zip",
+    "size": 72956,
+    "sha256": "b3050d84c0be41dae853e550c07acb1f768880c41472b44d701c03e9b1bc4734"
+  },
+  {
+    "path": "resourcepacks/E19 Cobblemon Minimap Icons.zip",
+    "size": 10674276,
+    "sha256": "baf24f1f375e6f1a40507ed21e5118e704f3d9fba97d5a9bec77ff76f8481fe1"
+  },
+  {
+    "path": "resourcepacks/EeveelutionsReimagined RP.zip",
+    "size": 315069,
+    "sha256": "0280c5f64b617705ed4d49a915f1106babcd985932e70b5f0c988cc371da62bc"
+  },
+  {
+    "path": "resourcepacks/Emissive Cobblemon Ores.zip",
+    "size": 803304,
+    "sha256": "1dfdfb226712ef47e28917642711972837af5c5e706e7ca6be0c8298a5b0bcd4"
+  },
+  {
+    "path": "resourcepacks/Fresh Animations.zip",
+    "size": 850941,
+    "sha256": "8e44b29560d2e7d952c0a4f77f0451e6dcb048f827189bffc712b446be8de7f2"
+  },
+  {
+    "path": "resourcepacks/Fresh Icons.zip",
+    "size": 852471,
+    "sha256": "6a77950346e51262adfa266a7d52acb0b35798528f4ccf73f518d1c69fc729d8"
+  },
+  {
+    "path": "resourcepacks/Fresh Moves.zip",
+    "size": 321871,
+    "sha256": "c433f3d831e86faa956836bf327ca00151bd813d1a8ab36aa064d518a58790f7"
+  },
+  {
+    "path": "resourcepacks/FullyHisuianStarters RP.zip",
+    "size": 202557,
+    "sha256": "a12cbdd26881621404bce13b7ce022aa18872067bdfefaa80d8d1c22bd6fc4b0"
+  },
+  {
+    "path": "resourcepacks/GlitchDex RP.zip",
+    "size": 196701,
+    "sha256": "45141851744fb63075f58bcfd8671e9f53d36bcc2c8300b56686b7e7cfd133cf"
+  },
+  {
+    "path": "resourcepacks/HydroReanimodel RP.zip",
+    "size": 1221200,
+    "sha256": "ca23de73a73f6b683976d9486afcf0ab6a4dc9b2d04bc27456978cc147967d55"
+  },
+  {
+    "path": "resourcepacks/JigglyRadio.zip",
+    "size": 124240613,
+    "sha256": "b766be373fa546f0671e064263f78710943b2ec8a341fe1e2c41075d11b86700"
+  },
+  {
+    "path": "resourcepacks/LackingMons RP.zip",
+    "size": 51067,
+    "sha256": "6e7a9a07464b01c4f748e38dfe735e09ee4874cc82898e09af8b1d8397dac1a9"
+  },
+  {
+    "path": "resourcepacks/Low Fire.zip",
+    "size": 42116,
+    "sha256": "a761f00a176be2b09ac128e5b9eea9f70c742017ded12fb29b3583d70463193b"
+  },
+  {
+    "path": "resourcepacks/MissingMons RP.zip",
+    "size": 201678,
+    "sha256": "22c45bddec83e9ea3e542e9fc43dce6bceb78f85bd76bb868a37383e3d2bd60c"
+  },
+  {
+    "path": "resourcepacks/MundialMons RP.zip",
+    "size": 1041048,
+    "sha256": "53593c95fd73a7261b429bbb391b181c17053024a752cb1590137c296f04bd03"
+  },
+  {
+    "path": "resourcepacks/MysticMons RP.zip",
+    "size": 59975,
+    "sha256": "0b17dd02a43bbe509ecfc3c5c9acd0ffad9e72f80f83b341b42fe9042d15d5b4"
+  },
+  {
+    "path": "resourcepacks/OJsAnimations RP.zip",
+    "size": 88853,
+    "sha256": "0772eab3fb332cb62b052a1f84451d562bde847ddd87a7a3ca874d2ef36a2512"
+  },
+  {
+    "path": "resourcepacks/Original Pokemon Battle Music.zip",
+    "size": 93138424,
+    "sha256": "73dbf078974cd81e5356f98d0b57b5b88c1dfed9aebbbddbfbcf8a3bc3600bb8"
+  },
+  {
+    "path": "resourcepacks/PlanetaCobblemon RP.zip",
+    "size": 138557,
+    "sha256": "139d3060983eead8e91a166d97fcc690b39f8ae5480edc20282b401aeccd0f55"
+  },
+  {
+    "path": "resourcepacks/PokeDiscs.zip",
+    "size": 24912925,
+    "sha256": "f90d7b3a1c5885a5c48aac3820d57033cd628e720bd9bc90481efe2ed01165d3"
+  },
+  {
+    "path": "resourcepacks/Pokemans RP.zip",
+    "size": 562340,
+    "sha256": "d0c0268051da4ac0c2a47af803e179ec221e222dd680f4a041e97c2dac5d411b"
+  },
+  {
+    "path": "resourcepacks/PokeRods3D.zip",
+    "size": 167546,
+    "sha256": "c93e9c866658bb752976c44414ca0e04fa90246060f114a183599abe1de4ca9e"
+  },
+  {
+    "path": "resourcepacks/TDmon RP.zip",
+    "size": 227765,
+    "sha256": "910e64ffb24126578d4a55ce5f015cc761912368f7c260b091ca4e07884a1e57"
+  }
+]
