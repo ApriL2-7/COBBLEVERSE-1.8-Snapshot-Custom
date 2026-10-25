@@ -3,8 +3,9 @@
   "client_mods": 158,
   "server_mods": 120,
   "mod_hashes": "passed",
-  "excluded_private_runtime_paths": "passed",
-  "mrpack_bytes": 657820787,
-  "mrpack_sha256": "8c6adf9ed6117b9eb11ee157050444204f6b05bb4f0a30249c785c5549d74f0d",
+  "excluded_private_runtime_paths": "passed for mrpack",
+  "server_runtime_paths": "not checked; server already used",
+  "mrpack_bytes": 657820723,
+  "mrpack_sha256": "c4478c57b72803c109c99dbbf8d63eaaa67eee526db2c36a7b3f5b90bd59580c",
   "runtime_test": "not performed by this check"
 }

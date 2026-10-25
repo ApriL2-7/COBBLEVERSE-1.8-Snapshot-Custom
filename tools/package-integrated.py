@@ -1,5 +1,6 @@
 """Build local RC artifacts only. Never publishes a release or runs a server."""
 import importlib.machinery, json, pathlib, os, zipfile, shutil, hashlib, urllib.request, re
+from keybind_defaults import clean_options
 
 m=importlib.machinery.SourceFileLoader('integration',str(pathlib.Path(__file__).with_name('integrate-local.py'))).load_module()
 VERSION='2026.10.25-rc1'
@@ -89,7 +90,7 @@ with zipfile.ZipFile(PLAYER/('COBBLEVERSE-Integrated-'+VERSION+'.mrpack'),'w',co
         dest=SERVER/rel;dest.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(p,dest)
     for p,rel in client:pack.write(p,'client-overrides/'+rel)
     options=(m.TARGET/'options.txt').read_text(encoding='utf8')
-    options=options.replace('key_key.ftbquests.quests:key.keyboard.unknown','key_key.ftbquests.quests:key.keyboard.grave.accent')
+    options=clean_options(options)[0]
     pack.writestr('client-overrides/options.txt',options)
     pack.writestr('modrinth.index.json',json.dumps({'formatVersion':1,'game':'minecraft','versionId':VERSION,'name':'COBBLEVERSE Integrated RC','summary':'Local release candidate: Cobblemon 1.8.3, FTB Questbook, Battle Tower, PC Enhancements. Not fully validated.','files':files,'dependencies':{'minecraft':'1.21.1','fabric-loader':'0.18.4'}},ensure_ascii=False,indent=2))
 
@@ -119,6 +120,7 @@ motd=Cobbleverse Integrated 1.8.3 RC
 enable-rcon=false
 ''',encoding='utf8')
 (SERVER/'start-server.bat').write_text('''@echo off
+chcp 65001 >nul
 setlocal
 cd /d "%~dp0"
 java -version

@@ -1,0 +1,151 @@
+{
+  "changes": [
+    {
+      "action": "key_key.ftbquests.quests",
+      "before": "key.keyboard.unknown",
+      "after": "key.keyboard.grave.accent"
+    },
+    {
+      "action": "key_key.ftbquests.gui.next_chapter",
+      "before": "key.keyboard.tab",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui.recenter",
+      "before": "key.keyboard.space",
+      "after": "key.keyboard.home"
+    },
+    {
+      "action": "key_key.ftbquests.gui.search",
+      "before": "key.keyboard.f",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui.move_up",
+      "before": "key.keyboard.up",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui.move_down",
+      "before": "key.keyboard.down",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui.player_prefs",
+      "before": "key.keyboard.p",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.undo",
+      "before": "key.keyboard.z",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.redo",
+      "before": "key.keyboard.y",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.select_all",
+      "before": "key.keyboard.a",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.select_none",
+      "before": "key.keyboard.d",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.toggle_crosshairs",
+      "before": "key.keyboard.r",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.copy",
+      "before": "key.keyboard.c",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.paste",
+      "before": "key.keyboard.v",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.reward_tables",
+      "before": "key.keyboard.t",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.reset_object",
+      "before": "key.keyboard.r",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.save",
+      "before": "key.keyboard.s",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_editor.reload_theme",
+      "before": "key.keyboard.f5",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.edit_title",
+      "before": "key.keyboard.t",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.edit_subtitle",
+      "before": "key.keyboard.s",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.edit_desc",
+      "before": "key.keyboard.d",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.add_page_break",
+      "before": "key.keyboard.p",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.add_line",
+      "before": "key.keyboard.l",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.add_image",
+      "before": "key.keyboard.i",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.ftbquests.gui_quest_panel.edit_quest_props",
+      "before": "key.keyboard.q",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_keybind.sophisticatedbackpacks.sort",
+      "before": "key.mouse.middle",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_keybind.sophisticatedstorage.sort",
+      "before": "key.mouse.middle",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_key.super_resolution.open_config",
+      "before": "key.keyboard.f6",
+      "after": "key.keyboard.unknown"
+    },
+    {
+      "action": "key_iris.keybind.toggleShaders",
+      "before": "key.keyboard.k",
+      "after": "key.keyboard.unknown"
+    }
+  ],
+  "active_duplicate_keys": 0,
+  "client_runtime_test": "not performed; user will relaunch"
+}

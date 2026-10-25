@@ -3,6 +3,12 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import zipfile
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--allow-server-runtime-data', action='store_true',
+                    help='Server folder has already been used; still check mod hashes, but permit its generated world and logs.')
+args = parser.parse_args()
 
 repo = Path(__file__).resolve().parent.parent
 root = repo / 'out/COBBLEVERSE-Integrated-2026.10.25-rc1'
@@ -42,11 +48,13 @@ for p in server_mods:
     m = by_name[p.name]
     assert m['server_included'] and m['environment'] != 'client'
     assert hashlib.sha256(p.read_bytes()).hexdigest() == m['sha256']
-for p in server.rglob('*'):
-    assert not forbidden.intersection(part.lower() for part in p.relative_to(server).parts), p
-assert 'eula=false' in (server / 'eula.txt').read_text()
+if not args.allow_server_runtime_data:
+    for p in server.rglob('*'):
+        assert not forbidden.intersection(part.lower() for part in p.relative_to(server).parts), p
+    assert 'eula=false' in (server / 'eula.txt').read_text()
 report = {'archive_integrity': 'passed', 'client_mods': len(packaged), 'server_mods': len(server_mods),
-          'mod_hashes': 'passed', 'excluded_private_runtime_paths': 'passed',
+          'mod_hashes': 'passed', 'excluded_private_runtime_paths': 'passed for mrpack',
+          'server_runtime_paths': 'not checked; server already used' if args.allow_server_runtime_data else 'passed',
           'mrpack_bytes': pack.stat().st_size, 'mrpack_sha256': hashlib.sha256(pack.read_bytes()).hexdigest(),
           'runtime_test': 'not performed by this check'}
 (repo / 'integration/package-verification.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf8')
