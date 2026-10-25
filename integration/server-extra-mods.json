@@ -1,0 +1,22 @@
+[
+  {
+    "id": "disconnect-packet-fix",
+    "version": "2.0.0",
+    "filename": "disconnect-packet-fix-fabric-2.0.0.jar",
+    "size": 8703,
+    "server_included": true,
+    "client_included": false,
+    "environment": "server",
+    "license": "MIT",
+    "depends": {
+      "fabricloader": ">=0.15.11",
+      "minecraft": "~1.21",
+      "java": ">=21"
+    },
+    "source": "official-exact-hash",
+    "version_id": "Gv74xveQ",
+    "sha1": "2ba7d25b312c09b4b1ad821b42526b8b33652740",
+    "sha256": "28b516da6b4c6f2325bf984d05d21c139eded77904ec5275076ea5c41532bc83",
+    "sha512": "1fd6f09a41ce36284e1a8e9def53f3f6834d7201e69e54e24933be56445ba569fbc26278f28300d36926ba92db6f4f9c0ae245d23576aaa790530345587316db"
+  }
+]

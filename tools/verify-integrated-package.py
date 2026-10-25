@@ -14,6 +14,7 @@ repo = Path(__file__).resolve().parent.parent
 root = repo / 'out/COBBLEVERSE-Integrated-2026.10.25-rc1'
 manifest = json.loads((repo / 'integration/release-mod-manifest.json').read_text(encoding='utf8'))
 by_name = {m['filename']: m for m in manifest}
+client_names = {m['filename'] for m in manifest if m.get('client_included', True)}
 pack = next((root / 'Player').glob('*.mrpack'))
 forbidden = {'saves', 'logs', 'crash-reports', 'accounts.json', 'integration-verification-only'}
 with zipfile.ZipFile(pack) as z:
@@ -40,7 +41,7 @@ with zipfile.ZipFile(pack) as z:
             assert hashlib.sha256(z.read(name)).hexdigest() == by_name[filename]['sha256']
             assert filename not in packaged
             packaged.add(filename)
-    assert packaged == set(by_name)
+    assert packaged == client_names
 server = root / 'Server'
 server_mods = list((server / 'mods').glob('*.jar'))
 assert len(server_mods) == sum(m['server_included'] for m in manifest)

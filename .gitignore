@@ -4,4 +4,6 @@ out/
 .test-work/
 __pycache__/
 *.pyc
+**/.gradle/
+**/build/
 

@@ -1,0 +1,10 @@
+{
+  "mega_changed_entries": [
+    "assets/cobblemon/lang/ko_kr.json"
+  ],
+  "strict_korean_json": "passed",
+  "resource_override_components": "passed",
+  "repair_model_parents_and_textures": "passed",
+  "post_fix_runtime": "not executed",
+  "world_data_modified": false
+}

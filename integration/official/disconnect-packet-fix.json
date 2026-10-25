@@ -1,0 +1,50 @@
+[
+  {
+    "game_versions": [
+      "1.21",
+      "1.21.1",
+      "1.21.2",
+      "1.21.3",
+      "1.21.4",
+      "1.21.5",
+      "1.21.6",
+      "1.21.7",
+      "1.21.8",
+      "1.21.9",
+      "1.21.10",
+      "1.21.11"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "dedicated_server_only",
+    "id": "Gv74xveQ",
+    "project_id": "rd9rKuJT",
+    "author_id": "sC2GVbm0",
+    "featured": true,
+    "name": "Disconnect Packet Fix 2.0.0 for Fabric",
+    "version_number": "2.0.0-fabric",
+    "changelog": "This release makes changes to the codebase that allows to build the mod for multiple different modloaders via Architectury - starting with Fabric and NeoForge!\n\nThere are no additional dependencies that are needed for the mod to function.\n\nFunctionality is largely unchanged. This update only concerns multi-modloader support.\n\n**NOTE:** Fabric does not have an official 2.0.1 build, as the changes between 2.0.0 and 2.0.1 only concern NeoForge.",
+    "changelog_url": null,
+    "date_published": "2024-11-23T15:55:05.797575Z",
+    "downloads": 133534,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "epXU8kdp",
+        "hashes": {
+          "sha1": "2ba7d25b312c09b4b1ad821b42526b8b33652740",
+          "sha512": "1fd6f09a41ce36284e1a8e9def53f3f6834d7201e69e54e24933be56445ba569fbc26278f28300d36926ba92db6f4f9c0ae245d23576aaa790530345587316db"
+        },
+        "url": "https://cdn.modrinth.com/data/rd9rKuJT/versions/Gv74xveQ/disconnect-packet-fix-fabric-2.0.0.jar",
+        "filename": "disconnect-packet-fix-fabric-2.0.0.jar",
+        "primary": true,
+        "size": 8703,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  }
+]

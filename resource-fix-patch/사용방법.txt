@@ -1,0 +1,15 @@
+기존 설치자용 COBBLEVERSE 리소스 오류 패치
+
+게임 종료 → ZIP 압축 해제 → APPLY-RESOURCE-FIXES.cmd 실행 → 프로필 폴더 선택 → 게임 재실행.
+전체 모드팩을 다시 받을 필요는 없습니다. Windows에서 실행합니다.
+Mega Showdown 1.3.2+1.8.2+1.21.1이 설치된 통합 프로필용입니다.
+
+수정: 한국어 번역 JSON의 누락된 쉼표, 리소스팩 제목·설명 직렬화, 일부 모델·텍스처 경로.
+이 패치는 퀘스트북의 한글 번역을 추가하지 않습니다.
+키 설정·그래픽·감도·월드 데이터는 바꾸지 않습니다.
+원래 파일은 프로필 안 resource-fix-backup-... 폴더에 백업됩니다.
+되돌리려면 게임을 종료하고 백업의 JAR는 mods에, resourcepackoverrides.json은 config에,
+options.txt는 프로필 루트에 복원하고 새 리소스팩을 비활성화하세요.
+
+서버의 접속 패킷 오류 수정은 서버 관리자에게만 적용하면 됩니다.
+이번 로컬 서버에는 disconnect-packet-fix-fabric-2.0.0.jar를 이미 추가했습니다.

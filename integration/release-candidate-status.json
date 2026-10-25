@@ -5,17 +5,16 @@
   "cobblemon": "1.8.3+1.21.1",
   "cobblemon_commit": "ffe005511dd0d3ba68377fa3f95906b3837d9a0e",
   "client_mod_count": 158,
-  "server_mod_count": 120,
-  "server_started": false,
+  "server_mod_count": 121,
+  "server_started": true,
   "known_limitations": [
-    "Dedicated server startup and external-player connection have not been tested.",
     "Battle Tower initialized, team locked, and NPC battle started; win/streak/reward cycle not completed.",
     "PC Enhancements loaded; actual global sorting and lock persistence not tested.",
     "Questbook loaded 41 chapters and 1366 quests; full completion/reward coverage not tested.",
     "Questbook references unavailable lumymon:zeraorite and lumymon:zygardite.",
     "Quest Pokedex handler can log owner-null warnings for trainer Pokemon; no fatal crash seen for that warning.",
-    "Client graphical warnings for some existing model references remain.",
-    "Redistribution permission review is required before publishing embedded third-party or modified binaries."
+    "Redistribution permission review is required before publishing embedded third-party or modified binaries.",
+    "Post-fix startup, Korean rendering, resource models, and malformed-connection workaround require runtime verification."
   ],
   "excluded": [
     "worlds",
@@ -71,6 +70,9 @@
     "Terralith_1.21.x_v2.5.8.jar",
     "tim_core-1.7.3-fabric-1.32.0-cobblemon1.8-test.jar",
     "tmcraft-1.4.18+1.7.3-api119fix-stable18fix.jar",
-    "worldedit-mod-7.3.8.jar"
-  ]
+    "worldedit-mod-7.3.8.jar",
+    "mega_showdown-fabric-1.3.2+1.8.2+1.21.1-release.jar"
+  ],
+  "runtime_after_resource_fixes": "not yet tested",
+  "external_player_connection_before_resource_fixes": "observed in server log"
 }

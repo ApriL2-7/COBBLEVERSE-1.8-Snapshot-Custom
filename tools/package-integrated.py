@@ -94,6 +94,16 @@ with zipfile.ZipFile(PLAYER/('COBBLEVERSE-Integrated-'+VERSION+'.mrpack'),'w',co
     pack.writestr('client-overrides/options.txt',options)
     pack.writestr('modrinth.index.json',json.dumps({'formatVersion':1,'game':'minecraft','versionId':VERSION,'name':'COBBLEVERSE Integrated RC','summary':'Local release candidate: Cobblemon 1.8.3, FTB Questbook, Battle Tower, PC Enhancements. Not fully validated.','files':files,'dependencies':{'minecraft':'1.21.1','fabric-loader':'0.18.4'}},ensure_ascii=False,indent=2))
 
+# Explicit server-only fixes are kept out of the player profile/archive.
+extra_file=m.OUT/'server-extra-mods.json'
+extra_mods=json.loads(extra_file.read_text(encoding='utf8')) if extra_file.exists() else []
+for extra in extra_mods:
+    remote=official[extra['sha1']]
+    destination=SERVER/'mods'/extra['filename']
+    urllib.request.urlretrieve(remote['downloads'][0],destination)
+    if m.digest(destination)!=extra['sha256']:raise RuntimeError('Server-only download hash mismatch')
+    manifest.append(extra)
+
 with urllib.request.urlopen('https://meta.fabricmc.net/v2/versions/installer',timeout=60) as r:installers=json.load(r)
 installer=next(v for v in installers if v.get('stable'))['version']
 url=f'https://meta.fabricmc.net/v2/versions/loader/1.21.1/0.18.4/{installer}/server/jar'
@@ -135,11 +145,12 @@ pause
 (SERVER/'start-server.sh').write_text('#!/usr/bin/env sh\nset -eu\ncd "$(dirname "$0")"\nexec java -Xms2G -Xmx8G -Dfile.encoding=UTF-8 -jar fabric-server-launch.jar nogui\n',encoding='utf8')
 
 known={'status':'release-candidate-not-fully-validated','minecraft':'1.21.1','fabric_loader':'0.18.4','cobblemon':'1.8.3+1.21.1','cobblemon_commit':'ffe005511dd0d3ba68377fa3f95906b3837d9a0e','client_mod_count':len(mods),'server_mod_count':len(server_ids),'server_started':False,'known_limitations':['Dedicated server startup and external-player connection have not been tested.','Battle Tower initialized, team locked, and NPC battle started; win/streak/reward cycle not completed.','PC Enhancements loaded; actual global sorting and lock persistence not tested.','Questbook loaded 41 chapters and 1366 quests; full completion/reward coverage not tested.','Questbook references unavailable lumymon:zeraorite and lumymon:zygardite.','Quest Pokedex handler can log owner-null warnings for trainer Pokemon; no fatal crash seen for that warning.','Client graphical warnings for some existing model references remain.','Redistribution permission review is required before publishing embedded third-party or modified binaries.'],'excluded':['worlds','player data','account credentials','logs','disabled JARs','verification-only datapack','native-library cache'],'github_deployment':{'repository':'ApriL2-7/COBBLEVERSE-1.8-Snapshot-Custom','existing_updater_supports':['mods/','resourcepacks/'],'recommended':'Publish the full mrpack as a separate RC release asset; do not feed it to the legacy incremental updater.','published':False},'embedded_mods_needing_distribution_review':embedded}
+known['server_mod_count']=len(server_ids)+len(extra_mods)
 m.dump(m.OUT/'release-candidate-status.json',known)
 m.dump(m.OUT/'release-mod-manifest.json',manifest)
 for folder in [PLAYER,SERVER]:
     shutil.copy2(m.OUT/'release-mod-manifest.json',folder/'mod-manifest.json')
     shutil.copy2(m.OUT/'release-candidate-status.json',folder/'KNOWN-ISSUES.json')
 print('OUTPUT',OUTPUT,flush=True)
-print('Client mods',len(mods),'server mods',len(server_ids),'official download entries',len(files),'embedded',len(embedded),flush=True)
+print('Client mods',len(mods),'server mods',len(server_ids)+len(extra_mods),'official download entries',len(files),'embedded',len(embedded),flush=True)
 print('SERVER FOLDER READY; server was not executed',flush=True)
