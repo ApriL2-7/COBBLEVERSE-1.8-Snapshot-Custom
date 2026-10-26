@@ -1,0 +1,9 @@
+{
+  "modern_install": "passed",
+  "legacy_profile_skipped": "passed",
+  "running_client_blocked": "passed",
+  "already_installed_no_changes": "passed",
+  "official_file_hash": "passed",
+  "backup_created": "passed",
+  "personal_settings_preserved": "passed"
+}
