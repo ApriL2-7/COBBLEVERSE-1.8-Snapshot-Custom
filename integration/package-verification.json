@@ -5,7 +5,7 @@
   "mod_hashes": "passed",
   "excluded_private_runtime_paths": "passed for mrpack",
   "server_runtime_paths": "not checked; server already used",
-  "mrpack_bytes": 676527492,
-  "mrpack_sha256": "357132f4a0c3694f6a99756cd8aeb3c905d3f20a14936190f2e21dad48fa5da4",
+  "mrpack_bytes": 676371832,
+  "mrpack_sha256": "f2a68b9ea3fc04baa1207ca7a72becc12dd42c81e89afc9c5a8f79fc1854b4a1",
   "runtime_test": "not performed by this check"
 }

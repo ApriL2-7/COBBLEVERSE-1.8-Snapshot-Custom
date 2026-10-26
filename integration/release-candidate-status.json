@@ -14,7 +14,8 @@
     "Questbook references unavailable lumymon:zeraorite and lumymon:zygardite.",
     "Quest Pokedex handler can log owner-null warnings for trainer Pokemon; no fatal crash seen for that warning.",
     "Redistribution permission review is required before publishing embedded third-party or modified binaries.",
-    "Post-fix startup, Korean rendering, resource models, and malformed-connection workaround require runtime verification."
+    "Post-fix startup, Korean rendering, resource models, and malformed-connection workaround require runtime verification.",
+    "Riding seat migration applied to 231 species; missing driver locators for Boltund/Drapion and four secondary-seat layouts remain. Riding camera runtime verification is pending."
   ],
   "excluded": [
     "worlds",
@@ -63,7 +64,6 @@
     "ftb-teams-fabric-2101.1.11.jar",
     "InventoryProfilesNext-fabric-1.21.1-2.2.6.jar",
     "libIPN-fabric-1.21.1-6.6.3.jar",
-    "MoreCobblemonTweaks-fabric-1.3.3.jar",
     "Only Bottle Caps-1.3.0-api119fix.jar",
     "rctapi-fabric-1.21.1-0.15.2-beta-cobblemon1.8-test-api119fix-stable18fix.jar",
     "super_resolution-fabric-1.21..1.21.1-0.9.1-alpha.1+opengl.jar",

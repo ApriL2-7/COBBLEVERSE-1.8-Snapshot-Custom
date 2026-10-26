@@ -1,0 +1,2682 @@
+{
+  "migrated_species": 231,
+  "changed": [
+    {
+      "species": "cobblemon:absol",
+      "path": "data/cobblemon/species_additions/absol.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:aerodactyl",
+      "path": "data/cobblemon/species_additions/aerodactyl.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:aggron",
+      "path": "data/cobblemon/species_additions/aggron.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:alakazam",
+      "path": "data/cobblemon/species_additions/alakazam.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:altaria",
+      "path": "data/cobblemon/species_additions/altaria.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:appletun",
+      "path": "data/cobblemon/species_additions/appletun.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:arbok",
+      "path": "data/cobblemon/species_additions/arbok.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:arcanine",
+      "path": "data/cobblemon/species_additions/arcanine.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:arceus",
+      "path": "data/cobblemon/species_additions/arceus.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:archaludon",
+      "path": "data/cobblemon/species_additions/archaludon.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:archeops",
+      "path": "data/cobblemon/species_additions/archeops.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:arctovish",
+      "path": "data/cobblemon/species_additions/arctovish.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:arctozolt",
+      "path": "data/cobblemon/species_additions/arctozolt.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:armaldo",
+      "path": "data/cobblemon/species_additions/armaldo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:articuno",
+      "path": "data/cobblemon/species_additions/articuno.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:aurorus",
+      "path": "data/cobblemon/species_additions/aurorus.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:avalugg",
+      "path": "data/cobblemon/species_additions/avalugg.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:basculegion",
+      "path": "data/cobblemon/species_additions/basculegion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:bastiodon",
+      "path": "data/cobblemon/species_additions/bastiodon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "poseOffsets": [
+            {
+              "poseTypes": [
+                "STAND"
+              ],
+              "offset": {
+                "x": 0.0,
+                "y": -1.2831491,
+                "z": 0.36128467
+              }
+            },
+            {
+              "poseTypes": [
+                "WALK"
+              ],
+              "offset": {
+                "x": -0.008630978,
+                "y": -1.2763681,
+                "z": 0.3505332
+              }
+            },
+            {
+              "poseTypes": [
+                "HOVER",
+                "FLY",
+                "FLOAT",
+                "SWIM",
+                "GLIDE"
+              ],
+              "offset": {
+                "x": -0.013196847,
+                "y": -1.3370697,
+                "z": 0.32919547
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:beartic",
+      "path": "data/cobblemon/species_additions/beartic.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:bellibolt",
+      "path": "data/cobblemon/species_additions/bellibolt.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:bewear",
+      "path": "data/cobblemon/species_additions/bewear.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:blastoise",
+      "path": "data/cobblemon/species_additions/blastoise.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "poseOffsets": [
+            {
+              "poseTypes": [
+                "STAND"
+              ],
+              "offset": {
+                "x": 0.0065662265,
+                "y": -1.938705,
+                "z": 0.75241566
+              }
+            },
+            {
+              "poseTypes": [
+                "WALK"
+              ],
+              "offset": {
+                "x": 0.1671896,
+                "y": -2.013784,
+                "z": 0.75219035
+              }
+            },
+            {
+              "poseTypes": [
+                "HOVER",
+                "FLY"
+              ],
+              "offset": {
+                "x": -0.031250015,
+                "y": -1.9133127,
+                "z": 1.0007445
+              }
+            },
+            {
+              "poseTypes": [
+                "FLOAT"
+              ],
+              "offset": {
+                "x": 0.01992935,
+                "y": -1.0380715,
+                "z": 0.24457838
+              }
+            },
+            {
+              "poseTypes": [
+                "SWIM"
+              ],
+              "offset": {
+                "x": -0.062409163,
+                "y": -1.0400126,
+                "z": 0.044064052
+              }
+            },
+            {
+              "poseTypes": [
+                "GLIDE"
+              ],
+              "offset": {
+                "x": 0.0050011426,
+                "y": -2.03721,
+                "z": 0.5746374
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:blaziken",
+      "path": "data/cobblemon/species_additions/blaziken.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:blissey",
+      "path": "data/cobblemon/species_additions/blissey.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:bouffalant",
+      "path": "data/cobblemon/species_additions/bouffalant.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:braviary",
+      "path": "data/cobblemon/species_additions/braviary.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:bronzong",
+      "path": "data/cobblemon/species_additions/bronzong.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:camerupt",
+      "path": "data/cobblemon/species_additions/camerupt.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        },
+        {
+          "locator": "seat_3"
+        },
+        {
+          "locator": "seat_4"
+        },
+        {
+          "locator": "seat_5"
+        },
+        {
+          "locator": "seat_6"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:carracosta",
+      "path": "data/cobblemon/species_additions/carracosta.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:centiskorch",
+      "path": "data/cobblemon/species_additions/centiskorch.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cetitan",
+      "path": "data/cobblemon/species_additions/cetitan.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:chandelure",
+      "path": "data/cobblemon/species_additions/chandelure.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:chansey",
+      "path": "data/cobblemon/species_additions/chansey.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:charizard",
+      "path": "data/cobblemon/species_additions/charizard.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:chesnaught",
+      "path": "data/cobblemon/species_additions/chesnaught.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:chienpao",
+      "path": "data/cobblemon/species_additions/chienpao.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:clawitzer",
+      "path": "data/cobblemon/species_additions/clawitzer.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:clefable",
+      "path": "data/cobblemon/species_additions/clefable.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cloyster",
+      "path": "data/cobblemon/species_additions/cloyster.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "poseOffsets": [
+            {
+              "offset": {
+                "x": 0.0065662265,
+                "y": -1.938705,
+                "z": 0.75241566
+              },
+              "poseTypes": [
+                "STAND"
+              ]
+            },
+            {
+              "offset": {
+                "x": 0.1671896,
+                "y": -2.013784,
+                "z": 0.75219035
+              },
+              "poseTypes": [
+                "WALK"
+              ]
+            },
+            {
+              "offset": {
+                "x": -0.031250015,
+                "y": -1.9133127,
+                "z": 1.0007445
+              },
+              "poseTypes": [
+                "HOVER"
+              ]
+            },
+            {
+              "offset": {
+                "x": -0.031250015,
+                "y": -1.9133127,
+                "z": 1.0007445
+              },
+              "poseTypes": [
+                "FLY"
+              ]
+            },
+            {
+              "offset": {
+                "x": 0.01992935,
+                "y": -1.0380715,
+                "z": 0.24457838
+              },
+              "poseTypes": [
+                "FLOAT"
+              ]
+            },
+            {
+              "offset": {
+                "x": -0.062409163,
+                "y": -1.0400126,
+                "z": 0.044064052
+              },
+              "poseTypes": [
+                "SWIM"
+              ]
+            },
+            {
+              "offset": {
+                "x": 0.0050011426,
+                "y": -2.03721,
+                "z": 0.5746374
+              },
+              "poseTypes": [
+                "GLIDE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cobalion",
+      "path": "data/cobblemon/species_additions/cobalion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cofagrigus",
+      "path": "data/cobblemon/species_additions/cofagrigus.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:conkeldurr",
+      "path": "data/cobblemon/species_additions/conkeldurr.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:copperajah",
+      "path": "data/cobblemon/species_additions/copperajah.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:corviknight",
+      "path": "data/cobblemon/species_additions/corviknight.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:crabominable",
+      "path": "data/cobblemon/species_additions/crabominable.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:crawdaunt",
+      "path": "data/cobblemon/species_additions/crawdaunt.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cresselia",
+      "path": "data/cobblemon/species_additions/cresselia.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:crobat",
+      "path": "data/cobblemon/species_additions/crobat.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:cyclizar",
+      "path": "data/cobblemon/species_additions/cyclizar.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:decidueye",
+      "path": "data/cobblemon/species_additions/decidueye.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:delphox",
+      "path": "data/cobblemon/species_additions/delphox.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dialga",
+      "path": "data/cobblemon/species_additions/dialga.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dodrio",
+      "path": "data/cobblemon/species_additions/dodrio.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dondozo",
+      "path": "data/cobblemon/species_additions/dondozo.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        },
+        {
+          "locator": "seat_3"
+        },
+        {
+          "locator": "seat_4"
+        },
+        {
+          "locator": "seat_5"
+        },
+        {
+          "locator": "seat_6"
+        },
+        {
+          "locator": "seat_7"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:donphan",
+      "path": "data/cobblemon/species_additions/donphan.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dracovish",
+      "path": "data/cobblemon/species_additions/dracovish.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dracozolt",
+      "path": "data/cobblemon/species_additions/dracozolt.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:drampa",
+      "path": "data/cobblemon/species_additions/drampa.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:drednaw",
+      "path": "data/cobblemon/species_additions/drednaw.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:drifblim",
+      "path": "data/cobblemon/species_additions/drifblim.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:druddigon",
+      "path": "data/cobblemon/species_additions/druddigon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dubwool",
+      "path": "data/cobblemon/species_additions/dubwool.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:dusknoir",
+      "path": "data/cobblemon/species_additions/dusknoir.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:electivire",
+      "path": "data/cobblemon/species_additions/electivire.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:emboar",
+      "path": "data/cobblemon/species_additions/emboar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:empoleon",
+      "path": "data/cobblemon/species_additions/empoleon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:entei",
+      "path": "data/cobblemon/species_additions/entei.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:espathra",
+      "path": "data/cobblemon/species_additions/espathra.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:espeon",
+      "path": "data/cobblemon/species_additions/espeon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:exploud",
+      "path": "data/cobblemon/species_additions/exploud.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:farigiraf",
+      "path": "data/cobblemon/species_additions/farigiraf.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:fearow",
+      "path": "data/cobblemon/species_additions/fearow.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:feraligatr",
+      "path": "data/cobblemon/species_additions/feraligatr.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:ferrothorn",
+      "path": "data/cobblemon/species_additions/ferrothorn.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:flareon",
+      "path": "data/cobblemon/species_additions/flareon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:fluttermane",
+      "path": "data/cobblemon/species_additions/fluttermane.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:flygon",
+      "path": "data/cobblemon/species_additions/flygon.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:furfrou",
+      "path": "data/cobblemon/species_additions/furfrou.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:galvantula",
+      "path": "data/cobblemon/species_additions/galvantula.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:garbodor",
+      "path": "data/cobblemon/species_additions/garbodor.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:gengar",
+      "path": "data/cobblemon/species_additions/gengar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:girafarig",
+      "path": "data/cobblemon/species_additions/girafarig.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:giratina",
+      "path": "data/cobblemon/species_additions/giratina.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:glaceon",
+      "path": "data/cobblemon/species_additions/glaceon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:glastrier",
+      "path": "data/cobblemon/species_additions/glastrier.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:golduck",
+      "path": "data/cobblemon/species_additions/golduck.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:golem",
+      "path": "data/cobblemon/species_additions/golem.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:golisopod",
+      "path": "data/cobblemon/species_additions/golisopod.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:goodra",
+      "path": "data/cobblemon/species_additions/goodra.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:gougingfire",
+      "path": "data/cobblemon/species_additions/gougingfire.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:granbull",
+      "path": "data/cobblemon/species_additions/granbull.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:greninja",
+      "path": "data/cobblemon/species_additions/greninja.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:grimmsnarl",
+      "path": "data/cobblemon/species_additions/grimmsnarl.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:groudon",
+      "path": "data/cobblemon/species_additions/groudon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:gyarados",
+      "path": "data/cobblemon/species_additions/gyarados.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:hariyama",
+      "path": "data/cobblemon/species_additions/hariyama.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:haxorus",
+      "path": "data/cobblemon/species_additions/haxorus.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:hippowdon",
+      "path": "data/cobblemon/species_additions/hippowdon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:hooh",
+      "path": "data/cobblemon/species_additions/hooh.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:houndoom",
+      "path": "data/cobblemon/species_additions/houndoom.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:hydrapple",
+      "path": "data/cobblemon/species_additions/hydrapple.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:hydreigon",
+      "path": "data/cobblemon/species_additions/hydreigon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "offset": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "poseOffsets": [
+            {
+              "poseTypes": [
+                "STAND"
+              ],
+              "offset": {
+                "x": -0.0018294463,
+                "y": -1.9147544,
+                "z": 0.66856575
+              }
+            },
+            {
+              "poseTypes": [
+                "WALK"
+              ],
+              "offset": {
+                "x": 0.0,
+                "y": -1.9790326,
+                "z": 0.529425
+              }
+            },
+            {
+              "poseTypes": [
+                "HOVER"
+              ],
+              "offset": {
+                "x": -0.0018294463,
+                "y": -1.9147544,
+                "z": 0.66856575
+              }
+            },
+            {
+              "poseTypes": [
+                "FLY"
+              ],
+              "offset": {
+                "x": 0.0,
+                "y": -1.9790326,
+                "z": 0.529425
+              }
+            },
+            {
+              "poseTypes": [
+                "FLOAT"
+              ],
+              "offset": {
+                "x": -0.39855194,
+                "y": -1.6268008,
+                "z": 0.5169395
+              }
+            },
+            {
+              "poseTypes": [
+                "SWIM"
+              ],
+              "offset": {
+                "x": -0.39855194,
+                "y": -1.6268008,
+                "z": 0.5169395
+              }
+            },
+            {
+              "poseTypes": [
+                "GLIDE"
+              ],
+              "offset": {
+                "x": -0.39855194,
+                "y": -1.6268008,
+                "z": 0.5169395
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:incineroar",
+      "path": "data/cobblemon/species_additions/incineroar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:infernape",
+      "path": "data/cobblemon/species_additions/infernape.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:ironcrown",
+      "path": "data/cobblemon/species_additions/ironcrown.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:jellicent",
+      "path": "data/cobblemon/species_additions/jellicent.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:jolteon",
+      "path": "data/cobblemon/species_additions/jolteon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kangaskhan",
+      "path": "data/cobblemon/species_additions/kangaskhan.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:keldeo",
+      "path": "data/cobblemon/species_additions/keldeo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kilowattrel",
+      "path": "data/cobblemon/species_additions/kilowattrel.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kingdra",
+      "path": "data/cobblemon/species_additions/kingdra.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kingler",
+      "path": "data/cobblemon/species_additions/kingler.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kommoo",
+      "path": "data/cobblemon/species_additions/kommoo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:koraidon",
+      "path": "data/cobblemon/species_additions/koraidon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:krookodile",
+      "path": "data/cobblemon/species_additions/krookodile.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:kyogre",
+      "path": "data/cobblemon/species_additions/kyogre.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lanturn",
+      "path": "data/cobblemon/species_additions/lanturn.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lapras",
+      "path": "data/cobblemon/species_additions/lapras.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:latias",
+      "path": "data/cobblemon/species_additions/latias.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:latios",
+      "path": "data/cobblemon/species_additions/latios.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:leafeon",
+      "path": "data/cobblemon/species_additions/leafeon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lickitung",
+      "path": "data/cobblemon/species_additions/lickitung.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:liepard",
+      "path": "data/cobblemon/species_additions/liepard.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:ludicolo",
+      "path": "data/cobblemon/species_additions/ludicolo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lugia",
+      "path": "data/cobblemon/species_additions/lugia.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lumineon",
+      "path": "data/cobblemon/species_additions/lumineon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:lunala",
+      "path": "data/cobblemon/species_additions/lunala.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:luxray",
+      "path": "data/cobblemon/species_additions/luxray.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:machamp",
+      "path": "data/cobblemon/species_additions/machamp.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:magcargo",
+      "path": "data/cobblemon/species_additions/magcargo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:magmortar",
+      "path": "data/cobblemon/species_additions/magmortar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:magnezone",
+      "path": "data/cobblemon/species_additions/magnezone.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:mamoswine",
+      "path": "data/cobblemon/species_additions/mamoswine.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        },
+        {
+          "locator": "seat_3"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:manectric",
+      "path": "data/cobblemon/species_additions/manectric.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:meganium",
+      "path": "data/cobblemon/species_additions/meganium.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:metagross",
+      "path": "data/cobblemon/species_additions/metagross.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        },
+        {
+          "locator": "seat_3"
+        },
+        {
+          "locator": "seat_4"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:mightyena",
+      "path": "data/cobblemon/species_additions/mightyena.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:milotic",
+      "path": "data/cobblemon/species_additions/milotic.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:miltank",
+      "path": "data/cobblemon/species_additions/miltank.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:miraidon",
+      "path": "data/cobblemon/species_additions/miraidon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:misdreavus",
+      "path": "data/cobblemon/species_additions/misdreavus.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:moltres",
+      "path": "data/cobblemon/species_additions/moltres.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:mrmime",
+      "path": "data/cobblemon/species_additions/mrmime.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:mudsdale",
+      "path": "data/cobblemon/species_additions/mudsdale.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:muk",
+      "path": "data/cobblemon/species_additions/muk.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:naganadel",
+      "path": "data/cobblemon/species_additions/naganadel.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:nidoking",
+      "path": "data/cobblemon/species_additions/nidoking.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:nidoqueen",
+      "path": "data/cobblemon/species_additions/nidoqueen.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:ninetales",
+      "path": "data/cobblemon/species_additions/ninetales.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:noctowl",
+      "path": "data/cobblemon/species_additions/noctowl.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:noivern",
+      "path": "data/cobblemon/species_additions/noivern.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:oinkologne",
+      "path": "data/cobblemon/species_additions/oinkologne.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:onix",
+      "path": "data/cobblemon/species_additions/onix.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:palkia",
+      "path": "data/cobblemon/species_additions/palkia.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:pelipper",
+      "path": "data/cobblemon/species_additions/pelipper.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:persian",
+      "path": "data/cobblemon/species_additions/persian.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:pidgeot",
+      "path": "data/cobblemon/species_additions/pidgeot.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:poliwrath",
+      "path": "data/cobblemon/species_additions/poliwrath.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:porygon2",
+      "path": "data/cobblemon/species_additions/porygon2.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:primarina",
+      "path": "data/cobblemon/species_additions/primarina.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:primeape",
+      "path": "data/cobblemon/species_additions/primeape.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:probopass",
+      "path": "data/cobblemon/species_additions/probopass.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:pyroar",
+      "path": "data/cobblemon/species_additions/pyroar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:ragingbolt",
+      "path": "data/cobblemon/species_additions/ragingbolt.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:raikou",
+      "path": "data/cobblemon/species_additions/raikou.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:rampardos",
+      "path": "data/cobblemon/species_additions/rampardos.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:regice",
+      "path": "data/cobblemon/species_additions/regice.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:regidrago",
+      "path": "data/cobblemon/species_additions/regidrago.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:regieleki",
+      "path": "data/cobblemon/species_additions/regieleki.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:regigigas",
+      "path": "data/cobblemon/species_additions/regigigas.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:regirock",
+      "path": "data/cobblemon/species_additions/regirock.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:registeel",
+      "path": "data/cobblemon/species_additions/registeel.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:reshiram",
+      "path": "data/cobblemon/species_additions/reshiram.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:rhydon",
+      "path": "data/cobblemon/species_additions/rhydon.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:rhyperior",
+      "path": "data/cobblemon/species_additions/rhyperior.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:rillaboom",
+      "path": "data/cobblemon/species_additions/rillaboom.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:salamence",
+      "path": "data/cobblemon/species_additions/salamence.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:salazzle",
+      "path": "data/cobblemon/species_additions/salazzle.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:samurott",
+      "path": "data/cobblemon/species_additions/samurott.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:sawsbuck",
+      "path": "data/cobblemon/species_additions/sawsbuck.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:scizor",
+      "path": "data/cobblemon/species_additions/scizor.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:screamtail",
+      "path": "data/cobblemon/species_additions/screamtail.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:seaking",
+      "path": "data/cobblemon/species_additions/seaking.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:sharpedo",
+      "path": "data/cobblemon/species_additions/sharpedo.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:skarmory",
+      "path": "data/cobblemon/species_additions/skarmory.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:slowbro",
+      "path": "data/cobblemon/species_additions/slowbro.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:slowking",
+      "path": "data/cobblemon/species_additions/slowking.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:snorlax",
+      "path": "data/cobblemon/species_additions/snorlax.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:solgaleo",
+      "path": "data/cobblemon/species_additions/solgaleo.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:spectrier",
+      "path": "data/cobblemon/species_additions/spectrier.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:stakataka",
+      "path": "data/cobblemon/species_additions/stakataka.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:stantler",
+      "path": "data/cobblemon/species_additions/stantler.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:staraptor",
+      "path": "data/cobblemon/species_additions/staraptor.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:steelix",
+      "path": "data/cobblemon/species_additions/steelix.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:stonjourner",
+      "path": "data/cobblemon/species_additions/stonjourner.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:stoutland",
+      "path": "data/cobblemon/species_additions/stoutland.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:suicune",
+      "path": "data/cobblemon/species_additions/suicune.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:swampert",
+      "path": "data/cobblemon/species_additions/swampert.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:swanna",
+      "path": "data/cobblemon/species_additions/swanna.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:swellow",
+      "path": "data/cobblemon/species_additions/swellow.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:talonflame",
+      "path": "data/cobblemon/species_additions/talonflame.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:tangrowth",
+      "path": "data/cobblemon/species_additions/tangrowth.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:terrakion",
+      "path": "data/cobblemon/species_additions/terrakion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:thievul",
+      "path": "data/cobblemon/species_additions/thievul.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:tinglu",
+      "path": "data/cobblemon/species_additions/tinglu.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:togekiss",
+      "path": "data/cobblemon/species_additions/togekiss.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:torkoal",
+      "path": "data/cobblemon/species_additions/torkoal.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:torterra",
+      "path": "data/cobblemon/species_additions/torterra.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        },
+        {
+          "locator": "seat_2"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:toucannon",
+      "path": "data/cobblemon/species_additions/toucannon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:toxapex",
+      "path": "data/cobblemon/species_additions/toxapex.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:trevenant",
+      "path": "data/cobblemon/species_additions/trevenant.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:turtonator",
+      "path": "data/cobblemon/species_additions/turtonator.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:typhlosion",
+      "path": "data/cobblemon/species_additions/typhlosion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:tyranitar",
+      "path": "data/cobblemon/species_additions/tyranitar.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:umbreon",
+      "path": "data/cobblemon/species_additions/umbreon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:unfezant",
+      "path": "data/cobblemon/species_additions/unfezant.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:vaporeon",
+      "path": "data/cobblemon/species_additions/vaporeon.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:victreebel",
+      "path": "data/cobblemon/species_additions/victreebel.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:vileplume",
+      "path": "data/cobblemon/species_additions/vileplume.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:virizion",
+      "path": "data/cobblemon/species_additions/virizion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:volcanion",
+      "path": "data/cobblemon/species_additions/volcanion.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:walrein",
+      "path": "data/cobblemon/species_additions/walrein.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:whiscash",
+      "path": "data/cobblemon/species_additions/whiscash.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:xatu",
+      "path": "data/cobblemon/species_additions/xatu.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:xerneas",
+      "path": "data/cobblemon/species_additions/xerneas.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:yanmega",
+      "path": "data/cobblemon/species_additions/yanmega.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:yveltal",
+      "path": "data/cobblemon/species_additions/yveltal.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:zapdos",
+      "path": "data/cobblemon/species_additions/zapdos.json",
+      "strategy": "official-1.8.3-seat-layout",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:zekrom",
+      "path": "data/cobblemon/species_additions/zekrom.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    },
+    {
+      "species": "cobblemon:zoroark",
+      "path": "data/cobblemon/species_additions/zoroark.json",
+      "strategy": "existing-model-seat-locators",
+      "seats": [
+        {
+          "locator": "seat_1"
+        }
+      ]
+    }
+  ],
+  "unresolved_primary_seats": [
+    {
+      "species": "cobblemon:boltund",
+      "reason": "no verified seat_1 locator; model-specific repair required"
+    },
+    {
+      "species": "cobblemon:drapion",
+      "reason": "no verified seat_1 locator; model-specific repair required"
+    }
+  ],
+  "unresolved_passenger_seats": [
+    {
+      "species": "cobblemon:bastiodon",
+      "seat": 2,
+      "reason": "passenger locator missing in active base model"
+    },
+    {
+      "species": "cobblemon:blastoise",
+      "seat": 2,
+      "reason": "passenger locator missing in active base model"
+    },
+    {
+      "species": "cobblemon:cloyster",
+      "seat": 2,
+      "reason": "passenger locator missing in active base model"
+    },
+    {
+      "species": "cobblemon:hydreigon",
+      "seat": 2,
+      "reason": "passenger locator missing in active base model"
+    }
+  ],
+  "spawn_or_riding_stats_modified": false,
+  "runtime_verified": false,
+  "oracle_applied": false,
+  "sha256": "16225b9d0798402644a2b74e90fcf563acede83a8d7144bbee80fcc55b03b94b"
+}

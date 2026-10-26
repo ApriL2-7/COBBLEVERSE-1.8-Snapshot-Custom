@@ -1,0 +1,39 @@
+[
+  {
+    "game_versions": [
+      "1.21.1"
+    ],
+    "loaders": [
+      "fabric"
+    ],
+    "environment": "client_only",
+    "id": "g4m18yE2",
+    "project_id": "5KWlJ2HC",
+    "author_id": "IE97q57V",
+    "featured": false,
+    "name": "MoreCobblemonTweaks 1.3.6 (Fabric)",
+    "version_number": "1.3.6-fabric",
+    "changelog": "# v1.3.6\n\n## Changes\n- Increased Cobblemon dependency version to be 1.8.2+\n\n## Fixes\n- Fixed a crash on Cobblemon 1.8.2+",
+    "changelog_url": null,
+    "date_published": "2026-10-19T23:47:27.062337Z",
+    "downloads": 9493,
+    "version_type": "release",
+    "status": "listed",
+    "requested_status": null,
+    "files": [
+      {
+        "id": "rO4VWSQg",
+        "hashes": {
+          "sha512": "d99fe98b741ed209d2537c44c69fefd888490859e71f2ea57e3b170803d3d8e5716f904f3f7024f1f6e8fd95f82fcac42f6c97a63fb6047f500ae1447c1f692b",
+          "sha1": "dcb3cd18977975e3f5a81ef0bf049278233bf88e"
+        },
+        "url": "https://cdn.modrinth.com/data/5KWlJ2HC/versions/g4m18yE2/MoreCobblemonTweaks-fabric-1.3.6.jar",
+        "filename": "MoreCobblemonTweaks-fabric-1.3.6.jar",
+        "primary": true,
+        "size": 138044,
+        "file_type": null
+      }
+    ],
+    "dependencies": []
+  }
+]
