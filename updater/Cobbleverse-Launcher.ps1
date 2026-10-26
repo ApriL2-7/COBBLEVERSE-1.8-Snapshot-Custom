@@ -8,7 +8,7 @@ $ProgressPreference = "SilentlyContinue"
 
 $GuardFileName = "cobbleverse-client-pack-guard-2026.08.29.1.jar"
 $StateFileName = "cobbleverse-pack-state.json"
-$PreferredProfileName = "COBBLEVERSE 1.8 Snapshot Custom"
+$PreferredProfileName = "COBBLEVERSE 1.8 Integrated Test"
 
 function Write-ConsoleProgress([string]$Phase, [string]$Message, [int]$Percent, [switch]$Complete) {
     $Percent = [Math]::Max(0, [Math]::Min(100, $Percent))
@@ -76,7 +76,8 @@ function Resolve-CobbleverseProfile {
         foreach ($dir in @(Get-ChildItem -LiteralPath $root -Directory -ErrorAction SilentlyContinue)) {
             $guardPath = Join-Path $dir.FullName ("mods\" + $GuardFileName)
             $statePath = Join-Path $dir.FullName $StateFileName
-            if ((Test-Path -LiteralPath $guardPath -PathType Leaf) -or
+            $anyGuard = @(Get-ChildItem -LiteralPath (Join-Path $dir.FullName 'mods') -Filter 'cobbleverse-client-pack-guard*.jar' -File -ErrorAction SilentlyContinue)
+            if ((Test-Path -LiteralPath $guardPath -PathType Leaf) -or $anyGuard.Count -gt 0 -or
                 (Test-Path -LiteralPath $statePath -PathType Leaf)) {
                 $matches.Add($dir)
             }
@@ -310,6 +311,7 @@ function Prepare-IndexedReleases([string]$Root, [string]$InstalledVersion) {
 $workRoot = Join-Path $env:TEMP ("Cobbleverse-Launcher-" + [Guid]::NewGuid().ToString('N'))
 $bootstrapFile = Join-Path $workRoot "Cobbleverse-Bootstrap.ps1"
 $updaterFile = Join-Path $workRoot "Cobbleverse-Updater.ps1"
+$pcFixFile = Join-Path $workRoot "Cobbleverse-PCFix.ps1"
 $exitCode = 0
 
 try {
@@ -330,6 +332,18 @@ try {
     Write-ConsoleProgress "START" "Profile found: $(Split-Path $profile -Leaf)" 100 -Complete
 
     New-Item -ItemType Directory -Path $workRoot -Force | Out-Null
+    Download-RepoFile "updater/Cobbleverse-PCFix.ps1" $pcFixFile
+    Normalize-WindowsPowerShellScript $pcFixFile
+    & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File $pcFixFile -ProfilePath $profile -Inspect
+    $profileKind=$LASTEXITCODE
+    if ($profileKind -eq 0) {
+        # Integrated profiles must never be rolled back through the old snapshot chain.
+        & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File $pcFixFile -ProfilePath $profile
+        if ($LASTEXITCODE -ne 0) { throw "PC hotfix stopped with exit code $LASTEXITCODE." }
+        Write-Host '[COBBLEVERSE] Integrated client update finished.' -ForegroundColor Green
+        exit 0
+    }
+    if ($profileKind -ne 20) { throw "Could not verify the selected profile (exit $profileKind)." }
     Write-ConsoleProgress "SETUP" "Downloading updater components" 10
     Download-RepoFile "updater/Cobbleverse-Bootstrap.ps1" $bootstrapFile
     Write-ConsoleProgress "SETUP" "Bootstrap ready" 45
