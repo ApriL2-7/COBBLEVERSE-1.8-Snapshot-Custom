@@ -8,7 +8,6 @@ $ProgressPreference = "SilentlyContinue"
 
 $GuardFileName = "cobbleverse-client-pack-guard-2026.08.29.1.jar"
 $StateFileName = "cobbleverse-pack-state.json"
-$PreferredProfileName = "COBBLEVERSE 1.8 Integrated Test"
 
 function Write-ConsoleProgress([string]$Phase, [string]$Message, [int]$Percent, [switch]$Complete) {
     $Percent = [Math]::Max(0, [Math]::Min(100, $Percent))
@@ -68,11 +67,6 @@ function Resolve-CobbleverseProfile {
     $matches = [Collections.Generic.List[object]]::new()
 
     foreach ($root in $roots) {
-        $named = Join-Path $root $PreferredProfileName
-        if (Test-LooksLikeProfile $named) {
-            $matches.Add((Get-Item -LiteralPath $named))
-        }
-
         foreach ($dir in @(Get-ChildItem -LiteralPath $root -Directory -ErrorAction SilentlyContinue)) {
             $guardPath = Join-Path $dir.FullName ("mods\" + $GuardFileName)
             $statePath = Join-Path $dir.FullName $StateFileName
@@ -94,10 +88,6 @@ function Resolve-CobbleverseProfile {
         }
     }
 
-    $preferred = @($unique | Where-Object { $_.Name -eq $PreferredProfileName })
-    if ($preferred.Count -eq 1) {
-        return Get-FullPath $preferred[0].FullName
-    }
     if ($unique.Count -eq 1) {
         return Get-FullPath $unique[0].FullName
     }
@@ -105,11 +95,17 @@ function Resolve-CobbleverseProfile {
     Write-Host ""
     if ($unique.Count -gt 1) {
         Write-Host "[COBBLEVERSE] Multiple candidate profiles were found:" -ForegroundColor Yellow
-        foreach ($item in $unique) { Write-Host ("  - " + $item.FullName) }
+        for ($i=0; $i -lt $unique.Count; $i++) {
+            Write-Host ("  {0}. {1}  ({2})" -f ($i+1),$unique[$i].Name,$unique[$i].FullName)
+        }
     }
-    $typed = (Read-Host "Enter the COBBLEVERSE profile folder path (blank to cancel)").Trim().Trim('"')
+    $typed = (Read-Host "Choose the profile number or enter its folder path (blank to cancel)").Trim().Trim('"')
     if ([string]::IsNullOrWhiteSpace($typed)) {
         return $null
+    }
+    $number=0
+    if ([int]::TryParse($typed,[ref]$number) -and $number -ge 1 -and $number -le $unique.Count) {
+        return Get-FullPath $unique[$number-1].FullName
     }
     if (-not (Test-LooksLikeProfile $typed)) {
         throw "The selected path is not a Minecraft profile with a mods folder:`n$typed"
