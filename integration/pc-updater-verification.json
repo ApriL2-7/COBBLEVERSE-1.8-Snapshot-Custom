@@ -5,5 +5,8 @@
   "already_installed_no_changes": "passed",
   "official_file_hash": "passed",
   "backup_created": "passed",
-  "personal_settings_preserved": "passed"
+  "personal_settings_preserved": "passed",
+  "arbitrary_profile_names": "passed",
+  "multiple_profiles_numeric_selection": "passed",
+  "renamed_mod_files_identified_by_id": "passed"
 }
