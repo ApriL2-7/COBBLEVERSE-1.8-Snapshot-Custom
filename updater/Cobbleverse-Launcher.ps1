@@ -308,6 +308,7 @@ $workRoot = Join-Path $env:TEMP ("Cobbleverse-Launcher-" + [Guid]::NewGuid().ToS
 $bootstrapFile = Join-Path $workRoot "Cobbleverse-Bootstrap.ps1"
 $updaterFile = Join-Path $workRoot "Cobbleverse-Updater.ps1"
 $pcFixFile = Join-Path $workRoot "Cobbleverse-PCFix.ps1"
+$clientRepairsFile = Join-Path $workRoot "Cobbleverse-ClientRepairs.ps1"
 $exitCode = 0
 
 try {
@@ -336,6 +337,10 @@ try {
         # Integrated profiles must never be rolled back through the old snapshot chain.
         & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File $pcFixFile -ProfilePath $profile
         if ($LASTEXITCODE -ne 0) { throw "PC hotfix stopped with exit code $LASTEXITCODE." }
+        Download-RepoFile "updater/Cobbleverse-ClientRepairs.ps1" $clientRepairsFile
+        Normalize-WindowsPowerShellScript $clientRepairsFile
+        & powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File $clientRepairsFile -ProfilePath $profile
+        if ($LASTEXITCODE -ne 0) { throw "Client repairs stopped with exit code $LASTEXITCODE." }
         Write-Host '[COBBLEVERSE] Integrated client update finished.' -ForegroundColor Green
         exit 0
     }
