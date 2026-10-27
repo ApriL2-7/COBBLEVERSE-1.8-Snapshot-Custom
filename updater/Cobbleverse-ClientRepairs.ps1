@@ -6,6 +6,13 @@ $utf8=New-Object Text.UTF8Encoding($false)
 $stage=$null
 $changedFiles=$false
 
+function Get-RepairHash([string]$Path) {
+    $stream=[IO.File]::OpenRead($Path)
+    $sha=[Security.Cryptography.SHA256]::Create()
+    try {return [BitConverter]::ToString($sha.ComputeHash($stream)).Replace('-','').ToLowerInvariant()}
+    finally {$stream.Dispose();$sha.Dispose()}
+}
+
 function Read-ZipJson($Zip,[string]$Name) {
     $entry=$Zip.GetEntry($Name)
     if (-not $entry) {return $null}
@@ -26,10 +33,11 @@ try {
     $clients=@(Get-CimInstance Win32_Process -Filter "name='javaw.exe' OR name='java.exe'" |
         Where-Object {$_.CommandLine -match 'KnotClient|net\.minecraft\.client\.main\.Main'})
     if ($clients.Count) {throw 'Close Minecraft before applying client repairs.'}
-    $core=@();$installed=@()
+    $core=@();$installed=@();$resourceMods=@()
     foreach ($jar in @(Get-ChildItem -LiteralPath $mods -Filter '*.jar' -File)) {
         $z=[IO.Compression.ZipFile]::OpenRead($jar.FullName)
         try {$meta=Read-ZipJson $z 'fabric.mod.json'} finally {$z.Dispose()}
+        if ($meta.id) {$resourceMods+=@{Id=[string]$meta.id;Path=$jar.FullName}}
         if ($meta.id -eq 'cobblemon') {$core+=@{File=$jar;Metadata=$meta}}
         if ($meta.id -eq 'cobbleverse_client_callback_guard') {$installed+=@{File=$jar;Metadata=$meta}}
     }
@@ -56,7 +64,7 @@ try {
     $needAddon=$installed.Count -eq 0
     if ($installed.Count -eq 1) {
         if ([version]$installed[0].Metadata.version -gt [version]'1.0.0') {$needAddon=$false}
-        elseif ((Get-FileHash -LiteralPath $installed[0].File.FullName -Algorithm SHA256).Hash -ne $expected) {
+        elseif ((Get-RepairHash $installed[0].File.FullName) -ne $expected) {
             throw 'Installed callback guard does not match the reviewed artifact; refusing overwrite.'
         }
     }
@@ -72,39 +80,57 @@ try {
     $repairName='Cobbleverse-Client-Repair-2026.10.27.zip'
     $token='file/'+$repairName
     $packRoot=[IO.Path]::GetFullPath((Join-Path $profile 'resourcepacks'))
-    $sources=@($core[0].File.FullName)
+    # Fabric's normal mod resource order is mod ID order, followed by enabled packs.
+    $sources=@($resourceMods | Sort-Object { $_.Id } | ForEach-Object {$_.Path})
     foreach ($id in $packList) {
         if (-not $id.StartsWith('file/') -or $id -eq $token) {continue}
         $path=[IO.Path]::GetFullPath((Join-Path $packRoot $id.Substring(5)))
         if (-not $path.StartsWith($packRoot+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)) {throw 'Unsafe resource pack path.'}
+        if (Test-Path -LiteralPath $path -PathType Container) {
+            $folderAnimations=@(Get-ChildItem -LiteralPath $path -Recurse -File -Filter '*.animation.json')
+            if ($folderAnimations.Count) {throw 'Folder-based animation packs are not supported. Convert that pack to ZIP before applying repairs.'}
+        }
         if (Test-Path -LiteralPath $path -PathType Leaf) {$sources+=@($path)}
     }
-    $animationEntry='assets/cobblemon/bedrock/pokemon/animations/0753_fomantis/fomantis.animation.json'
-    $animations=[ordered]@{}
-    $required=[Collections.Generic.HashSet[string]]::new([StringComparer]::Ordinal)
-    $referencePattern=@'
-bedrock\(\s*['"]?fomantis['"]?\s*,\s*['"]?([A-Za-z0-9_]+)
-'@
+    Write-Host '[COBBLEVERSE] Scanning installed animations (this can take a minute)...'
+    $animationFiles=[ordered]@{};$animationGroups=[ordered]@{}
     foreach ($path in $sources) {
         $z=[IO.Compression.ZipFile]::OpenRead($path)
         try {
-            $data=Read-ZipJson $z $animationEntry
             foreach ($entry in $z.Entries) {
-                if ($entry.FullName -notlike '*/bedrock/pokemon/posers/*fomantis*.json') {continue}
-                $reader=New-Object IO.StreamReader($entry.Open(),[Text.Encoding]::UTF8)
-                try {$poserText=$reader.ReadToEnd()} finally {$reader.Dispose()}
-                foreach ($reference in [regex]::Matches($poserText,$referencePattern)) {
-                    [void]$required.Add('animation.fomantis.'+$reference.Groups[1].Value)
+                if ($entry.FullName -notmatch '^assets/[^/]+/bedrock/pokemon/animations/.+\.animation\.json$') {continue}
+                $data=Read-ZipJson $z $entry.FullName
+                if (-not $data.animations) {continue}
+                if (-not $animationFiles.Contains($entry.FullName)) {
+                    $animationFiles[$entry.FullName]=@{Data=$null;Animations=[ordered]@{}}
                 }
+                $file=$animationFiles[$entry.FullName]
+                $group=[IO.Path]::GetFileName($entry.FullName)
+                if (-not $animationGroups.Contains($group)) {$animationGroups[$group]=[ordered]@{}}
+                # Last pack wins for existing names; restore only names it dropped.
+                foreach ($prop in $data.animations.PSObject.Properties) {
+                    $file.Animations[$prop.Name]=$prop.Value
+                    $animationGroups[$group][$prop.Name]=$prop.Value
+                }
+                $file.Data=$data
             }
         } finally {$z.Dispose()}
-        if ($data -and $data.animations) {
-            foreach ($prop in $data.animations.PSObject.Properties) {$animations[$prop.Name]=$prop.Value}
-        }
     }
-    # Only require animations actually referenced by the enabled poser files.
-    foreach ($name in $required) {
-        if (-not $animations.Contains($name)) {throw ('Missing original Fomantis animation '+$name+'. Enable the original ATMxMSD resource pack and retry.')}
+    $repairs=[ordered]@{};$restoredCount=0
+    foreach ($name in $animationFiles.Keys) {
+        $file=$animationFiles[$name]
+        # Cobblemon indexes groups by basename, even across different directories.
+        # Fill every competing path so resource enumeration order cannot drop names.
+        $group=[IO.Path]::GetFileName($name)
+        foreach ($key in $animationGroups[$group].Keys) {
+            if (-not $file.Animations.Contains($key)) {$file.Animations[$key]=$animationGroups[$group][$key]}
+        }
+        $lastNames=@($file.Data.animations.PSObject.Properties | ForEach-Object {$_.Name})
+        $missing=@($file.Animations.Keys | Where-Object {$_ -cnotin $lastNames})
+        if (-not $missing.Count) {continue}
+        $restoredCount+=$missing.Count
+        $file.Data.animations=$file.Animations
+        $repairs[$name]=$file.Data
     }
     $fields=@($config.pack_overrides.PSObject.Properties | ForEach-Object {$_.Value})+@($config.default_overrides)
     foreach ($entry in $fields) {
@@ -127,10 +153,11 @@ bedrock\(\s*['"]?fomantis['"]?\s*,\s*['"]?([A-Za-z0-9_]+)
     $newPack=Join-Path $stage 'repair-pack.tmp'
     $z=[IO.Compression.ZipFile]::Open($newPack,[IO.Compression.ZipArchiveMode]::Create)
     try {
-        $packMeta=[ordered]@{pack=[ordered]@{pack_format=34;description='Cobbleverse Fomantis animation compatibility repair'}}
+        $packMeta=[ordered]@{pack=[ordered]@{pack_format=34;description='Cobbleverse animation compatibility repairs'}}
         Write-ZipText $z 'pack.mcmeta' (ConvertTo-Json -InputObject $packMeta -Depth 10)
-        $merged=[ordered]@{format_version='1.8.0';animations=$animations}
-        Write-ZipText $z $animationEntry (ConvertTo-Json -InputObject $merged -Depth 100)
+        foreach ($name in $repairs.Keys) {
+            Write-ZipText $z $name (ConvertTo-Json -InputObject $repairs[$name] -Depth 100)
+        }
     } finally {$z.Dispose()}
     $addon=Join-Path $stage $addonName
     if ($needAddon) {
@@ -139,11 +166,11 @@ bedrock\(\s*['"]?fomantis['"]?\s*,\s*['"]?([A-Za-z0-9_]+)
             Write-Host '[COBBLEVERSE] Downloading held-item client repair (3 KB)...'
             Invoke-WebRequest -UseBasicParsing -Uri ('https://github.com/ApriL2-7/COBBLEVERSE-1.8-Snapshot-Custom/releases/download/v2026.10.27-clientfix1/'+$addonName) -OutFile $addon
         }
-        if ((Get-FileHash -LiteralPath $addon -Algorithm SHA256).Hash -ne $expected) {throw 'Client callback repair hash mismatch. Installed files unchanged.'}
+        if ((Get-RepairHash $addon) -ne $expected) {throw 'Client callback repair hash mismatch. Installed files unchanged.'}
     }
     $packDest=Join-Path $packRoot $repairName
     $packChanged=(-not (Test-Path -LiteralPath $packDest))
-    if (-not $packChanged) {$packChanged=(Get-FileHash -LiteralPath $newPack).Hash -ne (Get-FileHash -LiteralPath $packDest).Hash}
+    if (-not $packChanged) {$packChanged=(Get-RepairHash $newPack) -ne (Get-RepairHash $packDest)}
     if (-not $needAddon -and -not $packChanged -and $newConfig -ceq $configText -and $newOptions -ceq $optionsText) {
         Remove-Item -LiteralPath $newPack -Force
         [IO.Directory]::Delete($stage)
@@ -171,7 +198,8 @@ bedrock\(\s*['"]?fomantis['"]?\s*,\s*['"]?([A-Za-z0-9_]+)
     }
     Remove-Item -LiteralPath $newPack -Force
     if (Test-Path -LiteralPath $addon) {Remove-Item -LiteralPath $addon -Force}
-    Write-Host '[COBBLEVERSE] Fomantis animation, resource configuration and held-item callback repairs installed.' -ForegroundColor Green
+    Write-Host ('[COBBLEVERSE] Animation repairs: '+$repairs.Count+' files, '+$restoredCount+' restored names.') -ForegroundColor Green
+    Write-Host '[COBBLEVERSE] Animation, resource configuration and held-item callback repairs installed.' -ForegroundColor Green
     Write-Host ('[COBBLEVERSE] Original settings backup: '+$stage)
     exit 0
 } catch {
