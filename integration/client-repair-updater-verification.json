@@ -1,0 +1,11 @@
+{
+  "resource_merge_and_required_animations": "passed",
+  "strict_text_components_checked": 126,
+  "personal_options_preserved": "passed",
+  "world_marker_preserved": "passed",
+  "bad_hash_no_installed_changes": "passed",
+  "running_client_no_changes": "passed",
+  "second_run_idempotent": "passed",
+  "backups": "passed",
+  "actual_gameplay": "not tested"
+}
