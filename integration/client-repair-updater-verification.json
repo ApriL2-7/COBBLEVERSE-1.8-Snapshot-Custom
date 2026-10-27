@@ -1,6 +1,9 @@
 {
   "resource_merge_and_required_animations": "passed",
   "strict_text_components_checked": 126,
+  "vileplume_quirk_and_overlay_precedence": "passed",
+  "duplicate_group_across_directories": "passed",
+  "unsupported_folder_animation_pack_no_changes": "passed",
   "personal_options_preserved": "passed",
   "world_marker_preserved": "passed",
   "bad_hash_no_installed_changes": "passed",
