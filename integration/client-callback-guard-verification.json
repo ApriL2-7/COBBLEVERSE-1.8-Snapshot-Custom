@@ -1,0 +1,7 @@
+{
+  "guard_logic_cases": 8,
+  "jvm_bytecode_verification": "passed",
+  "four_real_mixin_target_signatures": "passed",
+  "minecraft_started": false,
+  "real_client_runtime": "not tested"
+}

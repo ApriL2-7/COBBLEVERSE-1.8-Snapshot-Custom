@@ -1,0 +1,8 @@
+{
+  "file": "cobbleverse-client-callback-guard-1.0.0.jar",
+  "sha256": "9a51a11cb20fb48cd335499f535f0ba7d54801ecc622491cdcefddcfcfd10079",
+  "bytes": 2641,
+  "client_only": true,
+  "requires_cobblemon": "1.8.3+1.21.1",
+  "runtime_tested": false
+}
