@@ -4,7 +4,7 @@
   "fabric_loader": "0.18.4",
   "cobblemon": "1.8.3+1.21.1",
   "cobblemon_commit": "ffe005511dd0d3ba68377fa3f95906b3837d9a0e",
-  "client_mod_count": 158,
+  "client_mod_count": 159,
   "server_mod_count": 121,
   "server_started": true,
   "known_limitations": [
@@ -74,5 +74,6 @@
     "mega_showdown-fabric-1.3.2+1.8.2+1.21.1-release.jar"
   ],
   "runtime_after_resource_fixes": "not yet tested",
-  "external_player_connection_before_resource_fixes": "observed in server log"
+  "external_player_connection_before_resource_fixes": "observed in server log",
+  "latest_client_repairs": "2026.10.27: callback guard, Fomantis merge, resource config; gameplay unverified"
 }

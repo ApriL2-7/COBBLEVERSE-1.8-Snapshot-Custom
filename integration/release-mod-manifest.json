@@ -4988,5 +4988,26 @@
     "sha1": "2ba7d25b312c09b4b1ad821b42526b8b33652740",
     "sha256": "28b516da6b4c6f2325bf984d05d21c139eded77904ec5275076ea5c41532bc83",
     "sha512": "1fd6f09a41ce36284e1a8e9def53f3f6834d7201e69e54e24933be56445ba569fbc26278f28300d36926ba92db6f4f9c0ae245d23576aaa790530345587316db"
+  },
+  {
+    "id": "cobbleverse_client_callback_guard",
+    "filename": "cobbleverse-client-callback-guard-1.0.0.jar",
+    "version": "1.0.0",
+    "environment": "client",
+    "license": "MIT",
+    "server_included": false,
+    "client_included": true,
+    "install_path": "mods/cobbleverse-client-callback-guard-1.0.0.jar",
+    "size": 2641,
+    "depends": {
+      "fabricloader": ">=0.16.0",
+      "minecraft": "1.21.1",
+      "java": ">=21",
+      "cobblemon": "=1.8.3+1.21.1"
+    },
+    "source": "locally-authored-client-hotfix",
+    "sha1": "825bf491e7bbe3a929c6496b80406f231818a63d",
+    "sha256": "9a51a11cb20fb48cd335499f535f0ba7d54801ecc622491cdcefddcfcfd10079",
+    "sha512": "b77f80b08de5c3c15637b7c91edee6e984f84f0aa810743331344680771368506b6201f077557b88f4702dffaff7960bf07611cf25220db9bb5389b4994d859c"
   }
 ]
